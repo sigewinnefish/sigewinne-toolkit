@@ -18,7 +18,7 @@
         AlwaysShowHeader="True"
         Background="Transparent"
         ExpandedModeThresholdWidth="500"
-        Header="Toolbox v6.2b1"
+        Header="Toolbox v6.1b1"
         IsBackButtonVisible="Auto"
         IsBackEnabled="False"
         IsSettingsVisible="True"
