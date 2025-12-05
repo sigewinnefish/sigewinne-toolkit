@@ -1,6 +1,6 @@
 #pragma once
 
-#include "HomePage.g.h"
+#include "IslandPage.g.h"
 #include "island.h"
 #include "config.h"
 
@@ -9,13 +9,13 @@ extern IslandEnvironment* penv;
 
 namespace winrt::App6::implementation
 {
-    struct HomePage : HomePageT<HomePage>
+    struct IslandPage : IslandPageT<IslandPage>
     {
 
     private:
         IslandEnvironment* penv = nullptr;
     public:
-        HomePage()
+        IslandPage()
 
         {
 			penv = ::penv;
@@ -49,7 +49,7 @@ namespace winrt::App6::implementation
 
 namespace winrt::App6::factory_implementation
 {
-    struct HomePage : HomePageT<HomePage, implementation::HomePage>
+    struct IslandPage : IslandPageT<IslandPage, implementation::IslandPage>
     {
     };
 }

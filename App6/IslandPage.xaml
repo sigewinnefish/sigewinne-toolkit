@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Page
-    x:Class="App6.HomePage"
+    x:Class="App6.IslandPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:App6"
@@ -72,6 +72,7 @@
                     SpinButtonPlacementMode="Inline"
                     ValueChanged="TargetFov"
                     Value="45" />
+            
             <ToggleSwitch
                     x:Name="DisableFog_Toggle"
                     Grid.Row="0"

@@ -59,7 +59,7 @@ namespace winrt::App6::implementation
 
         //
         //loadConfig();
-        contentFrame().Navigate(xaml_typename<App6::HomePage>());
+        contentFrame().Navigate(xaml_typename<App6::IslandPage>());
     }
 
     void MainWindow::NavigationView_SelectionChanged(winrt::Microsoft::UI::Xaml::Controls::NavigationView const& sender, winrt::Microsoft::UI::Xaml::Controls::NavigationViewSelectionChangedEventArgs const& args)

@@ -143,8 +143,8 @@
     <Manifest Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HomePage.xaml.h">
-      <DependentUpon>HomePage.xaml</DependentUpon>
+    <ClInclude Include="IslandPage.xaml.h">
+      <DependentUpon>IslandPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="island.h" />
@@ -159,14 +159,14 @@
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
-    <Page Include="HomePage.xaml">
+    <Page Include="IslandPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HomePage.xaml.cpp">
-      <DependentUpon>HomePage.xaml</DependentUpon>
+    <ClCompile Include="IslandPage.xaml.cpp">
+      <DependentUpon>IslandPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="launchgame.cpp" />
@@ -182,8 +182,8 @@
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="HomePage.idl">
-      <DependentUpon>HomePage.xaml</DependentUpon>
+    <Midl Include="IslandPage.idl">
+      <DependentUpon>IslandPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="MainWindow.idl">

@@ -1,7 +1,7 @@
 #include "pch.h"
-#include "HomePage.xaml.h"
-#if __has_include("HomePage.g.cpp")
-#include "HomePage.g.cpp"
+#include "IslandPage.xaml.h"
+#if __has_include("IslandPage.g.cpp")
+#include "IslandPage.g.cpp"
 #endif
 
 using namespace winrt;
@@ -13,7 +13,7 @@ using namespace Microsoft::UI::Xaml::Controls;
 namespace winrt::App6::implementation
 {
 
-    void HomePage::loadConfig()
+    void IslandPage::loadConfig()
     {
         pConfig pconfig = new Config();
         ZeroMemory(pconfig, sizeof(Config));
@@ -46,7 +46,7 @@ namespace winrt::App6::implementation
         delete pconfig;
     }
 
-    void HomePage::saveConfig()
+    void IslandPage::saveConfig()
     {
 
         pConfig pconfig = new Config();
@@ -82,102 +82,102 @@ namespace winrt::App6::implementation
         delete pconfig;
     }
 
-    void HomePage::Button_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::Button_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         exit(0);
     }
 
-    void HomePage::Button_Click_Game(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::Button_Click_Game(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         auto str = winrt::to_string(Path().Text());
         launchGame((char*)str.c_str());
 
     }
 
-    void HomePage::TargetFovHotSwitch(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::TargetFovHotSwitch(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->EnableSetFieldOfView = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::DisableFog(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::DisableFog(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->DisableFog = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::TargetFpsToggleSwitch(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::TargetFpsToggleSwitch(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->EnableSetTargetFrameRate = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::TargetFps(winrt::Microsoft::UI::Xaml::Controls::NumberBox const& sender, winrt::Microsoft::UI::Xaml::Controls::NumberBoxValueChangedEventArgs const& args)
+    void IslandPage::TargetFps(winrt::Microsoft::UI::Xaml::Controls::NumberBox const& sender, winrt::Microsoft::UI::Xaml::Controls::NumberBoxValueChangedEventArgs const& args)
     {
         penv->TargetFrameRate = sender.Value();
     }
 
-    void HomePage::TargetFov(winrt::Microsoft::UI::Xaml::Controls::NumberBox const& sender, winrt::Microsoft::UI::Xaml::Controls::NumberBoxValueChangedEventArgs const& args)
+    void IslandPage::TargetFov(winrt::Microsoft::UI::Xaml::Controls::NumberBox const& sender, winrt::Microsoft::UI::Xaml::Controls::NumberBoxValueChangedEventArgs const& args)
     {
         penv->FieldOfView = sender.Value();
     }
 
-    void HomePage::FixLowFovSceneToggleSwitch(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::FixLowFovSceneToggleSwitch(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->FixLowFovScene = sender.try_as<ToggleSwitch>().IsOn();
 
     }
 
 
-    void HomePage::RemoveOpenTeamProgress(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::RemoveOpenTeamProgress(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->RemoveOpenTeamProgress = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::EventCameraMoveHotSwitch(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::EventCameraMoveHotSwitch(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->DisableEventCameraMove = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::DisableShowDamageText(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::DisableShowDamageText(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->DisableShowDamageText = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::RedirectCombineEntryToggleSwitch(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::RedirectCombineEntryToggleSwitch(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->RedirectCombineEntry = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::UsingTouchScreen(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::UsingTouchScreen(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->UsingTouchScreen = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::ResinListItemAllowOriginalResin(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::ResinListItemAllowOriginalResin(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->ResinListItemId000106Allowed = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::ResinListItemAllowPrimogem(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::ResinListItemAllowPrimogem(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->ResinListItemId000201Allowed = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::ResinListItemAllowFragileResin(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::ResinListItemAllowFragileResin(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->ResinListItemId107009Allowed = sender.try_as<ToggleSwitch>().IsOn();
     }
 
 
-    void HomePage::ResinListItemAllowTransientResin(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::ResinListItemAllowTransientResin(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->ResinListItemId107012Allowed = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::ResinListItemAllowCondensedResin(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::ResinListItemAllowCondensedResin(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->ResinListItemId220007Allowed = sender.try_as<ToggleSwitch>().IsOn();
     }
 
-    void HomePage::HideQuestBanner(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
+    void IslandPage::HideQuestBanner(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         penv->HideQuestBanner = sender.try_as<ToggleSwitch>().IsOn();
     }
