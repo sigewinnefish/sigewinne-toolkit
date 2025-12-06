@@ -23,7 +23,7 @@ namespace winrt::App6::implementation
         }
         LPVOID ptr = nullptr;
         ReadFile(h, pconfig, sizeof(Config), NULL, NULL);
-        Path().Text(winrt::to_hstring(pconfig->gamePath));
+        //Path().Text(winrt::to_hstring(pconfig->gamePath));
         TargetFps_NumberBox().Value(pconfig->TargetFrameRate);
         TargetFov_NumberBox().Value(pconfig->FieldOfView);
         TargetFovHotSwitch_Toggle().IsOn(pconfig->EnableSetFieldOfView);
@@ -57,8 +57,8 @@ namespace winrt::App6::implementation
         }
         LPVOID ptr = nullptr;
 
-        auto str = winrt::to_string(Path().Text());
-        strcpy_s(pconfig->gamePath, str.c_str());
+        //auto str = winrt::to_string(Path().Text());
+        //strcpy_s(pconfig->gamePath, str.c_str());
         pconfig->DisableEventCameraMove = penv->DisableEventCameraMove;;
         pconfig->DisableFog = penv->DisableFog;
         pconfig->DisableShowDamageText = penv->DisableShowDamageText;
@@ -89,8 +89,8 @@ namespace winrt::App6::implementation
 
     void IslandPage::Button_Click_Game(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
-        auto str = winrt::to_string(Path().Text());
-        launchGame((char*)str.c_str());
+        //auto str = winrt::to_string(Path().Text());
+        //launchGame((char*)str.c_str());
 
     }
 

@@ -9,36 +9,16 @@
     mc:Ignorable="d">
 
     <StackPanel
-            Padding="12"
+            Padding="10"
             Orientation="Vertical"
-            Margin="30,20"
+            Margin="50,10"
             Spacing="15">
-        <StackPanel Orientation="Horizontal" Spacing="10">
-            <Button
-                Click="Button_Click_Game"
-                Content="Game Start"
-                Style="{StaticResource AccentButtonStyle}" />
-            <Button
-                Click="Button_Click"
-                Content="Kill Process"
-                Style="{StaticResource SubtleButtonStyle}" />
-        </StackPanel>
-        <TextBox
-                x:Name="Path"
-                Margin="0,20,0,0"
-                Header="Genshin Impact Game Path:"
-                PlaceholderText="eg: C:\\Genshin Impact\\YuanShen.exe" />
-        <SelectorBar x:Name="SelectorBar2">
-            <SelectorBarItem x:Name="SelectorBarItemPage1" Text="Page1" IsSelected="True" />
-            <SelectorBarItem x:Name="SelectorBarItemPage2" Text="Page2" />
-        </SelectorBar>
 
-
-        <Grid Padding="16">
+        <Grid Padding="0" RowSpacing="10" ColumnSpacing="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />

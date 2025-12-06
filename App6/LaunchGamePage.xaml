@@ -6,9 +6,31 @@
     xmlns:local="using:App6"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:App6"
     mc:Ignorable="d">
+    <Border Padding="20">
+        <ScrollViewer
+        >
 
-    <Grid>
 
-    </Grid>
+            <StackPanel Spacing="3">
+                <controls:SettingsCard x:Name="DisplayCard"/>
+                <controls:SettingsCard x:Name="SoundCard"/>
+                <controls:SettingsCard x:Name="NotificationsCard1"/>
+                <controls:SettingsCard x:Name="NotificationsCard2"/>
+                <controls:SettingsCard x:Name="NotificationsCard3"/>
+                <controls:SettingsCard x:Name="NotificationsCard4"/>
+                <controls:SettingsCard x:Name="NotificationsCard5"/>
+                <controls:SettingsCard x:Name="NotificationsCard6"/>
+                <controls:SettingsCard x:Name="NotificationsCard7"/>
+                <controls:SettingsCard x:Name="NotificationsCard8"/>
+                <controls:SettingsCard x:Name="NotificationsCard9"/>
+                <controls:SettingsCard x:Name="NotificationsCard10"/>
+                <controls:SettingsCard x:Name="NotificationsCard11"/>
+                <controls:SettingsCard x:Name="NotificationsCard12"/>
+                <controls:SettingsCard x:Name="NotificationsCard13"/>
+            </StackPanel>
+
+        </ScrollViewer>
+    </Border>
 </Page>

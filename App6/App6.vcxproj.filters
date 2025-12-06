@@ -10,6 +10,15 @@
     <Page Include="MainWindow.xaml">
       <Filter>View</Filter>
     </Page>
+    <Page Include="LaunchGamePage.xaml">
+      <Filter>View</Filter>
+    </Page>
+    <Page Include="SettingsCard.xaml">
+      <Filter>View</Filter>
+    </Page>
+    <Page Include="HomePage.xaml">
+      <Filter>View</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="MainWindow.idl" />
@@ -72,5 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natstepfilter" />
   </ItemGroup>
 </Project>

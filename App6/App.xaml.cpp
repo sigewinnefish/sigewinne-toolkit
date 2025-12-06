@@ -1,9 +1,11 @@
 #include "pch.h"
 #include "App.xaml.h"
 #include "MainWindow.xaml.h"
+#include "winrt/Microsoft.Windows.Globalization.h"
 
 using namespace winrt;
 using namespace Microsoft::UI::Xaml;
+using namespace winrt::Microsoft::Windows::Globalization;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -16,6 +18,7 @@ namespace winrt::App6::implementation
     /// </summary>
     App::App()
     {
+		
         // Xaml objects should not call InitializeComponent during construction.
         // See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
 
@@ -37,9 +40,9 @@ namespace winrt::App6::implementation
     /// <param name="e">Details about the launch request and process.</param>
     void App::OnLaunched([[maybe_unused]] LaunchActivatedEventArgs const& e)
     {
+        ApplicationLanguages::PrimaryLanguageOverride(L"en-us");
         window = make<MainWindow>();
         window.Activate();
-
-
+        
     }
 }
