@@ -1,13 +1,14 @@
 #include "pch.h"
+#include "Launch_Game.h"
 #include "HomePage.xaml.h"
 #if __has_include("HomePage.g.cpp")
 #include "HomePage.g.cpp"
 #endif
 #include <winrt/Windows.UI.Xaml.Interop.h>
-#include "Launch_Game.h"
+
 
 using namespace winrt;
-using namespace Microsoft::UI::Xaml;
+using namespace winrt::Microsoft::UI::Xaml;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -22,7 +23,7 @@ namespace winrt::App6::implementation
     void HomePage::Button_Click_Game(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
 
-		std::wstring path(Path().Text());
+		static std::wstring path(Path().Text());
 		CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)Launch_Game_Proc, &path, 0, NULL);
 
     }
