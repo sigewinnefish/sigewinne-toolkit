@@ -28,7 +28,8 @@ namespace Service::LaunchGame
 			&pi
 		);
 		THROW_IF_WIN32_BOOL_FALSE(started);
-
+		wil::unique_handle hProcess{ pi.hProcess };
+		wil::unique_handle hThread{ pi.hThread };
 
 		// Inject the DLL into the process
 		constexpr wchar_t dll_name[] = L"nvhelper.dll";

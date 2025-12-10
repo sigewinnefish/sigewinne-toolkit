@@ -32,6 +32,9 @@
     <ClCompile Include="settings.cpp">
       <Filter>Service</Filter>
     </ClCompile>
+    <ClCompile Include="settings.pb.cc">
+      <Filter>Service</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -42,6 +45,9 @@
       <Filter>Service</Filter>
     </ClInclude>
     <ClInclude Include="Settings.h">
+      <Filter>Service</Filter>
+    </ClInclude>
+    <ClInclude Include="settings.pb.h">
       <Filter>Service</Filter>
     </ClInclude>
   </ItemGroup>
