@@ -38,6 +38,7 @@ namespace winrt::App6::implementation
 			this->ExtendsContentIntoTitleBar(true);
             this->AppWindow().TitleBar().PreferredHeightOption(TitleBarHeightOption::Standard);
             this->AppWindow().TitleBar().PreferredTheme(TitleBarTheme::UseDefaultAppMode);
+            this->AppWindow().SetIcon(L"Assets\\Logo.ico");
             // Xaml objects should not call InitializeComponent during construction.
             // See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
         }
