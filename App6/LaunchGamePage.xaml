@@ -1,43 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Page
     x:Class="App6.LaunchGamePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:App6"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:App6"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:controls="using:App6"
     mc:Ignorable="d">
     <Border Padding="20">
         <ScrollViewer>
 
 
             <StackPanel Spacing="3">
-                <controls:SettingsCard x:Name="settingsCard"
-                               Description="Take advantage of monitors that support HDR for brighter, more vivid, and more detailed pictures"
-                               Header="Windows HDR"
-                               
-                />
-                <controls:SettingsCard x:Name="settingsCard1"
-                               Description="Modify its default behavior at game startup"
-                               Header="Launch Parameters"
-                               
-                />
-                <controls:SettingsCard x:Name="settingsCard2"
-                               Description="Incompatible with embedded browsers; operations like switching window may cause the game to crash"
-                               Header="-window-mode exclusive"
-                               
-                />
-                <controls:SettingsCard x:Name="settingsCard3"
-                               Description="Overwrite default fullscreen status"
-                               Header="-screen-fullscreen"
-                               
-                />
-                <controls:SettingsCard x:Name="settingsCard4"
-                               Description="Create window as popup, without frame"
-                               Header="-popupwindow"
-                               
-                />
+                <local:SettingsCard
+                    x:Name="settingsCard"
+                    Description="Take advantage of monitors that support HDR for brighter, more vivid, and more detailed pictures"
+                    Header="Windows HDR" />
+                <local:SettingsCard
+                    x:Name="settingsCard1"
+                    Description="Modify its default behavior at game startup"
+                    Header="Launch Parameters" />
+                <local:SettingsCard
+                    x:Name="settingsCard2"
+                    Description="Incompatible with embedded browsers; operations like switching window may cause the game to crash"
+                    Header="-window-mode exclusive" />
+                <local:SettingsCard
+                    x:Name="settingsCard3"
+                    Description="Overwrite default fullscreen status"
+                    Header="-screen-fullscreen" />
+                <local:SettingsCard
+                    x:Name="settingsCard4"
+                    Description="Create window as popup, without frame"
+                    Header="-popupwindow" />
 
             </StackPanel>
 

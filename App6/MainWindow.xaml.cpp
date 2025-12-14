@@ -4,6 +4,7 @@
 #include "MainWindow.g.cpp"
 #endif
 #include <winrt/Microsoft.UI.Interop.h>
+#include <winrt/Windows.UI.Xaml.Interop.h>
 
 IslandEnvironment* penv = nullptr;
 // To learn more about WinUI, the WinUI project structure,
@@ -53,20 +54,6 @@ namespace winrt::App6::implementation
         //penv->IslandFunctionOffsets.SetLastUid = 0x0F43BA90;
     }
 
-
-    void MainWindow::viewloaded(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
-    {
-
-        //
-        //loadConfig();
-        contentFrame().Navigate(xaml_typename<App6::HomePage>());
-    }
-
-    void MainWindow::NavigationView_SelectionChanged(winrt::Microsoft::UI::Xaml::Controls::NavigationView const& sender, winrt::Microsoft::UI::Xaml::Controls::NavigationViewSelectionChangedEventArgs const& args)
-    {
-        //contentFrame().Navigate(xaml_typename<App6::HomePage>());
-    }
-
     HWND MainWindow::GetWindowHandle()
     {
         if (_hwnd == nullptr)
@@ -77,6 +64,8 @@ namespace winrt::App6::implementation
         return _hwnd;
     }
 }
+
+
 
 
 

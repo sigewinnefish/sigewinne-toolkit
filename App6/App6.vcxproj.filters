@@ -19,6 +19,12 @@
     <Page Include="HomePage.xaml">
       <Filter>View</Filter>
     </Page>
+    <Page Include="SettingsPage.xaml">
+      <Filter>View</Filter>
+    </Page>
+    <Page Include="MainView.xaml">
+      <Filter>View</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="MainWindow.idl" />
@@ -109,10 +115,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
-    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natstepfilter" />
+    <ResourceCompile Include="App6.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="App6.rc" />
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natstepfilter" />
   </ItemGroup>
 </Project>

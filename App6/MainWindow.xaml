@@ -8,68 +8,14 @@
     xmlns:local="using:App6"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="ToolKit"
-    
     mc:Ignorable="d">
 
     <Window.SystemBackdrop>
-        <MicaBackdrop/>
+        <MicaBackdrop />
     </Window.SystemBackdrop>
 
-    <NavigationView
-        AlwaysShowHeader="True"
-        Background="Transparent"
-        ExpandedModeThresholdWidth="500"
-        Header="Sigewinne Toolbox v6.2b2 (Lite)"
-        IsBackButtonVisible="Auto"
-        IsBackEnabled="False"
-        IsSettingsVisible="True"
-        IsTabStop="False"
-        Loaded="viewloaded"
-        PaneDisplayMode="Auto"
-        SelectionFollowsFocus="Disabled"
-        SelectionChanged="NavigationView_SelectionChanged"
-        OpenPaneLength="200"
-        >
-
-        <NavigationView.MenuItems>
-            <NavigationViewItem
-                x:Name="SamplePage1Item"
-                Content="Default"
-                Tag="SamplePage1">
-                <NavigationViewItem.Icon>
-                    <SymbolIcon Symbol="Play" />
-                </NavigationViewItem.Icon>
-            </NavigationViewItem>
-            <NavigationViewItemHeader Content="Actions" />
-            <NavigationViewItem
-                x:Name="SamplePage2Item"
-                Content="Save Offsets"
-                SelectsOnInvoked="True" 
-                Tag="SamplePage2">
-                <NavigationViewItem.Icon>
-                    <SymbolIcon Symbol="Save" />
-                </NavigationViewItem.Icon>
-            </NavigationViewItem>
-            <NavigationViewItem
-                x:Name="SamplePage3Item"
-                Content="Search Offsets"
-                Tag="SamplePage3">
-                <NavigationViewItem.Icon>
-                    <SymbolIcon Symbol="Refresh" />
-                </NavigationViewItem.Icon>
-            </NavigationViewItem>
-        </NavigationView.MenuItems>
-        <NavigationView.FooterMenuItems>
-            <NavigationViewItem Content="Account" Icon="Contact" ToolTipService.ToolTip="Account" Tag="SamplePage2">
-            </NavigationViewItem>
-
-
-        </NavigationView.FooterMenuItems>
-
-
-        <Frame x:Name="contentFrame" Padding="010"/>
-        
-
-    </NavigationView>
+    <Grid>
+        <local:MainView x:Name="MainView" />
+    </Grid>
 
 </Window>

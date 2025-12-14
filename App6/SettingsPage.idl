@@ -1,0 +1,9 @@
+namespace App6
+{
+    [default_interface]
+    runtimeclass SettingsPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        SettingsPage();
+
+    }
+}

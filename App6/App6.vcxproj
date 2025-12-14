@@ -143,6 +143,10 @@
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HoYoLogin.h" />
+    <ClInclude Include="MainView.xaml.h">
+      <DependentUpon>MainView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -157,6 +161,10 @@
       <DependentUpon>SettingsCard.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="SettingsPage.xaml.h">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
@@ -169,8 +177,14 @@
     <Page Include="LaunchGamePage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="MainView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml" />
     <Page Include="SettingsCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SettingsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
@@ -185,7 +199,15 @@
     </ClCompile>
     <ClCompile Include="LaunchGame.cpp" />
     <ClCompile Include="HoYoLogin.cpp" />
+    <ClCompile Include="MainView.xaml.cpp">
+      <DependentUpon>MainView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="settings.cpp" />
+    <ClCompile Include="SettingsPage.xaml.cpp">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClInclude Include="LaunchGame.h" />
     <ClCompile Include="LaunchGamePage.xaml.cpp">
       <DependentUpon>LaunchGamePage.xaml</DependentUpon>
@@ -223,12 +245,20 @@
       <DependentUpon>LaunchGamePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="MainView.idl">
+      <DependentUpon>MainView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
     <Midl Include="MainWindow.idl">
       <SubType>Code</SubType>
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Midl>
     <Midl Include="SettingsCard.idl">
       <DependentUpon>SettingsCard.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="SettingsPage.idl">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
   </ItemGroup>
