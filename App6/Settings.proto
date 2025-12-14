@@ -53,6 +53,7 @@ message PrivateVars
 {
     int64           WindowRect                        =  1;
     int32		    StartCount                        =  2;
+    bool            collapseNavView                   =  3;
 }
 
 message Settings
