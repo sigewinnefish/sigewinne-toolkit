@@ -58,11 +58,12 @@ message PrivateVars
     AppEdition      AppEdition                        =  5;
 }
 
-enum AppEdition {
-  APP_EDITION_UNSPECIFIED = 0;
-  APP_EDITION_TRIAL       = 1;
-  APP_EDITION_STANDARD    = 2;
-  APP_EDITION_Dev         = 3;
+enum AppEdition 
+{
+    APP_EDITION_UNSPECIFIED = 0;
+    APP_EDITION_LITE        = 1;
+    APP_EDITION_STANDARD    = 2;
+    APP_EDITION_Dev         = 3;
 }
 
 message Settings
