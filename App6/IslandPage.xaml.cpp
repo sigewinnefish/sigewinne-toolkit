@@ -95,7 +95,7 @@ namespace winrt::App6::implementation
 
 	bool IslandPage::HideQuestBanner()
 	{
-		return pisland->set_hidequestbanner();
+		return pisland->hidequestbanner();
 	}
 
 	void IslandPage::HideQuestBanner(bool value)
