@@ -33,10 +33,10 @@ namespace Service::LaunchGame
 
 		// Inject the DLL into the process
 		constexpr wchar_t dll_name[] = L"nvhelper.dll";
-		WCHAR app_dir[MAX_PATH];
-		GetModuleFileNameW(NULL, app_dir, MAX_PATH);
-		std::filesystem::path app_path(app_dir);
-		auto dll_path = app_path / dll_name;
+		WCHAR exe_path[MAX_PATH];
+		GetModuleFileNameW(NULL, exe_path, MAX_PATH);
+		std::filesystem::path dll_path(exe_path);
+		dll_path.remove_filename() /= dll_name;
 		wil::unique_handle hOpenProcess(OpenProcess(PROCESS_ALL_ACCESS, 0, pi.dwProcessId));
 		THROW_LAST_ERROR_IF(!hOpenProcess);
 		HANDLE process = hOpenProcess.get();
