@@ -359,7 +359,9 @@
     <ResourceCompile Include="App6.rc" />
   </ItemGroup>
   <ItemGroup>
-    <PRIResource Include="Resources.resw" />
+    <PRIResource Include="Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
   </ItemGroup>
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>

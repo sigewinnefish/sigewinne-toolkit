@@ -238,6 +238,9 @@
     <Filter Include="Service\Account">
       <UniqueIdentifier>{7c9d3115-5826-41cd-8e92-d2da310f7e13}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{481531b1-48d5-4c74-9050-97eab8449e9b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
@@ -261,6 +264,8 @@
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natstepfilter" />
   </ItemGroup>
   <ItemGroup>
-    <PRIResource Include="Resources.resw" />
+    <PRIResource Include="Resources.resw">
+      <Filter>Resource</Filter>
+    </PRIResource>
   </ItemGroup>
 </Project>
