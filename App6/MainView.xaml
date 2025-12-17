@@ -20,10 +20,13 @@
             IsBackButtonVisible="False"
             IsPaneToggleButtonVisible="False"
             Subtitle="Toolkit v6.2b3">
-            <TitleBar.IconSource>
-                <ImageIconSource ImageSource="/Assets/Logo.ico" />
-            </TitleBar.IconSource>
 
+            <TitleBar.LeftHeader>
+                <ImageIcon
+                    Height="16"
+                    Margin="16,0,0,0"
+                    Source="/Assets/Logo.ico" />
+            </TitleBar.LeftHeader>
 
             <TitleBar.RightHeader>
                 <InfoBar
