@@ -21,29 +21,28 @@
             Spacing="15">
             <StackPanel Orientation="Horizontal" Spacing="10">
                 <Button
+                    x:Uid="ViewPageHomeLaunch"
                     Click="Button_Click_Game"
-                    Content="Launch"
                     Style="{StaticResource AccentButtonStyle}" />
                 <Button
+                    x:Uid="ViewPageHomeKillProcess"
                     Click="Button_KillProcess_Click"
-                    Content="Kill Process"
                     Style="{StaticResource SubtleButtonStyle}" />
             </StackPanel>
             <TextBox
                 x:Name="Path"
+                x:Uid="ViewPageHomeGamePath"
                 Margin="0,20,0,0"
-                Header="Genshin Impact Game Path:"
-                PlaceholderText="eg: C:\\Genshin Impact\\YuanShen.exe"
                 Text="{x:Bind GamePath, Mode=TwoWay}" />
             <SelectorBar x:Name="SelectorBar2" SelectionChanged="SelectorBar2_SelectionChanged">
                 <SelectorBarItem
                     x:Name="SelectorBarItemPage1"
-                    IsSelected="True"
-                    Text="Game Options" />
+                    x:Uid="ViewPageHomeGameOptions"
+                    IsSelected="True" />
                 <SelectorBarItem
                     x:Name="SelectorBarItemPage2"
-                    Margin="20,0"
-                    Text="Injection Options" />
+                    x:Uid="ViewPageHomeInjectionOptions"
+                    Margin="20,0" />
             </SelectorBar>
 
 

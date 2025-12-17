@@ -34,17 +34,17 @@
                 </Grid.RowDefinitions>
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandTargetFovHotSwitch"
                     Grid.Row="0"
                     Grid.Column="0"
-                    Header="TargetFovHotSwitch"
                     IsOn="{x:Bind EnableSetFieldOfView, Mode=TwoWay}" />
 
                 <NumberBox
+                    x:Uid="ViewPageIslandTargetFov"
                     Grid.Row="0"
                     Grid.Column="1"
                     Margin="0,0,100,0"
                     Padding="10,8,6,6"
-                    Header="TargetFov"
                     IsEnabled="True"
                     LargeChange="10"
                     Maximum="100"
@@ -54,23 +54,23 @@
                     Value="{x:Bind FieldOfView, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandDisableFog"
                     Grid.Row="0"
                     Grid.Column="2"
-                    Header="DisableFog"
                     IsOn="{x:Bind DisableFog, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandTargetFpsHotSwitch"
                     Grid.Row="1"
                     Grid.Column="0"
-                    Header="TargetFpsToggleSwitch"
                     IsOn="{x:Bind EnableSetTargetFrameRate, Mode=TwoWay}" />
 
                 <NumberBox
+                    x:Uid="ViewPageIslandTargetFps"
                     Grid.Row="1"
                     Grid.Column="1"
                     Margin="0,0,100,0"
                     Padding="10,8,6,6"
-                    Header="TargetFps"
                     IsEnabled="True"
                     Maximum="120"
                     Minimum="1"
@@ -78,78 +78,79 @@
                     Value="{x:Bind TargetFrameRate, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandTargetFpsHotSwitch"
                     Grid.Row="1"
                     Grid.Column="2"
-                    Header="FixLowFovSceneToggleSwitch"
                     IsOn="{x:Bind FixLowFovScene, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandHideQuestBannerHotSwitch"
                     Grid.Row="2"
                     Grid.Column="0"
-                    Header="HideQuestBanner"
                     IsOn="{x:Bind HideQuestBanner, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandRemoveOpenTeamProgress"
                     Grid.Row="2"
                     Grid.Column="1"
-                    Header="RemoveOpenTeamProgress"
                     IsOn="{x:Bind RemoveOpenTeamProgress, Mode=TwoWay}" />
+
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandEventCameraMoveHotSwitch"
                     Grid.Row="2"
                     Grid.Column="2"
-                    Header="EventCameraMoveHotSwitch"
                     IsOn="{x:Bind DisableEventCameraMove, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandDisableShowDamageText"
                     Grid.Row="3"
                     Grid.Column="0"
-                    Header="DisableShowDamageText"
                     IsOn="{x:Bind DisableShowDamageText, Mode=TwoWay}" />
+
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandRedirectCombineEntry"
                     Grid.Row="3"
                     Grid.Column="1"
-                    Header="RedirectCombineEntryToggleSwitch"
                     IsOn="{x:Bind RedirectCombineEntry, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandUsingTouchScreen"
                     Grid.Row="3"
                     Grid.Column="2"
-                    Header="UsingTouchScreen"
                     IsOn="{x:Bind UsingTouchScreen, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandResinListItemAllowOriginalResin"
                     Grid.Row="4"
                     Grid.Column="0"
-                    Header="ResinListItemAllowOriginalResin"
                     IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowOriginalResin, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandResinListItemAllowPrimogem"
                     Grid.Row="4"
                     Grid.Column="1"
-                    Header="ResinListItemAllowPrimogem"
                     IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowPrimogem, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandResinListItemAllowFragileResin"
                     Grid.Row="4"
                     Grid.Column="2"
-                    Header="ResinListItemAllowFragileResin"
                     IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowFragileResin, Mode=TwoWay}" />
 
-
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandResinListItemAllowTransientResin"
                     Grid.Row="5"
                     Grid.Column="0"
-                    Header="ResinListItemAllowTransientResin"
                     IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowTransientResin, Mode=TwoWay}" />
 
                 <ToggleSwitch
+                    x:Uid="ViewPageIslandResinListItemAllowCondensedResin"
                     Grid.Row="5"
                     Grid.Column="1"
-                    Header="ResinListItemAllowCondensedResin"
                     IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowCondensedResin, Mode=TwoWay}" />
             </Grid>

@@ -117,67 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ViewPageIslandDisableShowDamageTextHeader" xml:space="preserve">
+  <data name="ViewPageIslandDisableShowDamageText.Header" xml:space="preserve">
     <value>Disable Damage Numbers</value>
   </data>
-  <data name="ViewPageIslandDisableFogHeader" xml:space="preserve">
+  <data name="ViewPageIslandDisableFog.Header" xml:space="preserve">
     <value>Remove Fog</value>
   </data>
-  <data name="ViewPageIslandEventCameraMoveHotSwitchHeader" xml:space="preserve">
+  <data name="ViewPageIslandEventCameraMoveHotSwitch.Header" xml:space="preserve">
     <value>Disable Elemental Burst Animation</value>
   </data>
-  <data name="ViewPageIslandFixLowFovSceneHeader" xml:space="preserve">
+  <data name="ViewPageIslandFixLowFovScene.Header" xml:space="preserve">
     <value>Special Interface Fix</value>
   </data>
-  <data name="ViewPageIslandHideQuestBannerHotSwitchHeader" xml:space="preserve">
+  <data name="ViewPageIslandHideQuestBannerHotSwitch.Header" xml:space="preserve">
     <value>Close map banner</value>
   </data>
-  <data name="ViewPageIslandRedirectCombineEntryHeader" xml:space="preserve">
+  <data name="ViewPageIslandRedirectCombineEntry.Header" xml:space="preserve">
     <value>Crafting Redirect</value>
   </data>
-  <data name="ViewPageIslandResinListItemAllowCondensedResinHeader" xml:space="preserve">
+  <data name="ViewPageIslandResinListItemAllowCondensedResin.Header" xml:space="preserve">
     <value>Claim Rewards with Condensed Resin</value>
   </data>
-  <data name="ViewPageIslandResinListItemAllowFragileResinHeader" xml:space="preserve">
+  <data name="ViewPageIslandResinListItemAllowFragileResin.Header" xml:space="preserve">
     <value>Claim Rewards with Fragile Resin</value>
   </data>
-  <data name="ViewPageIslandResinListItemAllowPrimogemHeader" xml:space="preserve">
+  <data name="ViewPageIslandResinListItemAllowPrimogem.Header" xml:space="preserve">
     <value>Claim Rewards with Primogem</value>
   </data>
-  <data name="ViewPageIslandResinListItemAllowTransientResinHeader" xml:space="preserve">
+  <data name="ViewPageIslandResinListItemAllowTransientResin.Header" xml:space="preserve">
     <value>Claim Rewards with Transient Resin</value>
   </data>
-  <data name="ViewPageIslandUsingTouchScreenHeader" xml:space="preserve">
+  <data name="ViewPageIslandUsingTouchScreen.Header" xml:space="preserve">
     <value>Use Touch Input</value>
   </data>
-  <data name="ViewPageHomeGameOptionsHeader" xml:space="preserve">
+  <data name="ViewPageHomeGameOptions.Text" xml:space="preserve">
     <value>Game Options</value>
   </data>
-  <data name="ViewPageIslandRemoveOpenTeamProgressHeader" xml:space="preserve">
+  <data name="ViewPageIslandRemoveOpenTeamProgress.Header" xml:space="preserve">
     <value>Remove Team Configuration Progress Bar</value>
   </data>
-  <data name="ViewPageIslandTargetFovHeader" xml:space="preserve">
+  <data name="ViewPageIslandTargetFov.Header" xml:space="preserve">
     <value>Adjust FOV</value>
   </data>
-  <data name="ViewPageIslandTargetFovHotSwitchHeader" xml:space="preserve">
+  <data name="ViewPageIslandTargetFovHotSwitch.Header" xml:space="preserve">
     <value>Field of View Hot Switch</value>
   </data>
-  <data name="ViewPageIslandTargetFpsHeader" xml:space="preserve">
+  <data name="ViewPageIslandTargetFps.Header" xml:space="preserve">
     <value>Target Frame Rate</value>
   </data>
-  <data name="ViewPageIslandTargetFpsHotSwitchHeader" xml:space="preserve">
+  <data name="ViewPageIslandTargetFpsHotSwitch.Header" xml:space="preserve">
     <value>Frame Rate Hot Switch</value>
   </data>
-  <data name="ViewPageHomeInjectionOptionsHeader" xml:space="preserve">
+  <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
     <value>Injection Options</value>
   </data>
-  <data name="ViewPageIslandResinListItemAllowOriginalResinHeader" xml:space="preserve">
+  <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
     <value>Claim Rewards with Original Resin</value>
   </data>
-  <data name="ViewPageLaunchGameWindowsHDRHeader" xml:space="preserve">
+  <data name="ViewPageLaunchGameWindowsHDR.Header" xml:space="preserve">
     <value>Windows HDR</value>
   </data>
-  <data name="ViewPageLaunchGameArgumentsHeader" xml:space="preserve">
+  <data name="ViewPageLaunchGameArguments.Header" xml:space="preserve">
     <value>Launch Parameters</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceExclusiveDescription" xml:space="preserve">
@@ -198,16 +198,16 @@
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>Sign in with the currently selected MiYouShe / HoYoLAB user. Start parameters need to be enabled</value>
   </data>
-  <data name="ViewPageHomeLaunchContent" xml:space="preserve">
+  <data name="ViewPageHomeLaunch.Content" xml:space="preserve">
     <value>Launch</value>
   </data>
-  <data name="ViewPageHomeKillProcessContent" xml:space="preserve">
+  <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
     <value>Kill Process</value>
   </data>
-  <data name="ViewPageHomeGamePathHeader" xml:space="preserve">
+  <data name="ViewPageHomeGamePath.Header" xml:space="preserve">
     <value>Genshin Impact Game Path:</value>
   </data>
-  <data name="ViewPageHomeGamePathPlaceholderText" xml:space="preserve">
+  <data name="ViewPageHomeGamePath.PlaceholderText" xml:space="preserve">
     <value>eg: C:\\Genshin Impact\\YuanShen.exe</value>
   </data>
 </root>
