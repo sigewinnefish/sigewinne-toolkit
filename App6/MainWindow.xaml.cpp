@@ -23,8 +23,3 @@ namespace winrt::App6::implementation
         return _hwnd;
     }
 }
-
-
-
-
-

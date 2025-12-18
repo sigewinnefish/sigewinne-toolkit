@@ -7,7 +7,7 @@
 #include "winrt/Microsoft.Windows.Globalization.h"
 
 using namespace winrt;
-using namespace Microsoft::UI::Xaml;
+using namespace winrt::Microsoft::UI::Xaml;
 using namespace winrt::Microsoft::Windows::Globalization;
 using namespace Service::Settings;
 // To learn more about WinUI, the WinUI project structure,
