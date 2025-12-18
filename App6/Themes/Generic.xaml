@@ -2,17 +2,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:App6">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///SettingsCard_res.xaml" />
+    </ResourceDictionary.MergedDictionaries>
 
-    <Style TargetType="local:SettingsCard">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="local:SettingsCard">
-                    <Border
-                        Background="{TemplateBinding Background}"
-                        BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}" />
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
 </ResourceDictionary>

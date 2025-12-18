@@ -3,6 +3,7 @@
     x:Class="App6.LaunchGamePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:App6"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:App6"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -11,7 +12,21 @@
         <ScrollViewer>
 
 
-            <StackPanel Spacing="3" />
+            <StackPanel Spacing="3">
+
+                <controls:SettingsCard Description="You can use a FontIcon, SymbolIcon or BitmapIcon to set the cards HeaderIcon." Header="Icon options">
+
+
+                    <controls:SettingsCard.HeaderIcon>
+                        <FontIcon Glyph="&#xE700;" />
+                    </controls:SettingsCard.HeaderIcon>
+                    <ToggleSwitch />
+                </controls:SettingsCard>
+
+
+
+
+            </StackPanel>
 
         </ScrollViewer>
     </Border>

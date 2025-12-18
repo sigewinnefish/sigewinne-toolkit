@@ -23,6 +23,9 @@
       <Filter>View</Filter>
     </Page>
     <Page Include="Themes\Generic.xaml" />
+    <Page Include="SettingsCard_res.xaml">
+      <Filter>Controls</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="MainWindow.idl" />
