@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <microsoft.ui.xaml.window.h>
 #include <wil/result_macros.h>
@@ -22,11 +22,6 @@ namespace winrt::App6::implementation
         MainWindow()
         {
 
-            this->AppWindow().Closing([&](auto&&, auto&&)
-                {
-
-                    ;
-				});
             this->Title(L"winui");
 			this->ExtendsContentIntoTitleBar(true);
             this->AppWindow().TitleBar().PreferredHeightOption(TitleBarHeightOption::Tall);
