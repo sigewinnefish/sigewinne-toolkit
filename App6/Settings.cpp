@@ -1,4 +1,4 @@
-#include "pch.h"
+﻿#include "pch.h"
 #include "Settings.h"
 #include "Windows.h"
 #include <wil/resource.h>
@@ -89,7 +89,8 @@ namespace Service::Settings
 
 			memcpy(reinterpret_cast<char*>(penv) + 16u, &array, sizeof(array));
 
-		loc_1:		pisland = Service::Settings::g_settings.mutable_home()->mutable_island();
+loc_1:		plaunchgame = g_settings.mutable_home()->mutable_launchgame();
+			pisland = g_settings.mutable_home()->mutable_island();
 			if (!static_cast<int>(pisland->fieldofview()))
 			{
 				pisland->set_fieldofview(45);
@@ -98,7 +99,7 @@ namespace Service::Settings
 			{
 				pisland->set_targetframerate(60);
 			}
-
+			
 			penv->FieldOfView = pisland->fieldofview();
 			penv->TargetFrameRate = pisland->targetframerate();
 			penv->EnableSetFieldOfView = pisland->enablesetfieldofview();

@@ -16,7 +16,7 @@
                 <controls:SettingsCard x:Uid="ViewPageLaunchGameWindowsHDR">
                     <ToggleSwitch
                         MinWidth="10"
-                        IsOn="True"
+                        IsOn="{x:Bind LaunchGameWindowsHDR}"
                         Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
                     <controls:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE7F7;" />
@@ -26,7 +26,7 @@
                 <controls:SettingsCard x:Uid="ViewPageLaunchGameArguments">
                     <ToggleSwitch
                         MinWidth="10"
-                        IsOn="True"
+                        IsOn="{x:Bind LaunchGameArguments}"
                         Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
                     <controls:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE943;" />
@@ -40,7 +40,7 @@
                     Header="-window-mode exclusive">
                     <ToggleSwitch
                         MinWidth="10"
-                        IsOn="True"
+                        IsOn="{x:Bind LaunchGameAppearanceExclusive}"
                         Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
                     <controls:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE943;" Opacity="0" />
@@ -54,7 +54,7 @@
                     Header="-screen-fullscreen">
                     <ToggleSwitch
                         MinWidth="10"
-                        IsOn="True"
+                        IsOn="{x:Bind LaunchGameAppearanceFullscreen}"
                         Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
                     <controls:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE943;" Opacity="0" />
@@ -68,7 +68,7 @@
                     Header="-popupwindow">
                     <ToggleSwitch
                         MinWidth="10"
-                        IsOn="True"
+                        IsOn="{x:Bind LaunchGameAppearanceBorderless}"
                         Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
                     <controls:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE943;" Opacity="0" />
@@ -89,7 +89,7 @@
                             Value="2560" />
                         <ToggleSwitch
                             MinWidth="10"
-                            IsOn="True"
+                            IsOn="{x:Bind LaunchGameAppearanceScreenWidth}"
                             Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
                     </StackPanel>
                     <controls:SettingsCard.HeaderIcon>
@@ -111,7 +111,7 @@
                             Value="1440" />
                         <ToggleSwitch
                             MinWidth="10"
-                            IsOn="True"
+                            IsOn="{x:Bind LaunchGameAppearanceScreenHeight}"
                             Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
                     </StackPanel>
                     <controls:SettingsCard.HeaderIcon>

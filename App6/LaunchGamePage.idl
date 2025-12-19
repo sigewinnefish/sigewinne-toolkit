@@ -1,9 +1,17 @@
-namespace App6
+﻿namespace App6
 {
     [default_interface]
     runtimeclass LaunchGamePage : Microsoft.UI.Xaml.Controls.Page
     {
         LaunchGamePage();
-
+        Boolean LaunchGameWindowsHDR;
+        Boolean LaunchGameArguments;
+        Boolean LaunchGameAppearanceExclusive;
+        Boolean LaunchGameAppearanceFullscreen;
+        Boolean LaunchGameAppearanceBorderless;
+        Boolean LaunchGameAppearanceScreenWidth;
+        Boolean LaunchGameAppearanceScreenHeight;
+        UInt32  LaunchGameAppearanceScreenWidthValue;
+        UInt32  LaunchGameAppearanceScreenHeightValue;
     }
 }
