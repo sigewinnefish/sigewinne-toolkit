@@ -1,4 +1,4 @@
-#include "pch.h"
+﻿#include "pch.h"
 #include "SettingsPage.xaml.h"
 #if __has_include("SettingsPage.g.cpp")
 #include "SettingsPage.g.cpp"
@@ -12,5 +12,9 @@ using namespace Microsoft::UI::Xaml;
 
 namespace winrt::App6::implementation
 {
-
+	SettingsPage::SettingsPage()
+	{
+		// Xaml objects should not call InitializeComponent during construction.
+		// See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
+	}
 }

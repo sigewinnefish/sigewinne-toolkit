@@ -11,17 +11,7 @@ namespace winrt::App6::implementation
 {
     struct MainView : MainViewT<MainView>
     {
-        MainView()
-        {
-            DispatcherQueue().TryEnqueue(
-                [this]()
-                {
-					NavView().SelectedItem(NavView().MenuItems().GetAt(0));
-
-                });
-	        // Xaml objects should not call InitializeComponent during construction.
-	        // See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
-        }
+        MainView();
 
         void NavView_SelectionChanged(winrt::Microsoft::UI::Xaml::Controls::NavigationView const& sender, winrt::Microsoft::UI::Xaml::Controls::NavigationViewSelectionChangedEventArgs const& args);
     };

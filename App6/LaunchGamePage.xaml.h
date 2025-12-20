@@ -6,7 +6,7 @@ namespace winrt::App6::implementation
 {
     struct LaunchGamePage : LaunchGamePageT<LaunchGamePage>
     {
-        // 属性声明（inline getter/setter）
+
         bool LaunchGameWindowsHDR();
         void LaunchGameWindowsHDR(bool value);
 
@@ -34,12 +34,7 @@ namespace winrt::App6::implementation
         uint32_t LaunchGameAppearanceScreenHeightValue();
         void LaunchGameAppearanceScreenHeightValue(uint32_t value);
 
-        LaunchGamePage()
-        {
-            this->NavigationCacheMode(Microsoft::UI::Xaml::Navigation::NavigationCacheMode::Required);
-            // Xaml objects should not call InitializeComponent during construction.
-            // See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
-        }
+        LaunchGamePage();
 
     private:
 

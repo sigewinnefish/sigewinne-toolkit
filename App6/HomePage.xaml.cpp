@@ -20,6 +20,13 @@ using namespace Service::Settings;
 
 namespace winrt::App6::implementation
 {
+	HomePage::HomePage()
+	{
+		this->NavigationCacheMode(Microsoft::UI::Xaml::Navigation::NavigationCacheMode::Disabled); // a bug in here might from Microsoft, NavigationCacheMode::Disabled is default
+		// Xaml objects should not call InitializeComponent during construction.
+		// See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
+	}
+
 	void HomePage::GamePath(hstring value)
 	{
         g_settings.mutable_home()->set_gamepath(to_string(value));

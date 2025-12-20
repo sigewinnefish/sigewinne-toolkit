@@ -8,14 +8,9 @@ namespace winrt::App6::implementation
 {
     struct HomePage : HomePageT<HomePage>
     {
-        HomePage()
-        {
-			this->NavigationCacheMode(Microsoft::UI::Xaml::Navigation::NavigationCacheMode::Disabled); // a bug in here might from Microsoft, NavigationCacheMode::Disabled is default
-            // Xaml objects should not call InitializeComponent during construction.
-            // See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
-        }
+        HomePage();
 
-        
+
         void GamePath(hstring value);
 		hstring GamePath();
         void Button_KillProcess_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e);

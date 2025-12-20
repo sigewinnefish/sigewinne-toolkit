@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "IslandPage.g.h"
 #include "island.h"
@@ -16,13 +16,7 @@ namespace winrt::App6::implementation
     private:
 
     public:
-        IslandPage()
-
-        {
-            this->NavigationCacheMode(Microsoft::UI::Xaml::Navigation::NavigationCacheMode::Required);
-            // Xaml objects should not call InitializeComponent during construction.
-            // See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
-        }
+        IslandPage();
 
         float FieldOfView();
         void FieldOfView(float value);
