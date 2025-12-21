@@ -59,10 +59,11 @@ namespace winrt::App6::implementation
 	}
 	void MainWindow::Exp2()
 	{
-		void* result{};
-		guid gIAppWindowExperimental("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12");
-		this->AppWindow().try_as<IUnknown>()->QueryInterface(gIAppWindowExperimental, &result);
 		typedef __int64(__fastcall* SaveCurrentPlacement)(__int64 a1);
+
+		void* result{};
+		guid gIAppWindowExperimental("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12"); // IAppWindowExperimental
+		this->AppWindow().try_as<IUnknown>()->QueryInterface(gIAppWindowExperimental, &result);
 		auto vt = *(int64_t*)result;
 		auto func3 = reinterpret_cast<SaveCurrentPlacement*>((char*)vt + 0x58);
 		(*func3)((__int64)result);
