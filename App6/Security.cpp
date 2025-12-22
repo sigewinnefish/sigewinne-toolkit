@@ -1,2 +1,1 @@
-﻿Windows::Security::Credentials::KeyCredential
-windows.security.cryptography
+﻿#include "pch.h"
