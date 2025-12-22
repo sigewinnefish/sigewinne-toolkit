@@ -49,7 +49,7 @@ namespace winrt::App6::implementation
 		guid gIAppWindowExperimental("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12"); // IAppWindowExperimental
 		this->AppWindow().try_as<IUnknown>()->QueryInterface(gIAppWindowExperimental, &result);
 		auto vt = *(int64_t*)result;
-		const auto k = guid{ L"{1ed4408f-9732-4543-aa46-8758439652e6}" }; // App guid
+		const auto k = guid{ L"{1ed4408f-9732-4543-aa46-8758439652e6}" }; // guid, per window
 		auto func = reinterpret_cast<put_PlacementRestorationBehavior*>((char*)vt + 0x48);
 		(*func)((__int64)result, 0);
 		Windows::Foundation::IReference kk(k);
