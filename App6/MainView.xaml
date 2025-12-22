@@ -29,7 +29,7 @@
 
             <TitleBar.RightHeader>
                 <InfoBar
-                    Title="Lite Version"
+                    x:Uid="ViewMainAppEdition"
                     IsClosable="False"
                     IsOpen="True"
                     Message=""
@@ -47,10 +47,9 @@
             IsBackEnabled="False"
             IsSettingsVisible="True"
             IsTabStop="False"
-
-            SelectionChanged="NavView_SelectionChanged"
             OpenPaneLength="200"
             PaneDisplayMode="Auto"
+            SelectionChanged="NavView_SelectionChanged"
             SelectionFollowsFocus="Disabled">
             <NavigationView.Header>
                 <TextBlock x:Name="HeaderText" />
@@ -58,7 +57,7 @@
             <NavigationView.MenuItems>
                 <NavigationViewItem
                     x:Name="SamplePage1Item"
-                    Content="Home"
+                    x:Uid="ViewMainHome"
                     Tag="SamplePage1">
                     <NavigationViewItem.Icon>
                         <SymbolIcon Symbol="Play" />

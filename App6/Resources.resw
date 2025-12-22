@@ -228,4 +228,10 @@
   <data name="ViewPageSettingsEnableRestrictedTokens.Description" xml:space="preserve">
     <value>Start the Game with Standard User Accesss Token</value>
   </data>
+  <data name="ViewMainAppEdition.Title" xml:space="preserve">
+    <value>Lite Version</value>
+  </data>
+  <data name="ViewMainHome.Content" xml:space="preserve">
+    <value>Home</value>
+  </data>
 </root>

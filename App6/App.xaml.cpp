@@ -61,7 +61,8 @@ namespace winrt::App6::implementation
 			Service::LaunchGame::Launch();
 
 	    }
-        ApplicationLanguages::PrimaryLanguageOverride(L"en-us");
+		//wchar_t Lang[] = L"en-us";
+        ///ApplicationLanguages::PrimaryLanguageOverride(Lang);
         window = make<MainWindow>();
         window.Activate();
         

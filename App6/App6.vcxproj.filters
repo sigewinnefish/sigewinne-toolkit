@@ -278,5 +278,8 @@
     <PRIResource Include="Resources.resw">
       <Filter>Resource</Filter>
     </PRIResource>
+    <PRIResource Include="Strings\zh-CN\Resources.resw">
+      <Filter>Resource</Filter>
+    </PRIResource>
   </ItemGroup>
 </Project>
