@@ -42,8 +42,8 @@ namespace winrt::App6::implementation
     }
 	void MainWindow::Exp1()
 	{
-		typedef __int64(__fastcall* put_PersistedStateId)(__int64 a1, __int64 a2);
-		typedef __int64(__fastcall* put_PlacementRestorationBehavior)(__int64 a1, __int64 a2);
+		typedef __int64(*put_PersistedStateId)(__int64 a1, __int64 a2);
+		typedef __int64(*put_PlacementRestorationBehavior)(__int64 a1, __int64 a2);
 
 		void* result{};
 		guid gIAppWindowExperimental("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12"); // IAppWindowExperimental
@@ -59,7 +59,7 @@ namespace winrt::App6::implementation
 	}
 	void MainWindow::Exp2()
 	{
-		typedef __int64(__fastcall* SaveCurrentPlacement)(__int64 a1);
+		typedef __int64(*SaveCurrentPlacement)(__int64 a1);
 
 		void* result{};
 		guid gIAppWindowExperimental("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12"); // IAppWindowExperimental
