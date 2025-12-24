@@ -261,14 +261,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Settings.proto">
+      <Filter>Service</Filter>
+    </None>
+    <None Include="proto.props" />
+    <None Include="proto.targets" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="App6.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="Settings.proto">
-      <Filter>Service</Filter>
-    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<PROTO Include="*.proto" />
+	</ItemGroup>
+	<Target Name="ProtoCompile" 
+			BeforeTargets="$(PROTOBeforeTargets)"
+			Condition="'@(PROTO)' != ''"
+			Inputs="@(PROTO)"
+			Outputs="@(PROTO->'%(Filename).pb.cc');@(PROTO->'%(Filename).pb.h')"
+			>
+		
+		<Message Text="Compiling @(PROTO) to C++ source..." Importance="High" />
+		<Exec Command="$(SolutionDir)vcpkg_installed\x64-windows-static-md\x64-windows-static-md\tools\protobuf\protoc.exe --cpp_out=$(ProtoOutDir). %(PROTO.Identity)" />
+		<Message Text="Compiling @(PROTO) done" Importance="High" />
+	</Target>
+
+</Project>
+

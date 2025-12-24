@@ -38,6 +38,7 @@
     <WindowsPackageType>None</WindowsPackageType>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="proto.props" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -338,19 +339,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <CustomBuild Include="Settings.proto">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(SolutionDir)vcpkg_installed\x64-windows-static-md\x64-windows-static-md\tools\protobuf\protoc.exe" --cpp_out="$(ProjectDir)." "%(Identity)"</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      </AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SolutionDir)vcpkg_installed\x64-windows-static-md\x64-windows-static-md\tools\protobuf\protoc.exe" --cpp_out="$(ProjectDir)." "%(Identity)"</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-      </AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling %(Identity) to C++ source...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling %(Identity) to C++ source...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).pb.h;%(Filename).pb.cc;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).pb.h;%(Filename).pb.cc;%(Outputs)</Outputs>
-    </CustomBuild>
+    <None Include="proto.props" />
+    <None Include="proto.targets" />
+    <None Include="Settings.proto" />
   </ItemGroup>
   <!--
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution
@@ -379,6 +370,7 @@
     <VcpkgUseMD>true</VcpkgUseMD>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="proto.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\Microsoft.Windows.SDK.BuildTools.MSIX.1.7.20250829.1\build\Microsoft.Windows.SDK.BuildTools.MSIX.targets" Condition="Exists('..\packages\Microsoft.Windows.SDK.BuildTools.MSIX.1.7.20250829.1\build\Microsoft.Windows.SDK.BuildTools.MSIX.targets')" />
     <Import Project="..\packages\Microsoft.WindowsAppSDK.Base.1.8.250831001\build\native\Microsoft.WindowsAppSDK.Base.targets" Condition="Exists('..\packages\Microsoft.WindowsAppSDK.Base.1.8.250831001\build\native\Microsoft.WindowsAppSDK.Base.targets')" />
