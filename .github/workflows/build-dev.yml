@@ -36,8 +36,9 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: nuget restore ${{env.SOLUTION_FILE_PATH}}
 
-    - name: run-vcpkg
-      uses: lukka/run-vcpkg@v11
+    - uses: microsoft/vcpkg-action@v1
+      with:
+        triplet: x64-windows-static-md
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
