@@ -1,9 +1,12 @@
-﻿namespace App6
+namespace App6
 {
     [default_interface]
     runtimeclass SettingsPage : Microsoft.UI.Xaml.Controls.Page
     {
         SettingsPage();
         Boolean StealthMode;
+        Boolean RestrictedTokens;
+        Boolean LangOverride;
     }
+
 }

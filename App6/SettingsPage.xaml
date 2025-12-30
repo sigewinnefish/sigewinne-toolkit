@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Page
     x:Class="App6.SettingsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -23,13 +23,36 @@
                     </controls:SettingsCard.HeaderIcon>
                 </controls:SettingsCard>
 
-                <controls:SettingsCard x:Uid="ViewPageSettingsEnableRestrictedTokens">
+                <controls:SettingsCard x:Uid="ViewPageSettingsRestrictedTokens">
                     <ToggleSwitch
                         MinWidth="10"
-                        IsOn="False"
+                        IsOn="{x:Bind RestrictedTokens, Mode=TwoWay}"
                         Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
                     <controls:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xF0EF;" />
+                    </controls:SettingsCard.HeaderIcon>
+                </controls:SettingsCard>
+
+                <controls:SettingsCard x:Uid="ViewPageSettingsLanguageOverride">
+
+                    <StackPanel Orientation="Horizontal" Spacing="160">
+                        <ComboBox
+                            x:Name="LangCombo"
+                            Width="200"
+                            PlaceholderText="Pick a color"
+                            SelectionChanged="LangCombo_SelectionChanged">
+                            <x:String>Default</x:String>
+                            <x:String>Chinese</x:String>
+
+                        </ComboBox>
+                        <ToggleSwitch
+                            MinWidth="10"
+                            IsOn="{x:Bind LangOverride, Mode=TwoWay}"
+                            Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
+                    </StackPanel>
+
+                    <controls:SettingsCard.HeaderIcon>
+                        <FontIcon Glyph="&#xF2B7;" />
                     </controls:SettingsCard.HeaderIcon>
                 </controls:SettingsCard>
             </StackPanel>

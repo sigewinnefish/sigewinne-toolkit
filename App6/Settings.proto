@@ -1,4 +1,4 @@
-﻿syntax = "proto3";
+syntax = "proto3";
 package Service.Proto;
 
 message Home
@@ -47,7 +47,8 @@ message AppSettings
     bool            StealthMode                       =  1;
     bool            CloseAsQuit                       =  2;
     bool            RestrictedTokens                  =  3;
-
+    int32           Lang                              =  4;
+    bool            LangOverride                      =  5;
 }
 
 message PrivateVars

@@ -1,0 +1,6 @@
+/* Visual Studio Settings File */
+{
+  "environment.documents.saveWithSpecificEncoding": true,
+  "environment.documents.saveEncoding": "utf-8-nobom;65001",
+  "environment.visualExperience.colorTheme": "bubblegum"
+}

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -222,10 +222,10 @@
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
     <value>Stealth Mode</value>
   </data>
-  <data name="ViewPageSettingsEnableRestrictedTokens.Header" xml:space="preserve">
+  <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
     <value>Restricted Tokens</value>
   </data>
-  <data name="ViewPageSettingsEnableRestrictedTokens.Description" xml:space="preserve">
+  <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
     <value>Start the Game with Standard User Accesss Token</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
@@ -233,5 +233,11 @@
   </data>
   <data name="ViewMainHome.Content" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
+    <value>Overrides the application language. A restart is required for changes to take effect.</value>
+  </data>
+  <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
+    <value>Language Override</value>
   </data>
 </root>

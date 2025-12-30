@@ -1,10 +1,11 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include "App.xaml.h"
 
 #include <Settings.h>
 #include <LaunchGame.h>
 #include "MainWindow.xaml.h"
-#include "winrt/Microsoft.Windows.Globalization.h"
+#include <winrt/Microsoft.Windows.Globalization.h>
+
 
 using namespace winrt;
 using namespace winrt::Microsoft::UI::Xaml;
@@ -73,8 +74,23 @@ namespace winrt::App6::implementation
 			Service::LaunchGame::Launch();
 
 	    }
-		//wchar_t Lang[] = L"en-us";
-        ///ApplicationLanguages::PrimaryLanguageOverride(Lang);
+
+	    if (pappsettings->langoverride())
+	    {
+            switch (pappsettings->lang())
+            {
+            case 0:
+                ApplicationLanguages::PrimaryLanguageOverride(L"en-us");
+                break;
+            case 1:
+                ApplicationLanguages::PrimaryLanguageOverride(L"zh-cn");
+                break;
+            default:
+                break;
+            }
+	    }
+
+
         window = make<MainWindow>();
         window.Activate();
         
