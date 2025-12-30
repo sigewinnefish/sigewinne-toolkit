@@ -101,7 +101,7 @@
       </AdditionalManifestDependencies>
       <EnableUAC Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</EnableUAC>
       <CETCompat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CETCompat>
-      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Shell32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions)</AdditionalOptions>
@@ -123,7 +123,7 @@
       <UACExecutionLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RequireAdministrator</UACExecutionLevel>
       <EnableUAC Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</EnableUAC>
       <CETCompat Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CETCompat>
-      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Shell32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions)</AdditionalOptions>

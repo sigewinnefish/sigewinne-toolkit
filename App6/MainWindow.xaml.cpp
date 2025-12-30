@@ -7,6 +7,7 @@
 #include <winrt/Windows.UI.Xaml.Interop.h>
 #include <winrt/Microsoft.Windows.ApplicationModel.Resources.h>
 #include "resource.h"
+#include <commctrl.h>
 
 using namespace Microsoft::Windows::ApplicationModel::Resources;
 // To learn more about WinUI, the WinUI project structure,
@@ -14,10 +15,13 @@ using namespace Microsoft::Windows::ApplicationModel::Resources;
 
 namespace winrt::App6::implementation
 {
+
 	MainWindow::MainWindow()
 	{
-		Exp1();
-		this->ExtendsContentIntoTitleBar(true);
+		this->ExtendsContentIntoTitleBar(true); // this should be first
+		this->GetWindowHandle();
+		
+		//this->Exp1();
 		this->AppWindow().TitleBar().PreferredHeightOption(TitleBarHeightOption::Tall);
 		this->AppWindow().TitleBar().PreferredTheme(TitleBarTheme::UseDefaultAppMode);
 		this->AppWindow().SetIcon(L"Assets\\Logo.ico");
@@ -27,12 +31,17 @@ namespace winrt::App6::implementation
 		this->AppWindow().Presenter().try_as<OverlappedPresenter>().PreferredMinimumWidth(static_cast<int32_t>(1000 * scale));
 		this->AppWindow().Presenter().try_as<OverlappedPresenter>().PreferredMinimumHeight(static_cast<int32_t>(600 * scale));
 		this->AddNotifyIcon();
+		SetWindowSubclass(_hwnd, &NotifyIconProc, 1, 0);
 		// Xaml objects should not call InitializeComponent during construction.
 		// See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
-		
+
+		this->AppWindow().Closing([this](auto sender, AppWindowClosingEventArgs args)
+			{
+				args.Cancel(true);
+				
+			});
+		this->Activate();
 	}
-
-
 
     HWND MainWindow::GetWindowHandle()
     {
@@ -53,7 +62,7 @@ namespace winrt::App6::implementation
 
 		ResourceLoader loader;
 		hstring appname = loader.GetString(L"NotifyIconName");
-		GetWindowHandle();
+
 		NOTIFYICONDATAW nid = {};
 		nid.cbSize = sizeof(NOTIFYICONDATAW);
 		nid.hWnd = _hwnd;
@@ -93,6 +102,33 @@ namespace winrt::App6::implementation
 		(*func3)((__int64)result);
 		reinterpret_cast<IUnknown*>(result)->Release();
 	}
+
+	LRESULT CALLBACK NotifyIconProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, UINT_PTR uIdSubclass, DWORD_PTR dwRefData)
+	{
+		switch (uMsg)
+		{
+		case WM_MOUSEMOVE:
+			break;
+
+		case WM_SYSCOMMAND:
+			if ((wParam & 0xfff0) == SC_MINIMIZE)
+			{
+				// The window is being minimized
+				// Handle the SW_MINIMIZE event here
+			}
+			break;
+
+		case WM_LBUTTONDOWN:
+			break;
+
+		case WM_NCDESTROY:
+			RemoveWindowSubclass(hWnd, &NotifyIconProc, uIdSubclass);
+			break;
+		}
+
+		return DefSubclassProc(hWnd, uMsg, wParam, lParam);
+	}
+
 }
 
 void winrt::App6::implementation::MainWindow::Window_Closed(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::WindowEventArgs const& args)

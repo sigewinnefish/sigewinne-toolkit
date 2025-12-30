@@ -33,6 +33,7 @@ namespace winrt::App6::implementation
     public:
         void Window_Closed(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::WindowEventArgs const& args);
     };
+    LRESULT CALLBACK NotifyIconProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, UINT_PTR uIdSubclass, DWORD_PTR dwRefData);
 }
 
 namespace winrt::App6::factory_implementation
