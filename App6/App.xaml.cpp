@@ -16,6 +16,12 @@ using namespace Service::Settings;
 
 int __stdcall wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
 {
+    HANDLE hMutex = CreateMutexW(NULL, FALSE, L"1864d952-c1dd-441a-8756-1b96fb9ff89e"); // instance guid
+    if (GetLastError() == ERROR_ALREADY_EXISTS)
+    {
+        TerminateProcess(GetCurrentProcess(), 0);
+    }
+    
     winrt::init_apartment(winrt::apartment_type::single_threaded);
     ::winrt::Microsoft::UI::Xaml::Application::Start(
         [](auto&&)
