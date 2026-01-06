@@ -7,33 +7,34 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:App6"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:essential="using:WinUI3Package"
     mc:Ignorable="d">
 
     <Border Padding="20">
         <ScrollViewer>
             <StackPanel Margin="30,0,30,0" Spacing="3">
 
-                <controls:SettingsCard x:Uid="ViewPageSettingsStealthMode">
+                <essential:SettingsCard x:Uid="ViewPageSettingsStealthMode">
                     <ToggleSwitch
                         MinWidth="10"
                         IsOn="{x:Bind StealthMode, Mode=TwoWay}"
                         Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
-                    <controls:SettingsCard.HeaderIcon>
+                    <essential:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xED1A;" />
-                    </controls:SettingsCard.HeaderIcon>
-                </controls:SettingsCard>
+                    </essential:SettingsCard.HeaderIcon>
+                </essential:SettingsCard>
 
-                <controls:SettingsCard x:Uid="ViewPageSettingsRestrictedTokens">
+                <essential:SettingsCard x:Uid="ViewPageSettingsRestrictedTokens">
                     <ToggleSwitch
                         MinWidth="10"
                         IsOn="{x:Bind RestrictedTokens, Mode=TwoWay}"
                         Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
-                    <controls:SettingsCard.HeaderIcon>
+                    <essential:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xF0EF;" />
-                    </controls:SettingsCard.HeaderIcon>
-                </controls:SettingsCard>
+                    </essential:SettingsCard.HeaderIcon>
+                </essential:SettingsCard>
 
-                <controls:SettingsCard x:Uid="ViewPageSettingsLanguageOverride">
+                <essential:SettingsCard x:Uid="ViewPageSettingsLanguageOverride">
 
                     <StackPanel Orientation="Horizontal" Spacing="160">
                         <ComboBox
@@ -51,10 +52,10 @@
                             Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
                     </StackPanel>
 
-                    <controls:SettingsCard.HeaderIcon>
+                    <essential:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xF2B7;" />
-                    </controls:SettingsCard.HeaderIcon>
-                </controls:SettingsCard>
+                    </essential:SettingsCard.HeaderIcon>
+                </essential:SettingsCard>
             </StackPanel>
 
         </ScrollViewer>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Application
     x:Class="App6.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -9,6 +9,8 @@
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <ResourceDictionary Source="ms-appx:///ResourceDictionary.xaml" />
+                <ResourceDictionary Source="ms-appx:///WinUI3Package/SettingsCard_Resource.xaml"/>
+                <ResourceDictionary Source="ms-appx:///WinUI3Package/SettingsExpander_Resource.xaml"/>
                 <!--  Other merged dictionaries here  -->
             </ResourceDictionary.MergedDictionaries>
             <!--  Other app resources here  -->

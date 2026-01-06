@@ -271,10 +271,6 @@
     <ResourceCompile Include="App6.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
-    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natstepfilter" />
-  </ItemGroup>
-  <ItemGroup>
     <PRIResource Include="Resources.resw">
       <Filter>Resource</Filter>
     </PRIResource>
