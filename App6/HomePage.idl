@@ -4,6 +4,5 @@ namespace App6
     runtimeclass HomePage : Microsoft.UI.Xaml.Controls.Page
     {
         HomePage();
-        String GamePath;
     }
 }

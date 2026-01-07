@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #include "HomePage.g.h"
 #include "island.h"
@@ -10,9 +10,6 @@ namespace winrt::App6::implementation
     {
         HomePage();
 
-
-        void GamePath(hstring value);
-		hstring GamePath();
         void Button_KillProcess_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e);
         void Button_Click_Game(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e);
         void SelectorBar2_SelectionChanged(winrt::Microsoft::UI::Xaml::Controls::SelectorBar const& sender, winrt::Microsoft::UI::Xaml::Controls::SelectorBarSelectionChangedEventArgs const& args);

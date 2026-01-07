@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Page
     x:Class="App6.HomePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -29,11 +29,7 @@
                     Click="Button_KillProcess_Click"
                     Style="{StaticResource SubtleButtonStyle}" />
             </StackPanel>
-            <TextBox
-                x:Name="Path"
-                x:Uid="ViewPageHomeGamePath"
-                Margin="0,20,0,0"
-                Text="{x:Bind GamePath, Mode=TwoWay}" />
+
             <SelectorBar x:Name="SelectorBar2" SelectionChanged="SelectorBar2_SelectionChanged">
                 <SelectorBarItem
                     x:Name="SelectorBarItemPage1"

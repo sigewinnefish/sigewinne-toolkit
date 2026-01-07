@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Page
     x:Class="App6.IslandPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -10,10 +10,9 @@
 
     <ScrollViewer>
         <StackPanel
-            Margin="50,10"
-            Padding="10"
+            Margin="50,0,50,0"
             Orientation="Vertical"
-            Spacing="15">
+            Spacing="3">
 
             <Grid
                 Padding="0"

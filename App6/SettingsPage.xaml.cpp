@@ -58,6 +58,16 @@ namespace winrt::App6::implementation
 	{
 		pappsettings->set_langoverride(value);
 	}
+
+	void SettingsPage::GamePath(hstring value)
+	{
+		g_settings.mutable_home()->set_gamepath(to_string(value));
+	}
+
+	hstring SettingsPage::GamePath()
+	{
+		return to_hstring(g_settings.mutable_home()->gamepath());
+	}
 }
 
 void winrt::App6::implementation::SettingsPage::LangCombo_SelectionChanged(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::Controls::SelectionChangedEventArgs const& e)

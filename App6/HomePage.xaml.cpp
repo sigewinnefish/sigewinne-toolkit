@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include "LaunchGame.h"
 #include "HomePage.xaml.h"
 #if __has_include("HomePage.g.cpp")
@@ -27,16 +27,6 @@ namespace winrt::App6::implementation
 		// See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
 	}
 
-	void HomePage::GamePath(hstring value)
-	{
-        g_settings.mutable_home()->set_gamepath(to_string(value));
-	}
-
-	hstring HomePage::GamePath()
-	{
-        return to_hstring(g_settings.mutable_home()->gamepath());
-	}
-
 	void HomePage::Button_KillProcess_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
         TerminateProcess(GetCurrentProcess(), 0);
@@ -44,7 +34,7 @@ namespace winrt::App6::implementation
 
     void HomePage::Button_Click_Game(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
     {
-        g_path = Path().Text().c_str();
+        g_path;
         Launch();
     }
 

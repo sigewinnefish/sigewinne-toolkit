@@ -5,14 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="using:App6"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:essential="using:WinUI3Package"
     xmlns:local="using:App6"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:essential="using:WinUI3Package"
     mc:Ignorable="d">
 
-    <Border Padding="20">
+    <Border>
         <ScrollViewer>
-            <StackPanel Margin="30,0,30,0" Spacing="3">
+            <StackPanel Margin="50,20,50,0" Spacing="3">
 
                 <essential:SettingsCard x:Uid="ViewPageSettingsStealthMode">
                     <ToggleSwitch
@@ -40,13 +40,14 @@
                         <ComboBox
                             x:Name="LangCombo"
                             Width="200"
-                            PlaceholderText="Pick a color"
+                            IsEnabled="{x:Bind LangOverrideToggle.IsOn, Mode=OneWay}"
                             SelectionChanged="LangCombo_SelectionChanged">
                             <x:String>Default</x:String>
                             <x:String>zh-cn</x:String>
 
                         </ComboBox>
                         <ToggleSwitch
+                            x:Name="LangOverrideToggle"
                             MinWidth="10"
                             IsOn="{x:Bind LangOverride, Mode=TwoWay}"
                             Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
@@ -56,6 +57,34 @@
                         <FontIcon Glyph="&#xF2B7;" />
                     </essential:SettingsCard.HeaderIcon>
                 </essential:SettingsCard>
+
+                <essential:SettingsExpander x:Uid="ViewPageSettingsGamePath" IsExpanded="True">
+
+                    <essential:SettingsExpander.HeaderIcon>
+                        <FontIcon Glyph="&#xE7C3;" />
+                    </essential:SettingsExpander.HeaderIcon>
+
+                    <essential:SettingsExpander.Items>
+
+                        <essential:SettingsCard Header="Select Game Path" IsClickEnabled="True">
+                            <Button x:Uid="ViewPageSettingsGamePathAutoDetect" Style="{StaticResource AccentButtonStyle}" />
+                        </essential:SettingsCard>
+                        <essential:SettingsCard ContentAlignment="Left">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock x:Uid="ViewPageSettingsGamePathTextBlock" VerticalAlignment="Center" />
+                                <TextBox
+                                    x:Uid="ViewPageSettingsGamePathTextBox"
+                                    MinWidth="600"
+                                    Margin="20,0,0,0"
+                                    Text="{x:Bind GamePath, Mode=TwoWay}" />
+                            </StackPanel>
+
+                        </essential:SettingsCard>
+
+                    </essential:SettingsExpander.Items>
+                </essential:SettingsExpander>
+
+
             </StackPanel>
 
         </ScrollViewer>

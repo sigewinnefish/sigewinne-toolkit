@@ -18,6 +18,9 @@ namespace winrt::App6::implementation
         void LangOverride(bool value);
 
         void LangCombo_SelectionChanged(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::Controls::SelectionChangedEventArgs const& e);
+
+        void GamePath(hstring value);
+        hstring GamePath();
     };
 }
 

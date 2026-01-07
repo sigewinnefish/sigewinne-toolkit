@@ -210,10 +210,10 @@
   <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
     <value>Kill Process</value>
   </data>
-  <data name="ViewPageHomeGamePath.Header" xml:space="preserve">
+  <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
     <value>Genshin Impact Game Path:</value>
   </data>
-  <data name="ViewPageHomeGamePath.PlaceholderText" xml:space="preserve">
+  <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
     <value>eg: C:\\Genshin Impact\\YuanShen.exe</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
@@ -221,6 +221,12 @@
   </data>
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
     <value>Stealth Mode</value>
+  </data>
+  <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
+    <value>Game Path</value>
+  </data>
+  <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
+    <value>When setting the game path, please select the game program (Yuanshen.exe or GenshinImpact.exe) instead of the game launcher (launcher.exe)</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
     <value>Restricted Tokens</value>
@@ -242,5 +248,8 @@
   </data>
   <data name="NotifyIconName" xml:space="preserve">
     <value>sigewinne toolkit</value>
+  </data>
+  <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
+    <value>Auto Detect</value>
   </data>
 </root>

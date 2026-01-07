@@ -10,9 +10,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Border Padding="20">
+    <Border>
         <ScrollViewer>
-            <StackPanel Margin="30,0,30,0" Spacing="3">
+            <StackPanel Margin="50,0,50,0" Spacing="3">
 
                 <essential:SettingsCard x:Uid="ViewPageLaunchGameWindowsHDR">
                     <ToggleSwitch
