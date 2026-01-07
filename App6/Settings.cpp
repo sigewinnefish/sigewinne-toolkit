@@ -1,10 +1,11 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include "Settings.h"
 #include "Windows.h"
 #include <wil/resource.h>
 #include "wil/result.h"
 #include <filesystem>
 
+#include "xxhash.h"
 #include "island.h"
 
 namespace Service::Settings
@@ -37,7 +38,7 @@ namespace Service::Settings
 		BOOL isRead = ReadFile(file, ptr, size.QuadPart, NULL, NULL);
 		THROW_IF_WIN32_BOOL_FALSE(isRead);
 		THROW_HR_IF(E_FAIL, !g_settings.ParseFromArray(ptr, size.QuadPart));
-
+		oldHash = XXH3_64bits(ptr, size.QuadPart);
 	}
 
 	void WriteSettingsToFile()
@@ -46,6 +47,11 @@ namespace Service::Settings
 		const auto parr = std::make_unique<char[]>(size);
 		const auto ptr = parr.get();
 		g_settings.SerializeToArray(ptr, size);
+		newHash = XXH3_64bits(ptr, size);
+        if (newHash==oldHash)
+        {
+            return;
+        }
 
 		wchar_t exe_path[MAX_PATH];
 		THROW_LAST_ERROR_IF(!GetModuleFileNameW(NULL, exe_path, MAX_PATH));
