@@ -52,20 +52,12 @@ namespace winrt::App6::implementation
 		nid.uID = 0;
 		nid.guidItem = gNotifyIcon;
 		nid.hBalloonIcon = 0;
-		nid.uFlags = NIF_MESSAGE | NIF_ICON | NIF_TIP | NIF_GUID | NIF_STATE;
+		nid.uFlags = NIF_MESSAGE | NIF_ICON | NIF_SHOWTIP | NIF_TIP | NIF_GUID | NIF_STATE;
 		nid.uCallbackMessage = NotifyIconCallbackMessage;
 		nid.hIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_ICON1));
 		wcscpy_s(nid.szTip, appname.c_str());
 		if (Shell_NotifyIconW(NIM_ADD, &nid))
 		{
-			nid.cbSize = 976;
-			nid.hWnd = 0;
-			nid.uID = 0;
-			nid.uFlags = NIF_GUID;
-			memset(&nid.hIcon, 0, 784);
-			nid.uVersion = NOTIFYICON_VERSION_4;
-			memset(nid.szInfoTitle, 0, 132);
-			nid.hBalloonIcon = 0;
 			Shell_NotifyIconW(NIM_SETVERSION, &nid);
 		}
 		
