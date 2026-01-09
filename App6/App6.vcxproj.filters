@@ -272,6 +272,12 @@
     <Filter Include="Service\Game\FileSystem">
       <UniqueIdentifier>{a20c4d62-e58a-4ebb-ba5b-d4cd4459a69c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource\Default">
+      <UniqueIdentifier>{771ce8fb-1735-473c-b66b-bd410158b101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\zh-cn">
+      <UniqueIdentifier>{9434da13-63a4-469f-bf38-1607ece0f497}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
@@ -292,10 +298,10 @@
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="Resources.resw">
-      <Filter>Resource</Filter>
+      <Filter>Resource\Default</Filter>
     </PRIResource>
     <PRIResource Include="Strings\zh-CN\Resources.resw">
-      <Filter>Resource</Filter>
+      <Filter>Resource\zh-cn</Filter>
     </PRIResource>
   </ItemGroup>
   <ItemGroup>
