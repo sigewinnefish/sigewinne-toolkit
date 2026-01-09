@@ -76,6 +76,9 @@
     <ClInclude Include="LaunchGame.h">
       <Filter>Service\Game\Launching</Filter>
     </ClInclude>
+    <ClInclude Include="GamePathDetect.h">
+      <Filter>Service\Game\FileSystem</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Wide310x150Logo.scale-200.png">

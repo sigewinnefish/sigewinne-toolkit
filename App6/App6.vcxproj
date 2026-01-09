@@ -173,6 +173,7 @@
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="SettingsViewModel.h" />
+    <ClInclude Include="GamePathDetect.h" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
