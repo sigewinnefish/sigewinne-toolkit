@@ -30,11 +30,15 @@ jobs:
         ref: refs/heads/master
       
     - name: Add MSBuild to PATH
-      uses: microsoft/setup-msbuild@v1.0.2
+      uses: microsoft/setup-msbuild@v2
 
     - name: Restore NuGet packages
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: nuget restore ${{env.SOLUTION_FILE_PATH}}
+
+    - name: vcpkg
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      run: vcpkg integrate install
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
@@ -42,24 +46,25 @@ jobs:
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: msbuild /m /p:Platform=x64 /p:PlatformToolset=v143 /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
 
-    - name: Prepare Upload Artifact
+    - name: Build Post Action
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
-            powershell -Command "Copy-Item './x64/Release/App6' './artifact_temp/App6' -Recurse -Force -Exclude '*.pdb','*.exp','*.lib','*.xbf','*.winmd'"
-            powershell -Command "Invoke-WebRequest -Uri 'https://www.nuget.org/api/v2/package/Snap.Hutao.UnlockerIsland/1.4.6' -OutFile './island.zip'"
-            powershell -Command "Expand-Archive -Path './island.zip' -DestinationPath './island'"
-            powershell -Command "Copy-Item -Path '.\island\runtimes\win-x64\native\Snap.Hutao.UnlockerIsland.dll' -Destination '.\artifact_temp\App6\nvhelper.dll' -Force"
-            powershell -Command "Rename-Item -Path '.\artifact_temp\App6\App6.exe' -NewName 'toolbox.exe'"
-            powershell -Command "Rename-Item -Path '.\artifact_temp\App6\App6.pri' -NewName 'toolbox.pri'"
-            
+            powershell -Command "Copy-Item './x64/Release/App6' './installer/toolkit' -Recurse -Force -Exclude '*.pdb','*.exp','*.lib','*.xbf','*.winmd'"
+            powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.exe' -NewName 'toolkit.exe'"
+            powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.pri' -NewName 'toolkit.pri'"
+
+    - name: kachina installer
+      working-directory: ${{ github.workspace }}/installer
+      run: |
+            powershell -Command "Invoke-WebRequest -Uri 'https://github.com/YuehaiTeam/kachina-installer/releases/download/0.4.1/kachina-builder.exe' -OutFile './kachina-builder.exe'"
+            ./kachina-builder.exe pack -t installer.png --icon installer.ico -c toolkit.config.json -o toolkit.update.exe
+            ./kachina-builder.exe gen -j 8 -i toolkit -m metadata.json -r toolkit -o hashed -t 6.2b5 -u toolkit.update.exe
+            ./kachina-builder.exe pack -t installer.png --icon installer.ico -c toolkit.config.json -m metadata.json -d hashed -o toolkit.Install.exe
+
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v5.0.0
       with:
-        path: ${{ github.workspace }}\artifact_temp\App6*
-        
-    - name: Prepare Upload Release
-      working-directory: ${{env.GITHUB_WORKSPACE}}
-      run:  powershell -Command "Compress-Archive -Path './artifact_temp/App6/*' -DestinationPath './artifact_temp/toolbox.zip' -Force"
+        path: ${{ github.workspace }}\installer\toolkit.Install.exe
 
     - name: Create Release
       id: create_release
@@ -67,19 +72,18 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
-       tag_name: v6.2b0
+       tag_name: v6.2b5
        release_name: prerelease
        body: prerelease
        draft: false
        prerelease: true
 
     - name: Upload Release Asset
-    
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
        upload_url: ${{ steps.create_release.outputs.upload_url }}
-       asset_path: ./artifact_temp/toolbox.zip
-       asset_name: toolbox.zip
-       asset_content_type: application/zip
+       asset_path: ./installer/toolkit.Install.exe
+       asset_name: toolkit.Install.exe
+       asset_content_type: application/vnd.microsoft.portable-executable

@@ -39,7 +39,7 @@ jobs:
     - name: vcpkg
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: vcpkg integrate install
-    
+
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
@@ -54,7 +54,7 @@ jobs:
             powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.pri' -NewName 'toolkit.pri'"
 
     - name: kachina installer
-      working-directory: ${{env.GITHUB_WORKSPACE}}/installer
+      working-directory: ${{ github.workspace }}/installer
       run: |
             powershell -Command "Invoke-WebRequest -Uri 'https://github.com/YuehaiTeam/kachina-installer/releases/download/0.4.1/kachina-builder.exe' -OutFile './kachina-builder.exe'"
             ./kachina-builder.exe pack -t installer.png --icon installer.ico -c toolkit.config.json -o toolkit.update.exe
