@@ -41,7 +41,7 @@ jobs:
       run: vcpkg integrate install
 
     - name: kachina installer
-      working-directory: ${{env.GITHUB_WORKSPACE}}\installer
+      working-directory: ${{ github.workspace }}/installer
       run: |
             powershell -Command "Invoke-WebRequest -Uri 'https://github.com/YuehaiTeam/kachina-installer/releases/download/0.4.1/kachina-builder.exe' -OutFile './kachina-builder.exe'"
             ./kachina-builder.exe pack -t installer.png --icon installer.ico -c toolkit.config.json -o toolkit.update.exe
