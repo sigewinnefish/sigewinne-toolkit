@@ -225,6 +225,9 @@
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
     <value>Game Path</value>
   </data>
+  <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
+    <value>Select Game Path</value>
+  </data>
   <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
     <value>When setting the game path, please select the game program (Yuanshen.exe or GenshinImpact.exe) instead of the game launcher (launcher.exe)</value>
   </data>
