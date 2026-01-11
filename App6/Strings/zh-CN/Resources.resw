@@ -210,28 +210,73 @@
   <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
     <value>结束进程</value>
   </data>
-  <data name="ViewPageHomeGamePath.Header" xml:space="preserve">
+  <!-- <data name="ViewPageHomeGamePath.Header" xml:space="preserve">
     <value>游戏路径：</value>
-  </data>
-  <data name="ViewPageHomeGamePath.PlaceholderText" xml:space="preserve">
+  </data> -->
+  <!-- <data name="ViewPageHomeGamePath.PlaceholderText" xml:space="preserve">
     <value>例如：C:\\Genshin Impact\\YuanShen.exe</value>
-  </data>
+  </data> -->
   <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
-    <value>启用后，Sigewinne Toolkit 会在启动时立即启动游戏，并隐藏在系统托盘中。</value>
+    <value>启用后，Sigewinne Toolkit 会在启动时立即启动游戏，并隐藏在系统托盘中</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
-    <value>隐身模式</value>
+    <value>快速启动</value>
   </data>
   <data name="ViewMainHome.Content" xml:space="preserve">
-    <value>主页</value>
+    <value>主界面</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
-    <value>Lite 版</value>
+    <value>精简版</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
     <value>受限令牌</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
     <value>使用标准用户访问令牌启动游戏</value>
+  </data>
+  <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
+    <value>配置游戏路径：</value>
+  </data>
+  <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
+    <value>示例: C:\Genshin Impact\YuanShen.exe</value>
+  </data>
+  <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
+    <value>游戏路径</value>
+  </data>
+  <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
+    <value>选择游戏路径</value>
+  </data>
+  <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
+    <value>设置游戏路径时，请选择游戏程序（例如 Yuanshen.exe 或 GenshinImpact.exe）而不是游戏启动器（launcher.exe）</value>
+  </data>
+  <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
+    <value>覆盖应用程序语言，更改生效需重启应用</value>
+  </data>
+  <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
+    <value>语言覆盖</value>
+  </data>
+  <data name="NotifyIconName" xml:space="preserve">
+    <value>sigewinne toolkit</value>
+  </data>
+  <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
+    <value>自动检测路径</value>
+  </data>
+  <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
+    <value>加载设置文件失败，若为首次运行可忽略</value>
+  </data>
+  <data name="MBGamePathDetectError" xml:space="preserve">
+    <value>游戏路径检测错误</value>
+  </data>
+  <data name="MBLaunchGameError" xml:space="preserve">
+    <value>游戏启动失败</value>
+  </data>
+  <data name="MBWarn" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="MBError" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="MBInfo" xml:space="preserve">
+    <value>信息</value>
   </data>
 </root>
