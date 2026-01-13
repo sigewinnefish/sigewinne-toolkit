@@ -25,5 +25,6 @@ struct IslandEnvironment
     BOOL  ResinListItemId107009Allowed;
     BOOL  ResinListItemId107012Allowed;
     BOOL  ResinListItemId220007Allowed;
+    BOOL  HideUid;
 };
 

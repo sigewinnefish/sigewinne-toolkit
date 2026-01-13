@@ -30,6 +30,7 @@
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
 
                 <ToggleSwitch
@@ -152,6 +153,13 @@
                     Grid.Column="1"
                     IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowCondensedResin, Mode=TwoWay}" />
+
+                <ToggleSwitch
+                    x:Uid="ViewPageIslandHideUid"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    IsEnabled="True"
+                    IsOn="{x:Bind HideUid, Mode=TwoWay}" />
             </Grid>
         </StackPanel>
     </ScrollViewer>

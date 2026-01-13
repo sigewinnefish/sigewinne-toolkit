@@ -273,4 +273,7 @@
   <data name="MBInfo" xml:space="preserve">
     <value>Info</value>
   </data>
+  <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
+    <value>Hide UID</value>
+  </data>
 </root>
