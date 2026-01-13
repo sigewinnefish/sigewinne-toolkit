@@ -169,7 +169,7 @@
     <value>Frame Rate Hot Switch</value>
   </data>
   <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
-    <value>Injection Options</value>
+    <value>Island Options</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
     <value>Claim Rewards with Original Resin</value>
