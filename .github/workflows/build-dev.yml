@@ -28,6 +28,13 @@ jobs:
     - uses: actions/checkout@v4
       with:
         ref: refs/heads/dev
+        
+    - name: checkout Island
+      uses: actions/checkout@v4
+      with:
+        repository: sigewinnefish/minisland
+        token: ${{ secrets.pat }}
+        path: minisland
       
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v2
@@ -40,7 +47,7 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: vcpkg integrate install
 
-    - name: Build
+    - name: Build Island
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
@@ -50,6 +57,7 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
             powershell -Command "Copy-Item './x64/Release/App6' './installer/toolkit' -Recurse -Force -Exclude '*.pdb','*.exp','*.lib','*.xbf','*.winmd'"
+            powershell -Command "Copy-Item '${{ github.workspace }}\minisland\x64\Release\minisland.dll' './installer/toolkit/nvd3dump.dll' -Force"
             powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.exe' -NewName 'toolkit.exe'"
             powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.pri' -NewName 'toolkit.pri'"
 
