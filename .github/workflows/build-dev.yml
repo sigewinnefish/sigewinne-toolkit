@@ -72,7 +72,7 @@ jobs:
       run: |
             powershell -Command "Invoke-WebRequest -Uri 'https://github.com/YuehaiTeam/kachina-installer/releases/download/0.4.1/kachina-builder.exe' -OutFile './kachina-builder.exe'"
             ./kachina-builder.exe pack -t installer.png --icon installer.ico -c toolkit.config.json -o toolkit.update.exe
-            ./kachina-builder.exe gen -j 8 -i toolkit -m metadata.json -r toolkit -o hashed -t 6.2b5 -u toolkit.update.exe
+            ./kachina-builder.exe gen -j 8 -i toolkit -m metadata.json -r toolkit -o hashed -t 6.3b0 -u toolkit.update.exe
             ./kachina-builder.exe pack -t installer.png --icon installer.ico -c toolkit.config.json -m metadata.json -d hashed -o toolkit.Install.exe
 
     - name: Upload a Build Artifact
