@@ -27,14 +27,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: refs/heads/dev
-        
-    - name: checkout Island
-      uses: actions/checkout@v4
-      with:
-        repository: sigewinnefish/minisland
-        token: ${{ secrets.pat }}
-        path: minisland
+        ref: refs/heads/dev   
       
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v2
@@ -46,20 +39,27 @@ jobs:
     - name: vcpkg
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: vcpkg integrate install
-  
-    - name: Build Island
-      working-directory: ${{ github.workspace }}/minisland
-      # Add additional options to the MSBuild command line here (like platform or verbosity level).
-      # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
-      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}} > NUL 2>&1
-   
+
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: msbuild /m /p:Platform=x64 /p:PlatformToolset=v143 /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
 
-    - name: Build Post Action
+    - name: checkout Island
+      uses: actions/checkout@v4
+      with:
+        repository: sigewinnefish/minisland
+        token: ${{ secrets.pat }}
+        path: minisland
+  
+    - name: Build Island
+      working-directory: ${{ github.workspace }}/minisland
+      # Add additional options to the MSBuild command line here (like platform or verbosity level).
+      # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
+      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}} > NUL 2>&1
+
+    - name: Preparing for Packing
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
             powershell -Command "Copy-Item './x64/Release/App6' './installer/toolkit' -Recurse -Force -Exclude '*.pdb','*.exp','*.lib','*.xbf','*.winmd'"
@@ -67,7 +67,7 @@ jobs:
             powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.exe' -NewName 'toolkit.exe'"
             powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.pri' -NewName 'toolkit.pri'"
 
-    - name: kachina installer
+    - name: Pack with kachina installer
       working-directory: ${{ github.workspace }}/installer
       run: |
             powershell -Command "Invoke-WebRequest -Uri 'https://github.com/YuehaiTeam/kachina-installer/releases/download/0.4.1/kachina-builder.exe' -OutFile './kachina-builder.exe'"
