@@ -3,11 +3,7 @@
 
 struct IslandEnvironment
 {
-    DWORD Size;
-    DWORD State;
-    DWORD LastError;
-    DWORD Uid;
-    CHAR  Reserved[100];
+    CHAR  Reserved[76];
     BOOL  EnableSetFieldOfView;
     FLOAT FieldOfView;
     BOOL  FixLowFovScene;

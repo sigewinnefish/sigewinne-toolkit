@@ -44,7 +44,7 @@ namespace Service::Game::Launching
 		wil::unique_handle hThread{ pi.hThread };
 
 		// Inject the DLL into the process
-		constexpr wchar_t dll_name[] = L"nvd3dump.dll"; // Deprecated nvhelp64.dll
+		constexpr wchar_t dll_name[] = L"nvd3dump.dll";
 		WCHAR exe_path[MAX_PATH];
 		GetModuleFileNameW(NULL, exe_path, MAX_PATH);
 		std::filesystem::path dll_path(exe_path);
@@ -84,7 +84,6 @@ namespace Service::Game::Launching
 
 	static void GetLaunchGameParms()
 	{
-
 		wchar_t width[10];
 		wchar_t height[10];
 		auto params_arr = std::vector<std::pair<const wchar_t*, const wchar_t*>>();
@@ -145,7 +144,6 @@ namespace Service::Game::Launching
 			THROW_IF_WIN32_ERROR(RegSetValueExW(hKey, L"WINDOWS_HDR_ON_h3132281285", NULL, REG_DWORD, (BYTE*)&value, sizeof(value)));
 			THROW_IF_WIN32_ERROR(RegCloseKey(hKey));
 		}
-
 
 	}
 
