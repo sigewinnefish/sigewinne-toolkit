@@ -169,7 +169,7 @@
     <value>Frame Rate Hot Switch</value>
   </data>
   <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
-    <value>Injection Options</value>
+    <value>Island Options</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
     <value>Claim Rewards with Original Resin</value>
@@ -225,6 +225,9 @@
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
     <value>Game Path</value>
   </data>
+  <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
+    <value>Select Game Path</value>
+  </data>
   <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
     <value>When setting the game path, please select the game program (Yuanshen.exe or GenshinImpact.exe) instead of the game launcher (launcher.exe)</value>
   </data>
@@ -269,5 +272,8 @@
   </data>
   <data name="MBInfo" xml:space="preserve">
     <value>Info</value>
+  </data>
+  <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
+    <value>Hide UID</value>
   </data>
 </root>

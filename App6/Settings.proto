@@ -39,6 +39,7 @@ message Island
     bool            UsingTouchScreen                  = 11;
     bool            RedirectCombineEntry              = 12;
     map<int32,bool> items                             = 13;
+	bool            HideUid                           = 14;
 
 }
 

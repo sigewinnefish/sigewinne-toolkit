@@ -22,5 +22,6 @@ namespace App6
         Boolean  ResinListItemAllowFragileResin;
         Boolean  ResinListItemAllowTransientResin;
         Boolean  ResinListItemAllowCondensedResin;
+        Boolean  HideUid;
     }
 }

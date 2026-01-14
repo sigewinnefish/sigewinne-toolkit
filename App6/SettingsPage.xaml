@@ -68,8 +68,8 @@
                     <essential:SettingsExpander.Items>
 
                         <essential:SettingsCard
+                            x:Uid="ViewPageSettingsSelectGamePath"
                             Click="SelectGamePath_Click"
-                            Header="Select Game Path"
                             IsClickEnabled="True">
                             <Button
                                 x:Uid="ViewPageSettingsGamePathAutoDetect"

@@ -76,9 +76,8 @@ namespace Service::Settings
 		if (!penv)
 		{
 			DWORD array[] = {
-				0xc4007c0, 0x5e0d680, 0x3e87b0, 0x7728b90, 0, 0x10407c0, 0x14f2cb90, 0x125a050, 0x14f18ea0, 0xb8dcfa0,
-				0xb8e5fb0, 0x954f230, 0xdbb1320, 0x14f1bf20, 0x14f1bc60, 0xe076e80, 0xfea2160, 0xab06670, 0xa0a2d00,
-				0x84fb720, 0, 0, 0, 0, 0
+				0x1560ec0, 0x15b73330, 0x106a3c0, 0x106a3b0, 0xc835b70, 0x608d620, 0x406330, 0x71a6ee0, 0xe47e1b0, 0xe4851e0,
+				0xfeafc10, 0x69ea500, 0x9199950, 0xa98f410, 0x1063c50, 0x1063450, 0xfa87490, 0x1084e9e0, 0x105c2c10
 			};
 
 			HANDLE h = OpenFileMapping(FILE_MAP_READ | FILE_MAP_WRITE, FALSE, L"4F3E8543-40F7-4808-82DC-21E48A6037A7"); //4F3E8543-40F7-4808-82DC-21E48A6037A7
@@ -93,7 +92,7 @@ namespace Service::Settings
 			penv = (IslandEnvironment*)MapViewOfFile(_Notnull_ h, FILE_MAP_READ | FILE_MAP_WRITE, 0, 0, 0);
 			ZeroMemory(penv, sizeof(IslandEnvironment));
 
-			memcpy(reinterpret_cast<char*>(penv) + 16u, &array, sizeof(array));
+			memcpy(reinterpret_cast<char*>(penv), &array, sizeof(array));
 
 loc_1:		plaunchgame = g_settings.mutable_home()->mutable_launchgame();
 			pisland = g_settings.mutable_home()->mutable_island();

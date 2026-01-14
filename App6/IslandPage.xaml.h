@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #include "IslandPage.g.h"
 #include "island.h"
@@ -69,6 +69,8 @@ namespace winrt::App6::implementation
         bool ResinListItemAllowCondensedResin();
         void ResinListItemAllowCondensedResin(bool value);
 
+        bool HideUid();
+        void HideUid(bool value);
 
     };
 }

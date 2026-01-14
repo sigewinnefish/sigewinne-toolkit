@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include "IslandPage.xaml.h"
 #if __has_include("IslandPage.g.cpp")
 #include "IslandPage.g.cpp"
@@ -203,6 +203,14 @@ namespace winrt::App6::implementation
 
 	}
 
-	
+    bool IslandPage::HideUid()
+    {
+		return pisland->hideuid();
+    }
 
+    void IslandPage::HideUid(bool value)
+    {
+		pisland->set_hideuid(value);
+		penv->HideUid = value;
+    }
 }
