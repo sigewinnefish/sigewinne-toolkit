@@ -131,7 +131,7 @@ loc_1:		plaunchgame = g_settings.mutable_home()->mutable_launchgame();
 			penv->DisableShowDamageText = pisland->disableshowdamagetext();
 			penv->UsingTouchScreen = pisland->usingtouchscreen();
 			penv->RedirectCombineEntry = pisland->redirectcombineentry();
-
+			penv->HideUid = pisland->hideuid();
 		}
 	}
 }
