@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: masterbuild
+name: devbuild-full
 
 on:
   workflow_dispatch: {}
@@ -18,7 +18,7 @@ env:
   BUILD_CONFIGURATION: Release
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   build:
@@ -27,8 +27,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: refs/heads/master
-
+        ref: refs/heads/dev   
+      
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v2
 
@@ -39,7 +39,7 @@ jobs:
     - name: vcpkg
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: vcpkg integrate install
-      
+
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
@@ -52,13 +52,13 @@ jobs:
         repository: sigewinnefish/minisland
         token: ${{ secrets.pat }}
         path: minisland
-
+  
     - name: Build Island
       working-directory: ${{ github.workspace }}/minisland
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}} > NUL 2>&1
-      
+
     - name: Preparing for Packing
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
@@ -79,25 +79,3 @@ jobs:
       uses: actions/upload-artifact@v5.0.0
       with:
         path: ${{ github.workspace }}\installer\toolkit.Install.exe
-
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-      with:
-       tag_name: v6.3b0
-       release_name: prerelease
-       body: prerelease
-       draft: false
-       prerelease: true
-
-    - name: Upload Release Asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-       upload_url: ${{ steps.create_release.outputs.upload_url }}
-       asset_path: ./installer/toolkit.Install.exe
-       asset_name: toolkit.Install.exe
-       asset_content_type: application/vnd.microsoft.portable-executable
