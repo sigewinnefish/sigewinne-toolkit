@@ -217,7 +217,8 @@
     <value>eg: C:\\Genshin Impact\\YuanShen.exe</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
-    <value>When enabled, this toolkit launches the game immediately on startup, hiding in the system tray.</value>
+    <value>When enabled, this toolkit launches the game immediately on startup, hiding in the system tray.
+If the toolkit is already running, relaunching it will trigger the game launch.</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
     <value>Stealth Mode</value>
