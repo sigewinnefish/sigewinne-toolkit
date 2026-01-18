@@ -39,7 +39,7 @@ VOID WINAPI tls_callback1(
                 {
                     do
                     {
-                        if (wcscmp(pe.szExeFile, path.filename().c_str()) == 0 && pid != pe.th32ProcessID)
+                        if (_wcsicmp(pe.szExeFile, path.filename().c_str()) == 0 && pid != pe.th32ProcessID)
                         {
                             wil::unique_handle hOpenProcess(OpenProcess(PROCESS_ALL_ACCESS, FALSE, pe.th32ProcessID));
                             THROW_LAST_ERROR_IF(!hOpenProcess);
