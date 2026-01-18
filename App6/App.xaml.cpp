@@ -1,10 +1,14 @@
 #include "pch.h"
 #include "App.xaml.h"
-
+#include <wil/resource.h>
 #include <Settings.h>
 #include <LaunchGame.h>
 #include "MainWindow.xaml.h"
 #include <winrt/Microsoft.Windows.Globalization.h>
+#include "tlhelp32.h"
+#include <filesystem>
+
+
 #include "Utils.h"
 using namespace Service::Utils::Message;
 using namespace Service::Game::Launching;
@@ -20,6 +24,42 @@ VOID WINAPI tls_callback1(
         HANDLE hMutex = CreateMutexW(NULL, FALSE, L"1864d952-c1dd-441a-8756-1b96fb9ff89e"); // instance guid
         if (GetLastError() == ERROR_ALREADY_EXISTS)
         {
+            wil::unique_handle hSnapshot(CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0));
+
+            if (hSnapshot.get() != INVALID_HANDLE_VALUE)
+            {
+                wchar_t buffer[MAX_PATH];
+                GetModuleFileNameW(NULL, buffer, MAX_PATH);
+				std::filesystem::path path(buffer);
+
+                DWORD pid = GetCurrentProcessId();
+                PROCESSENTRY32W pe{};
+                pe.dwSize = sizeof(PROCESSENTRY32W);
+                if (Process32FirstW(hSnapshot.get(), &pe))
+                {
+                    do
+                    {
+                        if (wcscmp(pe.szExeFile, path.filename().c_str()) == 0 && pid != pe.th32ProcessID)
+                        {
+                            wil::unique_handle hOpenProcess(OpenProcess(PROCESS_ALL_ACCESS, FALSE, pe.th32ProcessID));
+                            THROW_LAST_ERROR_IF(!hOpenProcess);
+                            HANDLE process = hOpenProcess.get();
+                            wil::unique_handle hRemoteThread(CreateRemoteThread(
+                                process,
+                                NULL,
+                                NULL,
+                                (LPTHREAD_START_ROUTINE)LaunchIfStealthMode,
+                                NULL,
+                                NULL,
+                                NULL
+                            ));
+                            THROW_LAST_ERROR_IF(!hRemoteThread);
+                            break;
+                        }
+                    } while (Process32NextW(hSnapshot.get(), &pe));
+                }
+			}
+
             TerminateProcess(GetCurrentProcess(), 0);
         }
     }
@@ -92,13 +132,8 @@ namespace winrt::App6::implementation
             ShowMessageBox(L"MBLoadSettingsFromFileWarn", Warn);
 	    }
         init_environment();
-	    if (pappsettings->stealthmode())
-	    {
-            std::string_view tmp = pappsettings->gamepath();
-            g_path = std::wstring(tmp.begin(),tmp.end());
-			Launch();
 
-	    }
+        LaunchIfStealthMode();
 
 	    if (pappsettings->langoverride())
 	    {
