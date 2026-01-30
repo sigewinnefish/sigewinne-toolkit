@@ -20,8 +20,6 @@ namespace winrt::App6::implementation
         bool LangOverride();
         void LangOverride(bool value);
 
-        void LangCombo_SelectionChanged(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::Controls::SelectionChangedEventArgs const& e);
-
         auto GamePath() const noexcept {
             return m_GamePath;
         }

@@ -94,7 +94,7 @@ namespace winrt::App6::implementation
 
 		this->ExtendsContentIntoTitleBar(true); // this should be first
 		this->AppWindow().TitleBar().PreferredHeightOption(TitleBarHeightOption::Tall);
-		this->AppWindow().TitleBar().PreferredTheme(TitleBarTheme::UseDefaultAppMode);
+		//this->AppWindow().TitleBar().PreferredTheme(TitleBarTheme::UseDefaultAppMode);
 		this->AppWindow().SetIcon(L"Assets\\Logo.ico");
 
 		// WindowId

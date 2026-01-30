@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 #include "MainView.g.h"
 #include <winrt/Windows.UI.Xaml.Interop.h>
@@ -14,6 +14,7 @@ namespace winrt::App6::implementation
         MainView();
 
         void NavView_SelectionChanged(winrt::Microsoft::UI::Xaml::Controls::NavigationView const& sender, winrt::Microsoft::UI::Xaml::Controls::NavigationViewSelectionChangedEventArgs const& args);
+        void NavView_ItemInvoked(winrt::Microsoft::UI::Xaml::Controls::NavigationView const& sender, winrt::Microsoft::UI::Xaml::Controls::NavigationViewItemInvokedEventArgs const& args);
     };
 }
 

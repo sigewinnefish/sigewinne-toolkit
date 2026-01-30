@@ -22,9 +22,14 @@
     <Page Include="MainView.xaml">
       <Filter>View</Filter>
     </Page>
-    <Page Include="Themes\Generic.xaml" />
     <Page Include="RightAlignedCompactToggleSwitch.xaml">
-      <Filter>Controls</Filter>
+      <Filter>ResourceDictionary</Filter>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Filter>ResourceDictionary</Filter>
+    </Page>
+    <Page Include="UserView.xaml">
+      <Filter>View</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -38,9 +43,6 @@
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
     <ClCompile Include="HoYoLogin.cpp">
       <Filter>Service\Game\Account</Filter>
-    </ClCompile>
-    <ClCompile Include="SettingsViewModel.cpp">
-      <Filter>ViewModel</Filter>
     </ClCompile>
     <ClCompile Include="settings.cpp">
       <Filter>Service\Settings</Filter>
@@ -57,6 +59,9 @@
     <ClCompile Include="Utils.cpp">
       <Filter>Service\Utils</Filter>
     </ClCompile>
+    <ClCompile Include="SettingsViewModel.cpp">
+      <Filter>ViewModel</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -67,9 +72,6 @@
       <Filter>Service\Game\Account</Filter>
     </ClInclude>
     <ClInclude Include="resource.h" />
-    <ClInclude Include="SettingsViewModel.h">
-      <Filter>ViewModel</Filter>
-    </ClInclude>
     <ClInclude Include="Settings.h">
       <Filter>Service\Settings</Filter>
     </ClInclude>
@@ -84,6 +86,9 @@
     </ClInclude>
     <ClInclude Include="Utils.h">
       <Filter>Service\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsViewModel.h">
+      <Filter>ViewModel</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -246,6 +251,9 @@
     <Image Include="Assets\Logo.ico">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="Assets\miyoushe128.png">
+      <Filter>Assets</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Assets">
@@ -259,9 +267,6 @@
     </Filter>
     <Filter Include="Resource">
       <UniqueIdentifier>{481531b1-48d5-4c74-9050-97eab8449e9b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Controls">
-      <UniqueIdentifier>{cf3eecf3-5d69-43ac-a170-7ac98bbe943e}</UniqueIdentifier>
     </Filter>
     <Filter Include="ViewModel">
       <UniqueIdentifier>{139ef8be-f805-44bd-bfb6-82c8ffdcc3b9}</UniqueIdentifier>
@@ -289,6 +294,9 @@
     </Filter>
     <Filter Include="Service\Utils">
       <UniqueIdentifier>{1db2d635-1278-49ae-b029-cace694c6725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceDictionary">
+      <UniqueIdentifier>{cf3eecf3-5d69-43ac-a170-7ac98bbe943e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
