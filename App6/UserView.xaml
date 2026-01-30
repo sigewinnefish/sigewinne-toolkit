@@ -39,7 +39,7 @@
                     BorderThickness="0,0,1,0">
 
                     <AppBarButton
-                        x:Uid="ViewMainUserCookieOperation"
+                        x:Uid="ViewUserViewUserCookieOperation"
                         Width="100"
                         MaxWidth="100"
                         Margin="2,-4">
@@ -53,7 +53,7 @@
                                 Placement="RightEdgeAlignedBottom">
                                 <StackPanel Orientation="Horizontal" Spacing="0">
                                     <AppBarButton
-                                        x:Uid="ViewMainUserCookieOperationManualInputAction"
+                                        x:Uid="ViewUserViewUserCookieOperationManualInputAction"
                                         Width="100"
                                         MaxWidth="100"
                                         Margin="0,-4"
@@ -71,7 +71,7 @@
                     <StackPanel Visibility="Visible">
                         <StackPanel Visibility="Visible">
                             <TextBlock
-                                x:Uid="ViewMainViewUserRole"
+                                x:Uid="ViewUserViewUserRole"
                                 Margin="10,6,0,6"
                                 FontSize="14"
                                 FontWeight="SemiBold" />

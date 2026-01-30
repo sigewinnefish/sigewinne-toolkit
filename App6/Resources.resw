@@ -277,13 +277,13 @@ If the toolkit is already running, relaunching it will trigger the game launch.<
   <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
     <value>Hide UID</value>
   </data>
-  <data name="ViewMainUserCookieOperation.Label" xml:space="preserve">
+  <data name="ViewUserViewUserRole.Text" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="ViewUserViewUserCookieOperation.Label" xml:space="preserve">
     <value>MiYouShe</value>
   </data>
-  <data name="ViewMainUserCookieOperationManualInputAction.Label" xml:space="preserve">
+  <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
     <value>Input Manually</value>
-  </data>
-  <data name="ViewMainViewUserRole.Text" xml:space="preserve">
-    <value>Role</value>
   </data>
 </root>
