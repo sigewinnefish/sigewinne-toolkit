@@ -1,0 +1,10 @@
+namespace App6
+{
+	[default_interface]
+	runtimeclass UserViewModel : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+	{
+		UserViewModel();
+		Microsoft.UI.Xaml.Input.ICommand AddUserCommand{ get; };
+	}
+
+}

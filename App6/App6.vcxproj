@@ -177,11 +177,13 @@
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="GamePathDetect.h" />
+    <ClInclude Include="UserModel.h" />
     <ClInclude Include="UserView.xaml.h">
       <DependentUpon>UserView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="Utils.h" />
+    <ClInclude Include="UserViewModel.h" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
@@ -232,11 +234,13 @@
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="GamePathDetect.cpp" />
+    <ClCompile Include="UserModel.cpp" />
     <ClCompile Include="UserView.xaml.cpp">
       <DependentUpon>UserView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="UserViewModel.cpp" />
     <ClInclude Include="LaunchGame.h" />
     <ClCompile Include="LaunchGamePage.xaml.cpp">
       <DependentUpon>LaunchGamePage.xaml</DependentUpon>
@@ -283,10 +287,12 @@
       <DependentUpon>SettingsPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="UserModel.idl" />
     <Midl Include="UserView.idl">
       <DependentUpon>UserView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
+    <Midl Include="UserViewModel.idl" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt">

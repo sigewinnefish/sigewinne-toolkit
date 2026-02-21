@@ -37,6 +37,12 @@
     <Midl Include="SettingsViewModel.idl">
       <Filter>ViewModel</Filter>
     </Midl>
+    <Midl Include="UserViewModel.idl">
+      <Filter>ViewModel</Filter>
+    </Midl>
+    <Midl Include="UserModel.idl">
+      <Filter>Model</Filter>
+    </Midl>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
@@ -61,6 +67,12 @@
     </ClCompile>
     <ClCompile Include="SettingsViewModel.cpp">
       <Filter>ViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="UserViewModel.cpp">
+      <Filter>ViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="UserModel.cpp">
+      <Filter>Model</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +101,12 @@
     </ClInclude>
     <ClInclude Include="SettingsViewModel.h">
       <Filter>ViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="UserViewModel.h">
+      <Filter>ViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="UserModel.h">
+      <Filter>Model</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -297,6 +315,9 @@
     </Filter>
     <Filter Include="ResourceDictionary">
       <UniqueIdentifier>{cf3eecf3-5d69-43ac-a170-7ac98bbe943e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{c781b5af-33f7-4931-883c-97cf1b0e8266}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -57,6 +57,7 @@
                                         Width="100"
                                         MaxWidth="100"
                                         Margin="0,-4"
+                                        Command="{x:Bind AddUserCommand}"
                                         Icon="Add" />
 
                                     <Border Width="200" />

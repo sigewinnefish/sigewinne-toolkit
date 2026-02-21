@@ -13,10 +13,10 @@ using namespace Microsoft::UI::Xaml::Controls::Primitives;
 
 namespace winrt::App6::implementation
 {
+	void UserView::UserViewItem_Tapped(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::Input::TappedRoutedEventArgs const& e)
+	{
+		FlyoutBase::ShowAttachedFlyout(sender.as<FrameworkElement>());
+	}
 
 }
 
-void winrt::App6::implementation::UserView::UserViewItem_Tapped(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::Input::TappedRoutedEventArgs const& e)
-{
-	FlyoutBase::ShowAttachedFlyout(sender.as<FrameworkElement>());
-}
