@@ -6,15 +6,15 @@
 
 namespace winrt::App6::implementation
 {
-    struct UserView : UserViewT<UserView>
+    struct UserView : UserViewT<UserView>, wil::notify_property_changed_base<UserView>
     {
         UserView()
         {
-			wil::single_threaded_property<App6::UserViewModel> ViewModel;
+			
             // Xaml objects should not call InitializeComponent during construction.
             // See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
         }
-
+        wil::single_threaded_property<App6::UserViewModel> ViewModel;
         void UserViewItem_Tapped(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::Input::TappedRoutedEventArgs const& e);
     };
 }
