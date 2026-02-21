@@ -22,7 +22,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2025-vs2026
 
     steps:
     - uses: actions/checkout@v4
@@ -33,18 +33,29 @@ jobs:
       uses: microsoft/setup-msbuild@v2
 
     - name: Restore NuGet packages
-      working-directory: ${{env.GITHUB_WORKSPACE}}
+      working-directory: ${{ github.workspace }}
       run: nuget restore ${{env.SOLUTION_FILE_PATH}}
 
     - name: vcpkg
-      working-directory: ${{env.GITHUB_WORKSPACE}}
+      working-directory: ${{ github.workspace }}
       run: vcpkg integrate install
 
     - name: Build
-      working-directory: ${{env.GITHUB_WORKSPACE}}
-      # Add additional options to the MSBuild command line here (like platform or verbosity level).
-      # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
+      working-directory: ${{ github.workspace }}
       run: msbuild /m /p:Platform=x64 /p:PlatformToolset=v143 /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
+
+    - name: checkout Fulltrust
+      uses: actions/checkout@v4
+      with:
+        repository: sigewinnefish/sigewinne-toolkit-exclusive-component
+        token: ${{ secrets.pat }}
+        path: sigewinne-toolkit-exclusive-component
+
+    - name: Build Fulltrust
+      working-directory: ${{ github.workspace }}/sigewinne-toolkit-exclusive-component/toolkit_fulltrust
+      run: |
+           cmake -DCMAKE_BUILD_TYPE=Release -D CMAKE_ASM_MASM_COMPILER="C:/Program Files/Microsoft Visual Studio/18/Enterprise/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/ml64.exe" --preset x64-release -DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake > NUL 2>&1
+           cmake --build build\x64-release --target toolkit_fulltrust > NUL 2>&1
 
     - name: checkout Island
       uses: actions/checkout@v4
@@ -55,14 +66,13 @@ jobs:
   
     - name: Build Island
       working-directory: ${{ github.workspace }}/minisland
-      # Add additional options to the MSBuild command line here (like platform or verbosity level).
-      # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}} > NUL 2>&1
 
     - name: Preparing for Packing
-      working-directory: ${{env.GITHUB_WORKSPACE}}
+      working-directory: ${{ github.workspace }}
       run: |
             powershell -Command "Copy-Item './x64/Release/App6' './installer/toolkit' -Recurse -Force -Exclude '*.pdb','*.exp','*.lib','*.xbf','*.winmd'"
+            powershell -Command "Copy-Item '${{ github.workspace }}\sigewinne-toolkit-exclusive-component\toolkit_fulltrust\build\x64-release\src\toolkit_fulltrust.exe' './installer/toolkit/toolkit_fulltrust.exe' -Force"
             powershell -Command "Copy-Item '${{ github.workspace }}\minisland\x64\Release\minisland.dll' './installer/toolkit/nvd3dump.dll' -Force"
             powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.exe' -NewName 'toolkit.exe'"
             powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.pri' -NewName 'toolkit.pri'"
