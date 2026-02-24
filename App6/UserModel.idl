@@ -1,0 +1,10 @@
+namespace App6
+{
+    [default_interface]
+    runtimeclass UserModel : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        UserModel();
+        String User;
+        UInt32 UID;
+    }
+}

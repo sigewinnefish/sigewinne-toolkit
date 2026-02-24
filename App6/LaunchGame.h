@@ -16,5 +16,6 @@ namespace Service::Game::Launching
 
 	void Launch();
 
+	void LaunchIfStealthMode();
 
 } 

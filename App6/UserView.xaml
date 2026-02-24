@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UserControl
+    x:Class="App6.UserView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:essential="using:WinUI3Package"
+    xmlns:local="using:App6"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style
+            x:Key="FlyoutPresenterPadding0Style"
+            BasedOn="{StaticResource DefaultFlyoutPresenterStyle}"
+            TargetType="FlyoutPresenter">
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Background" Value="Transparent" />
+        </Style>
+        <Flyout
+            x:Key="SwitchUserFlyout"
+            essential:FlyoutHelper.AcrylicWorkaround="True"
+            FlyoutPresenterStyle="{StaticResource FlyoutPresenterPadding0Style}"
+            LightDismissOverlayMode="On"
+            Placement="RightEdgeAlignedBottom">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel
+                    Grid.Column="0"
+                    Margin="0,0"
+                    Padding="0,2"
+                    Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="0,0,1,0">
+
+                    <AppBarButton
+                        x:Uid="ViewUserViewUserCookieOperation"
+                        Width="100"
+                        MaxWidth="100"
+                        Margin="2,-4">
+                        <AppBarButton.Icon>
+                            <ImageIcon Source="/Assets/miyoushe128.png" />
+                        </AppBarButton.Icon>
+                        <AppBarButton.Flyout>
+                            <Flyout
+                                essential:FlyoutHelper.AcrylicWorkaround="True"
+                                FlyoutPresenterStyle="{StaticResource FlyoutPresenterPadding0Style}"
+                                Placement="RightEdgeAlignedBottom">
+                                <StackPanel Orientation="Horizontal" Spacing="0">
+                                    <AppBarButton
+                                        x:Uid="ViewUserViewUserCookieOperationManualInputAction"
+                                        Width="100"
+                                        MaxWidth="100"
+                                        Margin="0,-4"
+                                        Command="{Binding AddUserCommand}"
+                                        Icon="Add" />
+
+                                    <Border Width="200" />
+                                </StackPanel>
+                            </Flyout>
+                        </AppBarButton.Flyout>
+                    </AppBarButton>
+                    <Border Height="200" />
+                </StackPanel>
+
+                <Grid Grid.Column="1" Width="280">
+                    <StackPanel Visibility="Visible">
+                        <StackPanel Visibility="Visible">
+                            <TextBlock
+                                x:Uid="ViewUserViewUserRole"
+                                Margin="10,6,0,6"
+                                FontSize="14"
+                                FontWeight="SemiBold" />
+                            <ListView
+                                Margin="4"
+                                AllowDrop="True"
+                                CanDragItems="True"
+                                CanReorderItems="True"
+                                SelectionMode="Single">
+                                <ListViewItem Content="Item 1" />
+                                <ListViewItem Content="Item 2" />
+                                <ListViewItem Content="Item 3" />
+                                <ListViewItem Content="Item 4" />
+
+
+                            </ListView>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Grid>
+            </Grid>
+        </Flyout>
+    </UserControl.Resources>
+    <NavigationViewItem FlyoutBase.AttachedFlyout="{StaticResource SwitchUserFlyout}" Tapped="UserViewItem_Tapped">
+        <NavigationViewItem.Icon>
+            <FontIcon Glyph="&#xE748;" />
+        </NavigationViewItem.Icon>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                Grid.Column="0"
+                Margin="0,0,0,0"
+                Text="Lumine"
+                TextTrimming="CharacterEllipsis"
+                TextWrapping="NoWrap" />
+            <FontIcon
+                Grid.Column="1"
+                FontSize="12"
+                Glyph="&#xE76C;" />
+        </Grid>
+    </NavigationViewItem>
+
+</UserControl>

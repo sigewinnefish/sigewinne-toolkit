@@ -1,0 +1,11 @@
+import "UserViewModel.idl";
+
+namespace App6
+{
+    [default_interface]
+    runtimeclass UserView : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        UserView();
+        UserViewModel ViewModel{ get; };
+    }
+}

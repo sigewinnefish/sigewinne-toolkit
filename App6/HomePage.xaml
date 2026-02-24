@@ -41,8 +41,6 @@
                     Margin="20,0" />
             </SelectorBar>
 
-
-
         </StackPanel>
         <Frame x:Name="contentFrame" Grid.Row="1" />
     </Grid>

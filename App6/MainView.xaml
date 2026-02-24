@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:essential="using:WinUI3Package"
     xmlns:local="using:App6"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -18,7 +19,7 @@
             Grid.Row="0"
             IsBackButtonVisible="False"
             IsPaneToggleButtonVisible="False"
-            Subtitle="Toolkit v6.3b0">
+            Subtitle="Toolkit v6.4b0">
 
             <TitleBar.LeftHeader>
                 <ImageIcon
@@ -63,201 +64,15 @@
                         <SymbolIcon Symbol="Play" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <!--<NavigationViewItemHeader Content="Actions" />
-                <NavigationViewItem
-                    x:Name="SamplePage2Item"
-                    Content="Save Offsets"
-                    SelectsOnInvoked="True"
-                    Tag="SamplePage2">
-                    <NavigationViewItem.Icon>
-                        <SymbolIcon Symbol="Save" />
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>
-                <NavigationViewItem
-                    x:Name="SamplePage3Item"
-                    Content="Search Offsets"
-                    Tag="SamplePage3">
-                    <NavigationViewItem.Icon>
-                        <SymbolIcon Symbol="Refresh" />
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>-->
+
             </NavigationView.MenuItems>
-            <NavigationView.FooterMenuItems>
-                <!--<NavigationViewItem>
-                    <Button MaxHeight="40" Margin="4,0">
-                        <Button.Content>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="auto" />
-                                    <ColumnDefinition />
-                                    <ColumnDefinition Width="auto" />
-                                </Grid.ColumnDefinitions>
-                                <PersonPicture
-                                    Width="36"
-                                    Height="36"
-                                    Margin="1,1,6,1"
-                                    HorizontalAlignment="Left" />
-                                <TextBlock
-                                    Grid.Column="1"
-                                    Margin="1,0,0,0"
-                                    VerticalAlignment="Center"
-                                    Text="Lumine"
-                                    TextTrimming="CharacterEllipsis"
-                                    TextWrapping="NoWrap" />
-                                <FontIcon
-                                    Grid.Column="2"
-                                    Margin="0,0,8,0"
-                                    VerticalAlignment="Center"
-                                    FontSize="12"
-                                    Glyph="" />
-                            </Grid>
-                        </Button.Content>
-                        <Button.Flyout>
-                            <Flyout LightDismissOverlayMode="On" Placement="LeftEdgeAlignedBottom">
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="auto" />
-                                        <ColumnDefinition />
-                                    </Grid.ColumnDefinitions>
-                                    <StackPanel
-                                        Grid.Column="0"
-                                        Margin="0,0"
-                                        Padding="0,2"
-                                        BorderThickness="0,0,1,0">
-                -->
-                <!--  米游社 登录  -->
-                <!--
-                                        <AppBarButton
-                                            Width="100"
-                                            MaxWidth="100"
-                                            Margin="2,-4"
-                                            Icon="Contact"
-                                            Label="ViewUserCookieOperation">
-                                            <AppBarButton.Flyout>
-                                                <Flyout>
-                                                    <StackPanel Orientation="Horizontal" Spacing="0">
-                                                        <AppBarButton
-                                                            Width="100"
-                                                            MaxWidth="100"
-                                                            Margin="0,-4"
-                                                            Icon="Contact"
-                                                            Label="ViewUserCookieOperationLoginQRCodeAction" />
-                                                        <AppBarButton
-                                                            Width="100"
-                                                            MaxWidth="100"
-                                                            Margin="0,-4"
-                                                            Icon="Contact"
-                                                            Label="ViewUserCookieOperationLoginMobileCaptchaAction" />
-                                                        <AppBarButton
-                                                            Width="100"
-                                                            MaxWidth="100"
-                                                            Margin="0,-4"
-                                                            Icon="Contact"
-                                                            Label="ViewUserCookieOperationManualInputAction" />
-                                                    </StackPanel>
-                                                </Flyout>
-                                            </AppBarButton.Flyout>
-                                        </AppBarButton>
-                -->
-                <!--  HoYoLAB 登录  -->
-                <!--
-                                        <AppBarButton
-                                            Width="100"
-                                            MaxWidth="100"
-                                            Margin="2,-4"
-                                            Icon="Contact"
-                                            Label="ViewUserCookieOperation2">
-                                            <AppBarButton.Flyout>
-                                                <Flyout>
-                                                    <Grid>
-                                                        <Grid.RowDefinitions>
-                                                            <RowDefinition Height="auto" />
-                                                            <RowDefinition Height="auto" />
-                                                        </Grid.RowDefinitions>
-
-                                                        <StackPanel Grid.Row="1" Orientation="Horizontal">
-                                                            <AppBarButton
-                                                                Width="100"
-                                                                MaxWidth="100"
-                                                                Margin="0,-4"
-                                                                Icon="Contact"
-                                                                Label="iewUserCookieOperationLoginByPasswordAction" />
-                                                            <AppBarButton
-                                                                Width="100"
-                                                                MaxWidth="100"
-                                                                Margin="0,-4"
-                                                                Icon="Contact"
-                                                                Label="ViewUserCookieOperationManualInputAction" />
-                                                        </StackPanel>
-                                                    </Grid>
-
-                                                </Flyout>
-                                            </AppBarButton.Flyout>
-                                        </AppBarButton>
-
-                                        <MenuFlyoutSeparator Margin="4,0" />
-                                        <TextBlock
-                                            Margin="0,4,0,2"
-                                            HorizontalAlignment="Center"
-                                            Text="ViewUserCookieOperation3" />
-
-                                        <AppBarButton
-                                            Width="100"
-                                            MaxWidth="100"
-                                            Margin="2,-4"
-                                            AllowFocusOnInteraction="True"
-                                            Icon="Contact"
-                                            Label="ViewUserCookieOperationGameRecordIndexAction" />
-
-                                        <AppBarButton
-                                            Width="100"
-                                            MaxWidth="100"
-                                            Margin="2,-4"
-                                            Icon="Contact"
-                                            Label="ViewUserCookieOperationRefreshCookieAction" />
-                                    </StackPanel>
-
-                                    <Grid Grid.Column="1" Width="280">
-                                        <StackPanel Visibility="Visible">
-                                            <StackPanel Visibility="Visible">
-                                                <TextBlock Margin="10,6,0,6" Text="ViewUserRole" />
-                                                <ListView Margin="4" SelectionMode="Single" />
-                                            </StackPanel>
-
-                                            <TextBlock Margin="10,6,0,6" Text="ViewUserUser" />
-                                            <ListView
-                                                Margin="4"
-                                                AllowDrop="True"
-                                                CanReorderItems="True"
-                                                SelectionMode="Single"
-                                                Visibility="Visible">
-                                                <ListView.Header>
-                                                    <InfoBar
-                                                        Title="ViewListViewDragElevatedHint"
-                                                        Margin="4,0,4,2"
-                                                        IsClosable="True"
-                                                        IsOpen="True"
-                                                        Severity="Warning"
-                                                        Visibility="Visible" />
-                                                </ListView.Header>
-                                            </ListView>
-                                        </StackPanel>
-                                        <TextBlock
-                                            Margin="16"
-                                            HorizontalAlignment="Center"
-                                            VerticalAlignment="Center"
-                                            Style="{StaticResource SubtitleTextBlockStyle}"
-                                            Text="ViewUserDefaultDescription"
-                                            Visibility="Visible" />
-                                    </Grid>
-                                </Grid>
-                            </Flyout>
-                        </Button.Flyout>
-                        <Button.Style />
-                    </Button>
-                </NavigationViewItem>-->
-                <NavigationViewItemSeparator />
-            </NavigationView.FooterMenuItems>
+            <NavigationView.Resources />
+            <NavigationView.PaneFooter>
+                <StackPanel Orientation="Vertical">
+                    <NavigationViewItemSeparator />
+                    <local:UserView />
+                </StackPanel>
+            </NavigationView.PaneFooter>
 
             <Frame x:Name="contentFrame" Padding="10" />
         </NavigationView>
