@@ -28,7 +28,7 @@ namespace Service::Game::Launching
 		);
 		SetIfHDROn();
 		GetLaunchGameParms();
-		// Launch the process in a suspended state
+
 		STARTUPINFOW si{};
 		PROCESS_INFORMATION pi{};
 		si.cb = sizeof(si);
@@ -36,7 +36,7 @@ namespace Service::Game::Launching
 		auto work_dir = fs_path.parent_path();
 		BOOL started = CreateProcessW(
 			appname.c_str(),
-			const_cast<LPWSTR>(g_path.c_str()),
+			g_path.data(),
 			NULL,
 			NULL,
 			FALSE,
