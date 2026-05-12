@@ -81,7 +81,7 @@
                                     IsEnabled="{x:Bind FrameRateLimitOverrideToggle.IsOn, Mode=OneWay}"
                                     LargeChange="10"
                                     Maximum="10000"
-                                    Minimum="0"
+                                    Minimum="1"
                                     SmallChange="1"
                                     SpinButtonPlacementMode="Inline"
                                     Value="{x:Bind ViewModel.FrameRateLimitValue, Mode=TwoWay}" />
