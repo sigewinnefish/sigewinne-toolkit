@@ -51,6 +51,9 @@ message AppSettings
     int32           Lang                              =  4;
     bool            LangOverride                      =  5;
     string          GamePath                          =  6;
+    bool 		    IslandRestrictionsOverride        =  7;
+    bool 		    FrameRateLimitOverride            =  8;
+    int32           FrameRateLimitValue               =  9;
 }
 
 message PrivateVars

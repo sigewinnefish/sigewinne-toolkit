@@ -59,6 +59,45 @@
                     </essential:SettingsCard.HeaderIcon>
                 </essential:SettingsCard>
 
+                <essential:SettingsExpander x:Uid="ViewPageSettingsIslandRestrictionsOverride" IsExpanded="{x:Bind IslandRestrictionsOverrideToggle.IsOn, Mode=OneWay}">
+                    <ToggleSwitch
+                        x:Name="IslandRestrictionsOverrideToggle"
+                        MinWidth="10"
+                        IsOn="{x:Bind ViewModel.IslandRestrictionsOverride, Mode=TwoWay}"
+                        Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
+                    <essential:SettingsExpander.HeaderIcon>
+                        <FontIcon Glyph="&#xE785;" />
+                    </essential:SettingsExpander.HeaderIcon>
+
+                    <essential:SettingsExpander.Items>
+
+
+                        <essential:SettingsCard x:Uid="ViewPageSettingsFrameRateLimitOverride" IsEnabled="{x:Bind IslandRestrictionsOverrideToggle.IsOn, Mode=OneWay}">
+                            <StackPanel Orientation="Horizontal" Spacing="160">
+                                <NumberBox
+                                    MinWidth="160"
+                                    Padding="12,6,0,0"
+                                    VerticalAlignment="Center"
+                                    IsEnabled="{x:Bind FrameRateLimitOverrideToggle.IsOn, Mode=OneWay}"
+                                    LargeChange="10"
+                                    Maximum="10000"
+                                    Minimum="0"
+                                    SmallChange="1"
+                                    SpinButtonPlacementMode="Inline"
+                                    Value="{x:Bind ViewModel.FrameRateLimitValue, Mode=TwoWay}" />
+                                <ToggleSwitch
+                                    x:Name="FrameRateLimitOverrideToggle"
+                                    MinWidth="10"
+                                    IsOn="{x:Bind ViewModel.FrameRateLimitOverride, Mode=TwoWay}"
+                                    Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
+                            </StackPanel>
+
+                        </essential:SettingsCard>
+
+                    </essential:SettingsExpander.Items>
+                </essential:SettingsExpander>
+
+
                 <essential:SettingsExpander x:Uid="ViewPageSettingsGamePath" IsExpanded="True">
 
                     <essential:SettingsExpander.HeaderIcon>

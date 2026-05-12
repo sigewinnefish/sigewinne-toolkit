@@ -7,6 +7,9 @@ namespace App6
 		Boolean StealthMode;
 		Boolean RestrictedTokens;
 		Boolean LangOverride;
+		Boolean IslandRestrictionsOverride;
+		Boolean FrameRateLimitOverride;
+		UInt32 FrameRateLimitValue;
 		String GamePath;
 	}
 

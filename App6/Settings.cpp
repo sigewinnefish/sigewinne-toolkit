@@ -113,9 +113,10 @@ loc_1:		plaunchgame = g_settings.mutable_home()->mutable_launchgame();
 				plaunchgame->set_screenwidth(2560);
 			}
 
-			if (!plaunchgame->screenheight())
+			// appsettings default
+			if (!pappsettings->frameratelimitvalue())
 			{
-				plaunchgame->set_screenheight(1440);
+				pappsettings->set_frameratelimitvalue(120);
 			}
 			
 			penv->FieldOfView = pisland->fieldofview();

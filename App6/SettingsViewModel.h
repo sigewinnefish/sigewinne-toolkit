@@ -20,6 +20,15 @@ namespace winrt::App6::implementation
         bool LangOverride();
         void LangOverride(bool value);
 
+        bool IslandRestrictionsOverride();
+        void IslandRestrictionsOverride(bool value);
+
+        bool FrameRateLimitOverride();
+        void FrameRateLimitOverride(bool value);
+
+        uint32_t FrameRateLimitValue();
+        void FrameRateLimitValue(uint32_t value);
+
         auto GamePath() const noexcept {
             return m_GamePath;
         }

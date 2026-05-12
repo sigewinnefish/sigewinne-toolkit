@@ -187,7 +187,7 @@
     <value>Modify its default behavior at game startup</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceExclusive.Description" xml:space="preserve">
-    <value>Incompatible with embedded browsers; operations like switching window may cause the game to crash</value>
+    <value>Incompatible with embedded browsers, operations like switching window may cause the game to crash</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceFullscreen.Description" xml:space="preserve">
     <value>Overwrite default fullscreen status</value>
@@ -225,6 +225,16 @@ If the toolkit is already running, relaunching it will trigger the game launch.<
   </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
     <value>Game Path</value>
+  </data>
+  <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
+    <value>Frame Rate Limit Override</value>
+  </data>
+  <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
+    <value>For security reasons, the Island limits Frame Rate up to 120 FPS.
+Enable “Frame Rate Limit Override” to change this restriction.</value>
+  </data>
+  <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
+    <value>Island Restrictions Override</value>
   </data>
   <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
     <value>Select Game Path</value>
