@@ -20,6 +20,21 @@ namespace winrt::App6::implementation
 	IslandPage::IslandPage()
 	{
 		this->NavigationCacheMode(Microsoft::UI::Xaml::Navigation::NavigationCacheMode::Required);
+		DispatcherQueue().TryEnqueue(
+			[this]()
+			{
+				if (pappsettings->islandrestrictionsoverride() && pappsettings->frameratelimitoverride())
+				{
+
+					this->IslandTargetFpsValue().Maximum(pappsettings->frameratelimitvalue());
+				}
+				else
+				{
+					this->IslandTargetFpsValue().Maximum(120);
+				}
+
+			});
+
 		// Xaml objects should not call InitializeComponent during construction.
 		// See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
 	}

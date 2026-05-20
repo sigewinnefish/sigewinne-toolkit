@@ -76,7 +76,7 @@ namespace Service::Settings
 		if (!penv)
 		{
 			DWORD array[] = {
-				22807952, 382311856, 17558688, 17558672, 221269248, 104443440, 4415328, 281678496, 260970816, 260927600, 270179440, 111264928, 272153696, 237479968, 17532224, 17530112, 213770752, 290540976, 232343728
+				0x160F2F0, 0x173BA6B0, 0x1106F10, 0x1106F00, 0xD8765D0, 0x654B930, 0x449EB0, 0xB60DEC0, 0x7A06BA0, 0x79B8680, 0xE68B6D0, 0xE6D4D90, 0x9D127D0, 0xE93CCE0, 0x1100760, 0x10FFF20, 0x795DD26, 0x11B07B80, 0xD7ACCD0
 			};
 
 			HANDLE h = OpenFileMapping(FILE_MAP_READ | FILE_MAP_WRITE, FALSE, L"4F3E8543-40F7-4808-82DC-21E48A6037A7"); //4F3E8543-40F7-4808-82DC-21E48A6037A7
@@ -113,9 +113,10 @@ loc_1:		plaunchgame = g_settings.mutable_home()->mutable_launchgame();
 				plaunchgame->set_screenwidth(2560);
 			}
 
-			if (!plaunchgame->screenheight())
+			// appsettings default
+			if (!pappsettings->frameratelimitvalue())
 			{
-				plaunchgame->set_screenheight(1440);
+				pappsettings->set_frameratelimitvalue(120);
 			}
 			
 			penv->FieldOfView = pisland->fieldofview();
