@@ -40,10 +40,6 @@ jobs:
       working-directory: ${{ github.workspace }}
       run: vcpkg integrate install
 
-    - name: Build
-      working-directory: ${{ github.workspace }}
-      run: msbuild /m /p:Platform=x64 /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
-
     - name: checkout Fulltrust
       uses: actions/checkout@v4
       with:
