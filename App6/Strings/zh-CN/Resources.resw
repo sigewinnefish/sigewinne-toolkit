@@ -238,10 +238,11 @@
     <value>帧率限制覆盖</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>出于安全考虑，游戏帧率被限制在120 FPS 以内。您可以启用此选项来覆盖此限制。</value>
+    <value>出于安全考虑，游戏帧率被限制在 120 FPS 以内。
+您可以启用此选项来覆盖此限制。</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
-    <value>行为限制覆盖</value>
+    <value>行为限制覆盖(实验性)</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
     <value>配置游戏路径：</value>
