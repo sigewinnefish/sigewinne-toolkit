@@ -296,4 +296,8 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
   <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
     <value>Input Manually</value>
   </data>
+  <data name="MBAppCrash" xml:space="preserve">
+    <value>OOPS, APP CRASH !!!
+dump has been generate at %temp%/toolkit.dmp</value>
+  </data>
 </root>

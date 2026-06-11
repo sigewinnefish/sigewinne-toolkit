@@ -19,7 +19,8 @@ namespace Service::Settings
 		wil::unique_handle hFile(
 			CreateFileW(
 				tmp.c_str(),
-				GENERIC_READ | GENERIC_WRITE, 0, 
+				GENERIC_READ | GENERIC_WRITE,
+				0, 
 				NULL,
 				OPEN_EXISTING, 
 				FILE_ATTRIBUTE_NORMAL,
@@ -61,7 +62,8 @@ namespace Service::Settings
 		CreateFileW(
 			tmp.c_str(),
 				GENERIC_READ | GENERIC_WRITE,
-				0, NULL,
+				0,
+				NULL,
 				CREATE_ALWAYS,
 				FILE_ATTRIBUTE_NORMAL,
 				NULL)
