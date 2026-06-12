@@ -3,6 +3,7 @@
 #include "SettingsViewModel.g.h"
 #include <winrt/Microsoft.UI.Xaml.Data.h>
 #include <wil/cppwinrt_authoring.h>
+#include "helper.h"
 
 using namespace Service::Settings;
 namespace winrt::App6::implementation
@@ -11,15 +12,13 @@ namespace winrt::App6::implementation
     {
 		SettingsViewModel() = default;
 
-        bool StealthMode();
-        void StealthMode(bool value);
+        // default bind
+        BIND(StealthMode, pappsettings, stealthmode);
+        BIND(RestrictedTokens, pappsettings, restrictedtokens);
+        BIND(LangOverride, pappsettings, langoverride);
+        BIND(CloseAsExit, pappsettings, closeasexit);
 
-        void RestrictedTokens(bool value);
-        bool RestrictedTokens();
-
-        bool LangOverride();
-        void LangOverride(bool value);
-
+        // others
         bool IslandRestrictionsOverride();
         void IslandRestrictionsOverride(bool value);
 
@@ -40,6 +39,7 @@ namespace winrt::App6::implementation
             }
             return *this;
         };
+
 
 	private:
         hstring m_GamePath{ to_hstring(pappsettings->gamepath()) };

@@ -1,38 +1,25 @@
-﻿#pragma once
+#pragma once
 
 #include "LaunchGamePage.g.h"
+#include "Settings.h"
+#include "helper.h"
+
+using namespace Service::Settings;
 
 namespace winrt::App6::implementation
 {
     struct LaunchGamePage : LaunchGamePageT<LaunchGamePage>
     {
 
-        bool LaunchGameWindowsHDR();
-        void LaunchGameWindowsHDR(bool value);
-
-        bool LaunchGameArguments();
-        void LaunchGameArguments(bool value);
-
-        bool LaunchGameAppearanceExclusive();
-        void LaunchGameAppearanceExclusive(bool value);
-
-        bool LaunchGameAppearanceFullscreen();
-        void LaunchGameAppearanceFullscreen(bool value);
-
-        bool LaunchGameAppearanceBorderless();
-        void LaunchGameAppearanceBorderless(bool value);
-
-        bool LaunchGameAppearanceScreenWidth();
-        void LaunchGameAppearanceScreenWidth(bool value);
-
-        bool LaunchGameAppearanceScreenHeight();
-        void LaunchGameAppearanceScreenHeight(bool value);
-
-        uint32_t LaunchGameAppearanceScreenWidthValue();
-        void LaunchGameAppearanceScreenWidthValue(uint32_t value);
-
-        uint32_t LaunchGameAppearanceScreenHeightValue();
-        void LaunchGameAppearanceScreenHeightValue(uint32_t value);
+        BIND(LaunchGameWindowsHDR, plaunchgame, iswindowshdrenabled);
+        BIND(LaunchGameArguments, plaunchgame, arecommandlineargumentsenabled);
+        BIND(LaunchGameAppearanceExclusive, plaunchgame, isexclusive);
+        BIND(LaunchGameAppearanceFullscreen, plaunchgame, isfullscreen);
+        BIND(LaunchGameAppearanceBorderless, plaunchgame, isborderless);
+        BIND(LaunchGameAppearanceScreenWidth, plaunchgame, isscreenwidthenabled);
+        BIND(LaunchGameAppearanceScreenHeight, plaunchgame, isscreenheightenabled);
+        BIND(LaunchGameAppearanceScreenWidthValue, plaunchgame, screenwidth);
+        BIND(LaunchGameAppearanceScreenHeightValue, plaunchgame, screenheight);
 
         LaunchGamePage();
 

@@ -108,6 +108,7 @@
     <ClInclude Include="UserModel.h">
       <Filter>Model</Filter>
     </ClInclude>
+    <ClInclude Include="helper.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Wide310x150Logo.scale-200.png">
@@ -319,6 +320,9 @@
     <Filter Include="Model">
       <UniqueIdentifier>{c781b5af-33f7-4931-883c-97cf1b0e8266}</UniqueIdentifier>
     </Filter>
+    <Filter Include="proto">
+      <UniqueIdentifier>{7ced1377-6986-4a95-8e83-460544778d37}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
@@ -331,7 +335,7 @@
     <None Include="proto.props" />
     <None Include="proto.targets" />
     <None Include="Settings.proto">
-      <Filter>Service\Settings</Filter>
+      <Filter>proto</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

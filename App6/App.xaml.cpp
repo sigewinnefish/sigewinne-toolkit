@@ -116,7 +116,6 @@ int __stdcall wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
             ShowMessageBox(L"MBAppCrash", Error);
         }
 
-
         return EXCEPTION_EXECUTE_HANDLER;
     });
 
