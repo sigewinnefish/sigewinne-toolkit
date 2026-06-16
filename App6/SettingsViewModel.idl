@@ -11,7 +11,8 @@ namespace App6
 		Boolean FrameRateLimitOverride;
 		UInt32  FrameRateLimitValue;
 		String  GamePath;
-		Boolean CloseAsExit;
+		Int32  CloseBehaviorIndex;
+		Windows.Foundation.Collections.IObservableVector<String> CloseBehaviors{ get; };
 	}
 
 }

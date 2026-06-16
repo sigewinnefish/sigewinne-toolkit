@@ -142,7 +142,17 @@ namespace winrt::App6::implementation
 
 		this->AppWindow().Closing([this](auto sender, AppWindowClosingEventArgs args)
 			{
-				args.Cancel(false);
+                switch (pappsettings->closebehavior())
+                {
+				case 0:
+					break;
+                case 1:
+					args.Cancel(true);
+					this->AppWindow().Hide();
+					break;
+                default:
+					break;
+                }
 
 			});
 

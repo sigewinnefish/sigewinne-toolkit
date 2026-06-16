@@ -3,9 +3,17 @@
 #if __has_include("SettingsViewModel.g.cpp")
 #include "SettingsViewModel.g.cpp"
 #endif
+#include "Utils.h"
 
+using namespace Service::Utils;
 namespace winrt::App6::implementation
 {
+	SettingsViewModel::SettingsViewModel()
+	{
+		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorExit"));
+		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorMinimize"));
+		
+	}
 
 	bool SettingsViewModel::IslandRestrictionsOverride()
 	{

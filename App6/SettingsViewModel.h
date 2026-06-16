@@ -10,14 +10,14 @@ namespace winrt::App6::implementation
 {
     struct SettingsViewModel : SettingsViewModelT<SettingsViewModel>, wil::notify_property_changed_base<SettingsViewModel>
     {
-		SettingsViewModel() = default;
 
+        SettingsViewModel();
         // default bind
         BIND(StealthMode, pappsettings, stealthmode);
         BIND(RestrictedTokens, pappsettings, restrictedtokens);
         BIND(LangOverride, pappsettings, langoverride);
-        BIND(CloseAsExit, pappsettings, closeasexit);
-
+        BIND(CloseBehaviorIndex, pappsettings, closebehavior);
+        
         // others
         bool IslandRestrictionsOverride();
         void IslandRestrictionsOverride(bool value);
@@ -38,7 +38,9 @@ namespace winrt::App6::implementation
                 RaisePropertyChanged(L"GamePath");
             }
             return *this;
-        };
+        }
+
+        wil::single_threaded_property<Windows::Foundation::Collections::IObservableVector<hstring>> CloseBehaviors = winrt::single_threaded_observable_vector<hstring>();
 
 
 	private:
