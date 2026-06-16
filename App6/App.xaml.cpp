@@ -170,8 +170,8 @@ namespace winrt::App6::implementation
             ShowMessageBox(L"MBLoadSettingsFromFileWarn", Warn);
 	    }
 
-        init_environment();
-
+        init();
+        init_penv();
         LaunchIfStealthMode();
 
 	    if (pappsettings->langoverride())

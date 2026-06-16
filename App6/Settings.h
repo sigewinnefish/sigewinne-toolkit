@@ -7,8 +7,8 @@ namespace Service::Settings
 {
 	void LoadSettingsFromFile();
 	void WriteSettingsToFile();
-	void init_environment();
-
+	void init();
+	void init_penv();
 	inline Service::Proto::Settings g_settings;
 	inline IslandEnvironment* penv = nullptr;
 	inline Service::Proto::Island* pisland = nullptr;

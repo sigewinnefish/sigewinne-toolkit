@@ -73,15 +73,41 @@ namespace Service::Settings
 
 	}
 
-	void init_environment()
+	void init()
+	{
+		plaunchgame = g_settings.mutable_home()->mutable_launchgame();
+		pisland = g_settings.mutable_home()->mutable_island();
+		pappsettings = g_settings.mutable_appsettings();
+
+		// island default
+		if (!static_cast<int>(pisland->fieldofview()))
+		{
+			pisland->set_fieldofview(45);
+		}
+		if (!pisland->targetframerate())
+		{
+			pisland->set_targetframerate(60);
+		}
+
+		// launchgame default
+		if (!plaunchgame->screenwidth())
+		{
+			plaunchgame->set_screenwidth(2560);
+		}
+
+		// appsettings default
+		if (!pappsettings->frameratelimitvalue())
+		{
+			pappsettings->set_frameratelimitvalue(120);
+		}
+	}
+
+	void init_penv()
 	{
 		if (!penv)
 		{
-			DWORD array[] = {
-				0x160F2F0, 0x173BA6B0, 0x1106F10, 0x1106F00, 0xD8765D0, 0x654B930, 0x449EB0, 0xB60DEC0, 0x7A06BA0, 0x79B8680, 0xE68B6D0, 0xE6D4D90, 0x9D127D0, 0xE93CCE0, 0x1100760, 0x10FFF20, 0xE5BC000, 0x11B07B80, 0xD7ACCD0
-			};
 
-			HANDLE h = OpenFileMapping(FILE_MAP_READ | FILE_MAP_WRITE, FALSE, L"4F3E8543-40F7-4808-82DC-21E48A6037A7"); //4F3E8543-40F7-4808-82DC-21E48A6037A7
+			HANDLE h = OpenFileMapping(FILE_MAP_READ | FILE_MAP_WRITE, FALSE, L"4F3E8543-40F7-4808-82DC-21E48A6037A7");
 
 			if (h)
 			{
@@ -93,34 +119,7 @@ namespace Service::Settings
 			penv = (IslandEnvironment*)MapViewOfFile(_Notnull_ h, FILE_MAP_READ | FILE_MAP_WRITE, 0, 0, 0);
 			ZeroMemory(penv, sizeof(IslandEnvironment));
 
-			memcpy(reinterpret_cast<char*>(penv), &array, sizeof(array));
-
-loc_1:		plaunchgame = g_settings.mutable_home()->mutable_launchgame();
-			pisland = g_settings.mutable_home()->mutable_island();
-			pappsettings = g_settings.mutable_appsettings();
-			
-			// island default
-			if (!static_cast<int>(pisland->fieldofview()))
-			{
-				pisland->set_fieldofview(45);
-			}
-			if (!pisland->targetframerate())
-			{
-				pisland->set_targetframerate(60);
-			}
-
-			// launchgame default
-			if (!plaunchgame->screenwidth())
-			{
-				plaunchgame->set_screenwidth(2560);
-			}
-
-			// appsettings default
-			if (!pappsettings->frameratelimitvalue())
-			{
-				pappsettings->set_frameratelimitvalue(120);
-			}
-			
+loc_1:		
 			penv->FieldOfView = pisland->fieldofview();
 			penv->TargetFrameRate = pisland->targetframerate();
 			penv->EnableSetFieldOfView = pisland->enablesetfieldofview();
