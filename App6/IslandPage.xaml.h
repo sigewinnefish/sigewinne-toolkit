@@ -6,6 +6,7 @@
 #include "helper.h"
 
 using namespace Service::Settings;
+using namespace Service::Island;
 
 DWORD WINAPI LaunchGameProc(LPVOID lpParameter);
 

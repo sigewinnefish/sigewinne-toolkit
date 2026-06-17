@@ -74,12 +74,12 @@
     <ClCompile Include="UserModel.cpp">
       <Filter>Model</Filter>
     </ClCompile>
+    <ClCompile Include="island.cpp">
+      <Filter>Service\Island</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="island.h">
-      <Filter>Service</Filter>
-    </ClInclude>
     <ClInclude Include="HoYoLogin.h">
       <Filter>Service\Game\Account</Filter>
     </ClInclude>
@@ -109,6 +109,9 @@
       <Filter>Model</Filter>
     </ClInclude>
     <ClInclude Include="helper.h" />
+    <ClInclude Include="island.h">
+      <Filter>Service\Island</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Wide310x150Logo.scale-200.png">
@@ -322,6 +325,9 @@
     </Filter>
     <Filter Include="proto">
       <UniqueIdentifier>{7ced1377-6986-4a95-8e83-460544778d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Service\Island">
+      <UniqueIdentifier>{9e61ffbb-317b-414f-9412-7d3c2c45c938}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

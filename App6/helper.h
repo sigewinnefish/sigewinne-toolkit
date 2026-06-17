@@ -18,7 +18,7 @@ static decltype(pisland->a3()) a1()                     \
 static void a1(decltype(pisland->a3()) value)           \
 {                                                       \
     pisland->set_##a3(value);                           \
-    penv->a1 = value;                                   \
+    pmap->a1 = value;                                   \
 }                                            
 
 #define BINDISLANDITEM(a1, a2)                                          \
@@ -30,5 +30,5 @@ static std::decay_t<decltype(pisland->mutable_items()->at(0))> a1()     \
 static void a1(decltype((pisland)->mutable_items()->at(0)) value)       \
 {                                                                       \
     (*pisland->mutable_items())[a2] = value;                            \
-    penv->a1 = value;                                                   \
+    pmap->a1 = value;                                                   \
 }

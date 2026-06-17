@@ -6,7 +6,7 @@
 #include <filesystem>
 
 #include "xxhash.h"
-#include "island.h"
+#include "Utils.h"
 
 namespace Service::Settings
 {
@@ -73,8 +73,17 @@ namespace Service::Settings
 
 	}
 
-	void init()
+	void Init()
 	{
+		try
+		{
+			LoadSettingsFromFile();
+		}
+		catch (...)
+		{
+			ShowMessageBox(L"MBLoadSettingsFromFileWarn", Utils::Message::Warn);
+		}
+
 		plaunchgame = g_settings.mutable_home()->mutable_launchgame();
 		pisland = g_settings.mutable_home()->mutable_island();
 		pappsettings = g_settings.mutable_appsettings();
@@ -102,38 +111,5 @@ namespace Service::Settings
 		}
 	}
 
-	void init_penv()
-	{
-		if (!penv)
-		{
-
-			HANDLE h = OpenFileMapping(FILE_MAP_READ | FILE_MAP_WRITE, FALSE, L"4F3E8543-40F7-4808-82DC-21E48A6037A7");
-
-			if (h)
-			{
-				penv = (IslandEnvironment*)MapViewOfFile(_Notnull_ h, FILE_MAP_READ | FILE_MAP_WRITE, 0, 0, 0);
-				goto loc_1;
-			}
-
-			h = CreateFileMapping(INVALID_HANDLE_VALUE, NULL, PAGE_EXECUTE_READWRITE, 0, 1024, L"4F3E8543-40F7-4808-82DC-21E48A6037A7");
-			penv = (IslandEnvironment*)MapViewOfFile(_Notnull_ h, FILE_MAP_READ | FILE_MAP_WRITE, 0, 0, 0);
-			ZeroMemory(penv, sizeof(IslandEnvironment));
-
-loc_1:		
-			penv->FieldOfView = pisland->fieldofview();
-			penv->TargetFrameRate = pisland->targetframerate();
-			penv->EnableSetFieldOfView = pisland->enablesetfieldofview();
-			penv->FixLowFovScene = pisland->fixlowfovscene();
-			penv->DisableFog = pisland->disablefog();
-			penv->EnableSetTargetFrameRate = pisland->enablesettargetframerate();
-			penv->RemoveOpenTeamProgress = pisland->removeopenteamprogress();
-			penv->HideQuestBanner = pisland->hidequestbanner();
-			penv->DisableEventCameraMove = pisland->disableeventcameramove();
-			penv->DisableShowDamageText = pisland->disableshowdamagetext();
-			penv->UsingTouchScreen = pisland->usingtouchscreen();
-			penv->RedirectCombineEntry = pisland->redirectcombineentry();
-			penv->HideUid = pisland->hideuid();
-		}
-	}
 }
 

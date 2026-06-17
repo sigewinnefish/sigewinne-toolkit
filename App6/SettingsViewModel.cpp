@@ -6,6 +6,8 @@
 #include "Utils.h"
 
 using namespace Service::Utils;
+using namespace Service::Island;
+
 namespace winrt::App6::implementation
 {
 	SettingsViewModel::SettingsViewModel()
@@ -26,7 +28,7 @@ namespace winrt::App6::implementation
 		if (!value && pappsettings->frameratelimitvalue() > 120)
 		{
 			pisland->set_targetframerate(120);
-			penv->TargetFrameRate = 120;
+			pmap->TargetFrameRate = 120;
 		}
 	}
 
@@ -41,7 +43,7 @@ namespace winrt::App6::implementation
 		if (!value && pappsettings->frameratelimitvalue() > 120 )
 		{
 			pisland->set_targetframerate(120);
-			penv->TargetFrameRate = 120;
+			pmap->TargetFrameRate = 120;
 		}
 	}
 
@@ -56,7 +58,7 @@ namespace winrt::App6::implementation
 		if (pappsettings->frameratelimitvalue() < pisland->targetframerate())
 		{
 			pisland->set_targetframerate(value);
-			penv->TargetFrameRate = value;
+			pmap->TargetFrameRate = value;
 		}
 	}
 

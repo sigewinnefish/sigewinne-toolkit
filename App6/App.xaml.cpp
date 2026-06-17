@@ -76,7 +76,7 @@ EXTERN_C const PIMAGE_TLS_CALLBACK p_tls_callback1 = tls_callback1;
 using namespace winrt;
 using namespace winrt::Microsoft::UI::Xaml;
 using namespace winrt::Microsoft::Windows::Globalization;
-using namespace Service::Settings;
+using namespace Service;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
@@ -163,20 +163,21 @@ namespace winrt::App6::implementation
     {
 	    try
 	    {
-            LoadSettingsFromFile();
+            Settings::LoadSettingsFromFile();
 	    }
 	    catch (...)
 	    {
             ShowMessageBox(L"MBLoadSettingsFromFileWarn", Warn);
 	    }
 
-        init();
-        init_penv();
+        Settings::Init();
+        Island::Init();
+
         LaunchIfStealthMode();
 
-	    if (pappsettings->langoverride())
+	    if (Settings::pappsettings->langoverride())
 	    {
-            switch (pappsettings->lang())
+            switch (Settings::pappsettings->lang())
             {
             case 0:
                 ApplicationLanguages::PrimaryLanguageOverride(L"en-us");
@@ -209,7 +210,7 @@ namespace winrt::App6::implementation
     {
         try
         {
-            WriteSettingsToFile();
+            Settings::WriteSettingsToFile();
         }
         catch (...)
         {

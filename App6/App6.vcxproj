@@ -243,6 +243,7 @@
     </ClCompile>
     <ClCompile Include="Utils.cpp" />
     <ClCompile Include="UserViewModel.cpp" />
+    <ClCompile Include="island.cpp" />
     <ClInclude Include="LaunchGame.h" />
     <ClCompile Include="LaunchGamePage.xaml.cpp">
       <DependentUpon>LaunchGamePage.xaml</DependentUpon>
