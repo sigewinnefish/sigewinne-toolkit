@@ -96,7 +96,7 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
-       tag_name: v6.6b0
+       tag_name: v6.7b0
        release_name: prerelease
        body: prerelease
        draft: false
