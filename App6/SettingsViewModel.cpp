@@ -3,40 +3,20 @@
 #if __has_include("SettingsViewModel.g.cpp")
 #include "SettingsViewModel.g.cpp"
 #endif
+#include "Utils.h"
+
+using namespace Service::Utils;
+using namespace Service::Island;
 
 namespace winrt::App6::implementation
 {
-
-	bool SettingsViewModel::StealthMode()
+	SettingsViewModel::SettingsViewModel()
 	{
-		return pappsettings->stealthmode();
+		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorExit"));
+		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorMinimize"));
+		
 	}
 
-	void SettingsViewModel::StealthMode(bool value)
-	{
-		pappsettings->set_stealthmode(value);
-	}
-
-	bool SettingsViewModel::RestrictedTokens()
-	{
-		return pappsettings->restrictedtokens();
-	}
-
-	void SettingsViewModel::RestrictedTokens(bool value)
-	{
-		pappsettings->set_restrictedtokens(value);
-	}
-
-	bool SettingsViewModel::LangOverride()
-	{
-		return pappsettings->langoverride();
-	}
-
-	void SettingsViewModel::LangOverride(bool value)
-	{
-		pappsettings->set_langoverride(value);
-	}
-	
 	bool SettingsViewModel::IslandRestrictionsOverride()
 	{
 		return pappsettings->islandrestrictionsoverride();
@@ -48,7 +28,7 @@ namespace winrt::App6::implementation
 		if (!value && pappsettings->frameratelimitvalue() > 120)
 		{
 			pisland->set_targetframerate(120);
-			penv->TargetFrameRate = 120;
+			pmap->TargetFrameRate = 120;
 		}
 	}
 
@@ -63,7 +43,7 @@ namespace winrt::App6::implementation
 		if (!value && pappsettings->frameratelimitvalue() > 120 )
 		{
 			pisland->set_targetframerate(120);
-			penv->TargetFrameRate = 120;
+			pmap->TargetFrameRate = 120;
 		}
 	}
 
@@ -78,7 +58,8 @@ namespace winrt::App6::implementation
 		if (pappsettings->frameratelimitvalue() < pisland->targetframerate())
 		{
 			pisland->set_targetframerate(value);
-			penv->TargetFrameRate = value;
+			pmap->TargetFrameRate = value;
 		}
 	}
+
 }

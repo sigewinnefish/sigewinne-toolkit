@@ -46,7 +46,7 @@ message Island
 message AppSettings
 {
     bool            StealthMode                       =  1;
-    bool            CloseAsQuit                       =  2;
+    int32           CloseBehavior                     =  2;
     bool            RestrictedTokens                  =  3;
     int32           Lang                              =  4;
     bool            LangOverride                      =  5;
@@ -55,6 +55,7 @@ message AppSettings
     bool 		    FrameRateLimitOverride            =  8;
     int32           FrameRateLimitValue               =  9;
 }
+
 
 message PrivateVars
 {

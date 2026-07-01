@@ -1,3 +1,5 @@
+## sigewinne-toolkit [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sigewinnefish/sigewinne-toolkit)
+
 Disclaimer
 
 sigewinne-toolkit is intended solely for personal technical learning and research purposes.

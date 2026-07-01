@@ -9,8 +9,10 @@ namespace App6
 		Boolean LangOverride;
 		Boolean IslandRestrictionsOverride;
 		Boolean FrameRateLimitOverride;
-		UInt32 FrameRateLimitValue;
-		String GamePath;
+		UInt32  FrameRateLimitValue;
+		String  GamePath;
+		Int32  CloseBehaviorIndex;
+		Windows.Foundation.Collections.IObservableVector<String> CloseBehaviors{ get; };
 	}
 
 }

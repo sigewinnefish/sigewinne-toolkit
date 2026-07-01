@@ -245,6 +245,18 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
   <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
     <value>Restricted Tokens</value>
   </data>
+  <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
+    <value>Close Button Behavior</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
+    <value>Exit toolkit</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehaviorMinimize" xml:space="preserve">
+    <value>Minimize to tray</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
+    <value>Change the behavior of the close button</value>
+  </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
     <value>Start the Game with Standard User Accesss Token</value>
   </data>
@@ -295,5 +307,9 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
   </data>
   <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
     <value>Input Manually</value>
+  </data>
+  <data name="MBAppCrash" xml:space="preserve">
+    <value>OOPS, APP CRASH !!!
+dump has been generate at %temp%/toolkit.dmp</value>
   </data>
 </root>

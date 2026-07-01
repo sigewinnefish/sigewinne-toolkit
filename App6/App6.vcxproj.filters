@@ -74,12 +74,12 @@
     <ClCompile Include="UserModel.cpp">
       <Filter>Model</Filter>
     </ClCompile>
+    <ClCompile Include="island.cpp">
+      <Filter>Service\Island</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="island.h">
-      <Filter>Service</Filter>
-    </ClInclude>
     <ClInclude Include="HoYoLogin.h">
       <Filter>Service\Game\Account</Filter>
     </ClInclude>
@@ -107,6 +107,10 @@
     </ClInclude>
     <ClInclude Include="UserModel.h">
       <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="helper.h" />
+    <ClInclude Include="island.h">
+      <Filter>Service\Island</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -319,6 +323,12 @@
     <Filter Include="Model">
       <UniqueIdentifier>{c781b5af-33f7-4931-883c-97cf1b0e8266}</UniqueIdentifier>
     </Filter>
+    <Filter Include="proto">
+      <UniqueIdentifier>{7ced1377-6986-4a95-8e83-460544778d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Service\Island">
+      <UniqueIdentifier>{9e61ffbb-317b-414f-9412-7d3c2c45c938}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
@@ -331,7 +341,7 @@
     <None Include="proto.props" />
     <None Include="proto.targets" />
     <None Include="Settings.proto">
-      <Filter>Service\Settings</Filter>
+      <Filter>proto</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

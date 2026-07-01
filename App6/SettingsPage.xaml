@@ -71,7 +71,6 @@
 
                     <essential:SettingsExpander.Items>
 
-
                         <essential:SettingsCard x:Uid="ViewPageSettingsFrameRateLimitOverride" IsEnabled="{x:Bind IslandRestrictionsOverrideToggle.IsOn, Mode=OneWay}">
                             <StackPanel Orientation="Horizontal" Spacing="160">
                                 <NumberBox
@@ -132,6 +131,17 @@
                     </essential:SettingsExpander.Items>
                 </essential:SettingsExpander>
 
+                <essential:SettingsCard x:Uid="ViewPageSettingsCloseButtonBehavior">
+                    <ComboBox
+                        x:Name="LangCombo0"
+                        Width="200"
+                        essential:ComboBoxHelper.AcrylicWorkaround="True"
+                        ItemsSource="{x:Bind ViewModel.CloseBehaviors}"
+                        SelectedIndex="{x:Bind ViewModel.CloseBehaviorIndex, Mode=TwoWay}" />
+                    <essential:SettingsCard.HeaderIcon>
+                        <FontIcon Glyph="&#xE711;" />
+                    </essential:SettingsCard.HeaderIcon>
+                </essential:SettingsCard>
 
             </StackPanel>
 

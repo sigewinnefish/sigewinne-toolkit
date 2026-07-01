@@ -6,7 +6,7 @@
 #include <filesystem>
 
 #include "xxhash.h"
-#include "island.h"
+#include "Utils.h"
 
 namespace Service::Settings
 {
@@ -19,7 +19,8 @@ namespace Service::Settings
 		wil::unique_handle hFile(
 			CreateFileW(
 				tmp.c_str(),
-				GENERIC_READ | GENERIC_WRITE, 0, 
+				GENERIC_READ | GENERIC_WRITE,
+				0, 
 				NULL,
 				OPEN_EXISTING, 
 				FILE_ATTRIBUTE_NORMAL,
@@ -61,7 +62,8 @@ namespace Service::Settings
 		CreateFileW(
 			tmp.c_str(),
 				GENERIC_READ | GENERIC_WRITE,
-				0, NULL,
+				0,
+				NULL,
 				CREATE_ALWAYS,
 				FILE_ATTRIBUTE_NORMAL,
 				NULL)
@@ -71,68 +73,43 @@ namespace Service::Settings
 
 	}
 
-	void init_environment()
+	void Init()
 	{
-		if (!penv)
+		try
 		{
-			DWORD array[] = {
-				0x160F2F0, 0x173BA6B0, 0x1106F10, 0x1106F00, 0xD8765D0, 0x654B930, 0x449EB0, 0xB60DEC0, 0x7A06BA0, 0x79B8680, 0xE68B6D0, 0xE6D4D90, 0x9D127D0, 0xE93CCE0, 0x1100760, 0x10FFF20, 0x795DD26, 0x11B07B80, 0xD7ACCD0
-			};
+			LoadSettingsFromFile();
+		}
+		catch (...)
+		{
+			ShowMessageBox(L"MBLoadSettingsFromFileWarn", Utils::Message::Warn);
+		}
 
-			HANDLE h = OpenFileMapping(FILE_MAP_READ | FILE_MAP_WRITE, FALSE, L"4F3E8543-40F7-4808-82DC-21E48A6037A7"); //4F3E8543-40F7-4808-82DC-21E48A6037A7
+		plaunchgame = g_settings.mutable_home()->mutable_launchgame();
+		pisland = g_settings.mutable_home()->mutable_island();
+		pappsettings = g_settings.mutable_appsettings();
 
-			if (h)
-			{
-				penv = (IslandEnvironment*)MapViewOfFile(_Notnull_ h, FILE_MAP_READ | FILE_MAP_WRITE, 0, 0, 0);
-				goto loc_1;
-			}
+		// island default
+		if (!static_cast<int>(pisland->fieldofview()))
+		{
+			pisland->set_fieldofview(45);
+		}
+		if (!pisland->targetframerate())
+		{
+			pisland->set_targetframerate(60);
+		}
 
-			h = CreateFileMapping(INVALID_HANDLE_VALUE, NULL, PAGE_EXECUTE_READWRITE, 0, 1024, L"4F3E8543-40F7-4808-82DC-21E48A6037A7");
-			penv = (IslandEnvironment*)MapViewOfFile(_Notnull_ h, FILE_MAP_READ | FILE_MAP_WRITE, 0, 0, 0);
-			ZeroMemory(penv, sizeof(IslandEnvironment));
+		// launchgame default
+		if (!plaunchgame->screenwidth())
+		{
+			plaunchgame->set_screenwidth(2560);
+		}
 
-			memcpy(reinterpret_cast<char*>(penv), &array, sizeof(array));
-
-loc_1:		plaunchgame = g_settings.mutable_home()->mutable_launchgame();
-			pisland = g_settings.mutable_home()->mutable_island();
-			pappsettings = g_settings.mutable_appsettings();
-			
-			// island default
-			if (!static_cast<int>(pisland->fieldofview()))
-			{
-				pisland->set_fieldofview(45);
-			}
-			if (!pisland->targetframerate())
-			{
-				pisland->set_targetframerate(60);
-			}
-
-			// launchgame default
-			if (!plaunchgame->screenwidth())
-			{
-				plaunchgame->set_screenwidth(2560);
-			}
-
-			// appsettings default
-			if (!pappsettings->frameratelimitvalue())
-			{
-				pappsettings->set_frameratelimitvalue(120);
-			}
-			
-			penv->FieldOfView = pisland->fieldofview();
-			penv->TargetFrameRate = pisland->targetframerate();
-			penv->EnableSetFieldOfView = pisland->enablesetfieldofview();
-			penv->FixLowFovScene = pisland->fixlowfovscene();
-			penv->DisableFog = pisland->disablefog();
-			penv->EnableSetTargetFrameRate = pisland->enablesettargetframerate();
-			penv->RemoveOpenTeamProgress = pisland->removeopenteamprogress();
-			penv->HideQuestBanner = pisland->hidequestbanner();
-			penv->DisableEventCameraMove = pisland->disableeventcameramove();
-			penv->DisableShowDamageText = pisland->disableshowdamagetext();
-			penv->UsingTouchScreen = pisland->usingtouchscreen();
-			penv->RedirectCombineEntry = pisland->redirectcombineentry();
-			penv->HideUid = pisland->hideuid();
+		// appsettings default
+		if (!pappsettings->frameratelimitvalue())
+		{
+			pappsettings->set_frameratelimitvalue(120);
 		}
 	}
+
 }
 
