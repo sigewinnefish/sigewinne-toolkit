@@ -39,14 +39,12 @@
                     <StackPanel Orientation="Horizontal" Spacing="160">
                         <ComboBox
                             x:Name="LangCombo"
-                            Width="200"
+                            MinWidth="200"
+                            Width="auto"
                             essential:ComboBoxHelper.AcrylicWorkaround="True"
                             IsEnabled="{x:Bind LangOverrideToggle.IsOn, Mode=OneWay}"
-                            SelectionChanged="LangCombo_SelectionChanged">
-                            <x:String>Default</x:String>
-                            <x:String>zh-cn</x:String>
-
-                        </ComboBox>
+                            ItemsSource="{x:Bind ViewModel.Languages}"
+                            SelectionChanged="LangCombo_SelectionChanged" />
                         <ToggleSwitch
                             x:Name="LangOverrideToggle"
                             MinWidth="10"
@@ -134,12 +132,22 @@
                 <essential:SettingsCard x:Uid="ViewPageSettingsCloseButtonBehavior">
                     <ComboBox
                         x:Name="LangCombo0"
-                        Width="200"
+                        Width="150"
                         essential:ComboBoxHelper.AcrylicWorkaround="True"
                         ItemsSource="{x:Bind ViewModel.CloseBehaviors}"
                         SelectedIndex="{x:Bind ViewModel.CloseBehaviorIndex, Mode=TwoWay}" />
                     <essential:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE711;" />
+                    </essential:SettingsCard.HeaderIcon>
+                </essential:SettingsCard>
+
+                <essential:SettingsCard x:Uid="ViewPageSettingsCrashDump">
+                    <ToggleSwitch
+                        MinWidth="10"
+                        IsOn="True"
+                        Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
+                    <essential:SettingsCard.HeaderIcon>
+                        <FontIcon Glyph="&#xEBE8;" />
                     </essential:SettingsCard.HeaderIcon>
                 </essential:SettingsCard>
 

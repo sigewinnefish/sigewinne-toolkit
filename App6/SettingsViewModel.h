@@ -41,7 +41,7 @@ namespace winrt::App6::implementation
         }
 
         wil::single_threaded_property<Windows::Foundation::Collections::IObservableVector<hstring>> CloseBehaviors = winrt::single_threaded_observable_vector<hstring>();
-
+        wil::single_threaded_property<Windows::Foundation::Collections::IObservableVector<hstring>> Languages = winrt::single_threaded_observable_vector<hstring>();
 
 	private:
         hstring m_GamePath{ to_hstring(pappsettings->gamepath()) };

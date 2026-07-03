@@ -223,6 +223,9 @@ If the toolkit is already running, relaunching it will trigger the game launch.<
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
     <value>Stealth Mode</value>
   </data>
+  <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
+    <value>Crash Dump</value>
+  </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
     <value>Game Path</value>
   </data>
@@ -311,5 +314,11 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
   <data name="MBAppCrash" xml:space="preserve">
     <value>OOPS, APP CRASH !!!
 dump has been generate at %temp%/toolkit.dmp</value>
+  </data>
+  <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
+    <value>English (Official Support)</value>
+  </data>
+  <data name="ViewPageSettingsLanguagesThirdPartyChinese" xml:space="preserve">
+    <value>Chinese (Third Party)</value>
   </data>
 </root>
