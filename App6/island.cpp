@@ -16,14 +16,15 @@ namespace Service::Island
 			if (h)
 			{
 				pmap = (IslandEnvironment*)MapViewOfFile(_Notnull_ h, FILE_MAP_READ | FILE_MAP_WRITE, 0, 0, 0);
-				goto loc_1;
+
 			}
+            else
+            {
+				h = CreateFileMapping(INVALID_HANDLE_VALUE, NULL, PAGE_READWRITE, 0, 1024, L"4F3E8543-40F7-4808-82DC-21E48A6037A7");
+				pmap = (IslandEnvironment*)MapViewOfFile(_Notnull_ h, FILE_MAP_READ | FILE_MAP_WRITE, 0, 0, 0);
+				ZeroMemory(pmap, sizeof(IslandEnvironment));
+            }
 
-			h = CreateFileMapping(INVALID_HANDLE_VALUE, NULL, PAGE_READWRITE, 0, 1024, L"4F3E8543-40F7-4808-82DC-21E48A6037A7");
-			pmap = (IslandEnvironment*)MapViewOfFile(_Notnull_ h, FILE_MAP_READ | FILE_MAP_WRITE, 0, 0, 0);
-			ZeroMemory(pmap, sizeof(IslandEnvironment));
-
-		loc_1:
 			pmap->FieldOfView = pisland->fieldofview();
 			pmap->TargetFrameRate = pisland->targetframerate();
 			pmap->EnableSetFieldOfView = pisland->enablesetfieldofview();

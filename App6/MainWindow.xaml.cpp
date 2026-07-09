@@ -123,7 +123,7 @@ namespace winrt::App6::implementation
 				{
 					if (LOWORD(lParam) == WM_RBUTTONUP || LOWORD(lParam) == WM_LBUTTONUP)
 					{
-						reinterpret_cast<MainWindow*>(dwRefData)->Activate();
+						this->Activate();
 
 					}
 
