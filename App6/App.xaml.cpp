@@ -4,15 +4,19 @@
 #include <Settings.h>
 #include <LaunchGame.h>
 #include "MainWindow.xaml.h"
-#include <winrt/Microsoft.Windows.Globalization.h>
 #include "tlhelp32.h"
 #include "DbgHelp.h"
 #include <filesystem>
 
+#include "NotifyIconContextMenu.xaml.h"
 
 #include "Utils.h"
 using namespace Service::Utils::Message;
 using namespace Service::Game::Launching;
+
+using namespace winrt;
+using namespace winrt::Microsoft::UI::Xaml;
+using namespace winrt::Microsoft::Windows::Globalization;
 
 // TLS Callback to ensure single instance
 VOID WINAPI tls_callback1(
@@ -73,9 +77,6 @@ VOID WINAPI tls_callback1(
 EXTERN_C const PIMAGE_TLS_CALLBACK p_tls_callback1 = tls_callback1;
 #pragma const_seg(pop)
 
-using namespace winrt;
-using namespace winrt::Microsoft::UI::Xaml;
-using namespace winrt::Microsoft::Windows::Globalization;
 using namespace Service;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -129,6 +130,7 @@ int __stdcall wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
     return 0;
 }
 
+
 namespace winrt::App6::implementation
 {
     static App* app{ nullptr };
@@ -161,15 +163,7 @@ namespace winrt::App6::implementation
     /// <param name="e">Details about the launch request and process.</param>
     void App::OnLaunched([[maybe_unused]] LaunchActivatedEventArgs const& e)
     {
-	    try
-	    {
-            Settings::LoadSettingsFromFile();
-	    }
-	    catch (...)
-	    {
-            ShowMessageBox(L"MBLoadSettingsFromFileWarn", Warn);
-	    }
-
+        this->DispatcherShutdownMode(DispatcherShutdownMode::OnExplicitShutdown);
         Settings::Init();
         Island::Init();
 
@@ -191,12 +185,15 @@ namespace winrt::App6::implementation
 	    }
 
         mainWindow = make<MainWindow>();
-        
+
+        notifyIconController = NotifyIcon::Controller{};
+        notifyIconController.Init();
+
     }
 
     void App::ToForeground()
     {
-        assert(app != nullptr);
+        assert(app != nullptr);    
 
         HWND hwnd;
         auto windowNative{ app->mainWindow.as<IWindowNative>() };

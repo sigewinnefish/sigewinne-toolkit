@@ -3,15 +3,12 @@
 #if __has_include("MainWindow.g.cpp")
 #include "MainWindow.g.cpp"
 #endif
-#include <winrt/Microsoft.UI.Interop.h>
-#include <winrt/Windows.UI.Xaml.Interop.h>
-#include "resource.h"
-#include <commctrl.h>
+
 #include <Settings.h>
-#include "Utils.h"
+
 
 using namespace Service::Settings;
-using namespace Service::Utils;
+
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -22,9 +19,9 @@ namespace winrt::App6::implementation
 	MainWindow::MainWindow()
 	{
 		InitWindow();
-		// Xaml objects should not call InitializeComponent during construction.
-		// See https://github.com/microsoft/cppwinrt/tree/master/nuget#initializecomponent
+
 	}
+
 
     HWND MainWindow::GetWindowHandle()
     {
@@ -34,28 +31,6 @@ namespace winrt::App6::implementation
             window.as<IWindowNative>()->get_WindowHandle(&_hwnd);
         }
         return _hwnd;
-    }
-
-    void MainWindow::AddNotifyIcon()
-    {
-
-		hstring appname = ResourceGetString(const_cast<wchar_t*>(L"NotifyIconName"));
-		guid gNotifyIcon("21a2acbc-3a44-43c8-860a-f8e7151b2623");
-		NOTIFYICONDATAW nid = {};
-		nid.cbSize = sizeof(NOTIFYICONDATAW);
-		nid.hWnd = GetWindowHandle();
-		nid.uID = 0;
-		nid.guidItem = gNotifyIcon;
-		nid.hBalloonIcon = 0;
-		nid.uFlags = NIF_MESSAGE | NIF_ICON | NIF_SHOWTIP | NIF_TIP | NIF_GUID | NIF_STATE;
-		nid.uCallbackMessage = NotifyIconCallbackMessage;
-		nid.hIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_ICON1));
-		wcscpy_s(nid.szTip, appname.c_str());
-		if (Shell_NotifyIconW(NIM_ADD, &nid))
-		{
-			Shell_NotifyIconW(NIM_SETVERSION, &nid);
-		}
-		
     }
 
     void MainWindow::Exp1()
@@ -108,47 +83,16 @@ namespace winrt::App6::implementation
 		this->AppWindow().Presenter().try_as<OverlappedPresenter>().PreferredMinimumWidth(static_cast<int32_t>(1000 * scale));
 		this->AppWindow().Presenter().try_as<OverlappedPresenter>().PreferredMinimumHeight(static_cast<int32_t>(600 * scale));
 
-		// NotifyIcon
-
-		this->TaskbarCreatedMessage = RegisterWindowMessageW(L"TaskbarCreated");
-		this->NotifyIconCallbackMessage = RegisterWindowMessageW(L"SigewinneToolkitNotifyIconCallback");
-		this->AddNotifyIcon();
-
-		SetWindowSubclass(GetWindowHandle(),
-			[](HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, UINT_PTR uIdSubclass, DWORD_PTR dwRefData)->LRESULT
-			{
-				#define this reinterpret_cast<MainWindow*>(dwRefData)
-
-				if (uMsg == this->NotifyIconCallbackMessage)
-				{
-					if (LOWORD(lParam) == WM_RBUTTONUP || LOWORD(lParam) == WM_LBUTTONUP)
-					{
-						this->Activate();
-
-					}
-
-				}
-				if (uMsg == this->TaskbarCreatedMessage)
-				{
-					this->AddNotifyIcon();
-				}
-				return DefSubclassProc(hWnd, uMsg, wParam, lParam);
-
-				#undef this
-			},
-			1, reinterpret_cast<DWORD_PTR>(this));
-
 		// Window Closing Callback
 
 		this->AppWindow().Closing([this](auto sender, AppWindowClosingEventArgs args)
 			{
                 switch (pappsettings->closebehavior())
                 {
-				case 0:
+                case 0:
+					Application::Current().Exit();
 					break;
                 case 1:
-					args.Cancel(true);
-					this->AppWindow().Hide();
 					break;
                 default:
 					break;

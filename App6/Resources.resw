@@ -252,10 +252,10 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
     <value>Close Button Behavior</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
-    <value>Exit toolkit</value>
+    <value>Exit Toolkit</value>
   </data>
-  <data name="ViewPageSettingsCloseButtonBehaviorMinimize" xml:space="preserve">
-    <value>Minimize to tray</value>
+  <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
+    <value>Close Window</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
     <value>Change the behavior of the close button</value>

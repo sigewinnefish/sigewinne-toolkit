@@ -28,7 +28,6 @@ namespace winrt::App6::implementation
         UINT TaskbarCreatedMessage;
 
         HWND GetWindowHandle();
-        void AddNotifyIcon();
 		void Exp1();
         void Exp2();
         void InitWindow();

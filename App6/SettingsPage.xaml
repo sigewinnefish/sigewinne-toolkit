@@ -39,8 +39,8 @@
                     <StackPanel Orientation="Horizontal" Spacing="160">
                         <ComboBox
                             x:Name="LangCombo"
-                            MinWidth="200"
                             Width="auto"
+                            MinWidth="200"
                             essential:ComboBoxHelper.AcrylicWorkaround="True"
                             IsEnabled="{x:Bind LangOverrideToggle.IsOn, Mode=OneWay}"
                             ItemsSource="{x:Bind ViewModel.Languages}"
