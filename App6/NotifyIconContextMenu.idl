@@ -1,0 +1,8 @@
+namespace App6
+{
+    [default_interface]
+    runtimeclass NotifyIconContextMenu : Microsoft.UI.Xaml.Controls.Flyout
+    {
+        NotifyIconContextMenu();
+    }
+}

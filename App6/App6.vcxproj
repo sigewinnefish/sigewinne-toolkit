@@ -160,6 +160,11 @@
       <DependentUpon>MainView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClInclude>
+    <ClInclude Include="NotifyIconContextMenu.xaml.h">
+      <DependentUpon>NotifyIconContextMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="Controller.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -202,6 +207,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml" />
+    <Page Include="NotifyIconContextMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="RightAlignedCompactToggleSwitch.xaml" />
     <Page Include="SettingsPage.xaml">
       <SubType>Designer</SubType>
@@ -224,6 +232,11 @@
     <ClCompile Include="HoYoLogin.cpp" />
     <ClCompile Include="MainView.xaml.cpp">
       <DependentUpon>MainView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="NotifyIconContextMenu.xaml.cpp">
+      <DependentUpon>NotifyIconContextMenu.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="settings.cpp" />
@@ -284,6 +297,10 @@
     <Midl Include="MainWindow.idl">
       <SubType>Code</SubType>
       <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="NotifyIconContextMenu.idl">
+      <DependentUpon>NotifyIconContextMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
     <Midl Include="SettingsViewModel.idl" />
     <Midl Include="SettingsPage.idl">

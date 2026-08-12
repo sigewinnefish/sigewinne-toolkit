@@ -13,6 +13,7 @@ namespace App6
 		String  GamePath;
 		Int32  CloseBehaviorIndex;
 		Windows.Foundation.Collections.IObservableVector<String> CloseBehaviors{ get; };
+		Windows.Foundation.Collections.IObservableVector<String> Languages{ get; };
 	}
 
 }

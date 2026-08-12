@@ -19,7 +19,7 @@
             Grid.Row="0"
             IsBackButtonVisible="False"
             IsPaneToggleButtonVisible="False"
-            Subtitle="Toolkit v6.7b0">
+            Subtitle="Toolkit v7.0b0">
 
             <TitleBar.LeftHeader>
                 <ImageIcon

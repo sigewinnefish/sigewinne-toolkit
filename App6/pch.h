@@ -32,6 +32,7 @@
 #include <winrt/Microsoft.Windows.Storage.Pickers.h>
 #include <winrt/Microsoft.Windows.ApplicationModel.Resources.h>
 #include <winrt/Windows.UI.Xaml.Interop.h>
+#include <microsoft.ui.xaml.window.h>
 
 // WinUIEssential.WinUI3
 #include <winrt/Microsoft.UI.Xaml.Controls.AnimatedVisuals.h>

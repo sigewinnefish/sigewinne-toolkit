@@ -13,7 +13,10 @@ namespace winrt::App6::implementation
 	SettingsViewModel::SettingsViewModel()
 	{
 		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorExit"));
-		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorMinimize"));
+		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorCloseWindow"));
+
+		Languages.Append(ResourceGetString(L"ViewPageSettingsLanguagesDefault"));
+		Languages.Append(ResourceGetString(L"ViewPageSettingsLanguagesThirdPartyChinese"));
 		
 	}
 

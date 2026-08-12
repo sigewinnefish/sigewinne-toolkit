@@ -31,6 +31,9 @@
     <Page Include="UserView.xaml">
       <Filter>View</Filter>
     </Page>
+    <Page Include="NotifyIconContextMenu.xaml">
+      <Filter>View</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="MainWindow.idl" />
@@ -77,6 +80,9 @@
     <ClCompile Include="island.cpp">
       <Filter>Service\Island</Filter>
     </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Service\NotifyIcon</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -111,6 +117,9 @@
     <ClInclude Include="helper.h" />
     <ClInclude Include="island.h">
       <Filter>Service\Island</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Service\NotifyIcon</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -328,6 +337,9 @@
     </Filter>
     <Filter Include="Service\Island">
       <UniqueIdentifier>{9e61ffbb-317b-414f-9412-7d3c2c45c938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Service\NotifyIcon">
+      <UniqueIdentifier>{9ebe5039-b8c8-4de6-898f-0a0b93671110}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

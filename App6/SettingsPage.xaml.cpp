@@ -1,11 +1,9 @@
 #include "pch.h"
 #include "SettingsPage.xaml.h"
-#include <winrt/Microsoft.Windows.Storage.Pickers.h>
 #include "Settings.h"
 #if __has_include("SettingsPage.g.cpp")
 #include "SettingsPage.g.cpp"
 #endif
-#include <winrt/Microsoft.UI.Interop.h>
 #include "MainWindow.xaml.h"
 #include "GamePathDetect.h"
 #include "Utils.h"
