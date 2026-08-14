@@ -209,6 +209,18 @@ namespace winrt::App6::implementation
         }
     }
 
+    void App::PresentMainWindow()
+    {
+        if (mainWindow)
+        {
+            ToForeground();
+        }
+        else
+        {
+            mainWindow = make<MainWindow>();
+        }
+    }
+
     App::~App() noexcept
     {
         try

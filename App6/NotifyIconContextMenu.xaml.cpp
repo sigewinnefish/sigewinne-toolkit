@@ -19,14 +19,7 @@ namespace winrt::App6::implementation
 {
 	void NotifyIconContextMenu::Window_Click(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
 	{
-        if (App::mainWindow)
-        {
-			App::ToForeground();
-        }
-        else
-        {
-			App::mainWindow = make<MainWindow>();
-        }
+		App::PresentMainWindow();
 		
 	}
 
