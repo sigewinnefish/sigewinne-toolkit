@@ -13,13 +13,11 @@ namespace winrt::App6::implementation
 
         void OnLaunched(Microsoft::UI::Xaml::LaunchActivatedEventArgs const&);
         static void ToForeground();
-
+        inline static Microsoft::UI::Xaml::Window mainWindow{ nullptr };
         ~App();
 
 	private:
-        winrt::Microsoft::UI::Xaml::Window mainWindow{nullptr};
-        winrt::Microsoft::UI::Xaml::Window notifyIconWindow{ nullptr };
-        HWND notifyIconWindowhwnd{0};
+        
         NotifyIcon::Controller notifyIconController;
 
     };

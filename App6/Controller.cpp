@@ -4,7 +4,6 @@
 #include "Utils.h"
 #include <commctrl.h>
 
-#include "MainWindow.xaml.h"
 #include "NotifyIconContextMenu.xaml.h"
 
 using namespace Service::Utils;
@@ -111,8 +110,8 @@ namespace Service::NotifyIcon
 				{
 					if (LOWORD(lParam) == WM_RBUTTONUP || LOWORD(lParam) == WM_LBUTTONUP)
 					{
-                        //ptr->CreatePopupWindow();
-                        make<App6::implementation::MainWindow>();
+                        ptr->CreatePopupWindow();
+                        //make<App6::implementation::MainWindow>();
 					}
 
 				}

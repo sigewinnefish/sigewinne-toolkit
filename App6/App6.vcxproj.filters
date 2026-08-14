@@ -367,8 +367,4 @@
       <Filter>Resource\zh-cn</Filter>
     </PRIResource>
   </ItemGroup>
-  <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
-    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natstepfilter" />
-  </ItemGroup>
 </Project>

@@ -5,8 +5,10 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:essential="using:WinUI3Package"
     xmlns:local="using:App6"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    essential:FlyoutHelper.AcrylicWorkaround="True"
     ShouldConstrainToRootBounds="False"
     mc:Ignorable="d">
 
@@ -183,59 +185,38 @@
         </Grid.RowDefinitions>
         <Grid
             Grid.Row="0"
+            Padding="6"
             Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}"
             BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
-            BorderThickness="0,0,0,1">
+            BorderThickness="0,0,0,1"
+            ColumnSpacing="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <ImageIcon
+                Grid.Column="0"
+                Width="24"
+                Margin="4"
+                Source="/Assets/Logo.ico" />
             <TextBlock
-                Margin="8"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
                 Style="{StaticResource BodyTextBlockStyle}"
-                Text="SigeWinne Toolkit v6.7b0" />
+                Text="SigeWinne Toolkit" />
         </Grid>
 
         <StackPanel Grid.Row="1" Padding="0,2">
             <MenuFlyoutItem
-                Command="{Binding OpenScriptingWindowCommand}"
+                IsEnabled="False"
                 Style="{ThemeResource NotifyIconContextMenuFlyoutItemStyle}"
-                Text="ViewWindowScriptingTitle">
-                <MenuFlyoutItem.Icon>
-                    <FontIcon Glyph="&#xE768;" />
-                </MenuFlyoutItem.Icon>
-            </MenuFlyoutItem>
-            <MenuFlyoutItem
-                Command="{Binding OpenCompactWebView2WindowCommand}"
-                IsEnabled="True"
-                Style="{ThemeResource NotifyIconContextMenuFlyoutItemStyle}"
-                Text="ViewWindowCompactWebViewTitle">
-                <MenuFlyoutItem.Icon>
-                    <FontIcon Glyph="&#xF7ED;" />
-                </MenuFlyoutItem.Icon>
-            </MenuFlyoutItem>
-            <MenuFlyoutItem
-                Command="{Binding RestartAsElevatedCommand}"
-                IsEnabled="True"
-                Style="{ThemeResource NotifyIconContextMenuFlyoutItemStyle}"
-                Text="ViewPageSettingElevatedModeRestartAction">
+                Text="ElevatedMode">
                 <MenuFlyoutItem.Icon>
                     <FontIcon Glyph="&#xE7EF;" />
                 </MenuFlyoutItem.Icon>
             </MenuFlyoutItem>
-            <MenuFlyoutItem
-                Command="{Binding ClearWindowsIconCacheCommand}"
-                Style="{ThemeResource NotifyIconContextMenuFlyoutItemStyle}"
-                Text="ViewNotifyIconMenuClearWindowsIconCacheAction">
-                <MenuFlyoutItem.Icon>
-                    <FontIcon Glyph="&#xEBC4;" />
-                </MenuFlyoutItem.Icon>
-            </MenuFlyoutItem>
-            <MenuFlyoutItem
-                Command="{Binding TakeScreenshotCommand}"
-                Style="{ThemeResource NotifyIconContextMenuFlyoutItemStyle}"
-                Text="Take Screenshot"
-                Visibility="{Binding CanTakeScreenshot}">
-                <MenuFlyoutItem.Icon>
-                    <FontIcon Glyph="&#xE722;" />
-                </MenuFlyoutItem.Icon>
-            </MenuFlyoutItem>
+
         </StackPanel>
 
         <Grid
@@ -249,9 +230,9 @@
                 Orientation="Horizontal"
                 Spacing="2">
                 <AppBarButton
+                    x:Uid="ViewNotifyIconContextMenuWindow"
                     AllowFocusOnInteraction="True"
-                    Command="{Binding ShowWindowCommand}"
-                    Label="Window">
+                    Click="Window_Click">
                     <AppBarButton.Icon>
                         <FontIcon
                             Width="20"
@@ -260,9 +241,9 @@
                     </AppBarButton.Icon>
                 </AppBarButton>
                 <AppBarButton
+                    x:Uid="ViewNotifyIconContextMenuLaunch"
                     AllowFocusOnInteraction="True"
-                    Command="{Binding LaunchGameCommand}"
-                    Label="Launch">
+                    Click="Launch_Click">
                     <AppBarButton.Icon>
                         <FontIcon
                             Width="20"
@@ -271,9 +252,9 @@
                     </AppBarButton.Icon>
                 </AppBarButton>
                 <AppBarButton
+                    x:Uid="ViewNotifyIconContextMenuExit"
                     AllowFocusOnInteraction="True"
-                    Command="{Binding ExitCommand}"
-                    Label="Exit">
+                    Click="Exit_Click">
                     <AppBarButton.Icon>
                         <FontIcon
                             Width="20"

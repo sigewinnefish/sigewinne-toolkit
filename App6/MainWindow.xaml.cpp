@@ -104,10 +104,6 @@ namespace winrt::App6::implementation
 
 		this->Exp1();
 		this->Activate();
-		if (pappsettings->stealthmode())
-		{
-			this->AppWindow().Hide();
-		}
 
 	}
 
