@@ -111,7 +111,6 @@ namespace Service::NotifyIcon
 					if (LOWORD(lParam) == WM_RBUTTONUP || LOWORD(lParam) == WM_LBUTTONUP)
 					{
                         ptr->CreatePopupWindow();
-                        //make<App6::implementation::MainWindow>();
 					}
 
 				}

@@ -200,10 +200,9 @@ namespace winrt::App6::implementation
 
     void App::ToForeground()
     {
-        assert(app != nullptr);    
 
         HWND hwnd;
-        auto windowNative{ app->mainWindow.as<IWindowNative>() };
+        auto windowNative{ mainWindow.as<IWindowNative>() };
         if (windowNative && SUCCEEDED(windowNative->get_WindowHandle(&hwnd)))
         {
             SwitchToThisWindow(hwnd, TRUE);
