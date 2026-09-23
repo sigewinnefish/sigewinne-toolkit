@@ -4,13 +4,13 @@
 #include "Utils.h"
 #include <commctrl.h>
 
-#include "MainWindow.xaml.h"
 #include "NotifyIconContextMenu.xaml.h"
+#include "App.xaml.h"
 
 using namespace Service::Utils;
 using namespace winrt::Microsoft::UI::Xaml;
 using namespace winrt::Microsoft::UI::Xaml::Controls::Primitives;
-
+using namespace winrt::App6::implementation;
 
 namespace Service::NotifyIcon
 {
@@ -109,11 +109,16 @@ namespace Service::NotifyIcon
 
 				if (uMsg == ptr->m_NotifyIconCallbackMessage)
 				{
-					if (LOWORD(lParam) == WM_RBUTTONUP || LOWORD(lParam) == WM_LBUTTONUP)
+					if (LOWORD(lParam) == WM_RBUTTONUP)
 					{
+                        App::PresentMainWindow();
                         //ptr->CreatePopupWindow();
-                        make<App6::implementation::MainWindow>();
 					}
+
+                    if (LOWORD(lParam) == WM_LBUTTONUP)
+                    {
+                        App::PresentMainWindow();
+                    }
 
 				}
 				if (uMsg == ptr->m_TaskbarCreatedMessage)

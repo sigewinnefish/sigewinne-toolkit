@@ -167,8 +167,7 @@ namespace winrt::App6::implementation
         Settings::Init();
         Island::Init();
 
-        LaunchIfStealthMode();
-
+		//app language
 	    if (Settings::pappsettings->langoverride())
 	    {
             switch (Settings::pappsettings->lang())
@@ -184,22 +183,41 @@ namespace winrt::App6::implementation
             }
 	    }
 
-        mainWindow = make<MainWindow>();
-
         notifyIconController = NotifyIcon::Controller{};
         notifyIconController.Init();
+
+        // stealthmode
+        if (Settings::pappsettings->stealthmode())
+        {
+            Launch();
+        }
+        else
+        {
+            mainWindow = make<MainWindow>();
+        }
 
     }
 
     void App::ToForeground()
     {
-        assert(app != nullptr);    
 
         HWND hwnd;
-        auto windowNative{ app->mainWindow.as<IWindowNative>() };
+        auto windowNative{ mainWindow.as<IWindowNative>() };
         if (windowNative && SUCCEEDED(windowNative->get_WindowHandle(&hwnd)))
         {
             SwitchToThisWindow(hwnd, TRUE);
+        }
+    }
+
+    void App::PresentMainWindow()
+    {
+        if (mainWindow)
+        {
+            ToForeground();
+        }
+        else
+        {
+            mainWindow = make<MainWindow>();
         }
     }
 

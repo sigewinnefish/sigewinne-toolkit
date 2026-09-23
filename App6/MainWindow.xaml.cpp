@@ -5,7 +5,7 @@
 #endif
 
 #include <Settings.h>
-
+#include <App.xaml.h>
 
 using namespace Service::Settings;
 
@@ -93,8 +93,10 @@ namespace winrt::App6::implementation
 					Application::Current().Exit();
 					break;
                 case 1:
+					App::mainWindow = nullptr;
 					break;
                 default:
+					App::mainWindow = nullptr;
 					break;
                 }
 
@@ -104,10 +106,6 @@ namespace winrt::App6::implementation
 
 		this->Exp1();
 		this->Activate();
-		if (pappsettings->stealthmode())
-		{
-			this->AppWindow().Hide();
-		}
 
 	}
 

@@ -269,6 +269,15 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
   <data name="ViewMainHome.Content" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
+    <value>Window</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
+    <value>Launch</value>
+  </data>
   <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
     <value>Overrides the application language. A restart is required for changes to take effect.</value>
   </data>
