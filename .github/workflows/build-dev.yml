@@ -30,26 +30,32 @@ jobs:
     - uses: actions/checkout@v4
       with:
         ref: refs/heads/dev   
+    
+    - name: Cache vcpkg
+      uses: actions/cache@v5
+      with:
+       path: ~\AppData\Local\vcpkg\archives
+       key: vcpkg-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('vcpkg.json', 'vcpkg-configuration.json') }}
       
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v2
 
     - name: Restore NuGet packages
-      working-directory: ${{env.GITHUB_WORKSPACE}}
+      working-directory: ${{ github.workspace }}
       run: nuget restore ${{env.SOLUTION_FILE_PATH}}
 
     - name: vcpkg
-      working-directory: ${{env.GITHUB_WORKSPACE}}
+      working-directory: ${{ github.workspace }}
       run: vcpkg integrate install
 
     - name: Build
-      working-directory: ${{env.GITHUB_WORKSPACE}}
+      working-directory: ${{ github.workspace }}
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: msbuild /m /p:Platform=x64 /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
 
     - name: Prepare Upload Artifact
-      working-directory: ${{env.GITHUB_WORKSPACE}}
+      working-directory: ${{ github.workspace }}
       run: |
             powershell -Command "Copy-Item './x64/Release/App6' './artifact_temp/App6' -Recurse -Force -Exclude '*.pdb','*.exp','*.lib','*.xbf','*.winmd'"
             powershell -Command "Rename-Item -Path '.\artifact_temp\App6\App6.exe' -NewName 'toolbox.exe'"
