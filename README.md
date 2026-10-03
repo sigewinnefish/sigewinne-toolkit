@@ -1,4 +1,4 @@
-## sigewinne-toolkit [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sigewinnefish/sigewinne-toolkit)
+## sigewinne-toolkit
 
 Disclaimer
 
