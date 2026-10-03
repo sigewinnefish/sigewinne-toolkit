@@ -2,5 +2,11 @@
   "dependencies": [
     "protobuf",
     "xxhash"
+  ],
+  "overrides": [
+    {
+      "name": "protobuf",
+      "version": "5.29.5#2"
+    }
   ]
 }
