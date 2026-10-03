@@ -261,7 +261,7 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
     <value>Change the behavior of the close button</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
-    <value>Start the Game with Standard User Accesss Token</value>
+    <value>Start the Game with Standard User Access Token</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
     <value>Lite Version</value>
@@ -322,7 +322,7 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
   </data>
   <data name="MBAppCrash" xml:space="preserve">
     <value>OOPS, APP CRASH !!!
-dump has been generate at %temp%/toolkit.dmp</value>
+dump has been generated at %temp%/toolkit.dmp</value>
   </data>
   <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
     <value>English (Official Support)</value>
