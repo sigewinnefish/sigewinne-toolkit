@@ -144,7 +144,7 @@
                 <essential:SettingsCard x:Uid="ViewPageSettingsCrashDump">
                     <ToggleSwitch
                         MinWidth="10"
-                        IsOn="True"
+                        IsOn="{x:Bind ViewModel.CrashDump, Mode=TwoWay}"
                         Style="{ThemeResource RightAlignedCompactToggleSwitchStyle}" />
                     <essential:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xEBE8;" />

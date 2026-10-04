@@ -17,6 +17,7 @@ namespace winrt::App6::implementation
         BIND(RestrictedTokens, pappsettings, restrictedtokens);
         BIND(LangOverride, pappsettings, langoverride);
         BIND(CloseBehaviorIndex, pappsettings, closebehavior);
+        BIND(CrashDump, pappsettings, crashdump);
         
         // others
         bool IslandRestrictionsOverride();
