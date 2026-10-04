@@ -28,7 +28,8 @@ namespace winrt::App6::implementation
 	void SettingsViewModel::IslandRestrictionsOverride(bool value)
 	{
 		pappsettings->set_islandrestrictionsoverride(value);
-		if (!value && pappsettings->frameratelimitvalue() > 120)
+
+		if (!value && pisland->targetframerate() > 120)
 		{
 			pisland->set_targetframerate(120);
 			pmap->TargetFrameRate = 120;
@@ -43,7 +44,8 @@ namespace winrt::App6::implementation
 	void SettingsViewModel::FrameRateLimitOverride(bool value)
 	{
 		pappsettings->set_frameratelimitoverride(value);
-		if (!value && pappsettings->frameratelimitvalue() > 120 )
+
+		if (!value && pisland->targetframerate() > 120 )
 		{
 			pisland->set_targetframerate(120);
 			pmap->TargetFrameRate = 120;
