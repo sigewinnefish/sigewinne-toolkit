@@ -15,6 +15,7 @@ namespace Service::Game::Launching
 	
 	static void LaunchGameImpl()
 	{
+		std::wstring w_path;
 		WCHAR filename[MAX_PATH];
 		DWORD len = GetModuleFileNameW(NULL, filename, MAX_PATH);
 		THROW_HR_IF(HRESULT_FROM_WIN32(GetLastError()), len == 0);
@@ -22,21 +23,18 @@ namespace Service::Game::Launching
 		appname = appname.parent_path();
 		appname += L"\\toolkit_fulltrust.exe";
 
-		g_path = std::wstring(
-			pappsettings->gamepath().begin(),
-			pappsettings->gamepath().end()
-		);
-		SetIfHDROn();
-		GetLaunchGameParms();
-
+		auto h_path = to_hstring(pappsettings->gamepath());
+		w_path.assign(h_path.begin(), h_path.end());
 		STARTUPINFOW si{};
 		PROCESS_INFORMATION pi{};
 		si.cb = sizeof(si);
-		std::filesystem::path fs_path(g_path);
+		std::filesystem::path fs_path(w_path);
 		auto work_dir = fs_path.parent_path();
+		GetLaunchGameParms(w_path);
+		SetIfHDROn();
 		BOOL started = CreateProcessW(
 			appname.c_str(),
-			g_path.data(),
+			w_path.data(),
 			NULL,
 			NULL,
 			FALSE,
@@ -52,7 +50,7 @@ namespace Service::Game::Launching
 		
 	}
 
-	static void GetLaunchGameParms()
+	static void GetLaunchGameParms(std::wstring& w_path)
 	{
 		wchar_t width[10];
 		wchar_t height[10];
@@ -90,12 +88,12 @@ namespace Service::Game::Launching
 
 			for (const auto& arg : params_arr)
 			{
-				g_path += L" ";
-				g_path += arg.first;
+				w_path += L" ";
+				w_path += arg.first;
 				if (*arg.second != 0)
 				{
-					g_path += L" ";
-					g_path += arg.second;
+					w_path += L" ";
+					w_path += arg.second;
 				}
 
 			}
