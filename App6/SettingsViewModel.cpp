@@ -16,7 +16,7 @@ namespace winrt::App6::implementation
 		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorCloseWindow"));
 
 		Languages.Append(ResourceGetString(L"ViewPageSettingsLanguagesDefault"));
-		Languages.Append(ResourceGetString(L"ViewPageSettingsLanguagesThirdPartyChinese"));
+		Languages.Append(ResourceGetString(L"ViewPageSettingsLanguagesCommunitySimplifiedChinese"));
 		
 	}
 
