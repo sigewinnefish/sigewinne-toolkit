@@ -9,6 +9,7 @@ namespace Service::NotifyIcon
 		Controller() = default;
         void Init();
         void CreatePopupWindow();
+        void DeleteNotifyIcon();
 
     private:
         void AddNotifyIcon();
@@ -18,6 +19,7 @@ namespace Service::NotifyIcon
         HWND m_hwnd{};
         UINT m_NotifyIconCallbackMessage{};
         UINT m_TaskbarCreatedMessage{};
+        bool m_iconAdded = 0;
     };
 
 

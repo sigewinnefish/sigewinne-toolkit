@@ -45,6 +45,23 @@ namespace Service::NotifyIcon
         notifyIconWindow.Activate();
     }
 
+    void Controller::DeleteNotifyIcon()
+    {
+        if (m_iconAdded)
+        { 
+            NOTIFYICONDATAW nid{};
+            nid.cbSize = sizeof(NOTIFYICONDATAW);
+            nid.hWnd = m_hwnd;
+            nid.uID = 0;
+            nid.guidItem = winrt::guid("21a2acbc-3a44-43c8-860a-f8e7151b2623");
+            nid.uFlags = NIF_GUID;
+            if (Shell_NotifyIconW(NIM_DELETE, &nid))
+            {
+                m_iconAdded = 0;
+            }
+        }
+    }
+
     void Controller::AddNotifyIcon()
     {
 		hstring appname = ResourceGetString((L"NotifyIconName"));
@@ -61,6 +78,7 @@ namespace Service::NotifyIcon
 		wcscpy_s(nid.szTip, appname.c_str());
 		if (Shell_NotifyIconW(NIM_ADD, &nid))
 		{
+            m_iconAdded = 1;
 			Shell_NotifyIconW(NIM_SETVERSION, &nid);
 		}
     }
@@ -94,8 +112,12 @@ namespace Service::NotifyIcon
 
     void Controller::InitMessage()
     {
-
+        /*
+        Taskbar Creation Notification
+        When the taskbar is created, it registers a message with the TaskbarCreated string and then broadcasts this message to all top - level windows.
+        */
 		m_TaskbarCreatedMessage = RegisterWindowMessageW(L"TaskbarCreated");
+
 		m_NotifyIconCallbackMessage = RegisterWindowMessageW(L"SigewinneToolkitNotifyIconCallback");
     }
 

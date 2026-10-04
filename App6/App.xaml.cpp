@@ -223,6 +223,7 @@ namespace winrt::App6::implementation
 
     App::~App() noexcept
     {
+        notifyIconController.DeleteNotifyIcon();
         try
         {
             Settings::WriteSettingsToFile();
