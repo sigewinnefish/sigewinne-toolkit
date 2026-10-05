@@ -24,7 +24,7 @@ namespace Service::NotifyIcon
 
     void Controller::CreatePopupWindow()
     {
-        Window notifyIconWindow = Window{};;
+        Window notifyIconWindow = Window{};
         //notifyIconWindow.as<IWindowNative>()->get_WindowHandle(&notifyIconWindowhwnd); // get hwnd immediately
 
         notifyIconWindow.Title(L"NotifyIconXamlHost");
@@ -133,8 +133,7 @@ namespace Service::NotifyIcon
 				{
 					if (LOWORD(lParam) == WM_RBUTTONUP)
 					{
-                        App::PresentMainWindow();
-                        //ptr->CreatePopupWindow();
+                        ptr->CreatePopupWindow();
 					}
 
                     if (LOWORD(lParam) == WM_LBUTTONUP)

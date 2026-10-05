@@ -171,14 +171,14 @@ namespace winrt::App6::implementation
         notifyIconController = NotifyIcon::Controller{};
         notifyIconController.Init();
 
-        // stealthmode
+        // stealth launch the game or show main window
         if (Settings::pappsettings->stealthmode())
         {
             Launch();
         }
         else
         {
-            mainWindow = make<MainWindow>();
+            PresentMainWindow();
         }
 
     }
