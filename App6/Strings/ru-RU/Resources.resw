@@ -233,8 +233,8 @@
     <value>Переопределение ограничения частоты кадров</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>В целях безопасности Остров ограничивает частоту кадров до 120 FPS.
-Включите «Переопределение ограничения частоты кадров», чтобы изменить это ограничение.</value>
+    <value>В целях безопасности «Остров» ограничивает частоту кадров до 120 FPS.
+Включите «Обход ограничения частоты кадров», чтобы снять это ограничение.</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
     <value>Переопределение ограничений Острова</value>
@@ -324,13 +324,49 @@
     <value>ОЙ, ПРИЛОЖЕНИЕ УПАЛО !!!
 дамп сохранён в %temp%/toolkit.dmp</value>
   </data>
-  <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
+  <data name="AppLanguageDefault" xml:space="preserve">
     <value>Английский</value>
   </data>
-  <data name="ViewPageSettingsLanguagesCommunitySimplifiedChinese" xml:space="preserve">
+  <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
     <value>Упрощённый китайский</value>
   </data>
-  <data name="ViewPageSettingsLanguagesCommunityTraditionalChinese" xml:space="preserve">
+  <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
     <value>Традиционный китайский</value>
+  </data>
+  <data name="AppLanguageCommunityRussian" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="AppLanguageCommunitySpanish" xml:space="preserve">
+    <value>Испанский</value>
+  </data>
+  <data name="AppLanguageCommunityThai" xml:space="preserve">
+    <value>Тайский</value>
+  </data>
+  <data name="AppLanguageCommunityKorean" xml:space="preserve">
+    <value>Корейский</value>
+  </data>
+  <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
+    <value>Португальский</value>
+  </data>
+  <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
+    <value>Индонезийский</value>
+  </data>
+  <data name="AppLanguageCommunityItalian" xml:space="preserve">
+    <value>Итальянский</value>
+  </data>
+  <data name="AppLanguageCommunityJapanese" xml:space="preserve">
+    <value>Японский</value>
+  </data>
+  <data name="AppLanguageCommunityGerman" xml:space="preserve">
+    <value>Немецкий</value>
+  </data>
+  <data name="AppLanguageCommunityFrench" xml:space="preserve">
+    <value>Французский</value>
+  </data>
+  <data name="AppLanguageCommunityTurkish" xml:space="preserve">
+    <value>Турецкий</value>
+  </data>
+  <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
+    <value>Вьетнамский</value>
   </data>
 </root>

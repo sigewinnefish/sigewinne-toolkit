@@ -233,8 +233,8 @@
     <value>フレームレート制限の上書き</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>セキュリティ上の理由から、Islandはフレームレートを最大120 FPSに制限しています。
-この制限を変更するには「フレームレート制限の上書き」を有効にしてください。</value>
+    <value>セキュリティ上の理由により、Islandではフレームレートが最大120 FPSに制限されています。
+この制限を変更するには「フレームレート制限のオーバーライド」を有効にしてください。</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
     <value>Islandの制限の上書き</value>
@@ -324,13 +324,49 @@
     <value>あっ、アプリがクラッシュしました！！！
 ダンプは%temp%/toolkit.dmpに生成されました</value>
   </data>
-  <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
+  <data name="AppLanguageDefault" xml:space="preserve">
     <value>英語</value>
   </data>
-  <data name="ViewPageSettingsLanguagesCommunitySimplifiedChinese" xml:space="preserve">
+  <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
     <value>簡体字中国語</value>
   </data>
-  <data name="ViewPageSettingsLanguagesCommunityTraditionalChinese" xml:space="preserve">
+  <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
     <value>繁体字中国語</value>
+  </data>
+  <data name="AppLanguageCommunityRussian" xml:space="preserve">
+    <value>ロシア語</value>
+  </data>
+  <data name="AppLanguageCommunitySpanish" xml:space="preserve">
+    <value>スペイン語</value>
+  </data>
+  <data name="AppLanguageCommunityThai" xml:space="preserve">
+    <value>タイ語</value>
+  </data>
+  <data name="AppLanguageCommunityKorean" xml:space="preserve">
+    <value>韓国語</value>
+  </data>
+  <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
+    <value>ポルトガル語</value>
+  </data>
+  <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
+    <value>インドネシア語</value>
+  </data>
+  <data name="AppLanguageCommunityItalian" xml:space="preserve">
+    <value>イタリア語</value>
+  </data>
+  <data name="AppLanguageCommunityJapanese" xml:space="preserve">
+    <value>日本語</value>
+  </data>
+  <data name="AppLanguageCommunityGerman" xml:space="preserve">
+    <value>ドイツ語</value>
+  </data>
+  <data name="AppLanguageCommunityFrench" xml:space="preserve">
+    <value>フランス語</value>
+  </data>
+  <data name="AppLanguageCommunityTurkish" xml:space="preserve">
+    <value>トルコ語</value>
+  </data>
+  <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
+    <value>ベトナム語</value>
   </data>
 </root>
