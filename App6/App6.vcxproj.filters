@@ -326,9 +326,6 @@
     <Filter Include="Resource\Default">
       <UniqueIdentifier>{771ce8fb-1735-473c-b66b-bd410158b101}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource\zh-cn">
-      <UniqueIdentifier>{9434da13-63a4-469f-bf38-1607ece0f497}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Service\Utils">
       <UniqueIdentifier>{1db2d635-1278-49ae-b029-cace694c6725}</UniqueIdentifier>
     </Filter>
@@ -349,6 +346,9 @@
     </Filter>
     <Filter Include="Service\Localization">
       <UniqueIdentifier>{ff65f96a-d5bc-4a64-9f85-9880c834137a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Translations">
+      <UniqueIdentifier>{b2931f50-028a-48a6-9999-0859063e3503}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -372,8 +372,47 @@
     <PRIResource Include="Resources.resw">
       <Filter>Resource\Default</Filter>
     </PRIResource>
+    <PRIResource Include="Strings\de-DE\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\es-ES\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\fr-FR\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\id-ID\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\it-IT\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\ja-JP\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\ko-KR\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\pt-PT\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\ru-RU\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\th-TH\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\tr-TR\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\vi-VN\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
     <PRIResource Include="Strings\zh-CN\Resources.resw">
-      <Filter>Resource\zh-cn</Filter>
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\zh-TW\Resources.resw">
+      <Filter>Resource\Translations</Filter>
     </PRIResource>
   </ItemGroup>
   <ItemGroup>
