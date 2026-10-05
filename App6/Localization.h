@@ -13,7 +13,7 @@ namespace Service::Localization
        {L"AppLanguageCommunityItalian",               L"it-IT"},
        {L"AppLanguageCommunityJapanese",              L"ja-JP"},
        {L"AppLanguageCommunityKorean",                L"ko-KR"},
-       {L"AppLanguageCommunityPortuguese",            L"pt-BR"},
+       {L"AppLanguageCommunityPortuguese",            L"pt-PT"},
        {L"AppLanguageCommunityRussian",               L"ru-RU"},
        {L"AppLanguageCommunitySpanish",               L"es-ES"},
        {L"AppLanguageCommunityThai",                  L"th-TH"},
