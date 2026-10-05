@@ -118,255 +118,255 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ViewPageIslandDisableShowDamageText.Header" xml:space="preserve">
-    <value>Desactivar los números de daño</value>
+    <value>ปิดการแสดงตัวเลขความเสียหาย</value>
   </data>
   <data name="ViewPageIslandDisableFog.Header" xml:space="preserve">
-    <value>Eliminar la niebla</value>
+    <value>ลบหมอก</value>
   </data>
   <data name="ViewPageIslandEventCameraMoveHotSwitch.Header" xml:space="preserve">
-    <value>Desactivar la animación de la Habilidad Definitiva</value>
+    <value>ปิดแอนิเมชันท่าไม้ตายธาตุ</value>
   </data>
   <data name="ViewPageIslandFixLowFovScene.Header" xml:space="preserve">
-    <value>Corrección especial de interfaz</value>
+    <value>แก้ไขอินเทอร์เฟซพิเศษ</value>
   </data>
   <data name="ViewPageIslandHideQuestBannerHotSwitch.Header" xml:space="preserve">
-    <value>Cerrar el banner del mapa</value>
+    <value>ปิดแบนเนอร์แผนที่</value>
   </data>
   <data name="ViewPageIslandRedirectCombineEntry.Header" xml:space="preserve">
-    <value>Redirección de fabricación</value>
+    <value>เปลี่ยนเส้นทางการคราฟต์</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowCondensedResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Condensada</value>
+    <value>รับรางวัลด้วยเรซินควบแน่น</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowFragileResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Frágil</value>
+    <value>รับรางวัลด้วยเรซินเปราะ</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowPrimogem.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Protogemas</value>
+    <value>รับรางวัลด้วยเพรียงเทพ</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowTransientResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Transitoria</value>
+    <value>รับรางวัลด้วยเรซินชั่วคราว</value>
   </data>
   <data name="ViewPageIslandUsingTouchScreen.Header" xml:space="preserve">
-    <value>Usar entrada táctil</value>
+    <value>ใช้อินพุตแบบสัมผัส</value>
   </data>
   <data name="ViewPageHomeGameOptions.Text" xml:space="preserve">
-    <value>Opciones del juego</value>
+    <value>ตัวเลือกเกม</value>
   </data>
   <data name="ViewPageIslandRemoveOpenTeamProgress.Header" xml:space="preserve">
-    <value>Eliminar la barra de progreso de configuración del equipo</value>
+    <value>ลบแถบความคืบหน้าการตั้งค่าทีม</value>
   </data>
   <data name="ViewPageIslandTargetFov.Header" xml:space="preserve">
-    <value>Ajustar el campo de visión</value>
+    <value>ปรับ FOV</value>
   </data>
   <data name="ViewPageIslandTargetFovHotSwitch.Header" xml:space="preserve">
-    <value>Cambio rápido del campo de visión</value>
+    <value>สลับ FOV ด่วน</value>
   </data>
   <data name="ViewPageIslandTargetFps.Header" xml:space="preserve">
-    <value>Frecuencia de fotogramas objetivo</value>
+    <value>เฟรมเรตเป้าหมาย</value>
   </data>
   <data name="ViewPageIslandTargetFpsHotSwitch.Header" xml:space="preserve">
-    <value>Cambio rápido de frecuencia de fotogramas</value>
+    <value>สลับเฟรมเรตด่วน</value>
   </data>
   <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
-    <value>Opciones de la Isla</value>
+    <value>ตัวเลือก Island</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Original</value>
+    <value>รับรางวัลด้วยเรซินต้นกำเนิด</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Header" xml:space="preserve">
-    <value>HDR de Windows</value>
+    <value>Windows HDR</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Description" xml:space="preserve">
-    <value>Aprovecha los monitores compatibles con HDR para obtener imágenes más brillantes, vívidas y detalladas</value>
+    <value>ใช้ประโยชน์จากจอภาพที่รองรับ HDR เพื่อภาพที่สว่างขึ้น สดใสขึ้น และมีรายละเอียดมากขึ้น</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Header" xml:space="preserve">
-    <value>Parámetros de inicio</value>
+    <value>พารามิเตอร์การเปิดเกม</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Description" xml:space="preserve">
-    <value>Modifica su comportamiento predeterminado al iniciar el juego</value>
+    <value>ปรับเปลี่ยนพฤติกรรมเริ่มต้นเมื่อเปิดเกม</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceExclusive.Description" xml:space="preserve">
-    <value>Incompatible con navegadores integrados; operaciones como cambiar de ventana pueden provocar que el juego se bloquee</value>
+    <value>ไม่เข้ากันกับเบราว์เซอร์แบบฝัง การดำเนินการอย่างการสลับหน้าต่างอาจทำให้เกมแครช</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceFullscreen.Description" xml:space="preserve">
-    <value>Sobrescribir el estado predeterminado de pantalla completa</value>
+    <value>เขียนทับสถานะเต็มหน้าจอเริ่มต้น</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceBorderless.Description" xml:space="preserve">
-    <value>Crear la ventana como una ventana emergente, sin marco</value>
+    <value>สร้างหน้าต่างเป็นป๊อปอัป โดยไม่มีกรอบ</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenWidth.Description" xml:space="preserve">
-    <value>Sobrescribir la configuración del ancho de la ventana del juego</value>
+    <value>เขียนทับการตั้งค่าความกว้างหน้าต่างเกม</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenHeight.Description" xml:space="preserve">
-    <value>Sobrescribir la configuración de la altura de la ventana del juego</value>
+    <value>เขียนทับการตั้งค่าความสูงหน้าต่างเกม</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccount.Description" xml:space="preserve">
-    <value>Iniciar sesión con el usuario de MiYouShe / HoYoLAB seleccionado actualmente. Los parámetros de inicio deben estar habilitados.</value>
+    <value>ลงชื่อเข้าใช้ด้วยผู้ใช้ MiYouShe / HoYoLAB ที่เลือกอยู่ในปัจจุบัน ต้องเปิดใช้งานพารามิเตอร์เริ่มต้น</value>
   </data>
   <data name="ViewPageHomeLaunch.Content" xml:space="preserve">
-    <value>Iniciar</value>
+    <value>เปิดเกม</value>
   </data>
   <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
-    <value>Finalizar proceso</value>
+    <value>ปิดโปรเซส</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
-    <value>Ruta del juego Genshin Impact:</value>
+    <value>เส้นทางเกม Genshin Impact:</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
-    <value>ej.: C:\\Genshin Impact\\YuanShen.exe</value>
+    <value>เช่น: C:\\Genshin Impact\\YuanShen.exe</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
-    <value>Cuando está habilitado, este kit de herramientas inicia el juego inmediatamente al iniciarse, ocultándose en la bandeja del sistema.
-Si el kit de herramientas ya está en ejecución, volver a iniciarlo provocará el inicio del juego.</value>
+    <value>เมื่อเปิดใช้งาน ทูลคิทนี้จะเปิดเกมทันทีเมื่อเริ่มทำงาน และซ่อนอยู่ในถาดระบบ
+หากทูลคิททำงานอยู่แล้ว การเปิดใหม่จะเป็นการสั่งเปิดเกม</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
-    <value>Modo oculto</value>
+    <value>โหมดซ่อนตัว</value>
   </data>
   <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
-    <value>Volcado de bloqueo</value>
+    <value>ดัมพ์เมื่อแครช</value>
   </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
-    <value>Ruta del juego</value>
+    <value>เส้นทางเกม</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
-    <value>Anulación del límite de frecuencia de fotogramas</value>
+    <value>เขียนทับขีดจำกัดเฟรมเรต</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>Por motivos de seguridad, la Isla limita la tasa de fotogramas a un máximo de 120 FPS.
-Activa "Anulación del límite de tasa de fotogramas" para cambiar esta restricción.</value>
+    <value>ด้วยเหตุผลด้านความปลอดภัย Island จำกัดเฟรมเรตไว้ที่ 120 FPS
+เปิดใช้งาน "เขียนทับขีดจำกัดเฟรมเรต" เพื่อเปลี่ยนข้อจำกัดนี้</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
-    <value>Anulación de las restricciones de la Isla</value>
+    <value>เขียนทับข้อจำกัด Island</value>
   </data>
   <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
-    <value>Seleccionar la ruta del juego</value>
+    <value>เลือกเส้นทางเกม</value>
   </data>
   <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
-    <value>Cuando establezcas la ruta del juego, selecciona el programa del juego (Yuanshen.exe o GenshinImpact.exe) en lugar del lanzador del juego (launcher.exe)</value>
+    <value>เมื่อตั้งค่าเส้นทางเกม โปรดเลือกโปรแกรมเกม (Yuanshen.exe หรือ GenshinImpact.exe) แทนตัวเปิดเกม (launcher.exe)</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
-    <value>Tokens restringidos</value>
+    <value>โทเค็นแบบจำกัด</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
-    <value>Comportamiento del botón de cierre</value>
+    <value>การทำงานของปุ่มปิด</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
-    <value>Salir del kit de herramientas</value>
+    <value>ออกจากทูลคิท</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
-    <value>Cerrar ventana</value>
+    <value>ปิดหน้าต่าง</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
-    <value>Cambiar el comportamiento del botón de cierre</value>
+    <value>เปลี่ยนการทำงานของปุ่มปิด</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
-    <value>Iniciar el juego con el token de acceso de usuario estándar</value>
+    <value>เปิดเกมด้วยโทเค็นการเข้าถึงของผู้ใช้มาตรฐาน</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
-    <value>Versión Lite</value>
+    <value>เวอร์ชัน Lite</value>
   </data>
   <data name="ViewMainHome.Content" xml:space="preserve">
-    <value>Inicio</value>
+    <value>หน้าหลัก</value>
   </data>
   <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
-    <value>Ventana</value>
+    <value>หน้าต่าง</value>
   </data>
   <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
-    <value>Salir</value>
+    <value>ออก</value>
   </data>
   <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
-    <value>Iniciar</value>
+    <value>เปิดเกม</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
-    <value>Anula el idioma de la aplicación. Es necesario reiniciar para que los cambios surtan efecto.</value>
+    <value>เขียนทับภาษาของแอปพลิเคชัน จำเป็นต้องรีสตาร์ทเพื่อให้การเปลี่ยนแปลงมีผล</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
-    <value>Anulación del idioma</value>
+    <value>เขียนทับภาษา</value>
   </data>
   <data name="NotifyIconName" xml:space="preserve">
     <value>sigewinne toolkit</value>
   </data>
   <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
-    <value>Detección automática</value>
+    <value>ตรวจจับอัตโนมัติ</value>
   </data>
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
-    <value>LoadSettingsFromFile falló; ignóralo si es FIRSTRUN</value>
+    <value>โหลดการตั้งค่าจากไฟล์ล้มเหลว ไม่ต้องสนใจหากเป็น FIRSTRUN</value>
   </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
-    <value>Error de detección de GamePath</value>
+    <value>ตรวจหาเส้นทางเกมผิดพลาด</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>ERROR AL INICIAR EL JUEGO</value>
+    <value>เปิดเกมผิดพลาด</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
-    <value>Advertencia</value>
+    <value>คำเตือน</value>
   </data>
   <data name="MBError" xml:space="preserve">
-    <value>Error</value>
+    <value>ข้อผิดพลาด</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
-    <value>Información</value>
+    <value>ข้อมูล</value>
   </data>
   <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
-    <value>Ocultar UID</value>
+    <value>ซ่อน UID</value>
   </data>
   <data name="ViewUserViewUserRole.Text" xml:space="preserve">
-    <value>Rol</value>
+    <value>บทบาท</value>
   </data>
   <data name="ViewUserViewUserCookieOperation.Label" xml:space="preserve">
     <value>MiYouShe</value>
   </data>
   <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
-    <value>Introducir manualmente</value>
+    <value>ป้อนด้วยตนเอง</value>
   </data>
   <data name="MBAppCrash" xml:space="preserve">
-    <value>¡VAYA, LA APLICACIÓN SE BLOQUEÓ!
-Se ha generado un volcado en %temp%/toolkit.dmp</value>
+    <value>อุ๊ปส์ แอปแครช !!!
+ไฟล์ดัมพ์ถูกสร้างไว้ที่ %temp%/toolkit.dmp</value>
   </data>
   <data name="AppLanguageDefault" xml:space="preserve">
-    <value>Inglés</value>
+    <value>อังกฤษ</value>
   </data>
   <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
-    <value>Chino simplificado</value>
+    <value>จีนตัวย่อ</value>
   </data>
   <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
-    <value>Chino tradicional</value>
+    <value>จีนตัวเต็ม</value>
   </data>
   <data name="AppLanguageCommunityRussian" xml:space="preserve">
-    <value>Ruso</value>
+    <value>รัสเซีย</value>
   </data>
   <data name="AppLanguageCommunitySpanish" xml:space="preserve">
-    <value>Español</value>
+    <value>สเปน</value>
   </data>
   <data name="AppLanguageCommunityThai" xml:space="preserve">
-    <value>Tailandés</value>
+    <value>ไทย</value>
   </data>
   <data name="AppLanguageCommunityKorean" xml:space="preserve">
-    <value>Coreano</value>
+    <value>เกาหลี</value>
   </data>
   <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
-    <value>Portugués</value>
+    <value>โปรตุเกส</value>
   </data>
   <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
-    <value>Indonesio</value>
+    <value>อินโดนีเซีย</value>
   </data>
   <data name="AppLanguageCommunityItalian" xml:space="preserve">
-    <value>Italiano</value>
+    <value>อิตาลี</value>
   </data>
   <data name="AppLanguageCommunityJapanese" xml:space="preserve">
-    <value>Japonés</value>
+    <value>ญี่ปุ่น</value>
   </data>
   <data name="AppLanguageCommunityGerman" xml:space="preserve">
-    <value>Alemán</value>
+    <value>เยอรมัน</value>
   </data>
   <data name="AppLanguageCommunityFrench" xml:space="preserve">
-    <value>Francés</value>
+    <value>ฝรั่งเศส</value>
   </data>
   <data name="AppLanguageCommunityTurkish" xml:space="preserve">
-    <value>Turco</value>
+    <value>ตุรกี</value>
   </data>
   <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
-    <value>Vietnamita</value>
+    <value>เวียดนาม</value>
   </data>
 </root>

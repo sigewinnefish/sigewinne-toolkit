@@ -118,198 +118,198 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ViewPageIslandDisableShowDamageText.Header" xml:space="preserve">
-    <value>Desactivar los números de daño</value>
+    <value>Hasar Sayılarını Devre Dışı Bırak</value>
   </data>
   <data name="ViewPageIslandDisableFog.Header" xml:space="preserve">
-    <value>Eliminar la niebla</value>
+    <value>Sisi Kaldır</value>
   </data>
   <data name="ViewPageIslandEventCameraMoveHotSwitch.Header" xml:space="preserve">
-    <value>Desactivar la animación de la Habilidad Definitiva</value>
+    <value>Element Patlaması Animasyonunu Devre Dışı Bırak</value>
   </data>
   <data name="ViewPageIslandFixLowFovScene.Header" xml:space="preserve">
-    <value>Corrección especial de interfaz</value>
+    <value>Özel Arayüz Düzeltmesi</value>
   </data>
   <data name="ViewPageIslandHideQuestBannerHotSwitch.Header" xml:space="preserve">
-    <value>Cerrar el banner del mapa</value>
+    <value>Harita bannerını kapat</value>
   </data>
   <data name="ViewPageIslandRedirectCombineEntry.Header" xml:space="preserve">
-    <value>Redirección de fabricación</value>
+    <value>Üretim Yönlendirmesi</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowCondensedResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Condensada</value>
+    <value>Yoğunlaştırılmış Reçine ile Ödülleri Al</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowFragileResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Frágil</value>
+    <value>Kırılgan Reçine ile Ödülleri Al</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowPrimogem.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Protogemas</value>
+    <value>Primogem ile Ödülleri Al</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowTransientResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Transitoria</value>
+    <value>Geçici Reçine ile Ödülleri Al</value>
   </data>
   <data name="ViewPageIslandUsingTouchScreen.Header" xml:space="preserve">
-    <value>Usar entrada táctil</value>
+    <value>Dokunmatik Girişi Kullan</value>
   </data>
   <data name="ViewPageHomeGameOptions.Text" xml:space="preserve">
-    <value>Opciones del juego</value>
+    <value>Oyun Seçenekleri</value>
   </data>
   <data name="ViewPageIslandRemoveOpenTeamProgress.Header" xml:space="preserve">
-    <value>Eliminar la barra de progreso de configuración del equipo</value>
+    <value>Takım Yapılandırma İlerleme Çubuğunu Kaldır</value>
   </data>
   <data name="ViewPageIslandTargetFov.Header" xml:space="preserve">
-    <value>Ajustar el campo de visión</value>
+    <value>Görüş Açısını Ayarla</value>
   </data>
   <data name="ViewPageIslandTargetFovHotSwitch.Header" xml:space="preserve">
-    <value>Cambio rápido del campo de visión</value>
+    <value>Görüş Açısı Hızlı Değiştirme</value>
   </data>
   <data name="ViewPageIslandTargetFps.Header" xml:space="preserve">
-    <value>Frecuencia de fotogramas objetivo</value>
+    <value>Hedef Kare Hızı</value>
   </data>
   <data name="ViewPageIslandTargetFpsHotSwitch.Header" xml:space="preserve">
-    <value>Cambio rápido de frecuencia de fotogramas</value>
+    <value>Kare Hızı Hızlı Değiştirme</value>
   </data>
   <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
-    <value>Opciones de la Isla</value>
+    <value>Ada Seçenekleri</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Original</value>
+    <value>Özgün Reçine ile Ödülleri Al</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Header" xml:space="preserve">
-    <value>HDR de Windows</value>
+    <value>Windows HDR</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Description" xml:space="preserve">
-    <value>Aprovecha los monitores compatibles con HDR para obtener imágenes más brillantes, vívidas y detalladas</value>
+    <value>Daha parlak, daha canlı ve daha ayrıntılı görüntüler için HDR destekli monitörlerden yararlanın</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Header" xml:space="preserve">
-    <value>Parámetros de inicio</value>
+    <value>Başlatma Parametreleri</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Description" xml:space="preserve">
-    <value>Modifica su comportamiento predeterminado al iniciar el juego</value>
+    <value>Oyun başlangıcındaki varsayılan davranışını değiştirin</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceExclusive.Description" xml:space="preserve">
-    <value>Incompatible con navegadores integrados; operaciones como cambiar de ventana pueden provocar que el juego se bloquee</value>
+    <value>Gömülü tarayıcılarla uyumlu değildir; pencere değiştirme gibi işlemler oyunun çökmesine neden olabilir</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceFullscreen.Description" xml:space="preserve">
-    <value>Sobrescribir el estado predeterminado de pantalla completa</value>
+    <value>Varsayılan tam ekran durumunu geçersiz kıl</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceBorderless.Description" xml:space="preserve">
-    <value>Crear la ventana como una ventana emergente, sin marco</value>
+    <value>Pencereyi çerçevesiz, açılır pencere olarak oluştur</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenWidth.Description" xml:space="preserve">
-    <value>Sobrescribir la configuración del ancho de la ventana del juego</value>
+    <value>Oyun penceresi genişlik ayarını geçersiz kıl</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenHeight.Description" xml:space="preserve">
-    <value>Sobrescribir la configuración de la altura de la ventana del juego</value>
+    <value>Oyun penceresi yükseklik ayarını geçersiz kıl</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccount.Description" xml:space="preserve">
-    <value>Iniciar sesión con el usuario de MiYouShe / HoYoLAB seleccionado actualmente. Los parámetros de inicio deben estar habilitados.</value>
+    <value>Şu anda seçili MiYouShe / HoYoLAB kullanıcısıyla oturum açın. Başlatma parametrelerinin etkinleştirilmesi gerekir</value>
   </data>
   <data name="ViewPageHomeLaunch.Content" xml:space="preserve">
-    <value>Iniciar</value>
+    <value>Başlat</value>
   </data>
   <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
-    <value>Finalizar proceso</value>
+    <value>İşlemi Sonlandır</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
-    <value>Ruta del juego Genshin Impact:</value>
+    <value>Genshin Impact Oyun Yolu:</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
-    <value>ej.: C:\\Genshin Impact\\YuanShen.exe</value>
+    <value>örn: C:\\Genshin Impact\\YuanShen.exe</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
-    <value>Cuando está habilitado, este kit de herramientas inicia el juego inmediatamente al iniciarse, ocultándose en la bandeja del sistema.
-Si el kit de herramientas ya está en ejecución, volver a iniciarlo provocará el inicio del juego.</value>
+    <value>Etkinleştirildiğinde, bu araç başlangıçta oyunu hemen başlatır ve sistem tepsisinde gizlenir.
+Araç zaten çalışıyorsa, yeniden başlatılması oyunun başlatılmasını tetikler.</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
-    <value>Modo oculto</value>
+    <value>Gizli Mod</value>
   </data>
   <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
-    <value>Volcado de bloqueo</value>
+    <value>Çökme Dökümü</value>
   </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
-    <value>Ruta del juego</value>
+    <value>Oyun Yolu</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
-    <value>Anulación del límite de frecuencia de fotogramas</value>
+    <value>Kare Hızı Sınırını Geçersiz Kıl</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>Por motivos de seguridad, la Isla limita la tasa de fotogramas a un máximo de 120 FPS.
-Activa "Anulación del límite de tasa de fotogramas" para cambiar esta restricción.</value>
+    <value>Güvenlik nedeniyle Ada, Kare Hızını 120 FPS ile sınırlar.
+Bu kısıtlamayı değiştirmek için "Kare Hızı Sınırını Geçersiz Kıl" seçeneğini etkinleştirin.</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
-    <value>Anulación de las restricciones de la Isla</value>
+    <value>Ada Kısıtlamalarını Geçersiz Kıl</value>
   </data>
   <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
-    <value>Seleccionar la ruta del juego</value>
+    <value>Oyun Yolu Seç</value>
   </data>
   <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
-    <value>Cuando establezcas la ruta del juego, selecciona el programa del juego (Yuanshen.exe o GenshinImpact.exe) en lugar del lanzador del juego (launcher.exe)</value>
+    <value>Oyun yolunu ayarlarken lütfen oyun başlatıcısı (launcher.exe) yerine oyun programını (Yuanshen.exe veya GenshinImpact.exe) seçin</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
-    <value>Tokens restringidos</value>
+    <value>Kısıtlı Belirteçler</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
-    <value>Comportamiento del botón de cierre</value>
+    <value>Kapatma Düğmesi Davranışı</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
-    <value>Salir del kit de herramientas</value>
+    <value>Araçtan Çık</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
-    <value>Cerrar ventana</value>
+    <value>Pencereyi Kapat</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
-    <value>Cambiar el comportamiento del botón de cierre</value>
+    <value>Kapatma düğmesinin davranışını değiştirin</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
-    <value>Iniciar el juego con el token de acceso de usuario estándar</value>
+    <value>Oyunu Standart Kullanıcı Erişim Belirteci ile Başlat</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
-    <value>Versión Lite</value>
+    <value>Hafif Sürüm</value>
   </data>
   <data name="ViewMainHome.Content" xml:space="preserve">
-    <value>Inicio</value>
+    <value>Ana Sayfa</value>
   </data>
   <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
-    <value>Ventana</value>
+    <value>Pencere</value>
   </data>
   <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
-    <value>Salir</value>
+    <value>Çıkış</value>
   </data>
   <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
-    <value>Iniciar</value>
+    <value>Başlat</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
-    <value>Anula el idioma de la aplicación. Es necesario reiniciar para que los cambios surtan efecto.</value>
+    <value>Uygulama dilini geçersiz kılar. Değişikliklerin etkili olması için yeniden başlatma gerekir.</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
-    <value>Anulación del idioma</value>
+    <value>Dil Geçersiz Kılma</value>
   </data>
   <data name="NotifyIconName" xml:space="preserve">
     <value>sigewinne toolkit</value>
   </data>
   <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
-    <value>Detección automática</value>
+    <value>Otomatik Algıla</value>
   </data>
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
-    <value>LoadSettingsFromFile falló; ignóralo si es FIRSTRUN</value>
+    <value>LoadSettingsFromFile başarısız oldu, FIRSTRUN ise yok sayın</value>
   </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
-    <value>Error de detección de GamePath</value>
+    <value>Oyun Yolu Algılama Hatası</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>ERROR AL INICIAR EL JUEGO</value>
+    <value>OYUN BAŞLATMA HATASI</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
-    <value>Advertencia</value>
+    <value>Uyarı</value>
   </data>
   <data name="MBError" xml:space="preserve">
-    <value>Error</value>
+    <value>Hata</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
-    <value>Información</value>
+    <value>Bilgi</value>
   </data>
   <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
-    <value>Ocultar UID</value>
+    <value>UID'yi Gizle</value>
   </data>
   <data name="ViewUserViewUserRole.Text" xml:space="preserve">
     <value>Rol</value>
@@ -318,55 +318,55 @@ Activa "Anulación del límite de tasa de fotogramas" para cambiar esta restricc
     <value>MiYouShe</value>
   </data>
   <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
-    <value>Introducir manualmente</value>
+    <value>Manuel Olarak Gir</value>
   </data>
   <data name="MBAppCrash" xml:space="preserve">
-    <value>¡VAYA, LA APLICACIÓN SE BLOQUEÓ!
-Se ha generado un volcado en %temp%/toolkit.dmp</value>
+    <value>OOPS, UYGULAMA ÇÖKTÜ !!!
+döküm dosyası %temp%/toolkit.dmp konumunda oluşturuldu</value>
   </data>
   <data name="AppLanguageDefault" xml:space="preserve">
-    <value>Inglés</value>
+    <value>İngilizce</value>
   </data>
   <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
-    <value>Chino simplificado</value>
+    <value>Basitleştirilmiş Çince</value>
   </data>
   <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
-    <value>Chino tradicional</value>
+    <value>Geleneksel Çince</value>
   </data>
   <data name="AppLanguageCommunityRussian" xml:space="preserve">
-    <value>Ruso</value>
+    <value>Rusça</value>
   </data>
   <data name="AppLanguageCommunitySpanish" xml:space="preserve">
-    <value>Español</value>
+    <value>İspanyolca</value>
   </data>
   <data name="AppLanguageCommunityThai" xml:space="preserve">
-    <value>Tailandés</value>
+    <value>Tayca</value>
   </data>
   <data name="AppLanguageCommunityKorean" xml:space="preserve">
-    <value>Coreano</value>
+    <value>Korece</value>
   </data>
   <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
-    <value>Portugués</value>
+    <value>Portekizce</value>
   </data>
   <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
-    <value>Indonesio</value>
+    <value>Endonezce</value>
   </data>
   <data name="AppLanguageCommunityItalian" xml:space="preserve">
-    <value>Italiano</value>
+    <value>İtalyanca</value>
   </data>
   <data name="AppLanguageCommunityJapanese" xml:space="preserve">
-    <value>Japonés</value>
+    <value>Japonca</value>
   </data>
   <data name="AppLanguageCommunityGerman" xml:space="preserve">
-    <value>Alemán</value>
+    <value>Almanca</value>
   </data>
   <data name="AppLanguageCommunityFrench" xml:space="preserve">
-    <value>Francés</value>
+    <value>Fransızca</value>
   </data>
   <data name="AppLanguageCommunityTurkish" xml:space="preserve">
-    <value>Turco</value>
+    <value>Türkçe</value>
   </data>
   <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
-    <value>Vietnamita</value>
+    <value>Vietnamca</value>
   </data>
 </root>

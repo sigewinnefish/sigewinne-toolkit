@@ -118,255 +118,255 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ViewPageIslandDisableShowDamageText.Header" xml:space="preserve">
-    <value>Desactivar los números de daño</value>
+    <value>데미지 숫자 비활성화</value>
   </data>
   <data name="ViewPageIslandDisableFog.Header" xml:space="preserve">
-    <value>Eliminar la niebla</value>
+    <value>안개 제거</value>
   </data>
   <data name="ViewPageIslandEventCameraMoveHotSwitch.Header" xml:space="preserve">
-    <value>Desactivar la animación de la Habilidad Definitiva</value>
+    <value>원소 폭발 애니메이션 비활성화</value>
   </data>
   <data name="ViewPageIslandFixLowFovScene.Header" xml:space="preserve">
-    <value>Corrección especial de interfaz</value>
+    <value>특수 인터페이스 수정</value>
   </data>
   <data name="ViewPageIslandHideQuestBannerHotSwitch.Header" xml:space="preserve">
-    <value>Cerrar el banner del mapa</value>
+    <value>지도 배너 닫기</value>
   </data>
   <data name="ViewPageIslandRedirectCombineEntry.Header" xml:space="preserve">
-    <value>Redirección de fabricación</value>
+    <value>제작 리디렉션</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowCondensedResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Condensada</value>
+    <value>응축 레진으로 보상 수령</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowFragileResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Frágil</value>
+    <value>취약 레진으로 보상 수령</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowPrimogem.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Protogemas</value>
+    <value>원석으로 보상 수령</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowTransientResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Transitoria</value>
+    <value>한시 레진으로 보상 수령</value>
   </data>
   <data name="ViewPageIslandUsingTouchScreen.Header" xml:space="preserve">
-    <value>Usar entrada táctil</value>
+    <value>터치 입력 사용</value>
   </data>
   <data name="ViewPageHomeGameOptions.Text" xml:space="preserve">
-    <value>Opciones del juego</value>
+    <value>게임 옵션</value>
   </data>
   <data name="ViewPageIslandRemoveOpenTeamProgress.Header" xml:space="preserve">
-    <value>Eliminar la barra de progreso de configuración del equipo</value>
+    <value>팀 구성 진행 표시줄 제거</value>
   </data>
   <data name="ViewPageIslandTargetFov.Header" xml:space="preserve">
-    <value>Ajustar el campo de visión</value>
+    <value>시야각 조절</value>
   </data>
   <data name="ViewPageIslandTargetFovHotSwitch.Header" xml:space="preserve">
-    <value>Cambio rápido del campo de visión</value>
+    <value>시야각 핫 스위치</value>
   </data>
   <data name="ViewPageIslandTargetFps.Header" xml:space="preserve">
-    <value>Frecuencia de fotogramas objetivo</value>
+    <value>목표 프레임 레이트</value>
   </data>
   <data name="ViewPageIslandTargetFpsHotSwitch.Header" xml:space="preserve">
-    <value>Cambio rápido de frecuencia de fotogramas</value>
+    <value>프레임 레이트 핫 스위치</value>
   </data>
   <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
-    <value>Opciones de la Isla</value>
+    <value>아일랜드 옵션</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Original</value>
+    <value>원소 레진으로 보상 수령</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Header" xml:space="preserve">
-    <value>HDR de Windows</value>
+    <value>Windows HDR</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Description" xml:space="preserve">
-    <value>Aprovecha los monitores compatibles con HDR para obtener imágenes más brillantes, vívidas y detalladas</value>
+    <value>HDR을 지원하는 모니터를 활용하면 더 밝고 생생하며 세밀한 화면을 즐길 수 있습니다</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Header" xml:space="preserve">
-    <value>Parámetros de inicio</value>
+    <value>실행 매개변수</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Description" xml:space="preserve">
-    <value>Modifica su comportamiento predeterminado al iniciar el juego</value>
+    <value>게임 시작 시 기본 동작을 수정합니다</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceExclusive.Description" xml:space="preserve">
-    <value>Incompatible con navegadores integrados; operaciones como cambiar de ventana pueden provocar que el juego se bloquee</value>
+    <value>내장 브라우저와 호환되지 않으며, 창 전환 등의 작업 시 게임이 충돌할 수 있습니다</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceFullscreen.Description" xml:space="preserve">
-    <value>Sobrescribir el estado predeterminado de pantalla completa</value>
+    <value>기본 전체 화면 상태 덮어쓰기</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceBorderless.Description" xml:space="preserve">
-    <value>Crear la ventana como una ventana emergente, sin marco</value>
+    <value>프레임 없이 팝업으로 창 생성</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenWidth.Description" xml:space="preserve">
-    <value>Sobrescribir la configuración del ancho de la ventana del juego</value>
+    <value>게임 창 너비 설정 덮어쓰기</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenHeight.Description" xml:space="preserve">
-    <value>Sobrescribir la configuración de la altura de la ventana del juego</value>
+    <value>게임 창 높이 설정 덮어쓰기</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccount.Description" xml:space="preserve">
-    <value>Iniciar sesión con el usuario de MiYouShe / HoYoLAB seleccionado actualmente. Los parámetros de inicio deben estar habilitados.</value>
+    <value>현재 선택된 미유시 / HoYoLAB 계정으로 로그인합니다. 시작 매개변수를 활성화해야 합니다</value>
   </data>
   <data name="ViewPageHomeLaunch.Content" xml:space="preserve">
-    <value>Iniciar</value>
+    <value>실행</value>
   </data>
   <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
-    <value>Finalizar proceso</value>
+    <value>프로세스 종료</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
-    <value>Ruta del juego Genshin Impact:</value>
+    <value>원신 게임 경로:</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
-    <value>ej.: C:\\Genshin Impact\\YuanShen.exe</value>
+    <value>예: C:\\Genshin Impact\\YuanShen.exe</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
-    <value>Cuando está habilitado, este kit de herramientas inicia el juego inmediatamente al iniciarse, ocultándose en la bandeja del sistema.
-Si el kit de herramientas ya está en ejecución, volver a iniciarlo provocará el inicio del juego.</value>
+    <value>활성화하면 시작 시 이 툴킷이 즉시 게임을 실행하고 시스템 트레이에 숨겨집니다.
+툴킷이 이미 실행 중이라면 다시 실행할 때 게임이 실행됩니다.</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
-    <value>Modo oculto</value>
+    <value>스텔스 모드</value>
   </data>
   <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
-    <value>Volcado de bloqueo</value>
+    <value>충돌 덤프</value>
   </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
-    <value>Ruta del juego</value>
+    <value>게임 경로</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
-    <value>Anulación del límite de frecuencia de fotogramas</value>
+    <value>프레임 레이트 제한 재정의</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>Por motivos de seguridad, la Isla limita la tasa de fotogramas a un máximo de 120 FPS.
-Activa "Anulación del límite de tasa de fotogramas" para cambiar esta restricción.</value>
+    <value>보안상의 이유로 아일랜드는 프레임 레이트를 최대 120 FPS로 제한합니다.
+이 제한을 변경하려면 "프레임 레이트 제한 재정의"를 활성화하세요.</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
-    <value>Anulación de las restricciones de la Isla</value>
+    <value>아일랜드 제한 재정의</value>
   </data>
   <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
-    <value>Seleccionar la ruta del juego</value>
+    <value>게임 경로 선택</value>
   </data>
   <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
-    <value>Cuando establezcas la ruta del juego, selecciona el programa del juego (Yuanshen.exe o GenshinImpact.exe) en lugar del lanzador del juego (launcher.exe)</value>
+    <value>게임 경로를 설정할 때 게임 런처(launcher.exe)가 아닌 게임 프로그램(Yuanshen.exe 또는 GenshinImpact.exe)을 선택하세요</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
-    <value>Tokens restringidos</value>
+    <value>제한된 토큰</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
-    <value>Comportamiento del botón de cierre</value>
+    <value>닫기 버튼 동작</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
-    <value>Salir del kit de herramientas</value>
+    <value>툴킷 종료</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
-    <value>Cerrar ventana</value>
+    <value>창 닫기</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
-    <value>Cambiar el comportamiento del botón de cierre</value>
+    <value>닫기 버튼의 동작을 변경합니다</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
-    <value>Iniciar el juego con el token de acceso de usuario estándar</value>
+    <value>표준 사용자 액세스 토큰으로 게임 시작</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
-    <value>Versión Lite</value>
+    <value>라이트 버전</value>
   </data>
   <data name="ViewMainHome.Content" xml:space="preserve">
-    <value>Inicio</value>
+    <value>홈</value>
   </data>
   <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
-    <value>Ventana</value>
+    <value>창</value>
   </data>
   <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
-    <value>Salir</value>
+    <value>종료</value>
   </data>
   <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
-    <value>Iniciar</value>
+    <value>실행</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
-    <value>Anula el idioma de la aplicación. Es necesario reiniciar para que los cambios surtan efecto.</value>
+    <value>애플리케이션 언어를 재정의합니다. 변경 사항을 적용하려면 재시작해야 합니다.</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
-    <value>Anulación del idioma</value>
+    <value>언어 재정의</value>
   </data>
   <data name="NotifyIconName" xml:space="preserve">
     <value>sigewinne toolkit</value>
   </data>
   <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
-    <value>Detección automática</value>
+    <value>자동 감지</value>
   </data>
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
-    <value>LoadSettingsFromFile falló; ignóralo si es FIRSTRUN</value>
+    <value>LoadSettingsFromFile 실패, FIRSTRUN인 경우 무시하세요</value>
   </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
-    <value>Error de detección de GamePath</value>
+    <value>GamePath 감지 오류</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>ERROR AL INICIAR EL JUEGO</value>
+    <value>게임 실행 오류</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
-    <value>Advertencia</value>
+    <value>경고</value>
   </data>
   <data name="MBError" xml:space="preserve">
-    <value>Error</value>
+    <value>오류</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
-    <value>Información</value>
+    <value>정보</value>
   </data>
   <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
-    <value>Ocultar UID</value>
+    <value>UID 숨기기</value>
   </data>
   <data name="ViewUserViewUserRole.Text" xml:space="preserve">
-    <value>Rol</value>
+    <value>역할</value>
   </data>
   <data name="ViewUserViewUserCookieOperation.Label" xml:space="preserve">
-    <value>MiYouShe</value>
+    <value>미유시</value>
   </data>
   <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
-    <value>Introducir manualmente</value>
+    <value>직접 입력</value>
   </data>
   <data name="MBAppCrash" xml:space="preserve">
-    <value>¡VAYA, LA APLICACIÓN SE BLOQUEÓ!
-Se ha generado un volcado en %temp%/toolkit.dmp</value>
+    <value>이런, 앱이 충돌했습니다!!!
+덤프가 %temp%/toolkit.dmp에 생성되었습니다</value>
   </data>
   <data name="AppLanguageDefault" xml:space="preserve">
-    <value>Inglés</value>
+    <value>영어</value>
   </data>
   <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
-    <value>Chino simplificado</value>
+    <value>중국어 간체</value>
   </data>
   <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
-    <value>Chino tradicional</value>
+    <value>중국어 번체</value>
   </data>
   <data name="AppLanguageCommunityRussian" xml:space="preserve">
-    <value>Ruso</value>
+    <value>러시아어</value>
   </data>
   <data name="AppLanguageCommunitySpanish" xml:space="preserve">
-    <value>Español</value>
+    <value>스페인어</value>
   </data>
   <data name="AppLanguageCommunityThai" xml:space="preserve">
-    <value>Tailandés</value>
+    <value>태국어</value>
   </data>
   <data name="AppLanguageCommunityKorean" xml:space="preserve">
-    <value>Coreano</value>
+    <value>한국어</value>
   </data>
   <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
-    <value>Portugués</value>
+    <value>포르투갈어</value>
   </data>
   <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
-    <value>Indonesio</value>
+    <value>인도네시아어</value>
   </data>
   <data name="AppLanguageCommunityItalian" xml:space="preserve">
-    <value>Italiano</value>
+    <value>이탈리아어</value>
   </data>
   <data name="AppLanguageCommunityJapanese" xml:space="preserve">
-    <value>Japonés</value>
+    <value>일본어</value>
   </data>
   <data name="AppLanguageCommunityGerman" xml:space="preserve">
-    <value>Alemán</value>
+    <value>독일어</value>
   </data>
   <data name="AppLanguageCommunityFrench" xml:space="preserve">
-    <value>Francés</value>
+    <value>프랑스어</value>
   </data>
   <data name="AppLanguageCommunityTurkish" xml:space="preserve">
-    <value>Turco</value>
+    <value>터키어</value>
   </data>
   <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
-    <value>Vietnamita</value>
+    <value>베트남어</value>
   </data>
 </root>

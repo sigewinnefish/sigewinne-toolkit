@@ -232,8 +232,8 @@
     <value>帧率限制覆盖</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>出于安全考虑，游戏帧率被限制在 120 FPS 以内。
-您可以启用此选项来覆盖此限制。</value>
+    <value>出于安全考虑，Island 将帧率限制在 120 FPS 以内。
+启用“帧率限制覆盖”即可更改此限制。</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
     <value>行为限制覆盖(实验性)</value>
@@ -323,13 +323,49 @@
     <value>哎呀，应用崩溃了！！！
 转储文件已生成于 %temp%/toolkit.dmp</value>
   </data>
-  <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
+  <data name="AppLanguageDefault" xml:space="preserve">
     <value>英语</value>
   </data>
-  <data name="ViewPageSettingsLanguagesCommunitySimplifiedChinese" xml:space="preserve">
+  <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
     <value>简体中文</value>
   </data>
-  <data name="ViewPageSettingsLanguagesCommunityTraditionalChinese" xml:space="preserve">
+  <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
     <value>繁体中文</value>
+  </data>
+  <data name="AppLanguageCommunityRussian" xml:space="preserve">
+    <value>俄语</value>
+  </data>
+  <data name="AppLanguageCommunitySpanish" xml:space="preserve">
+    <value>西班牙语</value>
+  </data>
+  <data name="AppLanguageCommunityThai" xml:space="preserve">
+    <value>泰语</value>
+  </data>
+  <data name="AppLanguageCommunityKorean" xml:space="preserve">
+    <value>韩语</value>
+  </data>
+  <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
+    <value>葡萄牙语</value>
+  </data>
+  <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
+    <value>印尼语</value>
+  </data>
+  <data name="AppLanguageCommunityItalian" xml:space="preserve">
+    <value>意大利语</value>
+  </data>
+  <data name="AppLanguageCommunityJapanese" xml:space="preserve">
+    <value>日语</value>
+  </data>
+  <data name="AppLanguageCommunityGerman" xml:space="preserve">
+    <value>德语</value>
+  </data>
+  <data name="AppLanguageCommunityFrench" xml:space="preserve">
+    <value>法语</value>
+  </data>
+  <data name="AppLanguageCommunityTurkish" xml:space="preserve">
+    <value>土耳其语</value>
+  </data>
+  <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
+    <value>越南语</value>
   </data>
 </root>

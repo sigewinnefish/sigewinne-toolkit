@@ -118,255 +118,255 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ViewPageIslandDisableShowDamageText.Header" xml:space="preserve">
-    <value>Desactivar los números de daño</value>
+    <value>Schadenszahlen deaktivieren</value>
   </data>
   <data name="ViewPageIslandDisableFog.Header" xml:space="preserve">
-    <value>Eliminar la niebla</value>
+    <value>Nebel entfernen</value>
   </data>
   <data name="ViewPageIslandEventCameraMoveHotSwitch.Header" xml:space="preserve">
-    <value>Desactivar la animación de la Habilidad Definitiva</value>
+    <value>Elementarexplosionsanimation deaktivieren</value>
   </data>
   <data name="ViewPageIslandFixLowFovScene.Header" xml:space="preserve">
-    <value>Corrección especial de interfaz</value>
+    <value>Spezieller Interface-Fix</value>
   </data>
   <data name="ViewPageIslandHideQuestBannerHotSwitch.Header" xml:space="preserve">
-    <value>Cerrar el banner del mapa</value>
+    <value>Kartenbanner schließen</value>
   </data>
   <data name="ViewPageIslandRedirectCombineEntry.Header" xml:space="preserve">
-    <value>Redirección de fabricación</value>
+    <value>Weiterleitung zur Herstellung</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowCondensedResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Condensada</value>
+    <value>Belohnungen mit kondensiertem Harz abholen</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowFragileResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Frágil</value>
+    <value>Belohnungen mit zerbrechlichem Harz abholen</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowPrimogem.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Protogemas</value>
+    <value>Belohnungen mit Urgestein abholen</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowTransientResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Transitoria</value>
+    <value>Belohnungen mit flüchtigem Harz abholen</value>
   </data>
   <data name="ViewPageIslandUsingTouchScreen.Header" xml:space="preserve">
-    <value>Usar entrada táctil</value>
+    <value>Touch-Eingabe verwenden</value>
   </data>
   <data name="ViewPageHomeGameOptions.Text" xml:space="preserve">
-    <value>Opciones del juego</value>
+    <value>Spieloptionen</value>
   </data>
   <data name="ViewPageIslandRemoveOpenTeamProgress.Header" xml:space="preserve">
-    <value>Eliminar la barra de progreso de configuración del equipo</value>
+    <value>Fortschrittsleiste der Teamkonfiguration entfernen</value>
   </data>
   <data name="ViewPageIslandTargetFov.Header" xml:space="preserve">
-    <value>Ajustar el campo de visión</value>
+    <value>Sichtfeld anpassen</value>
   </data>
   <data name="ViewPageIslandTargetFovHotSwitch.Header" xml:space="preserve">
-    <value>Cambio rápido del campo de visión</value>
+    <value>Sichtfeld-Schnellumschaltung</value>
   </data>
   <data name="ViewPageIslandTargetFps.Header" xml:space="preserve">
-    <value>Frecuencia de fotogramas objetivo</value>
+    <value>Zielbildrate</value>
   </data>
   <data name="ViewPageIslandTargetFpsHotSwitch.Header" xml:space="preserve">
-    <value>Cambio rápido de frecuencia de fotogramas</value>
+    <value>Bildraten-Schnellumschaltung</value>
   </data>
   <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
-    <value>Opciones de la Isla</value>
+    <value>Inseloptionen</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
-    <value>Reclamar recompensas con Resina Original</value>
+    <value>Belohnungen mit Originalharz abholen</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Header" xml:space="preserve">
-    <value>HDR de Windows</value>
+    <value>Windows HDR</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Description" xml:space="preserve">
-    <value>Aprovecha los monitores compatibles con HDR para obtener imágenes más brillantes, vívidas y detalladas</value>
+    <value>Nutzen Sie die Vorteile von Monitoren mit HDR-Unterstützung für hellere, lebendigere und detailliertere Bilder</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Header" xml:space="preserve">
-    <value>Parámetros de inicio</value>
+    <value>Startparameter</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Description" xml:space="preserve">
-    <value>Modifica su comportamiento predeterminado al iniciar el juego</value>
+    <value>Ändern Sie das Standardverhalten beim Spielstart</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceExclusive.Description" xml:space="preserve">
-    <value>Incompatible con navegadores integrados; operaciones como cambiar de ventana pueden provocar que el juego se bloquee</value>
+    <value>Inkompatibel mit eingebetteten Browsern; Vorgänge wie das Wechseln des Fensters können zum Absturz des Spiels führen</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceFullscreen.Description" xml:space="preserve">
-    <value>Sobrescribir el estado predeterminado de pantalla completa</value>
+    <value>Standard-Vollbildstatus überschreiben</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceBorderless.Description" xml:space="preserve">
-    <value>Crear la ventana como una ventana emergente, sin marco</value>
+    <value>Fenster als Popup ohne Rahmen erstellen</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenWidth.Description" xml:space="preserve">
-    <value>Sobrescribir la configuración del ancho de la ventana del juego</value>
+    <value>Breiteneinstellung des Spielfensters überschreiben</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenHeight.Description" xml:space="preserve">
-    <value>Sobrescribir la configuración de la altura de la ventana del juego</value>
+    <value>Höheneinstellung des Spielfensters überschreiben</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccount.Description" xml:space="preserve">
-    <value>Iniciar sesión con el usuario de MiYouShe / HoYoLAB seleccionado actualmente. Los parámetros de inicio deben estar habilitados.</value>
+    <value>Melden Sie sich mit dem aktuell ausgewählten MiYouShe-/HoYoLAB-Benutzer an. Startparameter müssen aktiviert sein</value>
   </data>
   <data name="ViewPageHomeLaunch.Content" xml:space="preserve">
-    <value>Iniciar</value>
+    <value>Starten</value>
   </data>
   <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
-    <value>Finalizar proceso</value>
+    <value>Prozess beenden</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
-    <value>Ruta del juego Genshin Impact:</value>
+    <value>Genshin Impact-Spielpfad:</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
-    <value>ej.: C:\\Genshin Impact\\YuanShen.exe</value>
+    <value>z. B.: C:\\Genshin Impact\\YuanShen.exe</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
-    <value>Cuando está habilitado, este kit de herramientas inicia el juego inmediatamente al iniciarse, ocultándose en la bandeja del sistema.
-Si el kit de herramientas ya está en ejecución, volver a iniciarlo provocará el inicio del juego.</value>
+    <value>Wenn aktiviert, startet dieses Toolkit das Spiel sofort beim Start und versteckt sich im Infobereich.
+Wenn das Toolkit bereits läuft, löst ein erneuter Start den Spielstart aus.</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
-    <value>Modo oculto</value>
+    <value>Tarnmodus</value>
   </data>
   <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
-    <value>Volcado de bloqueo</value>
+    <value>Absturz-Dump</value>
   </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
-    <value>Ruta del juego</value>
+    <value>Spielpfad</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
-    <value>Anulación del límite de frecuencia de fotogramas</value>
+    <value>Bildratenbegrenzung überschreiben</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>Por motivos de seguridad, la Isla limita la tasa de fotogramas a un máximo de 120 FPS.
-Activa "Anulación del límite de tasa de fotogramas" para cambiar esta restricción.</value>
+    <value>Aus Sicherheitsgründen begrenzt die Insel die Bildrate auf 120 FPS.
+Aktivieren Sie "Bildratenbegrenzung überschreiben", um diese Beschränkung zu ändern.</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
-    <value>Anulación de las restricciones de la Isla</value>
+    <value>Inselbeschränkungen überschreiben</value>
   </data>
   <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
-    <value>Seleccionar la ruta del juego</value>
+    <value>Spielpfad auswählen</value>
   </data>
   <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
-    <value>Cuando establezcas la ruta del juego, selecciona el programa del juego (Yuanshen.exe o GenshinImpact.exe) en lugar del lanzador del juego (launcher.exe)</value>
+    <value>Wählen Sie beim Festlegen des Spielpfads bitte das Spielprogramm (Yuanshen.exe oder GenshinImpact.exe) anstelle des Spiel-Launchers (launcher.exe)</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
-    <value>Tokens restringidos</value>
+    <value>Eingeschränkte Tokens</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
-    <value>Comportamiento del botón de cierre</value>
+    <value>Verhalten der Schließen-Schaltfläche</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
-    <value>Salir del kit de herramientas</value>
+    <value>Toolkit beenden</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
-    <value>Cerrar ventana</value>
+    <value>Fenster schließen</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
-    <value>Cambiar el comportamiento del botón de cierre</value>
+    <value>Ändern Sie das Verhalten der Schließen-Schaltfläche</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
-    <value>Iniciar el juego con el token de acceso de usuario estándar</value>
+    <value>Spiel mit Standardbenutzer-Zugriffstoken starten</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
-    <value>Versión Lite</value>
+    <value>Lite-Version</value>
   </data>
   <data name="ViewMainHome.Content" xml:space="preserve">
-    <value>Inicio</value>
+    <value>Startseite</value>
   </data>
   <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
-    <value>Ventana</value>
+    <value>Fenster</value>
   </data>
   <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
-    <value>Salir</value>
+    <value>Beenden</value>
   </data>
   <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
-    <value>Iniciar</value>
+    <value>Starten</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
-    <value>Anula el idioma de la aplicación. Es necesario reiniciar para que los cambios surtan efecto.</value>
+    <value>Überschreibt die Sprache der Anwendung. Ein Neustart ist erforderlich, damit Änderungen wirksam werden.</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
-    <value>Anulación del idioma</value>
+    <value>Sprachüberschreibung</value>
   </data>
   <data name="NotifyIconName" xml:space="preserve">
     <value>sigewinne toolkit</value>
   </data>
   <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
-    <value>Detección automática</value>
+    <value>Automatisch erkennen</value>
   </data>
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
-    <value>LoadSettingsFromFile falló; ignóralo si es FIRSTRUN</value>
+    <value>LoadSettingsFromFile fehlgeschlagen, ignorieren, falls FIRSTRUN</value>
   </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
-    <value>Error de detección de GamePath</value>
+    <value>GamePath-Erkennungsfehler</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>ERROR AL INICIAR EL JUEGO</value>
+    <value>SPIELSTARTFEHLER</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
-    <value>Advertencia</value>
+    <value>Warnung</value>
   </data>
   <data name="MBError" xml:space="preserve">
-    <value>Error</value>
+    <value>Fehler</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
-    <value>Información</value>
+    <value>Info</value>
   </data>
   <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
-    <value>Ocultar UID</value>
+    <value>UID ausblenden</value>
   </data>
   <data name="ViewUserViewUserRole.Text" xml:space="preserve">
-    <value>Rol</value>
+    <value>Rolle</value>
   </data>
   <data name="ViewUserViewUserCookieOperation.Label" xml:space="preserve">
     <value>MiYouShe</value>
   </data>
   <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
-    <value>Introducir manualmente</value>
+    <value>Manuell eingeben</value>
   </data>
   <data name="MBAppCrash" xml:space="preserve">
-    <value>¡VAYA, LA APLICACIÓN SE BLOQUEÓ!
-Se ha generado un volcado en %temp%/toolkit.dmp</value>
+    <value>HOPPLA, APP-ABSTURZ !!!
+Dump wurde unter %temp%/toolkit.dmp erstellt</value>
   </data>
   <data name="AppLanguageDefault" xml:space="preserve">
-    <value>Inglés</value>
+    <value>Englisch</value>
   </data>
   <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
-    <value>Chino simplificado</value>
+    <value>Vereinfachtes Chinesisch</value>
   </data>
   <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
-    <value>Chino tradicional</value>
+    <value>Traditionelles Chinesisch</value>
   </data>
   <data name="AppLanguageCommunityRussian" xml:space="preserve">
-    <value>Ruso</value>
+    <value>Russisch</value>
   </data>
   <data name="AppLanguageCommunitySpanish" xml:space="preserve">
-    <value>Español</value>
+    <value>Spanisch</value>
   </data>
   <data name="AppLanguageCommunityThai" xml:space="preserve">
-    <value>Tailandés</value>
+    <value>Thailändisch</value>
   </data>
   <data name="AppLanguageCommunityKorean" xml:space="preserve">
-    <value>Coreano</value>
+    <value>Koreanisch</value>
   </data>
   <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
-    <value>Portugués</value>
+    <value>Portugiesisch</value>
   </data>
   <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
-    <value>Indonesio</value>
+    <value>Indonesisch</value>
   </data>
   <data name="AppLanguageCommunityItalian" xml:space="preserve">
-    <value>Italiano</value>
+    <value>Italienisch</value>
   </data>
   <data name="AppLanguageCommunityJapanese" xml:space="preserve">
-    <value>Japonés</value>
+    <value>Japanisch</value>
   </data>
   <data name="AppLanguageCommunityGerman" xml:space="preserve">
-    <value>Alemán</value>
+    <value>Deutsch</value>
   </data>
   <data name="AppLanguageCommunityFrench" xml:space="preserve">
-    <value>Francés</value>
+    <value>Französisch</value>
   </data>
   <data name="AppLanguageCommunityTurkish" xml:space="preserve">
-    <value>Turco</value>
+    <value>Türkisch</value>
   </data>
   <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
-    <value>Vietnamita</value>
+    <value>Vietnamesisch</value>
   </data>
 </root>
