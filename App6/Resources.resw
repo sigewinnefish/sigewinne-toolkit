@@ -234,7 +234,7 @@ If the toolkit is already running, relaunching it will trigger the game launch.<
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
     <value>For security reasons, the Island limits Frame Rate up to 120 FPS.
-Enable “Frame Rate Limit Override” to change this restriction.</value>
+Enable "Frame Rate Limit Override" to change this restriction.</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
     <value>Island Restrictions Override</value>
@@ -324,13 +324,49 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
     <value>OOPS, APP CRASH !!!
 dump has been generated at %temp%/toolkit.dmp</value>
   </data>
-  <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
+  <data name="AppLanguageDefault" xml:space="preserve">
     <value>English</value>
   </data>
-  <data name="ViewPageSettingsLanguagesCommunitySimplifiedChinese" xml:space="preserve">
+  <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
     <value>Simplified Chinese</value>
   </data>
-  <data name="ViewPageSettingsLanguagesCommunityTraditionalChinese" xml:space="preserve">
+  <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
     <value>Traditional Chinese</value>
+  </data>
+  <data name="AppLanguageCommunityRussian" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="AppLanguageCommunitySpanish" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="AppLanguageCommunityThai" xml:space="preserve">
+    <value>Thai</value>
+  </data>
+  <data name="AppLanguageCommunityKorean" xml:space="preserve">
+    <value>Korean</value>
+  </data>
+  <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
+    <value>Portuguese</value>
+  </data>
+  <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
+    <value>Indonesian</value>
+  </data>
+  <data name="AppLanguageCommunityItalian" xml:space="preserve">
+    <value>Italian</value>
+  </data>
+  <data name="AppLanguageCommunityJapanese" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="AppLanguageCommunityGerman" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="AppLanguageCommunityFrench" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="AppLanguageCommunityTurkish" xml:space="preserve">
+    <value>Turkish</value>
+  </data>
+  <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
+    <value>Vietnamese</value>
   </data>
 </root>

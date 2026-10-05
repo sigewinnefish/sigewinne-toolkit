@@ -46,4 +46,18 @@ namespace Service::Utils
 	}
 
 
+
+	std::wstring str2wstr(const std::string_view str)
+    {
+		auto hs = to_hstring(str);
+		auto ws = std::wstring(hs.begin(), hs.end());
+		return ws;
+    }
+
+	std::string wstr2str(const std::wstring_view wstr)
+	{
+		auto s = to_string(wstr);
+		return s;
+	}
+
 }

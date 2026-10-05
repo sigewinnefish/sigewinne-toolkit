@@ -4,9 +4,12 @@
 #include "SettingsViewModel.g.cpp"
 #endif
 #include "Utils.h"
+#include "island.h"
+#include "Localization.h"
 
 using namespace Service::Utils;
 using namespace Service::Island;
+using namespace Service;
 
 namespace winrt::App6::implementation
 {
@@ -15,9 +18,11 @@ namespace winrt::App6::implementation
 		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorExit"));
 		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorCloseWindow"));
 
-		Languages.Append(ResourceGetString(L"ViewPageSettingsLanguagesDefault"));
-		Languages.Append(ResourceGetString(L"ViewPageSettingsLanguagesCommunitySimplifiedChinese"));
-		
+        for (const auto& it: Localization::Languages)
+        {
+			Languages.Append(ResourceGetString(it.first.data()));
+        }
+	    
 	}
 
 	bool SettingsViewModel::IslandRestrictionsOverride()

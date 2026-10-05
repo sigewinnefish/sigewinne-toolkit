@@ -7,6 +7,8 @@
 #include "wil/result.h"
 #include "Settings.h"
 #include "Utils.h"
+
+using namespace Service::Utils;
 using namespace Service::Utils::Message;
 using namespace Service::Settings;
 
@@ -15,7 +17,6 @@ namespace Service::Game::Launching
 	
 	static void LaunchGameImpl()
 	{
-		std::wstring w_path;
 		WCHAR filename[MAX_PATH];
 		DWORD len = GetModuleFileNameW(NULL, filename, MAX_PATH);
 		THROW_HR_IF(HRESULT_FROM_WIN32(GetLastError()), len == 0);
@@ -23,8 +24,7 @@ namespace Service::Game::Launching
 		appname = appname.parent_path();
 		appname += L"\\toolkit_fulltrust.exe";
 
-		auto h_path = to_hstring(pappsettings->gamepath());
-		w_path.assign(h_path.begin(), h_path.end());
+		std::wstring w_path = str2wstr(pappsettings->gamepath());
 		STARTUPINFOW si{};
 		PROCESS_INFORMATION pi{};
 		si.cb = sizeof(si);

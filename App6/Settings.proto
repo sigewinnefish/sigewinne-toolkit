@@ -48,13 +48,14 @@ message AppSettings
     bool            StealthMode                       =   1;
     int32           CloseBehavior                     =   2;
     bool            RestrictedTokens                  =   3;
-    int32           Lang                              =   4;
+    //int32           Lang                              =   4;
     bool            LangOverride                      =   5;
     string          GamePath                          =   6;
     bool 		    IslandRestrictionsOverride        =   7;
     bool 		    FrameRateLimitOverride            =   8;
     int32           FrameRateLimitValue               =   9;
     bool            CrashDump                         =  10;
+    string          Lang                              =  11;
     
 }
 

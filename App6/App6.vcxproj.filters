@@ -83,6 +83,9 @@
     <ClCompile Include="Controller.cpp">
       <Filter>Service\NotifyIcon</Filter>
     </ClCompile>
+    <ClCompile Include="Localization.cpp">
+      <Filter>Service\Localization</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -120,6 +123,9 @@
     </ClInclude>
     <ClInclude Include="Controller.h">
       <Filter>Service\NotifyIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="Localization.h">
+      <Filter>Service\Localization</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -341,6 +347,9 @@
     <Filter Include="Service\NotifyIcon">
       <UniqueIdentifier>{9ebe5039-b8c8-4de6-898f-0a0b93671110}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Service\Localization">
+      <UniqueIdentifier>{ff65f96a-d5bc-4a64-9f85-9880c834137a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
@@ -366,5 +375,9 @@
     <PRIResource Include="Strings\zh-CN\Resources.resw">
       <Filter>Resource\zh-cn</Filter>
     </PRIResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natstepfilter" />
   </ItemGroup>
 </Project>

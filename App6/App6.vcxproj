@@ -156,6 +156,7 @@
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="HoYoLogin.h" />
+    <ClInclude Include="Localization.h" />
     <ClInclude Include="MainView.xaml.h">
       <DependentUpon>MainView.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -230,6 +231,7 @@
     </ClCompile>
     <ClCompile Include="LaunchGame.cpp" />
     <ClCompile Include="HoYoLogin.cpp" />
+    <ClCompile Include="Localization.cpp" />
     <ClCompile Include="MainView.xaml.cpp">
       <DependentUpon>MainView.xaml</DependentUpon>
       <SubType>Code</SubType>

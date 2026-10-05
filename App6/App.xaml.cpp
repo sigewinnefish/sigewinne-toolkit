@@ -2,12 +2,13 @@
 #include "App.xaml.h"
 #include <wil/resource.h>
 #include <Settings.h>
+#include <island.h>
 #include <LaunchGame.h>
 #include "MainWindow.xaml.h"
 #include "tlhelp32.h"
 #include "DbgHelp.h"
 #include <filesystem>
-
+#include "Localization.h"
 #include "NotifyIconContextMenu.xaml.h"
 
 #include "Utils.h"
@@ -16,7 +17,6 @@ using namespace Service::Game::Launching;
 
 using namespace winrt;
 using namespace winrt::Microsoft::UI::Xaml;
-using namespace winrt::Microsoft::Windows::Globalization;
 
 // TLS Callback to ensure single instance
 VOID WINAPI tls_callback1(
@@ -166,22 +166,7 @@ namespace winrt::App6::implementation
         this->DispatcherShutdownMode(DispatcherShutdownMode::OnExplicitShutdown);
         Settings::Init();
         Island::Init();
-
-		//app language
-	    if (Settings::pappsettings->langoverride())
-	    {
-            switch (Settings::pappsettings->lang())
-            {
-            case 0:
-                ApplicationLanguages::PrimaryLanguageOverride(L"en-us");
-                break;
-            case 1:
-                ApplicationLanguages::PrimaryLanguageOverride(L"zh-cn");
-                break;
-            default:
-                break;
-            }
-	    }
+        Localization::Init();
 
         notifyIconController = NotifyIcon::Controller{};
         notifyIconController.Init();
