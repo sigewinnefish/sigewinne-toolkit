@@ -223,7 +223,7 @@
     <value>快速启动</value>
   </data>
   <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
-    <value>Crash Dump</value>
+    <value>崩溃转储</value>
   </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
     <value>游戏路径</value>
@@ -248,16 +248,16 @@
     <value>受限令牌</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
-    <value>Close Button Behavior</value>
+    <value>关闭按钮行为</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
-    <value>Exit Toolkit</value>
+    <value>退出工具包</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
-    <value>Close Window</value>
+    <value>关闭窗口</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
-    <value>Change the behavior of the close button</value>
+    <value>更改关闭按钮的行为</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
     <value>使用标准用户访问令牌启动游戏</value>
@@ -269,13 +269,13 @@
     <value>主界面</value>
   </data>
   <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
-    <value>Window</value>
+    <value>窗口</value>
   </data>
   <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
-    <value>Exit</value>
+    <value>退出</value>
   </data>
   <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
-    <value>Launch</value>
+    <value>启动游戏</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
     <value>覆盖应用程序语言，更改生效需重启应用</value>
@@ -320,13 +320,16 @@
     <value>手动输入 Cookie</value>
   </data>
   <data name="MBAppCrash" xml:space="preserve">
-    <value>OOPS, APP CRASH !!!
-dump has been generated at %temp%/toolkit.dmp</value>
+    <value>哎呀，应用崩溃了！！！
+转储文件已生成于 %temp%/toolkit.dmp</value>
   </data>
   <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
-    <value>English (Official Support)</value>
+    <value>英语</value>
   </data>
-  <data name="ViewPageSettingsLanguagesThirdPartyChinese" xml:space="preserve">
-    <value>Chinese (Third Party)</value>
+  <data name="ViewPageSettingsLanguagesCommunitySimplifiedChinese" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="ViewPageSettingsLanguagesCommunityTraditionalChinese" xml:space="preserve">
+    <value>繁体中文</value>
   </data>
 </root>

@@ -118,216 +118,219 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ViewPageIslandDisableShowDamageText.Header" xml:space="preserve">
-    <value>Disable Damage Numbers</value>
+    <value>Отключить отображение чисел урона</value>
   </data>
   <data name="ViewPageIslandDisableFog.Header" xml:space="preserve">
-    <value>Remove Fog</value>
+    <value>Убрать туман</value>
   </data>
   <data name="ViewPageIslandEventCameraMoveHotSwitch.Header" xml:space="preserve">
-    <value>Disable Elemental Burst Animation</value>
+    <value>Отключить анимацию взрыва стихии</value>
   </data>
   <data name="ViewPageIslandFixLowFovScene.Header" xml:space="preserve">
-    <value>Special Interface Fix</value>
+    <value>Исправление специального интерфейса</value>
   </data>
   <data name="ViewPageIslandHideQuestBannerHotSwitch.Header" xml:space="preserve">
-    <value>Close map banner</value>
+    <value>Закрывать баннер карты</value>
   </data>
   <data name="ViewPageIslandRedirectCombineEntry.Header" xml:space="preserve">
-    <value>Crafting Redirect</value>
+    <value>Перенаправление крафта</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowCondensedResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Condensed Resin</value>
+    <value>Получать награды со сгущённой смолой</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowFragileResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Fragile Resin</value>
+    <value>Получать награды с хрупкой смолой</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowPrimogem.Header" xml:space="preserve">
-    <value>Claim Rewards with Primogem</value>
+    <value>Получать награды с помощью протогемов</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowTransientResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Transient Resin</value>
+    <value>Получать награды с временной смолой</value>
   </data>
   <data name="ViewPageIslandUsingTouchScreen.Header" xml:space="preserve">
-    <value>Use Touch Input</value>
+    <value>Использовать сенсорный ввод</value>
   </data>
   <data name="ViewPageHomeGameOptions.Text" xml:space="preserve">
-    <value>Game Options</value>
+    <value>Игровые настройки</value>
   </data>
   <data name="ViewPageIslandRemoveOpenTeamProgress.Header" xml:space="preserve">
-    <value>Remove Team Configuration Progress Bar</value>
+    <value>Убрать полосу прогресса настройки отряда</value>
   </data>
   <data name="ViewPageIslandTargetFov.Header" xml:space="preserve">
-    <value>Adjust FOV</value>
+    <value>Настроить угол обзора</value>
   </data>
   <data name="ViewPageIslandTargetFovHotSwitch.Header" xml:space="preserve">
-    <value>Field of View Hot Switch</value>
+    <value>Переключение угла обзора по горячей клавише</value>
   </data>
   <data name="ViewPageIslandTargetFps.Header" xml:space="preserve">
-    <value>Target Frame Rate</value>
+    <value>Целевая частота кадров</value>
   </data>
   <data name="ViewPageIslandTargetFpsHotSwitch.Header" xml:space="preserve">
-    <value>Frame Rate Hot Switch</value>
+    <value>Переключение частоты кадров по горячей клавише</value>
   </data>
   <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
-    <value>Island Options</value>
+    <value>Настройки Острова</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Original Resin</value>
+    <value>Получать награды с оригинальной смолой</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Header" xml:space="preserve">
     <value>Windows HDR</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Description" xml:space="preserve">
-    <value>Take advantage of monitors that support HDR for brighter, more vivid, and more detailed pictures</value>
+    <value>Воспользуйтесь преимуществами мониторов с поддержкой HDR для более яркой, насыщенной и детализированной картинки</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Header" xml:space="preserve">
-    <value>Launch Parameters</value>
+    <value>Параметры запуска</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Description" xml:space="preserve">
-    <value>Modify its default behavior at game startup</value>
+    <value>Изменить поведение игры по умолчанию при запуске</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceExclusive.Description" xml:space="preserve">
-    <value>Incompatible with embedded browsers, operations like switching window may cause the game to crash</value>
+    <value>Несовместимо со встроенными браузерами: такие операции, как переключение окна, могут привести к сбою игры</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceFullscreen.Description" xml:space="preserve">
-    <value>Overwrite default fullscreen status</value>
+    <value>Переопределить статус полноэкранного режима по умолчанию</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceBorderless.Description" xml:space="preserve">
-    <value>Create window as popup, without frame</value>
+    <value>Создать окно как всплывающее, без рамки</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenWidth.Description" xml:space="preserve">
-    <value>Overwrite game window width setting</value>
+    <value>Переопределить настройку ширины игрового окна</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenHeight.Description" xml:space="preserve">
-    <value>Overwrite game window height setting</value>
+    <value>Переопределить настройку высоты игрового окна</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccount.Description" xml:space="preserve">
-    <value>Sign in with the currently selected MiYouShe / HoYoLAB user. Start parameters need to be enabled</value>
+    <value>Войти под выбранным в данный момент пользователем MiYouShe / HoYoLAB. Необходимо включить параметры запуска</value>
   </data>
   <data name="ViewPageHomeLaunch.Content" xml:space="preserve">
-    <value>Launch</value>
+    <value>Запустить</value>
   </data>
   <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
-    <value>Kill Process</value>
+    <value>Завершить процесс</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
-    <value>Genshin Impact Game Path:</value>
+    <value>Путь к игре Genshin Impact:</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
-    <value>eg: C:\\Genshin Impact\\YuanShen.exe</value>
+    <value>напр.: C:\\Genshin Impact\\YuanShen.exe</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
-    <value>When enabled, this toolkit launches the game immediately on startup, hiding in the system tray.
-If the toolkit is already running, relaunching it will trigger the game launch.</value>
+    <value>Если включено, этот набор инструментов запускает игру сразу при старте, скрываясь в системном трее.
+Если набор инструментов уже запущен, повторный запуск приведёт к запуску игры.</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
-    <value>Stealth Mode</value>
+    <value>Скрытый режим</value>
   </data>
   <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
-    <value>Crash Dump</value>
+    <value>Дамп сбоя</value>
   </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
-    <value>Game Path</value>
+    <value>Путь к игре</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
-    <value>Frame Rate Limit Override</value>
+    <value>Переопределение ограничения частоты кадров</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>For security reasons, the Island limits Frame Rate up to 120 FPS.
-Enable “Frame Rate Limit Override” to change this restriction.</value>
+    <value>В целях безопасности Остров ограничивает частоту кадров до 120 FPS.
+Включите «Переопределение ограничения частоты кадров», чтобы изменить это ограничение.</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
-    <value>Island Restrictions Override</value>
+    <value>Переопределение ограничений Острова</value>
   </data>
   <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
-    <value>Select Game Path</value>
+    <value>Выбрать путь к игре</value>
   </data>
   <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
-    <value>When setting the game path, please select the game program (Yuanshen.exe or GenshinImpact.exe) instead of the game launcher (launcher.exe)</value>
+    <value>При указании пути к игре выберите исполняемый файл игры (Yuanshen.exe или GenshinImpact.exe), а не лаунчер (launcher.exe)</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
-    <value>Restricted Tokens</value>
+    <value>Ограниченные токены</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
-    <value>Close Button Behavior</value>
+    <value>Поведение кнопки закрытия</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
-    <value>Exit Toolkit</value>
+    <value>Выйти из набора инструментов</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
-    <value>Close Window</value>
+    <value>Закрыть окно</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
-    <value>Change the behavior of the close button</value>
+    <value>Изменить поведение кнопки закрытия</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
-    <value>Start the Game with Standard User Access Token</value>
+    <value>Запускать игру с токеном доступа обычного пользователя</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
-    <value>Lite Version</value>
+    <value>Облегчённая версия</value>
   </data>
   <data name="ViewMainHome.Content" xml:space="preserve">
-    <value>Home</value>
+    <value>Главная</value>
   </data>
   <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
-    <value>Window</value>
+    <value>Окно</value>
   </data>
   <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
-    <value>Exit</value>
+    <value>Выход</value>
   </data>
   <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
-    <value>Launch</value>
+    <value>Запустить</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
-    <value>Overrides the application language. A restart is required for changes to take effect.</value>
+    <value>Переопределяет язык приложения. Для применения изменений требуется перезапуск.</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
-    <value>Language Override</value>
+    <value>Переопределение языка</value>
   </data>
   <data name="NotifyIconName" xml:space="preserve">
     <value>sigewinne toolkit</value>
   </data>
   <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
-    <value>Auto Detect</value>
+    <value>Автоопределение</value>
   </data>
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
-    <value>LoadSettingsFromFile Failed, ignore if FIRSTRUN</value>
+    <value>Ошибка LoadSettingsFromFile, игнорируйте при FIRSTRUN</value>
   </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
-    <value>GamePath Detect Error</value>
+    <value>Ошибка определения пути к игре</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>Launch GAME ERROR</value>
+    <value>ОШИБКА ЗАПУСКА ИГРЫ</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
-    <value>Warn</value>
+    <value>Предупреждение</value>
   </data>
   <data name="MBError" xml:space="preserve">
-    <value>Error</value>
+    <value>Ошибка</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
-    <value>Info</value>
+    <value>Информация</value>
   </data>
   <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
-    <value>Hide UID</value>
+    <value>Скрыть UID</value>
   </data>
   <data name="ViewUserViewUserRole.Text" xml:space="preserve">
-    <value>Role</value>
+    <value>Роль</value>
   </data>
   <data name="ViewUserViewUserCookieOperation.Label" xml:space="preserve">
     <value>MiYouShe</value>
   </data>
   <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
-    <value>Input Manually</value>
+    <value>Ввести вручную</value>
   </data>
   <data name="MBAppCrash" xml:space="preserve">
-    <value>OOPS, APP CRASH !!!
-dump has been generated at %temp%/toolkit.dmp</value>
+    <value>ОЙ, ПРИЛОЖЕНИЕ УПАЛО !!!
+дамп сохранён в %temp%/toolkit.dmp</value>
   </data>
   <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
-    <value>English (Official Support)</value>
+    <value>Английский</value>
   </data>
-  <data name="ViewPageSettingsLanguagesThirdPartyChinese" xml:space="preserve">
-    <value>Chinese (Third Party)</value>
+  <data name="ViewPageSettingsLanguagesCommunitySimplifiedChinese" xml:space="preserve">
+    <value>Упрощённый китайский</value>
+  </data>
+  <data name="ViewPageSettingsLanguagesCommunityTraditionalChinese" xml:space="preserve">
+    <value>Традиционный китайский</value>
   </data>
 </root>

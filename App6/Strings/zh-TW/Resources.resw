@@ -118,216 +118,219 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ViewPageIslandDisableShowDamageText.Header" xml:space="preserve">
-    <value>Disable Damage Numbers</value>
+    <value>關閉傷害數字</value>
   </data>
   <data name="ViewPageIslandDisableFog.Header" xml:space="preserve">
-    <value>Remove Fog</value>
+    <value>移除霧氣</value>
   </data>
   <data name="ViewPageIslandEventCameraMoveHotSwitch.Header" xml:space="preserve">
-    <value>Disable Elemental Burst Animation</value>
+    <value>關閉元素爆發動畫</value>
   </data>
   <data name="ViewPageIslandFixLowFovScene.Header" xml:space="preserve">
-    <value>Special Interface Fix</value>
+    <value>特殊介面修正</value>
   </data>
   <data name="ViewPageIslandHideQuestBannerHotSwitch.Header" xml:space="preserve">
-    <value>Close map banner</value>
+    <value>關閉地圖橫幅</value>
   </data>
   <data name="ViewPageIslandRedirectCombineEntry.Header" xml:space="preserve">
-    <value>Crafting Redirect</value>
+    <value>合成跳轉</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowCondensedResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Condensed Resin</value>
+    <value>使用濃縮樹脂領取獎勵</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowFragileResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Fragile Resin</value>
+    <value>使用脆弱樹脂領取獎勵</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowPrimogem.Header" xml:space="preserve">
-    <value>Claim Rewards with Primogem</value>
+    <value>使用原石領取獎勵</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowTransientResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Transient Resin</value>
+    <value>使用須臾樹脂領取獎勵</value>
   </data>
   <data name="ViewPageIslandUsingTouchScreen.Header" xml:space="preserve">
-    <value>Use Touch Input</value>
+    <value>使用觸控輸入</value>
   </data>
   <data name="ViewPageHomeGameOptions.Text" xml:space="preserve">
-    <value>Game Options</value>
+    <value>遊戲選項</value>
   </data>
   <data name="ViewPageIslandRemoveOpenTeamProgress.Header" xml:space="preserve">
-    <value>Remove Team Configuration Progress Bar</value>
+    <value>移除隊伍配置進度條</value>
   </data>
   <data name="ViewPageIslandTargetFov.Header" xml:space="preserve">
-    <value>Adjust FOV</value>
+    <value>調整視野</value>
   </data>
   <data name="ViewPageIslandTargetFovHotSwitch.Header" xml:space="preserve">
-    <value>Field of View Hot Switch</value>
+    <value>視野熱切換</value>
   </data>
   <data name="ViewPageIslandTargetFps.Header" xml:space="preserve">
-    <value>Target Frame Rate</value>
+    <value>目標幀率</value>
   </data>
   <data name="ViewPageIslandTargetFpsHotSwitch.Header" xml:space="preserve">
-    <value>Frame Rate Hot Switch</value>
+    <value>幀率熱切換</value>
   </data>
   <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
-    <value>Island Options</value>
+    <value>Island 選項</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Original Resin</value>
+    <value>使用原粹樹脂領取獎勵</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Header" xml:space="preserve">
     <value>Windows HDR</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Description" xml:space="preserve">
-    <value>Take advantage of monitors that support HDR for brighter, more vivid, and more detailed pictures</value>
+    <value>善用支援 HDR 的螢幕，享受更明亮、更鮮豔、更細緻的畫面</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Header" xml:space="preserve">
-    <value>Launch Parameters</value>
+    <value>啟動參數</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Description" xml:space="preserve">
-    <value>Modify its default behavior at game startup</value>
+    <value>修改遊戲啟動時的預設行為</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceExclusive.Description" xml:space="preserve">
-    <value>Incompatible with embedded browsers, operations like switching window may cause the game to crash</value>
+    <value>與內嵌瀏覽器不相容，切換視窗等操作可能導致遊戲崩潰</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceFullscreen.Description" xml:space="preserve">
-    <value>Overwrite default fullscreen status</value>
+    <value>覆寫預設全螢幕狀態</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceBorderless.Description" xml:space="preserve">
-    <value>Create window as popup, without frame</value>
+    <value>以彈出視窗形式建立視窗，不帶邊框</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenWidth.Description" xml:space="preserve">
-    <value>Overwrite game window width setting</value>
+    <value>覆寫遊戲視窗寬度設定</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenHeight.Description" xml:space="preserve">
-    <value>Overwrite game window height setting</value>
+    <value>覆寫遊戲視窗高度設定</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccount.Description" xml:space="preserve">
-    <value>Sign in with the currently selected MiYouShe / HoYoLAB user. Start parameters need to be enabled</value>
+    <value>使用目前選擇的米遊社 / HoYoLAB 帳號登入。需啟用啟動參數</value>
   </data>
   <data name="ViewPageHomeLaunch.Content" xml:space="preserve">
-    <value>Launch</value>
+    <value>啟動</value>
   </data>
   <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
-    <value>Kill Process</value>
+    <value>結束處理程序</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
-    <value>Genshin Impact Game Path:</value>
+    <value>原神遊戲路徑：</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
-    <value>eg: C:\\Genshin Impact\\YuanShen.exe</value>
+    <value>例如：C:\\Genshin Impact\\YuanShen.exe</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
-    <value>When enabled, this toolkit launches the game immediately on startup, hiding in the system tray.
-If the toolkit is already running, relaunching it will trigger the game launch.</value>
+    <value>啟用後，本工具組會在啟動時立即啟動遊戲，並隱藏於系統匣中。
+若工具組已在執行中，再次啟動它將觸發遊戲啟動。</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
-    <value>Stealth Mode</value>
+    <value>隱蔽模式</value>
   </data>
   <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
-    <value>Crash Dump</value>
+    <value>崩潰傾印</value>
   </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
-    <value>Game Path</value>
+    <value>遊戲路徑</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
-    <value>Frame Rate Limit Override</value>
+    <value>幀率限制覆寫</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>For security reasons, the Island limits Frame Rate up to 120 FPS.
-Enable “Frame Rate Limit Override” to change this restriction.</value>
+    <value>基於安全考量，Island 將幀率限制在 120 FPS 以內。
+啟用「幀率限制覆寫」以變更此限制。</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
-    <value>Island Restrictions Override</value>
+    <value>Island 限制覆寫</value>
   </data>
   <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
-    <value>Select Game Path</value>
+    <value>選擇遊戲路徑</value>
   </data>
   <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
-    <value>When setting the game path, please select the game program (Yuanshen.exe or GenshinImpact.exe) instead of the game launcher (launcher.exe)</value>
+    <value>設定遊戲路徑時，請選擇遊戲程式（Yuanshen.exe 或 GenshinImpact.exe），而非遊戲啟動器（launcher.exe）</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
-    <value>Restricted Tokens</value>
+    <value>受限權杖</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
-    <value>Close Button Behavior</value>
+    <value>關閉按鈕行為</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
-    <value>Exit Toolkit</value>
+    <value>結束工具組</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
-    <value>Close Window</value>
+    <value>關閉視窗</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
-    <value>Change the behavior of the close button</value>
+    <value>變更關閉按鈕的行為</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
-    <value>Start the Game with Standard User Access Token</value>
+    <value>以標準使用者存取權杖啟動遊戲</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
-    <value>Lite Version</value>
+    <value>精簡版</value>
   </data>
   <data name="ViewMainHome.Content" xml:space="preserve">
-    <value>Home</value>
+    <value>首頁</value>
   </data>
   <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
-    <value>Window</value>
+    <value>視窗</value>
   </data>
   <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
-    <value>Exit</value>
+    <value>結束</value>
   </data>
   <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
-    <value>Launch</value>
+    <value>啟動</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
-    <value>Overrides the application language. A restart is required for changes to take effect.</value>
+    <value>覆寫應用程式語言。需重新啟動才能讓變更生效。</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
-    <value>Language Override</value>
+    <value>語言覆寫</value>
   </data>
   <data name="NotifyIconName" xml:space="preserve">
-    <value>sigewinne toolkit</value>
+    <value>sigewinne 工具組</value>
   </data>
   <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
-    <value>Auto Detect</value>
+    <value>自動偵測</value>
   </data>
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
-    <value>LoadSettingsFromFile Failed, ignore if FIRSTRUN</value>
+    <value>LoadSettingsFromFile 失敗，若為 FIRSTRUN 請忽略</value>
   </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
-    <value>GamePath Detect Error</value>
+    <value>遊戲路徑偵測錯誤</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>Launch GAME ERROR</value>
+    <value>啟動遊戲錯誤</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
-    <value>Warn</value>
+    <value>警告</value>
   </data>
   <data name="MBError" xml:space="preserve">
-    <value>Error</value>
+    <value>錯誤</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
-    <value>Info</value>
+    <value>資訊</value>
   </data>
   <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
-    <value>Hide UID</value>
+    <value>隱藏 UID</value>
   </data>
   <data name="ViewUserViewUserRole.Text" xml:space="preserve">
-    <value>Role</value>
+    <value>角色</value>
   </data>
   <data name="ViewUserViewUserCookieOperation.Label" xml:space="preserve">
-    <value>MiYouShe</value>
+    <value>米遊社</value>
   </data>
   <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
-    <value>Input Manually</value>
+    <value>手動輸入</value>
   </data>
   <data name="MBAppCrash" xml:space="preserve">
-    <value>OOPS, APP CRASH !!!
-dump has been generated at %temp%/toolkit.dmp</value>
+    <value>糟糕，應用程式崩潰了！！！
+傾印檔已產生於 %temp%/toolkit.dmp</value>
   </data>
   <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
-    <value>English (Official Support)</value>
+    <value>英文</value>
   </data>
-  <data name="ViewPageSettingsLanguagesThirdPartyChinese" xml:space="preserve">
-    <value>Chinese (Third Party)</value>
+  <data name="ViewPageSettingsLanguagesCommunitySimplifiedChinese" xml:space="preserve">
+    <value>簡體中文</value>
+  </data>
+  <data name="ViewPageSettingsLanguagesCommunityTraditionalChinese" xml:space="preserve">
+    <value>繁體中文</value>
   </data>
 </root>
