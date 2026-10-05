@@ -118,216 +118,219 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ViewPageIslandDisableShowDamageText.Header" xml:space="preserve">
-    <value>Disable Damage Numbers</value>
+    <value>Desactivar los números de daño</value>
   </data>
   <data name="ViewPageIslandDisableFog.Header" xml:space="preserve">
-    <value>Remove Fog</value>
+    <value>Eliminar la niebla</value>
   </data>
   <data name="ViewPageIslandEventCameraMoveHotSwitch.Header" xml:space="preserve">
-    <value>Disable Elemental Burst Animation</value>
+    <value>Desactivar la animación de la Habilidad Definitiva</value>
   </data>
   <data name="ViewPageIslandFixLowFovScene.Header" xml:space="preserve">
-    <value>Special Interface Fix</value>
+    <value>Corrección especial de interfaz</value>
   </data>
   <data name="ViewPageIslandHideQuestBannerHotSwitch.Header" xml:space="preserve">
-    <value>Close map banner</value>
+    <value>Cerrar el banner del mapa</value>
   </data>
   <data name="ViewPageIslandRedirectCombineEntry.Header" xml:space="preserve">
-    <value>Crafting Redirect</value>
+    <value>Redirección de fabricación</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowCondensedResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Condensed Resin</value>
+    <value>Reclamar recompensas con Resina Condensada</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowFragileResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Fragile Resin</value>
+    <value>Reclamar recompensas con Resina Frágil</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowPrimogem.Header" xml:space="preserve">
-    <value>Claim Rewards with Primogem</value>
+    <value>Reclamar recompensas con Protogemas</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowTransientResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Transient Resin</value>
+    <value>Reclamar recompensas con Resina Transitoria</value>
   </data>
   <data name="ViewPageIslandUsingTouchScreen.Header" xml:space="preserve">
-    <value>Use Touch Input</value>
+    <value>Usar entrada táctil</value>
   </data>
   <data name="ViewPageHomeGameOptions.Text" xml:space="preserve">
-    <value>Game Options</value>
+    <value>Opciones del juego</value>
   </data>
   <data name="ViewPageIslandRemoveOpenTeamProgress.Header" xml:space="preserve">
-    <value>Remove Team Configuration Progress Bar</value>
+    <value>Eliminar la barra de progreso de configuración del equipo</value>
   </data>
   <data name="ViewPageIslandTargetFov.Header" xml:space="preserve">
-    <value>Adjust FOV</value>
+    <value>Ajustar el campo de visión</value>
   </data>
   <data name="ViewPageIslandTargetFovHotSwitch.Header" xml:space="preserve">
-    <value>Field of View Hot Switch</value>
+    <value>Cambio rápido del campo de visión</value>
   </data>
   <data name="ViewPageIslandTargetFps.Header" xml:space="preserve">
-    <value>Target Frame Rate</value>
+    <value>Frecuencia de fotogramas objetivo</value>
   </data>
   <data name="ViewPageIslandTargetFpsHotSwitch.Header" xml:space="preserve">
-    <value>Frame Rate Hot Switch</value>
+    <value>Cambio rápido de frecuencia de fotogramas</value>
   </data>
   <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
-    <value>Island Options</value>
+    <value>Opciones de la Isla</value>
   </data>
   <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
-    <value>Claim Rewards with Original Resin</value>
+    <value>Reclamar recompensas con Resina Original</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Header" xml:space="preserve">
-    <value>Windows HDR</value>
+    <value>HDR de Windows</value>
   </data>
   <data name="ViewPageLaunchGameWindowsHDR.Description" xml:space="preserve">
-    <value>Take advantage of monitors that support HDR for brighter, more vivid, and more detailed pictures</value>
+    <value>Aprovecha los monitores compatibles con HDR para obtener imágenes más brillantes, vívidas y detalladas</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Header" xml:space="preserve">
-    <value>Launch Parameters</value>
+    <value>Parámetros de inicio</value>
   </data>
   <data name="ViewPageLaunchGameArguments.Description" xml:space="preserve">
-    <value>Modify its default behavior at game startup</value>
+    <value>Modifica su comportamiento predeterminado al iniciar el juego</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceExclusive.Description" xml:space="preserve">
-    <value>Incompatible with embedded browsers, operations like switching window may cause the game to crash</value>
+    <value>Incompatible con navegadores integrados; operaciones como cambiar de ventana pueden provocar que el juego se bloquee</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceFullscreen.Description" xml:space="preserve">
-    <value>Overwrite default fullscreen status</value>
+    <value>Sobrescribir el estado predeterminado de pantalla completa</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceBorderless.Description" xml:space="preserve">
-    <value>Create window as popup, without frame</value>
+    <value>Crear la ventana como una ventana emergente, sin marco</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenWidth.Description" xml:space="preserve">
-    <value>Overwrite game window width setting</value>
+    <value>Sobrescribir la configuración del ancho de la ventana del juego</value>
   </data>
   <data name="ViewPageLaunchGameAppearanceScreenHeight.Description" xml:space="preserve">
-    <value>Overwrite game window height setting</value>
+    <value>Sobrescribir la configuración de la altura de la ventana del juego</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccount.Description" xml:space="preserve">
-    <value>Sign in with the currently selected MiYouShe / HoYoLAB user. Start parameters need to be enabled</value>
+    <value>Iniciar sesión con el usuario de MiYouShe / HoYoLAB seleccionado actualmente. Los parámetros de inicio deben estar habilitados.</value>
   </data>
   <data name="ViewPageHomeLaunch.Content" xml:space="preserve">
-    <value>Launch</value>
+    <value>Iniciar</value>
   </data>
   <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
-    <value>Kill Process</value>
+    <value>Finalizar proceso</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
-    <value>Genshin Impact Game Path:</value>
+    <value>Ruta del juego Genshin Impact:</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
-    <value>eg: C:\\Genshin Impact\\YuanShen.exe</value>
+    <value>ej.: C:\\Genshin Impact\\YuanShen.exe</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
-    <value>When enabled, this toolkit launches the game immediately on startup, hiding in the system tray.
-If the toolkit is already running, relaunching it will trigger the game launch.</value>
+    <value>Cuando está habilitado, este kit de herramientas inicia el juego inmediatamente al iniciarse, ocultándose en la bandeja del sistema.
+Si el kit de herramientas ya está en ejecución, volver a iniciarlo provocará el inicio del juego.</value>
   </data>
   <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
-    <value>Stealth Mode</value>
+    <value>Modo oculto</value>
   </data>
   <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
-    <value>Crash Dump</value>
+    <value>Volcado de bloqueo</value>
   </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
-    <value>Game Path</value>
+    <value>Ruta del juego</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
-    <value>Frame Rate Limit Override</value>
+    <value>Anulación del límite de frecuencia de fotogramas</value>
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>For security reasons, the Island limits Frame Rate up to 120 FPS.
-Enable “Frame Rate Limit Override” to change this restriction.</value>
+    <value>Por motivos de seguridad, la Isla limita la frecuencia de fotogramas a un máximo de 120 FPS.
+Habilita “Anulación del límite de frecuencia de fotogramas” para cambiar esta restricción.</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
-    <value>Island Restrictions Override</value>
+    <value>Anulación de las restricciones de la Isla</value>
   </data>
   <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
-    <value>Select Game Path</value>
+    <value>Seleccionar la ruta del juego</value>
   </data>
   <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
-    <value>When setting the game path, please select the game program (Yuanshen.exe or GenshinImpact.exe) instead of the game launcher (launcher.exe)</value>
+    <value>Cuando establezcas la ruta del juego, selecciona el programa del juego (Yuanshen.exe o GenshinImpact.exe) en lugar del lanzador del juego (launcher.exe)</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
-    <value>Restricted Tokens</value>
+    <value>Tokens restringidos</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
-    <value>Close Button Behavior</value>
+    <value>Comportamiento del botón de cierre</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
-    <value>Exit Toolkit</value>
+    <value>Salir del kit de herramientas</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
-    <value>Close Window</value>
+    <value>Cerrar ventana</value>
   </data>
   <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
-    <value>Change the behavior of the close button</value>
+    <value>Cambiar el comportamiento del botón de cierre</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
-    <value>Start the Game with Standard User Access Token</value>
+    <value>Iniciar el juego con el token de acceso de usuario estándar</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
-    <value>Lite Version</value>
+    <value>Versión Lite</value>
   </data>
   <data name="ViewMainHome.Content" xml:space="preserve">
-    <value>Home</value>
+    <value>Inicio</value>
   </data>
   <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
-    <value>Window</value>
+    <value>Ventana</value>
   </data>
   <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
-    <value>Exit</value>
+    <value>Salir</value>
   </data>
   <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
-    <value>Launch</value>
+    <value>Iniciar</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
-    <value>Overrides the application language. A restart is required for changes to take effect.</value>
+    <value>Anula el idioma de la aplicación. Es necesario reiniciar para que los cambios surtan efecto.</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
-    <value>Language Override</value>
+    <value>Anulación del idioma</value>
   </data>
   <data name="NotifyIconName" xml:space="preserve">
     <value>sigewinne toolkit</value>
   </data>
   <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
-    <value>Auto Detect</value>
+    <value>Detección automática</value>
   </data>
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
-    <value>LoadSettingsFromFile Failed, ignore if FIRSTRUN</value>
+    <value>LoadSettingsFromFile falló; ignóralo si es FIRSTRUN</value>
   </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
-    <value>GamePath Detect Error</value>
+    <value>Error de detección de GamePath</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>Launch GAME ERROR</value>
+    <value>ERROR AL INICIAR EL JUEGO</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
-    <value>Warn</value>
+    <value>Advertencia</value>
   </data>
   <data name="MBError" xml:space="preserve">
     <value>Error</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
-    <value>Info</value>
+    <value>Información</value>
   </data>
   <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
-    <value>Hide UID</value>
+    <value>Ocultar UID</value>
   </data>
   <data name="ViewUserViewUserRole.Text" xml:space="preserve">
-    <value>Role</value>
+    <value>Rol</value>
   </data>
   <data name="ViewUserViewUserCookieOperation.Label" xml:space="preserve">
     <value>MiYouShe</value>
   </data>
   <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
-    <value>Input Manually</value>
+    <value>Introducir manualmente</value>
   </data>
   <data name="MBAppCrash" xml:space="preserve">
-    <value>OOPS, APP CRASH !!!
-dump has been generated at %temp%/toolkit.dmp</value>
+    <value>¡VAYA, LA APLICACIÓN SE BLOQUEÓ!
+Se ha generado un volcado en %temp%/toolkit.dmp</value>
   </data>
   <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
-    <value>English (Official Support)</value>
+    <value>Inglés</value>
   </data>
-  <data name="ViewPageSettingsLanguagesThirdPartyChinese" xml:space="preserve">
-    <value>Chinese (Third Party)</value>
+  <data name="ViewPageSettingsLanguagesCommunitySimplifiedChinese" xml:space="preserve">
+    <value>Chino simplificado</value>
+  </data>
+  <data name="ViewPageSettingsLanguagesCommunityTraditionalChinese" xml:space="preserve">
+    <value>Chino tradicional</value>
   </data>
 </root>
