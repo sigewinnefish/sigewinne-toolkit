@@ -2,7 +2,7 @@
 
 ## Translations
 
-Help translate the App on [Crowdin](https://crowdin.com/project/sigewinne-toolkit).
+Help improve translate the App on [Crowdin](https://crowdin.com/project/sigewinne-toolkit).
 
 [![es-ES translation](https://img.shields.io/badge/dynamic/json?color=blue&label=es-ES&style=plastic&logo=crowdin&query=%24.progress.0.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-17927485-935733.json)](https://crowdin.com/project/sigewinne-toolkit)
 [![ja translation](https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=plastic&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-17927485-935733.json)](https://crowdin.com/project/sigewinne-toolkit)
