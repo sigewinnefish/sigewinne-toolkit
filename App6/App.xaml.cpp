@@ -209,14 +209,14 @@ namespace winrt::App6::implementation
     App::~App() noexcept
     {
         notifyIconController.DeleteNotifyIcon();
+        
         try
         {
             Settings::WriteSettingsToFile();
         }
         catch (...)
         {
-            MessageBoxW(0, L"WriteSettingsToFile Error", L"Warn", MB_OK | MB_ICONWARNING);
-            abort();
+            ShowMessageBox(L"MBWriteSettingsToFileError", Utils::Message::Error);
         }
     }
 }

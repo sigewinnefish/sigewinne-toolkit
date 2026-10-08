@@ -13,9 +13,18 @@ namespace Service::Localization
     {
         if (pappsettings->langoverride())
         {
-            const auto& wstr = str2wstr(pappsettings->lang());
-            const auto& lang = Languages.at(wstr);
-            ApplicationLanguages::PrimaryLanguageOverride(lang);
+            try
+            {
+                const auto& wstr = str2wstr(pappsettings->lang());
+                const auto& lang = Languages.at(wstr);
+                ApplicationLanguages::PrimaryLanguageOverride(lang);
+            }
+            catch (...)
+            {
+                ShowMessageBox(L"MBPrimaryLanguageOverride", Utils::Message::Error);
+                pappsettings->set_langoverride(false);
+            }
+            
         }
     }
 

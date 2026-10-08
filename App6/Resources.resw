@@ -293,11 +293,18 @@ Enable "Frame Rate Limit Override" to change this restriction.</value>
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile Failed, ignore if FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>WriteSettingsToFile FAILED</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Override Language FAILED
+LanguageOverride has reset</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>GamePath Detect Error</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>Launch GAME ERROR</value>
+    <value>Launch GAME FAILED</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Warn</value>
