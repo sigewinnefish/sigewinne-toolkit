@@ -1,11 +1,11 @@
 #include "pch.h"
 #include "Controller.h"
-#include "resource.h"
 #include "Utils.h"
 #include <commctrl.h>
+#include <shellapi.h>
 
-#include "NotifyIconContextMenu.xaml.h"
 #include "App.xaml.h"
+#include "resource.h"
 
 using namespace Service::Utils;
 using namespace winrt::Microsoft::UI::Xaml;
@@ -16,33 +16,51 @@ namespace Service::NotifyIcon
 {
     void Controller::Init()
     {
-		CreateNotifyIconHostWindow();
+        m_dispatcherQueue = Microsoft::UI::Dispatching::DispatcherQueue::GetForCurrentThread();
+        CreateNotifyIconHostWindow();
+        InitPopupWindowContents();
         InitMessage();
-		AddNotifyIcon();
-		SetCallback();
+        AddNotifyIcon();
+        SetCallback();
     }
 
-    void Controller::CreatePopupWindow()
+    void Controller::InitPopupWindowContents()
     {
-        Window notifyIconWindow = Window{};
-        //notifyIconWindow.as<IWindowNative>()->get_WindowHandle(&notifyIconWindowhwnd); // get hwnd immediately
+        m_dispatcherQueue.TryEnqueue(
+            [this]()
+            {
+                m_xamlSource = DesktopWindowXamlSource{};
+                m_flyout = make<NotifyIconContextMenu>();
+                m_anchor = Border{};
+                m_anchor.Loaded([this](auto&&, auto&&) {
+                    m_flyout.XamlRoot(m_anchor.XamlRoot());
+                    });
+                m_xamlSource.Initialize(m_windowId);
+                m_xamlSource.Content(m_anchor);
 
-        notifyIconWindow.Title(L"NotifyIconXamlHost");
-        notifyIconWindow.AppWindow().IsShownInSwitchers(false);
-
-
-        auto border = Controls::Border{};
-        border.Loaded([notifyIconWindow](auto&&, auto&&) {
-            auto flyout = make<winrt::App6::implementation::NotifyIconContextMenu>();
-            FlyoutShowOptions options;
-            options.Position(Windows::Foundation::Point{ 1,2 });
-            options.Placement(FlyoutPlacementMode::Auto);
-            options.ShowMode(FlyoutShowMode::Standard);
-            flyout.XamlRoot(notifyIconWindow.Content().XamlRoot());
-            flyout.ShowAt(notifyIconWindow.Content(), options);
+                m_flyout.Closed([this](auto&&, auto&&)
+                    {
+                        ShowWindow(m_hwnd, SW_HIDE);
+                    });
             });
-        notifyIconWindow.Content(border);
-        notifyIconWindow.Activate();
+    }
+
+    void Controller::ShowPopupWindow()
+    {
+        ShowWindow(m_hwnd, SW_SHOWNOACTIVATE);
+
+        FlyoutShowOptions options;
+        NOTIFYICONIDENTIFIER id{};
+        id.guidItem = winrt::guid("21a2acbc-3a44-43c8-860a-f8e7151b2623");
+        id.cbSize = sizeof(NOTIFYICONIDENTIFIER);
+        RECT rect;
+        Shell_NotifyIconGetRect(&id, &rect);
+        auto dpi_scale = m_anchor.XamlRoot().RasterizationScale();
+
+        options.Position(Windows::Foundation::Point{ static_cast<float>(rect.left / dpi_scale - 8),static_cast<float>(rect.top / dpi_scale - 24) });
+        options.Placement(FlyoutPlacementMode::Auto);
+        options.ShowMode(FlyoutShowMode::Auto);
+        m_flyout.ShowAt(m_anchor, options);
     }
 
     void Controller::DeleteNotifyIcon()
@@ -91,9 +109,13 @@ namespace Service::NotifyIcon
         wc.lpfnWndProc = DefWindowProcW;
         wc.hInstance = GetModuleHandleW(0);
         wc.lpszClassName = name;
-		THROW_LAST_ERROR_IF(!RegisterClassExW(&wc));
+        THROW_LAST_ERROR_IF(!RegisterClassExW(&wc));
         m_hwnd = CreateWindowExW(
-            0,
+            WS_EX_LAYERED |
+            WS_EX_TOOLWINDOW |
+            WS_EX_NOACTIVATE |
+            WS_EX_TOPMOST
+            ,
             name,
             L"",
             0,
@@ -106,7 +128,16 @@ namespace Service::NotifyIcon
             wc.hInstance,
             NULL
         );
-		THROW_LAST_ERROR_IF_NULL(m_hwnd);
+        THROW_LAST_ERROR_IF_NULL(m_hwnd);
+        THROW_LAST_ERROR_IF(
+            !SetLayeredWindowAttributes(
+                m_hwnd,
+                0,
+                0,
+                LWA_ALPHA
+            )
+        );
+        m_windowId = GetWindowIdFromWindow(m_hwnd);
 
     }
 
@@ -123,32 +154,32 @@ namespace Service::NotifyIcon
 
     void Controller::SetCallback()
     {
-		SetWindowSubclass(m_hwnd,
-			[](HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, UINT_PTR uIdSubclass, DWORD_PTR dwRefData)->LRESULT
-			{
-				auto ptr = reinterpret_cast<Controller*>(dwRefData);
+        SetWindowSubclass(m_hwnd,
+            [](HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, UINT_PTR uIdSubclass, DWORD_PTR dwRefData)->LRESULT
+            {
+                auto ptr = reinterpret_cast<Controller*>(dwRefData);
 
 
-				if (uMsg == ptr->m_NotifyIconCallbackMessage)
-				{
-					if (LOWORD(lParam) == WM_RBUTTONUP)
-					{
-                        ptr->CreatePopupWindow();
-					}
+                if (uMsg == ptr->m_NotifyIconCallbackMessage)
+                {
+                    if (LOWORD(lParam) == WM_RBUTTONUP)
+                    {
+                        ptr->ShowPopupWindow();
+                    }
 
                     if (LOWORD(lParam) == WM_LBUTTONUP)
                     {
                         App::PresentMainWindow();
                     }
 
-				}
-				if (uMsg == ptr->m_TaskbarCreatedMessage)
-				{
-					ptr->AddNotifyIcon();
-				}
-				return DefSubclassProc(hWnd, uMsg, wParam, lParam);
+                }
+                if (uMsg == ptr->m_TaskbarCreatedMessage)
+                {
+                    ptr->AddNotifyIcon();
+                }
+                return DefSubclassProc(hWnd, uMsg, wParam, lParam);
 
-			},
-			1, reinterpret_cast<DWORD_PTR>(this));
+            },
+            1, reinterpret_cast<DWORD_PTR>(this));
     }
 }
