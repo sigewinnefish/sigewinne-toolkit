@@ -12,10 +12,6 @@
     ShouldConstrainToRootBounds="False"
     mc:Ignorable="d">
 
-    <Flyout.SystemBackdrop>
-        <MicaBackdrop />
-    </Flyout.SystemBackdrop>
-
     <Flyout.FlyoutPresenterStyle>
         <Style BasedOn="{StaticResource DefaultFlyoutPresenterStyle}" TargetType="FlyoutPresenter">
             <Setter Property="Background" Value="Transparent" />
