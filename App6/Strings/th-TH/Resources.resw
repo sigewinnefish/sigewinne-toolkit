@@ -293,11 +293,18 @@
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>โหลดการตั้งค่าจากไฟล์ล้มเหลว ไม่ต้องสนใจหากเป็น FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>การเขียนการตั้งค่าลงไฟล์ไม่สำเร็จ</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>การแทนที่ภาษาไม่สำเร็จ
+LanguageOverride ถูกรีเซ็ตแล้ว</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>ตรวจหาเส้นทางเกมผิดพลาด</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>เปิดเกมผิดพลาด</value>
+    <value>การเปิดเกมไม่สำเร็จ</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>คำเตือน</value>

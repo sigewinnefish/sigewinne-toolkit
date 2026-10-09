@@ -293,11 +293,18 @@ Activez « Dérogation à la limite de fréquence d'images » pour modifier cett
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>Échec de LoadSettingsFromFile, ignorer si FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>Échec de WriteSettingsToFile</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Échec du remplacement de la langue
+LanguageOverride a été réinitialisé</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>Erreur de détection du chemin du jeu</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>ERREUR DE LANCEMENT DU JEU</value>
+    <value>Échec du lancement du jeu</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Avertissement</value>

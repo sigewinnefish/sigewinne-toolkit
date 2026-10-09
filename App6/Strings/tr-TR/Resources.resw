@@ -293,11 +293,18 @@ Bu kısıtlamayı değiştirmek için "Kare Hızı Sınırını Geçersiz Kıl" 
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile başarısız oldu, FIRSTRUN ise yok sayın</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>WriteSettingsToFile BAŞARISIZ</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Dil Geçersiz Kılma BAŞARISIZ
+LanguageOverride sıfırlandı</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>Oyun Yolu Algılama Hatası</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>OYUN BAŞLATMA HATASI</value>
+    <value>Oyun başlatma BAŞARISIZ</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Uyarı</value>

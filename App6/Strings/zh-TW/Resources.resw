@@ -293,11 +293,18 @@
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile 失敗，若為 FIRSTRUN 請忽略</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>寫入設定至檔案失敗</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>覆寫語言失敗
+語言覆寫已重設</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>遊戲路徑偵測錯誤</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>啟動遊戲錯誤</value>
+    <value>啟動遊戲失敗</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>警告</value>

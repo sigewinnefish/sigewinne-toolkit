@@ -293,11 +293,18 @@ Aktivieren Sie "Bildratenbegrenzung überschreiben", um diese Beschränkung zu �
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile fehlgeschlagen, ignorieren, falls FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>WriteSettingsToFile FEHLGESCHLAGEN</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Sprache überschreiben FEHLGESCHLAGEN
+LanguageOverride wurde zurückgesetzt</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>GamePath-Erkennungsfehler</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>SPIELSTARTFEHLER</value>
+    <value>Spiel starten FEHLGESCHLAGEN</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Warnung</value>
