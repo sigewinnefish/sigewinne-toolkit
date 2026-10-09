@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:essential="using:WinUI3Package"
     xmlns:local="using:App6"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -13,35 +14,53 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackPanel
-            Grid.Row="0"
-            Margin="30,20"
-            Padding="12"
-            Orientation="Vertical"
-            Spacing="15">
-            <StackPanel Orientation="Horizontal" Spacing="10">
-                <Button
-                    x:Uid="ViewPageHomeLaunch"
-                    Click="Button_Click_Game"
-                    Style="{StaticResource AccentButtonStyle}" />
-                <Button
-                    x:Uid="ViewPageHomeKillProcess"
-                    Click="Button_KillProcess_Click"
-                    Style="{StaticResource SubtleButtonStyle}" />
+        <essential:RevealFocusPanel x:Name="RevealFocusPanel">
+
+            <StackPanel
+                Grid.Row="0"
+                Margin="30,0"
+                Padding="12"
+                Orientation="Vertical"
+                Spacing="15">
+                <StackPanel.Resources>
+                    <Style
+                        x:Key="LaunchButtonStyle"
+                        BasedOn="{StaticResource DefaultButtonStyle}"
+                        TargetType="Button">
+                        <Setter Property="MinWidth" Value="80" />
+                        <Setter Property="MinHeight" Value="40" />
+                        <Setter Property="VerticalAlignment" Value="Top" />
+                        <Setter Property="CornerRadius" Value="4" />
+                        <Setter Property="Margin" Value="10" />
+                    </Style>
+                </StackPanel.Resources>
+
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <Button
+                        x:Uid="ViewPageHomeLaunch"
+                        essential:RevealFocusPanel.AttachToPanel="{x:Bind RevealFocusPanel}"
+                        Click="Button_Click_Game"
+                        Style="{StaticResource LaunchButtonStyle}" />
+                    <Button
+                        x:Uid="ViewPageHomeKillProcess"
+                        Click="Button_KillProcess_Click"
+                        Style="{StaticResource SubtleButtonStyle}"
+                        Visibility="Collapsed" />
+                </StackPanel>
+
+                <SelectorBar x:Name="SelectorBar2" SelectionChanged="SelectorBar2_SelectionChanged">
+                    <SelectorBarItem
+                        x:Name="SelectorBarItemPage1"
+                        x:Uid="ViewPageHomeGameOptions"
+                        IsSelected="True" />
+                    <SelectorBarItem
+                        x:Name="SelectorBarItemPage2"
+                        x:Uid="ViewPageHomeInjectionOptions"
+                        Margin="20,0" />
+                </SelectorBar>
+
             </StackPanel>
-
-            <SelectorBar x:Name="SelectorBar2" SelectionChanged="SelectorBar2_SelectionChanged">
-                <SelectorBarItem
-                    x:Name="SelectorBarItemPage1"
-                    x:Uid="ViewPageHomeGameOptions"
-                    IsSelected="True" />
-                <SelectorBarItem
-                    x:Name="SelectorBarItemPage2"
-                    x:Uid="ViewPageHomeInjectionOptions"
-                    Margin="20,0" />
-            </SelectorBar>
-
-        </StackPanel>
+        </essential:RevealFocusPanel>
         <Frame x:Name="contentFrame" Grid.Row="1" />
     </Grid>
 </Page>
