@@ -293,11 +293,18 @@ Abilita "Sovrascrittura limite frame rate" per modificare questa restrizione.</v
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile non riuscito, ignora se FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>Scrittura delle impostazioni su file NON RIUSCITA</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Override della lingua NON RIUSCITO
+LanguageOverride è stato reimpostato</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>Errore di rilevamento del percorso di gioco</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>ERRORE DI AVVIO DEL GIOCO</value>
+    <value>Avvio del GIOCO NON RIUSCITO</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Avviso</value>

@@ -293,11 +293,18 @@ Ative "Substituição do Limite de Taxa de Quadros" para alterar essa restriçã
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile falhou, ignore se for FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>Falha ao gravar as configurações no arquivo</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Falha ao substituir o idioma
+LanguageOverride foi redefinido</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>Erro de Detecção do Caminho do Jogo</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>ERRO AO INICIAR O JOGO</value>
+    <value>Falha ao iniciar o JOGO</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Aviso</value>

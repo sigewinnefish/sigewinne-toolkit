@@ -293,11 +293,18 @@ Aktifkan "Frame Rate Limit Override" untuk mengubah pembatasan ini.</value>
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile Gagal, abaikan jika FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>WriteSettingsToFile GAGAL</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Ganti Paksa Bahasa GAGAL
+LanguageOverride telah direset</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>Error Deteksi GamePath</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>ERROR PELUNCURAN GAME</value>
+    <value>Peluncuran GAME GAGAL</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Peringatan</value>
