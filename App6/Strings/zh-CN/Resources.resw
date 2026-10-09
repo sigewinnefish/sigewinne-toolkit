@@ -292,6 +292,13 @@
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>加载设置文件失败，若为首次运行可忽略</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>写入设置文件失败</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>覆盖语言失败
+语言覆盖已重置</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>游戏路径检测错误</value>
   </data>

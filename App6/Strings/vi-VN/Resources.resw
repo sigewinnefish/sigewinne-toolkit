@@ -293,11 +293,18 @@ Bật "Ghi đè giới hạn tốc độ khung hình" để thay đổi hạn ch
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile thất bại, bỏ qua nếu là FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>Ghi cài đặt vào tệp THẤT BẠI</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Ghi đè Ngôn ngữ THẤT BẠI
+LanguageOverride đã được đặt lại</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>Lỗi phát hiện GamePath</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>LỖI KHỞI CHẠY TRÒ CHƠI</value>
+    <value>Khởi chạy TRÒ CHƠI THẤT BẠI</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Cảnh báo</value>

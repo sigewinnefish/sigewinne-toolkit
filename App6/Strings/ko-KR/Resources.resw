@@ -293,11 +293,18 @@
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile 실패, FIRSTRUN인 경우 무시하세요</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>설정 파일 쓰기 실패</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>언어 재정의 실패
+LanguageOverride가 재설정되었습니다</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>GamePath 감지 오류</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>게임 실행 오류</value>
+    <value>게임 실행 실패</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>경고</value>

@@ -293,11 +293,18 @@ Activa "Anulación del límite de tasa de fotogramas" para cambiar esta restricc
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile falló; ignóralo si es FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>WriteSettingsToFile FALLÓ</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Anulación de idioma FALLÓ
+Se ha restablecido LanguageOverride</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>Error de detección de GamePath</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>ERROR AL INICIAR EL JUEGO</value>
+    <value>Inicio del JUEGO FALLÓ</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Advertencia</value>

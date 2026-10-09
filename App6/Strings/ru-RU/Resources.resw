@@ -293,11 +293,18 @@
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>Ошибка LoadSettingsFromFile, игнорируйте при FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>Запись настроек в файл НЕ УДАЛАСЬ</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Переопределение языка НЕ УДАЛОСЬ
+Переопределение языка сброшено</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>Ошибка определения пути к игре</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>ОШИБКА ЗАПУСКА ИГРЫ</value>
+    <value>Запуск ИГРЫ НЕ УДАЛСЯ</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Предупреждение</value>
