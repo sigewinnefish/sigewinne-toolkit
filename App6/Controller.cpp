@@ -61,6 +61,7 @@ namespace Service::NotifyIcon
         options.Placement(FlyoutPlacementMode::Auto);
         options.ShowMode(FlyoutShowMode::Auto);
         m_flyout.ShowAt(m_anchor, options);
+        SetForegroundWindow(m_hwnd);
     }
 
     void Controller::DeleteNotifyIcon()
