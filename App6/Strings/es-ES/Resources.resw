@@ -332,48 +332,70 @@ Se ha restablecido LanguageOverride</value>
 Se ha generado un volcado en %temp%/toolkit.dmp</value>
   </data>
   <data name="AppLanguageDefault" xml:space="preserve">
-    <value>Inglés</value>
+    <value>English</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
-    <value>Chino simplificado</value>
+    <value>简体中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
-    <value>Chino tradicional</value>
+    <value>繁體中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityRussian" xml:space="preserve">
-    <value>Ruso</value>
+    <value>Русский</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunitySpanish" xml:space="preserve">
     <value>Español</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityThai" xml:space="preserve">
-    <value>Tailandés</value>
+    <value>ไทย</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityKorean" xml:space="preserve">
-    <value>Coreano</value>
+    <value>한국어</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
-    <value>Portugués</value>
+    <value>Português</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
-    <value>Indonesio</value>
+    <value>Indonesia</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityItalian" xml:space="preserve">
     <value>Italiano</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityJapanese" xml:space="preserve">
-    <value>Japonés</value>
+    <value>日本語</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityGerman" xml:space="preserve">
-    <value>Alemán</value>
+    <value>Deutsch</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityFrench" xml:space="preserve">
-    <value>Francés</value>
+    <value>Français</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>7.1b1</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>SigeWinne Toolkit</value>
   </data>
   <data name="AppLanguageCommunityTurkish" xml:space="preserve">
-    <value>Turco</value>
+    <value>Türkçe</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
-    <value>Vietnamita</value>
+    <value>Tiếng Việt</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
 </root>
