@@ -387,6 +387,9 @@ dump has been generated at %temp%/toolkit.dmp</value>
     <value>7.1b1</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
+  <data name="AppName" xml:space="preserve">
+    <value>SigeWinne Toolkit</value>
+  </data>
   <data name="AppLanguageCommunityTurkish" xml:space="preserve">
     <value>Türkçe</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>

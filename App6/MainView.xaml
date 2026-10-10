@@ -15,11 +15,10 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TitleBar
-            Title="Sigewinne"
+            x:Name="TitleBar"
             Grid.Row="0"
             IsBackButtonVisible="False"
-            IsPaneToggleButtonVisible="False"
-            Subtitle="Toolkit v7.1b1">
+            IsPaneToggleButtonVisible="False">
 
             <TitleBar.LeftHeader>
                 <ImageIcon

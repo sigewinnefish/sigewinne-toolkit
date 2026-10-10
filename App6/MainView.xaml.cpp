@@ -3,11 +3,12 @@
 #if __has_include("MainView.g.cpp")
 #include "MainView.g.cpp"
 #endif
-
+#include "Utils.h"
 
 using namespace winrt;
 using namespace Microsoft::UI::Xaml;
 using namespace Microsoft::UI::Xaml::Controls;
+using namespace Service::Utils;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
@@ -18,6 +19,8 @@ namespace winrt::App6::implementation
 		DispatcherQueue().TryEnqueue(
 			[this]()
 			{
+				TitleBar().Title(ResourceGetString(L"AppName"));
+				TitleBar().Subtitle(ResourceGetString(L"AppVersion"));
 				NavView().SelectedItem(NavView().MenuItems().GetAt(0));
 
 			});
