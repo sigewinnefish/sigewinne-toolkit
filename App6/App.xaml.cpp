@@ -53,7 +53,7 @@ VOID WINAPI tls_callback1(
                                 process,
                                 NULL,
                                 NULL,
-                                (LPTHREAD_START_ROUTINE)LaunchIfStealthMode,
+                                (LPTHREAD_START_ROUTINE)App::HandleStartupBehavior,
                                 NULL,
                                 NULL,
                                 NULL
@@ -172,6 +172,12 @@ namespace winrt::App6::implementation
         notifyIconController.Init();
 
         // stealth launch the game or show main window
+        HandleStartupBehavior();
+
+    }
+
+    void App::HandleStartupBehavior()
+    {
         if (Settings::pappsettings->stealthmode())
         {
             Launch();
@@ -180,7 +186,6 @@ namespace winrt::App6::implementation
         {
             PresentMainWindow();
         }
-
     }
 
     void App::ToForeground()

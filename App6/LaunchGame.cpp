@@ -132,12 +132,5 @@ namespace Service::Game::Launching
 		THROW_LAST_ERROR_IF(!hThread);
 	}
 
-	void LaunchIfStealthMode()
-	{
-		if (pappsettings->stealthmode())
-		{
-			Launch();
-		}
-	}
 }
 

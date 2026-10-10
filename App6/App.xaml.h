@@ -12,7 +12,7 @@ namespace winrt::App6::implementation
         App();
 
         void OnLaunched(Microsoft::UI::Xaml::LaunchActivatedEventArgs const&);
-        
+        static void HandleStartupBehavior();
 		static void PresentMainWindow();
         inline static Microsoft::UI::Xaml::Window mainWindow{ nullptr };
         ~App();
