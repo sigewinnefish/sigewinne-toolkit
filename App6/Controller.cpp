@@ -57,6 +57,7 @@ namespace Service::NotifyIcon
         RECT rect;
         Shell_NotifyIconGetRect(&id, &rect);
         auto dpi_scale = m_anchor.XamlRoot().RasterizationScale();
+
         options.Position(Windows::Foundation::Point{ static_cast<float>(rect.left / dpi_scale - 8),static_cast<float>(rect.top / dpi_scale - 24) });
         options.Placement(FlyoutPlacementMode::Auto);
         options.ShowMode(FlyoutShowMode::Auto);
