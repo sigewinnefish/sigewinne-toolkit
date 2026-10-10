@@ -34,6 +34,9 @@
     <Page Include="NotifyIconContextMenu.xaml">
       <Filter>View</Filter>
     </Page>
+    <Page Include="NotifyIconContextMenuContent.xaml">
+      <Filter>View</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="MainWindow.idl" />

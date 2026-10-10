@@ -1,0 +1,8 @@
+namespace App6
+{
+    [default_interface]
+    runtimeclass NotifyIconContextMenuContent : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        NotifyIconContextMenuContent();
+    }
+}

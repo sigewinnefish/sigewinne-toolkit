@@ -168,6 +168,10 @@
       <SubType>Code</SubType>
     </ClInclude>
     <ClInclude Include="Controller.h" />
+    <ClInclude Include="NotifyIconContextMenuContent.xaml.h">
+      <DependentUpon>NotifyIconContextMenuContent.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -213,6 +217,9 @@
     <Page Include="NotifyIconContextMenu.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="NotifyIconContextMenuContent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="RightAlignedCompactToggleSwitch.xaml" />
     <Page Include="SettingsPage.xaml">
       <SubType>Designer</SubType>
@@ -241,6 +248,10 @@
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="NotifyIconContextMenu.xaml.cpp">
       <DependentUpon>NotifyIconContextMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="NotifyIconContextMenuContent.xaml.cpp">
+      <DependentUpon>NotifyIconContextMenuContent.xaml</DependentUpon>
       <SubType>Code</SubType>
     </ClCompile>
     <ClCompile Include="settings.cpp" />
@@ -304,6 +315,10 @@
     </Midl>
     <Midl Include="NotifyIconContextMenu.idl">
       <DependentUpon>NotifyIconContextMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="NotifyIconContextMenuContent.idl">
+      <DependentUpon>NotifyIconContextMenuContent.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
     <Midl Include="SettingsViewModel.idl" />
