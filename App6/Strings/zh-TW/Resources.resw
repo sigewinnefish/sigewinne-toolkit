@@ -332,48 +332,70 @@
 傾印檔已產生於 %temp%/toolkit.dmp</value>
   </data>
   <data name="AppLanguageDefault" xml:space="preserve">
-    <value>英文</value>
+    <value>English</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
-    <value>簡體中文</value>
+    <value>简体中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
     <value>繁體中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityRussian" xml:space="preserve">
-    <value>俄文</value>
+    <value>Русский</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunitySpanish" xml:space="preserve">
-    <value>西班牙文</value>
+    <value>Español</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityThai" xml:space="preserve">
-    <value>泰文</value>
+    <value>ไทย</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityKorean" xml:space="preserve">
-    <value>韓文</value>
+    <value>한국어</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
-    <value>葡萄牙文</value>
+    <value>Português</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
-    <value>印尼文</value>
+    <value>Indonesia</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityItalian" xml:space="preserve">
-    <value>義大利文</value>
+    <value>Italiano</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityJapanese" xml:space="preserve">
-    <value>日文</value>
+    <value>日本語</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityGerman" xml:space="preserve">
-    <value>德文</value>
+    <value>Deutsch</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityFrench" xml:space="preserve">
-    <value>法文</value>
+    <value>Français</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>7.1b1</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>SigeWinne 工具箱</value>
   </data>
   <data name="AppLanguageCommunityTurkish" xml:space="preserve">
-    <value>土耳其文</value>
+    <value>Türkçe</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
-    <value>越南文</value>
+    <value>Tiếng Việt</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
 </root>
