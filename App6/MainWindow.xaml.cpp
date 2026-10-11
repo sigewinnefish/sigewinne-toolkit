@@ -6,9 +6,10 @@
 
 #include <Settings.h>
 #include <App.xaml.h>
+#include "GUID.h"
 
 using namespace Service::Settings;
-
+using namespace Service::GlobalConst::GUID;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -39,10 +40,10 @@ namespace winrt::App6::implementation
 		typedef __int64(*put_PlacementRestorationBehavior)(__int64 a1, __int64 a2);
 
 		void* result{};
-		guid gIAppWindowExperimental("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12"); // IAppWindowExperimental
+		guid gIAppWindowExperimental(IAppWindowExperimental);
 		this->AppWindow().try_as<IUnknown>()->QueryInterface(gIAppWindowExperimental, &result);
 		auto vt = *(int64_t*)result;
-		const auto k = guid{ L"{1ed4408f-9732-4543-aa46-8758439652e6}" }; // guid, per window
+		const auto k = guid{ MainWindowGUID }; // guid, per window
 		auto func = reinterpret_cast<put_PlacementRestorationBehavior*>((char*)vt + 0x48);
 		(*func)((__int64)result, 0);
 		Windows::Foundation::IReference kk(k);
@@ -55,7 +56,7 @@ namespace winrt::App6::implementation
 		typedef __int64(*SaveCurrentPlacement)(__int64 a1);
 
 		void* result{};
-		guid gIAppWindowExperimental("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12"); // IAppWindowExperimental
+		guid gIAppWindowExperimental(IAppWindowExperimental); // IAppWindowExperimental
 		this->AppWindow().try_as<IUnknown>()->QueryInterface(gIAppWindowExperimental, &result);
 		auto vt = *(int64_t*)result;
 		auto func3 = reinterpret_cast<SaveCurrentPlacement*>((char*)vt + 0x58);

@@ -12,11 +12,13 @@
 #include "NotifyIconContextMenu.xaml.h"
 
 #include "Utils.h"
+#include "GUID.h"
 using namespace Service::Utils::Message;
 using namespace Service::Game::Launching;
 
 using namespace winrt;
 using namespace winrt::Microsoft::UI::Xaml;
+using namespace Service::GlobalConst::GUID;
 
 // TLS Callback to ensure single instance
 VOID WINAPI tls_callback1(
@@ -26,7 +28,7 @@ VOID WINAPI tls_callback1(
 {
     if (Reason == DLL_PROCESS_ATTACH) //PROCESS start
     {
-        HANDLE hMutex = CreateMutexW(NULL, FALSE, L"1864d952-c1dd-441a-8756-1b96fb9ff89e"); // instance GUID
+        HANDLE hMutex = CreateMutexW(NULL, FALSE, AppInstanceGUID);
         if (GetLastError() == ERROR_ALREADY_EXISTS)
         {
             wil::unique_handle hSnapshot(CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0));

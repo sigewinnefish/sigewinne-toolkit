@@ -6,11 +6,13 @@
 
 #include "App.xaml.h"
 #include "resource.h"
+#include "GUID.h"
 
 using namespace Service::Utils;
 using namespace winrt::Microsoft::UI::Xaml;
 using namespace winrt::Microsoft::UI::Xaml::Controls::Primitives;
 using namespace winrt::App6::implementation;
+using namespace Service::GlobalConst::GUID;
 
 namespace Service::NotifyIcon
 {
@@ -52,7 +54,7 @@ namespace Service::NotifyIcon
 
         FlyoutShowOptions options;
         NOTIFYICONIDENTIFIER id{};
-        id.guidItem = winrt::guid("21a2acbc-3a44-43c8-860a-f8e7151b2623");
+        id.guidItem = winrt::guid(NOTIFYICONGUID);
         id.cbSize = sizeof(NOTIFYICONIDENTIFIER);
         RECT rect;
         Shell_NotifyIconGetRect(&id, &rect);
@@ -73,7 +75,7 @@ namespace Service::NotifyIcon
             nid.cbSize = sizeof(NOTIFYICONDATAW);
             nid.hWnd = m_hwnd;
             nid.uID = 0;
-            nid.guidItem = winrt::guid("21a2acbc-3a44-43c8-860a-f8e7151b2623");
+            nid.guidItem = winrt::guid(NOTIFYICONGUID);
             nid.uFlags = NIF_GUID;
             if (Shell_NotifyIconW(NIM_DELETE, &nid))
             {
@@ -85,7 +87,7 @@ namespace Service::NotifyIcon
     void Controller::AddNotifyIcon()
     {
 		hstring appname = ResourceGetString((L"NotifyIconName"));
-		guid gNotifyIcon("21a2acbc-3a44-43c8-860a-f8e7151b2623");
+		guid gNotifyIcon(NOTIFYICONGUID);
 		NOTIFYICONDATAW nid = {};
 		nid.cbSize = sizeof(NOTIFYICONDATAW);
 		nid.hWnd = m_hwnd;

@@ -4,6 +4,7 @@
 #include <Controller.h>
 
 using namespace Service;
+using namespace winrt::Microsoft::UI::Xaml;
 
 namespace winrt::App6::implementation
 {
@@ -11,10 +12,10 @@ namespace winrt::App6::implementation
     {
         App();
 
-        void OnLaunched(Microsoft::UI::Xaml::LaunchActivatedEventArgs const&);
+        void OnLaunched(LaunchActivatedEventArgs const&);
         static void HandleStartupBehavior();
 		static void PresentMainWindow();
-        inline static Microsoft::UI::Xaml::Window mainWindow{ nullptr };
+        inline static Window mainWindow{ nullptr };
         ~App();
 
 	private:

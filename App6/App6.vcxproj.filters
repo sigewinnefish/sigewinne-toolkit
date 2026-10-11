@@ -130,6 +130,9 @@
     <ClInclude Include="Localization.h">
       <Filter>Service\Localization</Filter>
     </ClInclude>
+    <ClInclude Include="GUID.h">
+      <Filter>Service\GlobalConst</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Wide310x150Logo.scale-200.png">
@@ -352,6 +355,9 @@
     </Filter>
     <Filter Include="Resource\Translations">
       <UniqueIdentifier>{b2931f50-028a-48a6-9999-0859063e3503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Service\GlobalConst">
+      <UniqueIdentifier>{8efea9d9-be8a-4460-865e-50ed380a01cc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
