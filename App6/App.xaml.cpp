@@ -210,6 +210,7 @@ namespace winrt::App6::implementation
         else
         {
             mainWindow = make<MainWindow>();
+            winrt::get_self<MainWindow>(mainWindow.as<default_interface<MainWindow>>())->ShowWindowWithSavedPlacement();
         }
     }
 

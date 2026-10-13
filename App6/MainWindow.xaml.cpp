@@ -34,20 +34,10 @@ namespace winrt::App6::implementation
         return _hwnd;
     }
 
-	enum class PlacementRestorationBehavior : std::uint32_t
-	{
-		None = 0,
-		AllowShowMaximized = 0x1,
-		AllowShowFullScreen = 0x2,
-		AllowShowArranged = 0x4,
-		UseStartupInfoForFirstWindow = 0x8,
-		All = 0xffffffff,
-	};
-
 	struct  __declspec(novtable) IAppWindowExperimental : public ::IInspectable
 	{
 		virtual HRESULT STDMETHODCALLTYPE get_PersistedStateId() = 0; // not use
-		virtual HRESULT STDMETHODCALLTYPE put_PersistedStateId(__int64) = 0;
+		virtual HRESULT STDMETHODCALLTYPE put_PersistedStateId(void*) = 0;
 		virtual HRESULT STDMETHODCALLTYPE get_PlacementRestorationBehavior() = 0; // not use
 		virtual HRESULT STDMETHODCALLTYPE put_PlacementRestorationBehavior(PlacementRestorationBehavior) = 0;
 		virtual HRESULT STDMETHODCALLTYPE GetCurrentPlacement() = 0; // not use
@@ -55,20 +45,23 @@ namespace winrt::App6::implementation
 		
 	};
 
-    void MainWindow::Exp1()
+    void MainWindow::SetPlacementRestorationBehavior(PlacementRestorationBehavior behavior)
 	{
-
 		winrt::com_ptr<IAppWindowExperimental> com_IAppWindowExperimental;
-		//winrt::com_ptr<IAppWindowExperimental> com_IAppWindowExperimental;
-		auto guid_MainWindowGUID = guid{ MainWindowGUID };
-		auto guid_Reference = Windows::Foundation::IReference{ guid_MainWindowGUID };
 		this->AppWindow().try_as<IUnknown>()->QueryInterface(guid{ iid_IAppWindowExperimental }, com_IAppWindowExperimental.put_void());
-		com_IAppWindowExperimental->put_PersistedStateId(*(__int64*)&guid_Reference);
-		com_IAppWindowExperimental->put_PlacementRestorationBehavior(PlacementRestorationBehavior::None);
-
+		com_IAppWindowExperimental->put_PlacementRestorationBehavior(behavior);
 	}
 
-	void MainWindow::Exp2()
+	void MainWindow::ShowWindowWithSavedPlacement()
+	{
+		winrt::com_ptr<IAppWindowExperimental> com_IAppWindowExperimental;
+		winrt::guid winrtGuid(MainWindowGUID);
+		Windows::Foundation::IReference<winrt::guid> guid_Reference(winrtGuid);
+		this->AppWindow().try_as<IUnknown>()->QueryInterface(guid{ iid_IAppWindowExperimental }, com_IAppWindowExperimental.put_void());
+		com_IAppWindowExperimental->put_PersistedStateId(winrt::get_abi(guid_Reference));
+	}
+
+	void MainWindow::SaveCurrentPlacement()
 	{
 		winrt::com_ptr<IAppWindowExperimental> com_IAppWindowExperimental;
 		this->AppWindow().try_as<IUnknown>()->QueryInterface(guid{ iid_IAppWindowExperimental }, com_IAppWindowExperimental.put_void());
@@ -114,16 +107,13 @@ namespace winrt::App6::implementation
 
 			});
 
-		// ShowWindow
-
-		this->Exp1();
-		this->Activate();
-
+		// SetPlacementRestorationBehavior to default
+		SetPlacementRestorationBehavior(PlacementRestorationBehavior::None);
 	}
 
 	void MainWindow::Window_Closed(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::WindowEventArgs const& args)
 	{
-		Exp2();
+		SaveCurrentPlacement();
 	}
 }
 
