@@ -7,9 +7,6 @@
     <Page Include="IslandPage.xaml">
       <Filter>View</Filter>
     </Page>
-    <Page Include="MainWindow.xaml">
-      <Filter>View</Filter>
-    </Page>
     <Page Include="LaunchGamePage.xaml">
       <Filter>View</Filter>
     </Page>
@@ -36,6 +33,9 @@
     </Page>
     <Page Include="NotifyIconContextMenuContent.xaml">
       <Filter>View</Filter>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Filter>View\Window</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -358,6 +358,9 @@
     </Filter>
     <Filter Include="Service\GlobalConst">
       <UniqueIdentifier>{8efea9d9-be8a-4460-865e-50ed380a01cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View\Window">
+      <UniqueIdentifier>{31047b29-fa16-489a-b89e-30837fefcf27}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
