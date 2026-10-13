@@ -211,6 +211,7 @@ namespace winrt::App6::implementation
         {
             mainWindow = make<MainWindow>();
             winrt::get_self<MainWindow>(mainWindow.as<default_interface<MainWindow>>())->ShowWindowWithSavedPlacement();
+            mainWindow.Activate();
         }
     }
 
