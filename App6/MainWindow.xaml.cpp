@@ -34,34 +34,45 @@ namespace winrt::App6::implementation
         return _hwnd;
     }
 
+	enum class PlacementRestorationBehavior : std::uint32_t
+	{
+		None = 0,
+		AllowShowMaximized = 0x1,
+		AllowShowFullScreen = 0x2,
+		AllowShowArranged = 0x4,
+		UseStartupInfoForFirstWindow = 0x8,
+		All = 0xffffffff,
+	};
+
+	struct  __declspec(novtable) IAppWindowExperimental : public ::IInspectable
+	{
+		virtual HRESULT STDMETHODCALLTYPE get_PersistedStateId() = 0; // not use
+		virtual HRESULT STDMETHODCALLTYPE put_PersistedStateId(__int64) = 0;
+		virtual HRESULT STDMETHODCALLTYPE get_PlacementRestorationBehavior() = 0; // not use
+		virtual HRESULT STDMETHODCALLTYPE put_PlacementRestorationBehavior(PlacementRestorationBehavior) = 0;
+		virtual HRESULT STDMETHODCALLTYPE GetCurrentPlacement() = 0; // not use
+		virtual HRESULT STDMETHODCALLTYPE SaveCurrentPlacement() = 0;
+		
+	};
+
     void MainWindow::Exp1()
 	{
-		typedef __int64(*put_PersistedStateId)(__int64 a1, __int64 a2);
-		typedef __int64(*put_PlacementRestorationBehavior)(__int64 a1, __int64 a2);
 
-		void* result{};
-		guid gIAppWindowExperimental(IAppWindowExperimental);
-		this->AppWindow().try_as<IUnknown>()->QueryInterface(gIAppWindowExperimental, &result);
-		auto vt = *(int64_t*)result;
-		const auto k = guid{ MainWindowGUID }; // guid, per window
-		auto func = reinterpret_cast<put_PlacementRestorationBehavior*>((char*)vt + 0x48);
-		(*func)((__int64)result, 0);
-		Windows::Foundation::IReference kk(k);
-		auto func2 = reinterpret_cast<put_PersistedStateId*>((char*)vt + 0x38);
-		(*func2)((__int64)result, (__int64)(*(__int64*)&kk));
-		reinterpret_cast<IUnknown*>(result)->Release();
+		winrt::com_ptr<IAppWindowExperimental> com_IAppWindowExperimental;
+		//winrt::com_ptr<IAppWindowExperimental> com_IAppWindowExperimental;
+		auto guid_MainWindowGUID = guid{ MainWindowGUID };
+		auto guid_Reference = Windows::Foundation::IReference{ guid_MainWindowGUID };
+		this->AppWindow().try_as<IUnknown>()->QueryInterface(guid{ iid_IAppWindowExperimental }, com_IAppWindowExperimental.put_void());
+		com_IAppWindowExperimental->put_PersistedStateId(*(__int64*)&guid_Reference);
+		com_IAppWindowExperimental->put_PlacementRestorationBehavior(PlacementRestorationBehavior::None);
+
 	}
+
 	void MainWindow::Exp2()
 	{
-		typedef __int64(*SaveCurrentPlacement)(__int64 a1);
-
-		void* result{};
-		guid gIAppWindowExperimental(IAppWindowExperimental); // IAppWindowExperimental
-		this->AppWindow().try_as<IUnknown>()->QueryInterface(gIAppWindowExperimental, &result);
-		auto vt = *(int64_t*)result;
-		auto func3 = reinterpret_cast<SaveCurrentPlacement*>((char*)vt + 0x58);
-		(*func3)((__int64)result);
-		reinterpret_cast<IUnknown*>(result)->Release();
+		winrt::com_ptr<IAppWindowExperimental> com_IAppWindowExperimental;
+		this->AppWindow().try_as<IUnknown>()->QueryInterface(guid{ iid_IAppWindowExperimental }, com_IAppWindowExperimental.put_void());
+		com_IAppWindowExperimental->SaveCurrentPlacement();
 	}
 
 	void MainWindow::InitWindow()
