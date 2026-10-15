@@ -113,7 +113,7 @@ namespace winrt::App6::implementation
 
 	void MainWindow::Window_Closed(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::WindowEventArgs const& args)
 	{
-		SaveCurrentPlacement();
+		//SaveCurrentPlacement();
 	}
 }
 
