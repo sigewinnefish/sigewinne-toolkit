@@ -9,8 +9,6 @@
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <ResourceDictionary Source="ms-appx:///RightAlignedCompactToggleSwitch.xaml" />
-                <ResourceDictionary Source="ms-appx:///WinUI3Package/SettingsCard_Resource.xaml" />
-                <ResourceDictionary Source="ms-appx:///WinUI3Package/SettingsExpander_Resource.xaml" />
                 <!--  Other merged dictionaries here  -->
             </ResourceDictionary.MergedDictionaries>
             <!--  Other app resources here  -->
