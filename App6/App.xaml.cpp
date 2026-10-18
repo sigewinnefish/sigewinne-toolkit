@@ -126,6 +126,7 @@ int __stdcall wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
     ::winrt::Microsoft::UI::Xaml::Application::Start(
         [](auto&&)
         {
+            g_mainthreadq = winrt::Microsoft::UI::Dispatching::DispatcherQueue::GetForCurrentThread();
             ::winrt::make<::winrt::App6::implementation::App>();
         });
 
@@ -209,9 +210,17 @@ namespace winrt::App6::implementation
         }
         else
         {
-            mainWindow = make<MainWindow>();
-            winrt::get_self<MainWindow>(mainWindow.as<default_interface<MainWindow>>())->ShowWindowWithSavedPlacement();
-            mainWindow.Activate();
+            auto const result = g_mainthreadq.TryEnqueue(
+                []() {
+                    app->mainWindow = mainWindow = make<MainWindow>();
+                    winrt::get_self<MainWindow>(mainWindow.as<default_interface<MainWindow>>())->ShowWindowWithSavedPlacement();
+                    mainWindow.Activate();
+                });
+            if (!result)
+            {
+                ShowMessageBox(L"MBMainWindowCreateFatalError", Utils::Message::FatalError);
+                __fastfail(FAST_FAIL_FATAL_APP_EXIT);
+            }
         }
     }
 

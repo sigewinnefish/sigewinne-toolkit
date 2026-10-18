@@ -6,6 +6,8 @@
 using namespace Service;
 using namespace winrt::Microsoft::UI::Xaml;
 
+inline winrt::Microsoft::UI::Dispatching::DispatcherQueue g_mainthreadq{nullptr};
+
 namespace winrt::App6::implementation
 {
     struct App : AppT<App>

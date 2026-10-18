@@ -27,6 +27,10 @@ namespace Service::Utils
 				caption = ResourceGetString(const_cast<wchar_t*>(L"MBError"));
 				MessageBoxW(0, text.c_str(), caption.c_str(), MB_OK | MB_ICONERROR);
 				break;
+			case FatalError:
+				caption = ResourceGetString(const_cast<wchar_t*>(L"MBFatalError"));
+				MessageBoxW(0, text.c_str(), caption.c_str(), MB_OK | MB_ICONERROR);
+				break;
 			default:
 				break;
 			}
