@@ -8,12 +8,10 @@ using namespace Service::GlobalConst::GUID;
 
 namespace Service::Island
 {
-
 	void Init()
 	{
 		if (!pmap)
 		{
-
 			HANDLE h = OpenFileMapping(FILE_MAP_READ | FILE_MAP_WRITE, FALSE, IslandGUID);
 
 			if (h)

@@ -20,7 +20,6 @@ namespace winrt::App6::implementation
 	MainWindow::MainWindow()
 	{
 		InitWindow();
-
 	}
 
 

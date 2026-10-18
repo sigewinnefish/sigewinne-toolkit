@@ -24,7 +24,6 @@ namespace Service::Localization
                 ShowMessageBox(L"MBPrimaryLanguageOverride", Utils::Message::Error);
                 pappsettings->set_langoverride(false);
             }
-            
         }
     }
 

@@ -49,8 +49,6 @@ namespace Service::Utils
 		return hstr;
 	}
 
-
-
 	std::wstring str2wstr(const std::string_view str)
     {
 		auto hs = to_hstring(str);

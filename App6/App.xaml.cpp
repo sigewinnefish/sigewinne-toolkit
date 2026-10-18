@@ -66,7 +66,6 @@ VOID WINAPI tls_callback1(
                     } while (Process32NextW(hSnapshot.get(), &pe));
                 }
 			}
-
             TerminateProcess(GetCurrentProcess(), 0);
         }
     }
@@ -171,6 +170,7 @@ namespace winrt::App6::implementation
         Island::Init();
         Localization::Init();
 
+        // create notifyIcon
         notifyIconController = NotifyIcon::Controller{};
         notifyIconController.Init();
 
