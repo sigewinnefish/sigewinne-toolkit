@@ -387,7 +387,7 @@ dump has been generated at %temp%/toolkit.dmp</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppVersion" xml:space="preserve">
-    <value>7.1b1</value>
+    <value>7.1b2</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppName" xml:space="preserve">
