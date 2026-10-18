@@ -131,7 +131,6 @@
 
                 <essential:SettingsCard x:Uid="ViewPageSettingsCloseButtonBehavior">
                     <ComboBox
-                        x:Name="LangCombo0"
                         Width="150"
                         essential:ComboBoxHelper.AcrylicWorkaround="True"
                         ItemsSource="{x:Bind ViewModel.CloseBehaviors}"
