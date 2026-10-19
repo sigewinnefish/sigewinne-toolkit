@@ -18,7 +18,7 @@ namespace winrt::App6::implementation
 	{
 		DispatcherQueue().TryEnqueue(
 			[this]()
-			{
+ 			{
 				TitleBar().Title(ResourceGetString(L"AppName"));
 				TitleBar().Subtitle(ResourceGetString(L"AppVersion"));
 				NavView().SelectedItem(NavView().MenuItems().GetAt(0));

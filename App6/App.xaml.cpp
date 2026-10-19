@@ -204,23 +204,24 @@ namespace winrt::App6::implementation
 
     void App::PresentMainWindow()
     {
-        if (mainWindow)
-        {
-            ToForeground();
-        }
-        else
-        {
-            auto const result = g_mainthreadq.TryEnqueue(
-                []() {
+        auto const result = g_mainthreadq.TryEnqueue([]() 
+            {
+                if (mainWindow)
+                {
+                    ToForeground();
+                }
+                else
+                {
                     app->mainWindow = mainWindow = make<MainWindow>();
                     winrt::get_self<MainWindow>(mainWindow.as<default_interface<MainWindow>>())->ShowWindowWithSavedPlacement();
                     mainWindow.Activate();
-                });
-            if (!result)
-            {
-                ShowMessageBox(L"MBMainWindowCreateFatalError", Utils::Message::FatalError);
-                __fastfail(FAST_FAIL_FATAL_APP_EXIT);
-            }
+                }
+
+            });
+        if (!result)
+        {
+            ShowMessageBox(L"MBMainWindowCreateFatalError", Utils::Message::FatalError);
+            __fastfail(FAST_FAIL_FATAL_APP_EXIT);
         }
     }
 
