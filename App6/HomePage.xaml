@@ -52,11 +52,20 @@
                     <SelectorBarItem
                         x:Name="SelectorBarItemPage1"
                         x:Uid="ViewPageHomeGameOptions"
-                        IsSelected="True" />
+                        IsSelected="True">
+                        <SelectorBarItem.Icon>
+                            <FontIcon Glyph="&#xE967;" />
+                        </SelectorBarItem.Icon>
+                    </SelectorBarItem>
                     <SelectorBarItem
                         x:Name="SelectorBarItemPage2"
                         x:Uid="ViewPageHomeInjectionOptions"
-                        Margin="20,0" />
+                        Margin="20,0">
+                        <SelectorBarItem.Icon>
+                            <FontIcon Glyph="&#xEEA0;" />
+                        </SelectorBarItem.Icon>
+                    </SelectorBarItem>
+
                 </SelectorBar>
 
             </StackPanel>
