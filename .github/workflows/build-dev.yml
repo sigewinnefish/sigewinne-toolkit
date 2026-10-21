@@ -6,9 +6,6 @@
 name: devbuild
 
 on:
-  push:
-    branches:
-    - dev
   workflow_dispatch:
 
 env:
@@ -32,11 +29,11 @@ jobs:
       with:
         ref: refs/heads/dev   
     
-    - name: Cache vcpkg
-      uses: actions/cache@v5
+    - name: Restore vcpkg
+      uses: actions/cache/restore@v5
       with:
        path: ~\AppData\Local\vcpkg\archives
-       key: vcpkg-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('vcpkg.json', 'vcpkg-configuration.json') }}
+       key: vcpkg-Windows-X64-06d3f3f186f274f281a993ba1ec9b70db491b94e4a0e32324f07d7cab799fdf1
       
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v2
