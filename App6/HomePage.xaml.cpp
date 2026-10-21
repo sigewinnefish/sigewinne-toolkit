@@ -5,9 +5,7 @@
 #include "HomePage.g.cpp"
 #endif
 #include <winrt/Windows.UI.Xaml.Interop.h>
-#include <winrt/Microsoft.UI.Xaml.Media.Animation.h>
 #include "Settings.h"
-#include <google/protobuf/util/json_util.h>
 
 using namespace winrt;
 using namespace winrt::Microsoft::UI::Xaml;

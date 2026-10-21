@@ -53,10 +53,7 @@
                 <TextBlock x:Name="HeaderText" />
             </NavigationView.Header>
             <NavigationView.MenuItems>
-                <NavigationViewItem
-                    x:Name="SamplePage1Item"
-                    x:Uid="ViewMainHome"
-                    Tag="SamplePage1">
+                <NavigationViewItem x:Uid="ViewMainHome">
                     <NavigationViewItem.Icon>
                         <SymbolIcon Symbol="Play" />
                     </NavigationViewItem.Icon>

@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "Utils.h"
-#include <winrt/Microsoft.Windows.ApplicationModel.Resources.h>
 
 using namespace winrt;
 using namespace Microsoft::Windows::ApplicationModel::Resources;

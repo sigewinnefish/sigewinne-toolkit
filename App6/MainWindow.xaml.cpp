@@ -4,8 +4,8 @@
 #include "MainWindow.g.cpp"
 #endif
 
-#include <Settings.h>
-#include <App.xaml.h>
+#include "Settings.h"
+#include "App.xaml.h"
 #include "GUID.h"
 
 using namespace Service::Settings;

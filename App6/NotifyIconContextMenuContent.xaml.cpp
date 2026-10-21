@@ -4,8 +4,8 @@
 #include "NotifyIconContextMenuContent.g.cpp"
 #endif
 
-#include <LaunchGame.h>
-#include <App.xaml.h>
+#include "LaunchGame.h"
+#include "App.xaml.h"
 
 using namespace winrt;
 using namespace Microsoft::UI::Xaml;

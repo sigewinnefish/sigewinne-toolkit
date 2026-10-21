@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Localization.h"
 #include "Utils.h"
-#include <Settings.h>
+#include "Settings.h"
 
 using namespace winrt::Microsoft::Windows::Globalization;
 using namespace Service::Settings;

@@ -1,10 +1,7 @@
 #include "pch.h"
-#include <Windows.h>
-#include <string>
-#include <filesystem>
 #include "LaunchGame.h"
 #include <wil/resource.h>
-#include "wil/result.h"
+#include <wil/result.h>
 #include "Settings.h"
 #include "Utils.h"
 

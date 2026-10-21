@@ -1,13 +1,12 @@
 #include "pch.h"
 #include "App.xaml.h"
 #include <wil/resource.h>
-#include <Settings.h>
-#include <island.h>
-#include <LaunchGame.h>
+#include "Settings.h"
+#include "island.h"
+#include "LaunchGame.h"
 #include "MainWindow.xaml.h"
-#include "tlhelp32.h"
-#include "DbgHelp.h"
-#include <filesystem>
+#include <tlhelp32.h>
+#include <DbgHelp.h>
 #include "Localization.h"
 #include "NotifyIconContextMenu.xaml.h"
 
