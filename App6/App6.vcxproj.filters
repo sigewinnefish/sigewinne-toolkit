@@ -297,6 +297,9 @@
     <Image Include="Assets\miyoushe128.png">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="Assets\FakeAIWatermark.png">
+      <Filter>Assets</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Assets">

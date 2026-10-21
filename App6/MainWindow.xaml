@@ -19,6 +19,14 @@
     <Grid>
         <essential:WindowCaptionButtonThemeWorkaround Window="{x:Bind}" />
         <local:MainView x:Name="MainView" />
+        <Image
+            Height="24"
+            Margin="24"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            IsHitTestVisible="False"
+            Opacity="0.2"
+            Source="/Assets/FakeAIWatermark.png" />
     </Grid>
 
 </Window>
