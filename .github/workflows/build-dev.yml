@@ -18,18 +18,18 @@ jobs:
     runs-on: windows-2025-vs2026
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
       with:
         ref: refs/heads/dev   
     
     - name: Cache vcpkg
-      uses: actions/cache@v5
+      uses: actions/cache@v6
       with:
        path: ~\AppData\Local\vcpkg\archives
        key: vcpkg-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('vcpkg.json', 'vcpkg-configuration.json') }}
       
     - name: Add MSBuild to PATH
-      uses: microsoft/setup-msbuild@v2
+      uses: microsoft/setup-msbuild@v3
 
     - name: Restore NuGet packages
       working-directory: ${{ github.workspace }}
@@ -44,7 +44,7 @@ jobs:
       run: msbuild /m /p:Platform=x64 /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
 
     - name: checkout external component
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         repository: sigewinnefish/sigewinne-toolkit-exclusive-component
         token: ${{ secrets.pat }}
@@ -66,6 +66,6 @@ jobs:
             ./kachina-builder.exe pack -t installer.png --icon installer.ico -c toolkit.config.json -m metadata.json -d hashed -o toolkit.Install.exe
 
     - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v5.0.0
+      uses: actions/upload-artifact@v7.0.2
       with:
         path: ${{ github.workspace }}\installer\toolkit.Install.exe
