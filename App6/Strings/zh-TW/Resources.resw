@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ViewPageIslandDisableShowDamageText.Header" xml:space="preserve">
+    <value>關閉傷害數字</value>
+  </data>
+  <data name="ViewPageIslandDisableFog.Header" xml:space="preserve">
+    <value>移除霧氣</value>
+  </data>
+  <data name="ViewPageIslandEventCameraMoveHotSwitch.Header" xml:space="preserve">
+    <value>關閉元素爆發動畫</value>
+  </data>
+  <data name="ViewPageIslandFixLowFovScene.Header" xml:space="preserve">
+    <value>特殊介面修正</value>
+  </data>
+  <data name="ViewPageIslandHideQuestBannerHotSwitch.Header" xml:space="preserve">
+    <value>關閉地圖橫幅</value>
+  </data>
+  <data name="ViewPageIslandRedirectCombineEntry.Header" xml:space="preserve">
+    <value>合成跳轉</value>
+  </data>
+  <data name="ViewPageIslandResinListItemAllowCondensedResin.Header" xml:space="preserve">
+    <value>使用濃縮樹脂領取獎勵</value>
+  </data>
+  <data name="ViewPageIslandResinListItemAllowFragileResin.Header" xml:space="preserve">
+    <value>使用脆弱樹脂領取獎勵</value>
+  </data>
+  <data name="ViewPageIslandResinListItemAllowPrimogem.Header" xml:space="preserve">
+    <value>使用原石領取獎勵</value>
+  </data>
+  <data name="ViewPageIslandResinListItemAllowTransientResin.Header" xml:space="preserve">
+    <value>使用須臾樹脂領取獎勵</value>
+  </data>
+  <data name="ViewPageIslandUsingTouchScreen.Header" xml:space="preserve">
+    <value>使用觸控輸入</value>
+  </data>
+  <data name="ViewPageHomeGameOptions.Text" xml:space="preserve">
+    <value>遊戲選項</value>
+  </data>
+  <data name="ViewPageIslandRemoveOpenTeamProgress.Header" xml:space="preserve">
+    <value>移除隊伍配置進度條</value>
+  </data>
+  <data name="ViewPageIslandTargetFov.Header" xml:space="preserve">
+    <value>調整視野</value>
+  </data>
+  <data name="ViewPageIslandTargetFovHotSwitch.Header" xml:space="preserve">
+    <value>視野熱切換</value>
+  </data>
+  <data name="ViewPageIslandTargetFps.Header" xml:space="preserve">
+    <value>目標幀率</value>
+  </data>
+  <data name="ViewPageIslandTargetFpsHotSwitch.Header" xml:space="preserve">
+    <value>幀率熱切換</value>
+  </data>
+  <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
+    <value>Island 選項</value>
+  </data>
+  <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
+    <value>使用原粹樹脂領取獎勵</value>
+  </data>
+  <data name="ViewPageLaunchGameWindowsHDR.Header" xml:space="preserve">
+    <value>Windows HDR</value>
+  </data>
+  <data name="ViewPageLaunchGameWindowsHDR.Description" xml:space="preserve">
+    <value>善用支援 HDR 的螢幕，享受更明亮、更鮮豔、更細緻的畫面</value>
+  </data>
+  <data name="ViewPageLaunchGameArguments.Header" xml:space="preserve">
+    <value>啟動參數</value>
+  </data>
+  <data name="ViewPageLaunchGameArguments.Description" xml:space="preserve">
+    <value>修改遊戲啟動時的預設行為</value>
+  </data>
+  <data name="ViewPageLaunchGameAppearanceExclusive.Description" xml:space="preserve">
+    <value>與內嵌瀏覽器不相容，切換視窗等操作可能導致遊戲崩潰</value>
+  </data>
+  <data name="ViewPageLaunchGameAppearanceFullscreen.Description" xml:space="preserve">
+    <value>覆寫預設全螢幕狀態</value>
+  </data>
+  <data name="ViewPageLaunchGameAppearanceBorderless.Description" xml:space="preserve">
+    <value>以彈出視窗形式建立視窗，不帶邊框</value>
+  </data>
+  <data name="ViewPageLaunchGameAppearanceScreenWidth.Description" xml:space="preserve">
+    <value>覆寫遊戲視窗寬度設定</value>
+  </data>
+  <data name="ViewPageLaunchGameAppearanceScreenHeight.Description" xml:space="preserve">
+    <value>覆寫遊戲視窗高度設定</value>
+  </data>
+  <data name="ViewPageLaunchGameUseHoyolabAccount.Description" xml:space="preserve">
+    <value>使用目前選擇的米遊社 / HoYoLAB 帳號登入。需啟用啟動參數</value>
+  </data>
+  <data name="ViewPageHomeLaunch.Content" xml:space="preserve">
+    <value>啟動</value>
+  </data>
+  <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
+    <value>結束處理程序</value>
+  </data>
+  <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
+    <value>原神遊戲路徑：</value>
+  </data>
+  <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
+    <value>例如：C:\\Genshin Impact\\YuanShen.exe</value>
+  </data>
+  <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
+    <value>啟用後，本工具組會在啟動時立即啟動遊戲，並隱藏於系統匣中。
+若工具組已在執行中，再次啟動它將觸發遊戲啟動。</value>
+  </data>
+  <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
+    <value>隱蔽模式</value>
+  </data>
+  <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
+    <value>崩潰傾印</value>
+  </data>
+  <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
+    <value>遊戲路徑</value>
+  </data>
+  <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
+    <value>幀率限制覆寫</value>
+  </data>
+  <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
+    <value>基於安全理由，Island 將幀率限制為最高 120 FPS。
+啟用「幀率限制覆寫」以變更此限制。</value>
+  </data>
+  <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
+    <value>Island 限制覆寫</value>
+  </data>
+  <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
+    <value>選擇遊戲路徑</value>
+  </data>
+  <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
+    <value>設定遊戲路徑時，請選擇遊戲程式（Yuanshen.exe 或 GenshinImpact.exe），而非遊戲啟動器（launcher.exe）</value>
+  </data>
+  <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
+    <value>受限權杖</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
+    <value>關閉按鈕行為</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
+    <value>結束工具組</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
+    <value>關閉視窗</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
+    <value>變更關閉按鈕的行為</value>
+  </data>
+  <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
+    <value>以標準使用者存取權杖啟動遊戲</value>
+  </data>
+  <data name="ViewMainAppEdition.Title" xml:space="preserve">
+    <value>精簡版</value>
+  </data>
+  <data name="ViewMainHome.Content" xml:space="preserve">
+    <value>首頁</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
+    <value>視窗</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
+    <value>結束</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
+    <value>啟動</value>
+  </data>
+  <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
+    <value>覆寫應用程式語言。需重新啟動才能讓變更生效。</value>
+  </data>
+  <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
+    <value>語言覆寫</value>
+  </data>
+  <data name="NotifyIconName" xml:space="preserve">
+    <value>sigewinne 工具組</value>
+  </data>
+  <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
+    <value>自動偵測</value>
+  </data>
+  <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
+    <value>LoadSettingsFromFile 失敗，若為 FIRSTRUN 請忽略</value>
+  </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>寫入設定至檔案失敗</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>覆寫語言失敗
+語言覆寫已重設</value>
+  </data>
+  <data name="MBGamePathDetectError" xml:space="preserve">
+    <value>遊戲路徑偵測錯誤</value>
+  </data>
+  <data name="MBLaunchGameError" xml:space="preserve">
+    <value>啟動遊戲失敗</value>
+  </data>
+  <data name="MBWarn" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="MBError" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="MBInfo" xml:space="preserve">
+    <value>資訊</value>
+  </data>
+  <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
+    <value>隱藏 UID</value>
+  </data>
+  <data name="ViewUserViewUserRole.Text" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="ViewUserViewUserCookieOperation.Label" xml:space="preserve">
+    <value>米遊社</value>
+  </data>
+  <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
+    <value>手動輸入</value>
+  </data>
+  <data name="MBAppCrash" xml:space="preserve">
+    <value>糟糕，應用程式崩潰了！！！
+傾印檔已產生於 %temp%/toolkit.dmp</value>
+  </data>
+  <data name="AppLanguageDefault" xml:space="preserve">
+    <value>English</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
+    <value>简体中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
+    <value>繁體中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityRussian" xml:space="preserve">
+    <value>Русский</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunitySpanish" xml:space="preserve">
+    <value>Español</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityThai" xml:space="preserve">
+    <value>ไทย</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityKorean" xml:space="preserve">
+    <value>한국어</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
+    <value>Português</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
+    <value>Indonesia</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityItalian" xml:space="preserve">
+    <value>Italiano</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityJapanese" xml:space="preserve">
+    <value>日本語</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityGerman" xml:space="preserve">
+    <value>Deutsch</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityFrench" xml:space="preserve">
+    <value>Français</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>7.1b1</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>SigeWinne 工具箱</value>
+  </data>
+  <data name="AppLanguageCommunityTurkish" xml:space="preserve">
+    <value>Türkçe</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
+    <value>Tiếng Việt</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+</root>

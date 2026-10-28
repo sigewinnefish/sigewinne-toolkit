@@ -7,6 +7,7 @@
 #include "MainWindow.xaml.h"
 #include "GamePathDetect.h"
 #include "Utils.h"
+#include "Localization.h"
 
 using namespace winrt;
 using namespace Microsoft::UI::Xaml;
@@ -14,6 +15,7 @@ using namespace Microsoft::Windows::Storage::Pickers;
 using namespace Service::Settings;
 using namespace Service::Game::FileSystem;
 using namespace Service::Utils::Message;
+using namespace Service::Localization;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
@@ -25,7 +27,7 @@ namespace winrt::App6::implementation
         DispatcherQueue().TryEnqueue(
             [this]()
             {
-                LangCombo().SelectedIndex(pappsettings->lang());
+                LangCombo().SelectedIndex(GetLangIndex());
             });
 
         // Xaml objects should not call InitializeComponent during construction.
@@ -35,7 +37,7 @@ namespace winrt::App6::implementation
     void SettingsPage::LangCombo_SelectionChanged(const Windows::Foundation::IInspectable& sender,
                                                   const Controls::SelectionChangedEventArgs& e)
     {
-        pappsettings->set_lang(LangCombo().SelectedIndex());
+        SetLang(LangCombo().SelectedIndex());
     }
 
     void SettingsPage::SelectGamePath_Click(const Windows::Foundation::IInspectable& sender, const RoutedEventArgs& e)

@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -210,54 +210,72 @@
   <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
     <value>结束进程</value>
   </data>
-  <!-- <data name="ViewPageHomeGamePath.Header" xml:space="preserve">
-    <value>游戏路径：</value>
-  </data> -->
-  <!-- <data name="ViewPageHomeGamePath.PlaceholderText" xml:space="preserve">
-    <value>例如：C:\\Genshin Impact\\YuanShen.exe</value>
-  </data> -->
-  <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
-    <value>启用后，Sigewinne Toolkit 会在启动时立即启动游戏，并隐藏在系统托盘中</value>
-  </data>
-  <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
-    <value>快速启动</value>
-  </data>
-  <data name="ViewMainHome.Content" xml:space="preserve">
-    <value>主界面</value>
-  </data>
-  <data name="ViewMainAppEdition.Title" xml:space="preserve">
-    <value>精简版</value>
-  </data>
-  <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
-    <value>受限令牌</value>
-  </data>
-  <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
-    <value>使用标准用户访问令牌启动游戏</value>
-  </data>
-  <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
-    <value>帧率限制覆盖</value>
-  </data>
-  <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
-    <value>出于安全考虑，游戏帧率被限制在 120 FPS 以内。
-您可以启用此选项来覆盖此限制。</value>
-  </data>
-  <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
-    <value>行为限制覆盖(实验性)</value>
-  </data>
   <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
     <value>配置游戏路径：</value>
   </data>
   <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
     <value>示例: C:\Genshin Impact\YuanShen.exe</value>
   </data>
+  <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
+    <value>启用后，Sigewinne Toolkit 会在启动时立即启动游戏，并隐藏在系统托盘中</value>
+  </data>
+  <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
+    <value>快速启动</value>
+  </data>
+  <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
+    <value>崩溃转储</value>
+  </data>
   <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
     <value>游戏路径</value>
+  </data>
+  <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
+    <value>帧率限制覆盖</value>
+  </data>
+  <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
+    <value>出于安全考虑，Island 将帧率限制在 120 FPS 以内。
+启用“帧率限制覆盖”即可更改此限制。</value>
+  </data>
+  <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
+    <value>行为限制覆盖(实验性)</value>
   </data>
   <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
     <value>选择游戏路径</value>
   </data>
   <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
     <value>设置游戏路径时，请选择游戏程序（例如 Yuanshen.exe 或 GenshinImpact.exe）而不是游戏启动器（launcher.exe）</value>
+  </data>
+  <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
+    <value>受限令牌</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
+    <value>关闭按钮行为</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
+    <value>退出工具包</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
+    <value>关闭窗口</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
+    <value>更改关闭按钮的行为</value>
+  </data>
+  <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
+    <value>使用标准用户访问令牌启动游戏</value>
+  </data>
+  <data name="ViewMainAppEdition.Title" xml:space="preserve">
+    <value>精简版</value>
+  </data>
+  <data name="ViewMainHome.Content" xml:space="preserve">
+    <value>主界面</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
+    <value>窗口</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
+    <value>启动游戏</value>
   </data>
   <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
     <value>覆盖应用程序语言，更改生效需重启应用</value>
@@ -274,6 +292,13 @@
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>加载设置文件失败，若为首次运行可忽略</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>写入设置文件失败</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>覆盖语言失败
+语言覆盖已重置</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>游戏路径检测错误</value>
   </data>
@@ -289,7 +314,7 @@
   <data name="MBInfo" xml:space="preserve">
     <value>信息</value>
   </data>
-    <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
+  <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
     <value>隐藏游戏右下角 UID</value>
   </data>
   <data name="ViewUserViewUserRole.Text" xml:space="preserve">
@@ -300,5 +325,76 @@
   </data>
   <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
     <value>手动输入 Cookie</value>
+  </data>
+  <data name="MBAppCrash" xml:space="preserve">
+    <value>哎呀，应用崩溃了！！！
+转储文件已生成于 %temp%/toolkit.dmp</value>
+  </data>
+  <data name="AppLanguageDefault" xml:space="preserve">
+    <value>English</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
+    <value>简体中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
+    <value>繁體中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityRussian" xml:space="preserve">
+    <value>Русский</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunitySpanish" xml:space="preserve">
+    <value>Español</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityThai" xml:space="preserve">
+    <value>ไทย</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityKorean" xml:space="preserve">
+    <value>한국어</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
+    <value>Português</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
+    <value>Indonesia</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityItalian" xml:space="preserve">
+    <value>Italiano</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityJapanese" xml:space="preserve">
+    <value>日本語</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityGerman" xml:space="preserve">
+    <value>Deutsch</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityFrench" xml:space="preserve">
+    <value>Français</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>7.1b1</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>SigeWinne 工具包</value>
+  </data>
+  <data name="AppLanguageCommunityTurkish" xml:space="preserve">
+    <value>Türkçe</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
+    <value>Tiếng Việt</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
 </root>

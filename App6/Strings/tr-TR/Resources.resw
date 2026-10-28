@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ViewPageIslandDisableShowDamageText.Header" xml:space="preserve">
+    <value>Hasar Sayılarını Devre Dışı Bırak</value>
+  </data>
+  <data name="ViewPageIslandDisableFog.Header" xml:space="preserve">
+    <value>Sisi Kaldır</value>
+  </data>
+  <data name="ViewPageIslandEventCameraMoveHotSwitch.Header" xml:space="preserve">
+    <value>Element Patlaması Animasyonunu Devre Dışı Bırak</value>
+  </data>
+  <data name="ViewPageIslandFixLowFovScene.Header" xml:space="preserve">
+    <value>Özel Arayüz Düzeltmesi</value>
+  </data>
+  <data name="ViewPageIslandHideQuestBannerHotSwitch.Header" xml:space="preserve">
+    <value>Harita bannerını kapat</value>
+  </data>
+  <data name="ViewPageIslandRedirectCombineEntry.Header" xml:space="preserve">
+    <value>Üretim Yönlendirmesi</value>
+  </data>
+  <data name="ViewPageIslandResinListItemAllowCondensedResin.Header" xml:space="preserve">
+    <value>Yoğunlaştırılmış Reçine ile Ödülleri Al</value>
+  </data>
+  <data name="ViewPageIslandResinListItemAllowFragileResin.Header" xml:space="preserve">
+    <value>Kırılgan Reçine ile Ödülleri Al</value>
+  </data>
+  <data name="ViewPageIslandResinListItemAllowPrimogem.Header" xml:space="preserve">
+    <value>Primogem ile Ödülleri Al</value>
+  </data>
+  <data name="ViewPageIslandResinListItemAllowTransientResin.Header" xml:space="preserve">
+    <value>Geçici Reçine ile Ödülleri Al</value>
+  </data>
+  <data name="ViewPageIslandUsingTouchScreen.Header" xml:space="preserve">
+    <value>Dokunmatik Girişi Kullan</value>
+  </data>
+  <data name="ViewPageHomeGameOptions.Text" xml:space="preserve">
+    <value>Oyun Seçenekleri</value>
+  </data>
+  <data name="ViewPageIslandRemoveOpenTeamProgress.Header" xml:space="preserve">
+    <value>Takım Yapılandırma İlerleme Çubuğunu Kaldır</value>
+  </data>
+  <data name="ViewPageIslandTargetFov.Header" xml:space="preserve">
+    <value>Görüş Açısını Ayarla</value>
+  </data>
+  <data name="ViewPageIslandTargetFovHotSwitch.Header" xml:space="preserve">
+    <value>Görüş Açısı Hızlı Değiştirme</value>
+  </data>
+  <data name="ViewPageIslandTargetFps.Header" xml:space="preserve">
+    <value>Hedef Kare Hızı</value>
+  </data>
+  <data name="ViewPageIslandTargetFpsHotSwitch.Header" xml:space="preserve">
+    <value>Kare Hızı Hızlı Değiştirme</value>
+  </data>
+  <data name="ViewPageHomeInjectionOptions.Text" xml:space="preserve">
+    <value>Ada Seçenekleri</value>
+  </data>
+  <data name="ViewPageIslandResinListItemAllowOriginalResin.Header" xml:space="preserve">
+    <value>Özgün Reçine ile Ödülleri Al</value>
+  </data>
+  <data name="ViewPageLaunchGameWindowsHDR.Header" xml:space="preserve">
+    <value>Windows HDR</value>
+  </data>
+  <data name="ViewPageLaunchGameWindowsHDR.Description" xml:space="preserve">
+    <value>Daha parlak, daha canlı ve daha ayrıntılı görüntüler için HDR destekli monitörlerden yararlanın</value>
+  </data>
+  <data name="ViewPageLaunchGameArguments.Header" xml:space="preserve">
+    <value>Başlatma Parametreleri</value>
+  </data>
+  <data name="ViewPageLaunchGameArguments.Description" xml:space="preserve">
+    <value>Oyun başlangıcındaki varsayılan davranışını değiştirin</value>
+  </data>
+  <data name="ViewPageLaunchGameAppearanceExclusive.Description" xml:space="preserve">
+    <value>Gömülü tarayıcılarla uyumlu değildir; pencere değiştirme gibi işlemler oyunun çökmesine neden olabilir</value>
+  </data>
+  <data name="ViewPageLaunchGameAppearanceFullscreen.Description" xml:space="preserve">
+    <value>Varsayılan tam ekran durumunu geçersiz kıl</value>
+  </data>
+  <data name="ViewPageLaunchGameAppearanceBorderless.Description" xml:space="preserve">
+    <value>Pencereyi çerçevesiz, açılır pencere olarak oluştur</value>
+  </data>
+  <data name="ViewPageLaunchGameAppearanceScreenWidth.Description" xml:space="preserve">
+    <value>Oyun penceresi genişlik ayarını geçersiz kıl</value>
+  </data>
+  <data name="ViewPageLaunchGameAppearanceScreenHeight.Description" xml:space="preserve">
+    <value>Oyun penceresi yükseklik ayarını geçersiz kıl</value>
+  </data>
+  <data name="ViewPageLaunchGameUseHoyolabAccount.Description" xml:space="preserve">
+    <value>Şu anda seçili MiYouShe / HoYoLAB kullanıcısıyla oturum açın. Başlatma parametrelerinin etkinleştirilmesi gerekir</value>
+  </data>
+  <data name="ViewPageHomeLaunch.Content" xml:space="preserve">
+    <value>Başlat</value>
+  </data>
+  <data name="ViewPageHomeKillProcess.Content" xml:space="preserve">
+    <value>İşlemi Sonlandır</value>
+  </data>
+  <data name="ViewPageSettingsGamePathTextBlock.Text" xml:space="preserve">
+    <value>Genshin Impact Oyun Yolu:</value>
+  </data>
+  <data name="ViewPageSettingsGamePathTextBox.PlaceholderText" xml:space="preserve">
+    <value>örn: C:\\Genshin Impact\\YuanShen.exe</value>
+  </data>
+  <data name="ViewPageSettingsStealthMode.Description" xml:space="preserve">
+    <value>Etkinleştirildiğinde, bu araç başlangıçta oyunu hemen başlatır ve sistem tepsisinde gizlenir.
+Araç zaten çalışıyorsa, yeniden başlatılması oyunun başlatılmasını tetikler.</value>
+  </data>
+  <data name="ViewPageSettingsStealthMode.Header" xml:space="preserve">
+    <value>Gizli Mod</value>
+  </data>
+  <data name="ViewPageSettingsCrashDump.Header" xml:space="preserve">
+    <value>Çökme Dökümü</value>
+  </data>
+  <data name="ViewPageSettingsGamePath.Header" xml:space="preserve">
+    <value>Oyun Yolu</value>
+  </data>
+  <data name="ViewPageSettingsFrameRateLimitOverride.Header" xml:space="preserve">
+    <value>Kare Hızı Sınırını Geçersiz Kıl</value>
+  </data>
+  <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
+    <value>Güvenlik nedeniyle Ada, Kare Hızını 120 FPS ile sınırlar.
+Bu kısıtlamayı değiştirmek için "Kare Hızı Sınırını Geçersiz Kıl" seçeneğini etkinleştirin.</value>
+  </data>
+  <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
+    <value>Ada Kısıtlamalarını Geçersiz Kıl</value>
+  </data>
+  <data name="ViewPageSettingsSelectGamePath.Header" xml:space="preserve">
+    <value>Oyun Yolu Seç</value>
+  </data>
+  <data name="ViewPageSettingsGamePath.Description" xml:space="preserve">
+    <value>Oyun yolunu ayarlarken lütfen oyun başlatıcısı (launcher.exe) yerine oyun programını (Yuanshen.exe veya GenshinImpact.exe) seçin</value>
+  </data>
+  <data name="ViewPageSettingsRestrictedTokens.Header" xml:space="preserve">
+    <value>Kısıtlı Belirteçler</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehavior.Header" xml:space="preserve">
+    <value>Kapatma Düğmesi Davranışı</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
+    <value>Araçtan Çık</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
+    <value>Pencereyi Kapat</value>
+  </data>
+  <data name="ViewPageSettingsCloseButtonBehavior.Description" xml:space="preserve">
+    <value>Kapatma düğmesinin davranışını değiştirin</value>
+  </data>
+  <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
+    <value>Oyunu Standart Kullanıcı Erişim Belirteci ile Başlat</value>
+  </data>
+  <data name="ViewMainAppEdition.Title" xml:space="preserve">
+    <value>Hafif Sürüm</value>
+  </data>
+  <data name="ViewMainHome.Content" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuWindow.Label" xml:space="preserve">
+    <value>Pencere</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuExit.Label" xml:space="preserve">
+    <value>Çıkış</value>
+  </data>
+  <data name="ViewNotifyIconContextMenuLaunch.Label" xml:space="preserve">
+    <value>Başlat</value>
+  </data>
+  <data name="ViewPageSettingsLanguageOverride.Description" xml:space="preserve">
+    <value>Uygulama dilini geçersiz kılar. Değişikliklerin etkili olması için yeniden başlatma gerekir.</value>
+  </data>
+  <data name="ViewPageSettingsLanguageOverride.Header" xml:space="preserve">
+    <value>Dil Geçersiz Kılma</value>
+  </data>
+  <data name="NotifyIconName" xml:space="preserve">
+    <value>sigewinne toolkit</value>
+  </data>
+  <data name="ViewPageSettingsGamePathAutoDetect.Content" xml:space="preserve">
+    <value>Otomatik Algıla</value>
+  </data>
+  <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
+    <value>LoadSettingsFromFile başarısız oldu, FIRSTRUN ise yok sayın</value>
+  </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>WriteSettingsToFile BAŞARISIZ</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Dil Geçersiz Kılma BAŞARISIZ
+LanguageOverride sıfırlandı</value>
+  </data>
+  <data name="MBGamePathDetectError" xml:space="preserve">
+    <value>Oyun Yolu Algılama Hatası</value>
+  </data>
+  <data name="MBLaunchGameError" xml:space="preserve">
+    <value>Oyun başlatma BAŞARISIZ</value>
+  </data>
+  <data name="MBWarn" xml:space="preserve">
+    <value>Uyarı</value>
+  </data>
+  <data name="MBError" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="MBInfo" xml:space="preserve">
+    <value>Bilgi</value>
+  </data>
+  <data name="ViewPageIslandHideUid.Header" xml:space="preserve">
+    <value>UID'yi Gizle</value>
+  </data>
+  <data name="ViewUserViewUserRole.Text" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="ViewUserViewUserCookieOperation.Label" xml:space="preserve">
+    <value>MiYouShe</value>
+  </data>
+  <data name="ViewUserViewUserCookieOperationManualInputAction.Label" xml:space="preserve">
+    <value>Manuel Olarak Gir</value>
+  </data>
+  <data name="MBAppCrash" xml:space="preserve">
+    <value>OOPS, UYGULAMA ÇÖKTÜ !!!
+döküm dosyası %temp%/toolkit.dmp konumunda oluşturuldu</value>
+  </data>
+  <data name="AppLanguageDefault" xml:space="preserve">
+    <value>English</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
+    <value>简体中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
+    <value>繁體中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityRussian" xml:space="preserve">
+    <value>Русский</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunitySpanish" xml:space="preserve">
+    <value>Español</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityThai" xml:space="preserve">
+    <value>ไทย</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityKorean" xml:space="preserve">
+    <value>한국어</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
+    <value>Português</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
+    <value>Indonesia</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityItalian" xml:space="preserve">
+    <value>Italiano</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityJapanese" xml:space="preserve">
+    <value>日本語</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityGerman" xml:space="preserve">
+    <value>Deutsch</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityFrench" xml:space="preserve">
+    <value>Français</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>7.1b1</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>SigeWinne Araç Seti</value>
+  </data>
+  <data name="AppLanguageCommunityTurkish" xml:space="preserve">
+    <value>Türkçe</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
+    <value>Tiếng Việt</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+</root>

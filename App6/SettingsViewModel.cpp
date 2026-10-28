@@ -4,9 +4,12 @@
 #include "SettingsViewModel.g.cpp"
 #endif
 #include "Utils.h"
+#include "island.h"
+#include "Localization.h"
 
 using namespace Service::Utils;
 using namespace Service::Island;
+using namespace Service;
 
 namespace winrt::App6::implementation
 {
@@ -15,9 +18,11 @@ namespace winrt::App6::implementation
 		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorExit"));
 		CloseBehaviors.Append(ResourceGetString(L"ViewPageSettingsCloseButtonBehaviorCloseWindow"));
 
-		Languages.Append(ResourceGetString(L"ViewPageSettingsLanguagesDefault"));
-		Languages.Append(ResourceGetString(L"ViewPageSettingsLanguagesThirdPartyChinese"));
-		
+        for (const auto& it: Localization::Languages)
+        {
+			Languages.Append(ResourceGetString(it.first.data()));
+        }
+	    
 	}
 
 	bool SettingsViewModel::IslandRestrictionsOverride()
@@ -28,7 +33,8 @@ namespace winrt::App6::implementation
 	void SettingsViewModel::IslandRestrictionsOverride(bool value)
 	{
 		pappsettings->set_islandrestrictionsoverride(value);
-		if (!value && pappsettings->frameratelimitvalue() > 120)
+
+		if (!value && pisland->targetframerate() > 120)
 		{
 			pisland->set_targetframerate(120);
 			pmap->TargetFrameRate = 120;
@@ -43,7 +49,8 @@ namespace winrt::App6::implementation
 	void SettingsViewModel::FrameRateLimitOverride(bool value)
 	{
 		pappsettings->set_frameratelimitoverride(value);
-		if (!value && pappsettings->frameratelimitvalue() > 120 )
+
+		if (!value && pisland->targetframerate() > 120 )
 		{
 			pisland->set_targetframerate(120);
 			pmap->TargetFrameRate = 120;

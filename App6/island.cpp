@@ -1,17 +1,18 @@
 #include "pch.h"
+#include "island.h"
 #include "Settings.h"
+#include "GUID.h"
 
 using namespace Service::Settings;
+using namespace Service::GlobalConst::GUID;
 
 namespace Service::Island
 {
-
 	void Init()
 	{
 		if (!pmap)
 		{
-
-			HANDLE h = OpenFileMapping(FILE_MAP_READ | FILE_MAP_WRITE, FALSE, L"4F3E8543-40F7-4808-82DC-21E48A6037A7");
+			HANDLE h = OpenFileMapping(FILE_MAP_READ | FILE_MAP_WRITE, FALSE, IslandGUID);
 
 			if (h)
 			{
@@ -20,7 +21,7 @@ namespace Service::Island
 			}
             else
             {
-				h = CreateFileMapping(INVALID_HANDLE_VALUE, NULL, PAGE_READWRITE, 0, 1024, L"4F3E8543-40F7-4808-82DC-21E48A6037A7");
+				h = CreateFileMapping(INVALID_HANDLE_VALUE, NULL, PAGE_READWRITE, 0, 1024, IslandGUID);
 				pmap = (IslandEnvironment*)MapViewOfFile(_Notnull_ h, FILE_MAP_READ | FILE_MAP_WRITE, 0, 0, 0);
 				ZeroMemory(pmap, sizeof(IslandEnvironment));
             }

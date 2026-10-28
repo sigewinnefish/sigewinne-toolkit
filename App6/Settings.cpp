@@ -1,9 +1,7 @@
 #include "pch.h"
 #include "Settings.h"
-#include "Windows.h"
 #include <wil/resource.h>
-#include "wil/result.h"
-#include <filesystem>
+#include <wil/result.h>
 
 #include "xxhash.h"
 #include "Utils.h"

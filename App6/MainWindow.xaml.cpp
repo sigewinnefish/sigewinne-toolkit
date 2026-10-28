@@ -4,11 +4,12 @@
 #include "MainWindow.g.cpp"
 #endif
 
-#include <Settings.h>
-#include <App.xaml.h>
+#include "Settings.h"
+#include "App.xaml.h"
+#include "GUID.h"
 
 using namespace Service::Settings;
-
+using namespace Service::GlobalConst::GUID;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -19,7 +20,6 @@ namespace winrt::App6::implementation
 	MainWindow::MainWindow()
 	{
 		InitWindow();
-
 	}
 
 
@@ -33,34 +33,38 @@ namespace winrt::App6::implementation
         return _hwnd;
     }
 
-    void MainWindow::Exp1()
+	struct  __declspec(novtable) IAppWindowExperimental : public ::IInspectable
 	{
-		typedef __int64(*put_PersistedStateId)(__int64 a1, __int64 a2);
-		typedef __int64(*put_PlacementRestorationBehavior)(__int64 a1, __int64 a2);
+		virtual HRESULT STDMETHODCALLTYPE get_PersistedStateId() = 0; // not use
+		virtual HRESULT STDMETHODCALLTYPE put_PersistedStateId(void*) = 0;
+		virtual HRESULT STDMETHODCALLTYPE get_PlacementRestorationBehavior() = 0; // not use
+		virtual HRESULT STDMETHODCALLTYPE put_PlacementRestorationBehavior(PlacementRestorationBehavior) = 0;
+		virtual HRESULT STDMETHODCALLTYPE GetCurrentPlacement() = 0; // not use
+		virtual HRESULT STDMETHODCALLTYPE SaveCurrentPlacement() = 0;
+		
+	};
 
-		void* result{};
-		guid gIAppWindowExperimental("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12"); // IAppWindowExperimental
-		this->AppWindow().try_as<IUnknown>()->QueryInterface(gIAppWindowExperimental, &result);
-		auto vt = *(int64_t*)result;
-		const auto k = guid{ L"{1ed4408f-9732-4543-aa46-8758439652e6}" }; // guid, per window
-		auto func = reinterpret_cast<put_PlacementRestorationBehavior*>((char*)vt + 0x48);
-		(*func)((__int64)result, 0);
-		Windows::Foundation::IReference kk(k);
-		auto func2 = reinterpret_cast<put_PersistedStateId*>((char*)vt + 0x38);
-		(*func2)((__int64)result, (__int64)(*(__int64*)&kk));
-		reinterpret_cast<IUnknown*>(result)->Release();
+    void MainWindow::SetPlacementRestorationBehavior(PlacementRestorationBehavior behavior)
+	{
+		winrt::com_ptr<IAppWindowExperimental> com_IAppWindowExperimental;
+		this->AppWindow().try_as<IUnknown>()->QueryInterface(guid{ iid_IAppWindowExperimental }, com_IAppWindowExperimental.put_void());
+		com_IAppWindowExperimental->put_PlacementRestorationBehavior(behavior);
 	}
-	void MainWindow::Exp2()
-	{
-		typedef __int64(*SaveCurrentPlacement)(__int64 a1);
 
-		void* result{};
-		guid gIAppWindowExperimental("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12"); // IAppWindowExperimental
-		this->AppWindow().try_as<IUnknown>()->QueryInterface(gIAppWindowExperimental, &result);
-		auto vt = *(int64_t*)result;
-		auto func3 = reinterpret_cast<SaveCurrentPlacement*>((char*)vt + 0x58);
-		(*func3)((__int64)result);
-		reinterpret_cast<IUnknown*>(result)->Release();
+	void MainWindow::ShowWindowWithSavedPlacement()
+	{
+		winrt::com_ptr<IAppWindowExperimental> com_IAppWindowExperimental;
+		winrt::guid winrtGuid(MainWindowGUID);
+		Windows::Foundation::IReference<winrt::guid> guid_Reference(winrtGuid);
+		this->AppWindow().try_as<IUnknown>()->QueryInterface(guid{ iid_IAppWindowExperimental }, com_IAppWindowExperimental.put_void());
+		com_IAppWindowExperimental->put_PersistedStateId(winrt::get_abi(guid_Reference));
+	}
+
+	void MainWindow::SaveCurrentPlacement()
+	{
+		winrt::com_ptr<IAppWindowExperimental> com_IAppWindowExperimental;
+		this->AppWindow().try_as<IUnknown>()->QueryInterface(guid{ iid_IAppWindowExperimental }, com_IAppWindowExperimental.put_void());
+		com_IAppWindowExperimental->SaveCurrentPlacement();
 	}
 
 	void MainWindow::InitWindow()
@@ -102,16 +106,13 @@ namespace winrt::App6::implementation
 
 			});
 
-		// ShowWindow
-
-		this->Exp1();
-		this->Activate();
-
+		// SetPlacementRestorationBehavior to default
+		SetPlacementRestorationBehavior(PlacementRestorationBehavior::None);
 	}
 
 	void MainWindow::Window_Closed(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::WindowEventArgs const& args)
 	{
-		Exp2();
+		//SaveCurrentPlacement();
 	}
 }
 

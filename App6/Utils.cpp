@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "Utils.h"
-#include <winrt/Microsoft.Windows.ApplicationModel.Resources.h>
 
 using namespace winrt;
 using namespace Microsoft::Windows::ApplicationModel::Resources;
@@ -27,6 +26,10 @@ namespace Service::Utils
 				caption = ResourceGetString(const_cast<wchar_t*>(L"MBError"));
 				MessageBoxW(0, text.c_str(), caption.c_str(), MB_OK | MB_ICONERROR);
 				break;
+			case FatalError:
+				caption = ResourceGetString(const_cast<wchar_t*>(L"MBFatalError"));
+				MessageBoxW(0, text.c_str(), caption.c_str(), MB_OK | MB_ICONERROR);
+				break;
 			default:
 				break;
 			}
@@ -45,5 +48,17 @@ namespace Service::Utils
 		return hstr;
 	}
 
+	std::wstring str2wstr(const std::string_view str)
+    {
+		auto hs = to_hstring(str);
+		auto ws = std::wstring(hs.begin(), hs.end());
+		return ws;
+    }
+
+	std::string wstr2str(const std::wstring_view wstr)
+	{
+		auto s = to_string(wstr);
+		return s;
+	}
 
 }

@@ -15,18 +15,14 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TitleBar
-            Title="Sigewinne"
+            x:Name="TitleBar"
             Grid.Row="0"
             IsBackButtonVisible="False"
-            IsPaneToggleButtonVisible="False"
-            Subtitle="Toolkit v7.1b0">
+            IsPaneToggleButtonVisible="False">
 
-            <TitleBar.LeftHeader>
-                <ImageIcon
-                    Height="16"
-                    Margin="16,0,0,0"
-                    Source="/Assets/Logo.ico" />
-            </TitleBar.LeftHeader>
+            <TitleBar.IconSource>
+                <ImageIconSource ImageSource="/Assets/Logo.ico" />
+            </TitleBar.IconSource>
 
             <TitleBar.RightHeader>
                 <InfoBar
@@ -36,6 +32,7 @@
                     Message=""
                     Severity="Warning" />
             </TitleBar.RightHeader>
+
         </TitleBar>
         <NavigationView
             x:Name="NavView"
@@ -56,10 +53,7 @@
                 <TextBlock x:Name="HeaderText" />
             </NavigationView.Header>
             <NavigationView.MenuItems>
-                <NavigationViewItem
-                    x:Name="SamplePage1Item"
-                    x:Uid="ViewMainHome"
-                    Tag="SamplePage1">
+                <NavigationViewItem x:Uid="ViewMainHome">
                     <NavigationViewItem.Icon>
                         <SymbolIcon Symbol="Play" />
                     </NavigationViewItem.Icon>

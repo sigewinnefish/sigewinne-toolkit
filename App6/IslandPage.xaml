@@ -123,42 +123,36 @@
                     x:Uid="ViewPageIslandResinListItemAllowOriginalResin"
                     Grid.Row="4"
                     Grid.Column="0"
-                    IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowOriginalResin, Mode=TwoWay}" />
 
                 <ToggleSwitch
                     x:Uid="ViewPageIslandResinListItemAllowPrimogem"
                     Grid.Row="4"
                     Grid.Column="1"
-                    IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowPrimogem, Mode=TwoWay}" />
 
                 <ToggleSwitch
                     x:Uid="ViewPageIslandResinListItemAllowFragileResin"
                     Grid.Row="4"
                     Grid.Column="2"
-                    IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowFragileResin, Mode=TwoWay}" />
 
                 <ToggleSwitch
                     x:Uid="ViewPageIslandResinListItemAllowTransientResin"
                     Grid.Row="5"
                     Grid.Column="0"
-                    IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowTransientResin, Mode=TwoWay}" />
 
                 <ToggleSwitch
                     x:Uid="ViewPageIslandResinListItemAllowCondensedResin"
                     Grid.Row="5"
                     Grid.Column="1"
-                    IsEnabled="False"
                     IsOn="{x:Bind ResinListItemAllowCondensedResin, Mode=TwoWay}" />
 
                 <ToggleSwitch
                     x:Uid="ViewPageIslandHideUid"
                     Grid.Row="6"
                     Grid.Column="0"
-                    IsEnabled="True"
                     IsOn="{x:Bind HideUid, Mode=TwoWay}" />
             </Grid>
         </StackPanel>

@@ -234,7 +234,7 @@ If the toolkit is already running, relaunching it will trigger the game launch.<
   </data>
   <data name="ViewPageSettingsFrameRateLimitOverride.Description" xml:space="preserve">
     <value>For security reasons, the Island limits Frame Rate up to 120 FPS.
-Enable “Frame Rate Limit Override” to change this restriction.</value>
+Enable "Frame Rate Limit Override" to change this restriction.</value>
   </data>
   <data name="ViewPageSettingsIslandRestrictionsOverride.Header" xml:space="preserve">
     <value>Island Restrictions Override</value>
@@ -261,7 +261,7 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
     <value>Change the behavior of the close button</value>
   </data>
   <data name="ViewPageSettingsRestrictedTokens.Description" xml:space="preserve">
-    <value>Start the Game with Standard User Accesss Token</value>
+    <value>Start the Game with Standard User Access Token</value>
   </data>
   <data name="ViewMainAppEdition.Title" xml:space="preserve">
     <value>Lite Version</value>
@@ -293,17 +293,27 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
   <data name="MBLoadSettingsFromFileWarn" xml:space="preserve">
     <value>LoadSettingsFromFile Failed, ignore if FIRSTRUN</value>
   </data>
+  <data name="MBWriteSettingsToFileError" xml:space="preserve">
+    <value>WriteSettingsToFile FAILED</value>
+  </data>
+  <data name="MBPrimaryLanguageOverride" xml:space="preserve">
+    <value>Override Language FAILED
+LanguageOverride has reset</value>
+  </data>
   <data name="MBGamePathDetectError" xml:space="preserve">
     <value>GamePath Detect Error</value>
   </data>
   <data name="MBLaunchGameError" xml:space="preserve">
-    <value>Launch GAME ERROR</value>
+    <value>Launch GAME FAILED</value>
   </data>
   <data name="MBWarn" xml:space="preserve">
     <value>Warn</value>
   </data>
   <data name="MBError" xml:space="preserve">
     <value>Error</value>
+  </data>
+  <data name="MBFatalError" xml:space="preserve">
+    <value>Fatal Error</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
     <value>Info</value>
@@ -322,12 +332,76 @@ Enable “Frame Rate Limit Override” to change this restriction.</value>
   </data>
   <data name="MBAppCrash" xml:space="preserve">
     <value>OOPS, APP CRASH !!!
-dump has been generate at %temp%/toolkit.dmp</value>
+dump has been generated at %temp%/toolkit.dmp</value>
   </data>
-  <data name="ViewPageSettingsLanguagesDefault" xml:space="preserve">
-    <value>English (Official Support)</value>
+  <data name="AppLanguageDefault" xml:space="preserve">
+    <value>English</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
-  <data name="ViewPageSettingsLanguagesThirdPartyChinese" xml:space="preserve">
-    <value>Chinese (Third Party)</value>
+  <data name="AppLanguageCommunitySimplifiedChinese" xml:space="preserve">
+    <value>简体中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityTraditionalChinese" xml:space="preserve">
+    <value>繁體中文</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityRussian" xml:space="preserve">
+    <value>Русский</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunitySpanish" xml:space="preserve">
+    <value>Español</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityThai" xml:space="preserve">
+    <value>ไทย</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityKorean" xml:space="preserve">
+    <value>한국어</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityPortuguese" xml:space="preserve">
+    <value>Português</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityIndonesian" xml:space="preserve">
+    <value>Indonesia</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityItalian" xml:space="preserve">
+    <value>Italiano</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityJapanese" xml:space="preserve">
+    <value>日本語</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityGerman" xml:space="preserve">
+    <value>Deutsch</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityFrench" xml:space="preserve">
+    <value>Français</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>7.1b2</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>SigeWinne Toolkit</value>
+  </data>
+  <data name="AppLanguageCommunityTurkish" xml:space="preserve">
+    <value>Türkçe</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
+    <value>Tiếng Việt</value>
+    <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="MBMainWindowCreateFatalError" xml:space="preserve">
+    <value>Failed to create the main window. The application will now close</value>
   </data>
 </root>

@@ -1,7 +1,6 @@
 #pragma once
 #include "Settings.h"
 #include "SettingsViewModel.g.h"
-#include <winrt/Microsoft.UI.Xaml.Data.h>
 #include <wil/cppwinrt_authoring.h>
 #include "helper.h"
 
@@ -12,11 +11,13 @@ namespace winrt::App6::implementation
     {
 
         SettingsViewModel();
+
         // default bind
         BIND(StealthMode, pappsettings, stealthmode);
         BIND(RestrictedTokens, pappsettings, restrictedtokens);
         BIND(LangOverride, pappsettings, langoverride);
         BIND(CloseBehaviorIndex, pappsettings, closebehavior);
+        BIND(CrashDump, pappsettings, crashdump);
         
         // others
         bool IslandRestrictionsOverride();
@@ -38,13 +39,14 @@ namespace winrt::App6::implementation
                 RaisePropertyChanged(L"GamePath");
             }
             return *this;
-        }
-
+        }      
+        
         wil::single_threaded_property<Windows::Foundation::Collections::IObservableVector<hstring>> CloseBehaviors = winrt::single_threaded_observable_vector<hstring>();
         wil::single_threaded_property<Windows::Foundation::Collections::IObservableVector<hstring>> Languages = winrt::single_threaded_observable_vector<hstring>();
 
 	private:
         hstring m_GamePath{ to_hstring(pappsettings->gamepath()) };
+
 
     };
 }

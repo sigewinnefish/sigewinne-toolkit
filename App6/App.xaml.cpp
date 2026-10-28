@@ -1,22 +1,23 @@
 #include "pch.h"
 #include "App.xaml.h"
 #include <wil/resource.h>
-#include <Settings.h>
-#include <LaunchGame.h>
+#include "Settings.h"
+#include "island.h"
+#include "LaunchGame.h"
 #include "MainWindow.xaml.h"
-#include "tlhelp32.h"
-#include "DbgHelp.h"
-#include <filesystem>
-
+#include <tlhelp32.h>
+#include <DbgHelp.h>
+#include "Localization.h"
 #include "NotifyIconContextMenu.xaml.h"
 
 #include "Utils.h"
+#include "GUID.h"
 using namespace Service::Utils::Message;
 using namespace Service::Game::Launching;
 
 using namespace winrt;
 using namespace winrt::Microsoft::UI::Xaml;
-using namespace winrt::Microsoft::Windows::Globalization;
+using namespace Service::GlobalConst::GUID;
 
 // TLS Callback to ensure single instance
 VOID WINAPI tls_callback1(
@@ -26,7 +27,7 @@ VOID WINAPI tls_callback1(
 {
     if (Reason == DLL_PROCESS_ATTACH) //PROCESS start
     {
-        HANDLE hMutex = CreateMutexW(NULL, FALSE, L"1864d952-c1dd-441a-8756-1b96fb9ff89e"); // instance GUID
+        HANDLE hMutex = CreateMutexW(NULL, FALSE, AppInstanceGUID);
         if (GetLastError() == ERROR_ALREADY_EXISTS)
         {
             wil::unique_handle hSnapshot(CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0));
@@ -53,7 +54,7 @@ VOID WINAPI tls_callback1(
                                 process,
                                 NULL,
                                 NULL,
-                                (LPTHREAD_START_ROUTINE)LaunchIfStealthMode,
+                                (LPTHREAD_START_ROUTINE)App::HandleStartupBehavior,
                                 NULL,
                                 NULL,
                                 NULL
@@ -64,7 +65,6 @@ VOID WINAPI tls_callback1(
                     } while (Process32NextW(hSnapshot.get(), &pe));
                 }
 			}
-
             TerminateProcess(GetCurrentProcess(), 0);
         }
     }
@@ -124,6 +124,7 @@ int __stdcall wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
     ::winrt::Microsoft::UI::Xaml::Application::Start(
         [](auto&&)
         {
+            g_mainthreadq = winrt::Microsoft::UI::Dispatching::DispatcherQueue::GetForCurrentThread();
             ::winrt::make<::winrt::App6::implementation::App>();
         });
 
@@ -166,36 +167,27 @@ namespace winrt::App6::implementation
         this->DispatcherShutdownMode(DispatcherShutdownMode::OnExplicitShutdown);
         Settings::Init();
         Island::Init();
+        Localization::Init();
 
-		//app language
-	    if (Settings::pappsettings->langoverride())
-	    {
-            switch (Settings::pappsettings->lang())
-            {
-            case 0:
-                ApplicationLanguages::PrimaryLanguageOverride(L"en-us");
-                break;
-            case 1:
-                ApplicationLanguages::PrimaryLanguageOverride(L"zh-cn");
-                break;
-            default:
-                break;
-            }
-	    }
-
+        // create notifyIcon
         notifyIconController = NotifyIcon::Controller{};
         notifyIconController.Init();
 
-        // stealthmode
+        // stealth launch the game or show main window
+        HandleStartupBehavior();
+
+    }
+
+    void App::HandleStartupBehavior()
+    {
         if (Settings::pappsettings->stealthmode())
         {
             Launch();
         }
         else
         {
-            mainWindow = make<MainWindow>();
+            PresentMainWindow();
         }
-
     }
 
     void App::ToForeground()
@@ -211,26 +203,38 @@ namespace winrt::App6::implementation
 
     void App::PresentMainWindow()
     {
-        if (mainWindow)
+        auto const result = g_mainthreadq.TryEnqueue([]() 
+            {
+                if (mainWindow)
+                {
+                    ToForeground();
+                }
+                else
+                {
+                    app->mainWindow = mainWindow = make<MainWindow>();
+                    winrt::get_self<MainWindow>(mainWindow.as<default_interface<MainWindow>>())->ShowWindowWithSavedPlacement();
+                    mainWindow.Activate();
+                }
+
+            });
+        if (!result)
         {
-            ToForeground();
-        }
-        else
-        {
-            mainWindow = make<MainWindow>();
+            ShowMessageBox(L"MBMainWindowCreateFatalError", Utils::Message::FatalError);
+            __fastfail(FAST_FAIL_FATAL_APP_EXIT);
         }
     }
 
     App::~App() noexcept
     {
+        notifyIconController.DeleteNotifyIcon();
+        
         try
         {
             Settings::WriteSettingsToFile();
         }
         catch (...)
         {
-            MessageBoxW(0, L"WriteSettingsToFile Error", L"Warn", MB_OK | MB_ICONWARNING);
-            abort();
+            ShowMessageBox(L"MBWriteSettingsToFileError", Utils::Message::Error);
         }
     }
 }

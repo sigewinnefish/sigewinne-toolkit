@@ -7,9 +7,6 @@
     <Page Include="IslandPage.xaml">
       <Filter>View</Filter>
     </Page>
-    <Page Include="MainWindow.xaml">
-      <Filter>View</Filter>
-    </Page>
     <Page Include="LaunchGamePage.xaml">
       <Filter>View</Filter>
     </Page>
@@ -33,6 +30,12 @@
     </Page>
     <Page Include="NotifyIconContextMenu.xaml">
       <Filter>View</Filter>
+    </Page>
+    <Page Include="NotifyIconContextMenuContent.xaml">
+      <Filter>View</Filter>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Filter>View\Window</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +86,9 @@
     <ClCompile Include="Controller.cpp">
       <Filter>Service\NotifyIcon</Filter>
     </ClCompile>
+    <ClCompile Include="Localization.cpp">
+      <Filter>Service\Localization</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -120,6 +126,12 @@
     </ClInclude>
     <ClInclude Include="Controller.h">
       <Filter>Service\NotifyIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="Localization.h">
+      <Filter>Service\Localization</Filter>
+    </ClInclude>
+    <ClInclude Include="GUID.h">
+      <Filter>Service\GlobalConst</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -285,6 +297,9 @@
     <Image Include="Assets\miyoushe128.png">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="Assets\FakeAIWatermark.png">
+      <Filter>Assets</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Assets">
@@ -320,9 +335,6 @@
     <Filter Include="Resource\Default">
       <UniqueIdentifier>{771ce8fb-1735-473c-b66b-bd410158b101}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource\zh-cn">
-      <UniqueIdentifier>{9434da13-63a4-469f-bf38-1607ece0f497}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Service\Utils">
       <UniqueIdentifier>{1db2d635-1278-49ae-b029-cace694c6725}</UniqueIdentifier>
     </Filter>
@@ -340,6 +352,18 @@
     </Filter>
     <Filter Include="Service\NotifyIcon">
       <UniqueIdentifier>{9ebe5039-b8c8-4de6-898f-0a0b93671110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Service\Localization">
+      <UniqueIdentifier>{ff65f96a-d5bc-4a64-9f85-9880c834137a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Translations">
+      <UniqueIdentifier>{b2931f50-028a-48a6-9999-0859063e3503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Service\GlobalConst">
+      <UniqueIdentifier>{8efea9d9-be8a-4460-865e-50ed380a01cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View\Window">
+      <UniqueIdentifier>{31047b29-fa16-489a-b89e-30837fefcf27}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -363,8 +387,51 @@
     <PRIResource Include="Resources.resw">
       <Filter>Resource\Default</Filter>
     </PRIResource>
-    <PRIResource Include="Strings\zh-CN\Resources.resw">
-      <Filter>Resource\zh-cn</Filter>
+    <PRIResource Include="Strings\de-DE\Resources.resw">
+      <Filter>Resource\Translations</Filter>
     </PRIResource>
+    <PRIResource Include="Strings\es-ES\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\fr-FR\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\id-ID\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\it-IT\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\ja-JP\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\ko-KR\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\pt-PT\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\ru-RU\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\th-TH\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\tr-TR\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\vi-VN\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\zh-CN\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\zh-TW\Resources.resw">
+      <Filter>Resource\Translations</Filter>
+    </PRIResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natstepfilter" />
   </ItemGroup>
 </Project>
