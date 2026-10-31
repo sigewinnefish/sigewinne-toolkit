@@ -6,7 +6,7 @@ namespace Service::Island
 
     struct IslandEnvironment
     {
-        float FieldOfView;
+        float     FieldOfView;
         uint32_t  TargetFrameRate;
         uint32_t  EnableSetFieldOfView : 1;
         uint32_t  FixLowFovScene : 1;

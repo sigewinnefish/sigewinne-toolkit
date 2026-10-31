@@ -39,6 +39,11 @@ namespace Service::Island
 			pmap->UsingTouchScreen = pisland->usingtouchscreen();
 			pmap->RedirectCombineEntry = pisland->redirectcombineentry();
 			pmap->HideUid = pisland->hideuid();
+			pmap->ResinListItemAllowOriginalResin = (*pisland->mutable_items())[106];
+			pmap->ResinListItemAllowPrimogem = (*pisland->mutable_items())[201];
+			pmap->ResinListItemAllowFragileResin = (*pisland->mutable_items())[107009];
+			pmap->ResinListItemAllowTransientResin = (*pisland->mutable_items())[107012];
+			pmap->ResinListItemAllowCondensedResin = (*pisland->mutable_items())[220007];
 		}
 	}
 }
