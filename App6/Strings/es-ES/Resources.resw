@@ -312,6 +312,9 @@ Se ha restablecido LanguageOverride</value>
   <data name="MBError" xml:space="preserve">
     <value>Error</value>
   </data>
+  <data name="MBFatalError" xml:space="preserve">
+    <value>Fatal Error</value>
+  </data>
   <data name="MBInfo" xml:space="preserve">
     <value>Información</value>
   </data>
@@ -384,7 +387,7 @@ Se ha generado un volcado en %temp%/toolkit.dmp</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppVersion" xml:space="preserve">
-    <value>7.1b1</value>
+    <value>7.1b2</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="AppName" xml:space="preserve">
@@ -397,5 +400,8 @@ Se ha generado un volcado en %temp%/toolkit.dmp</value>
   <data name="AppLanguageCommunityVietnamese" xml:space="preserve">
     <value>Tiếng Việt</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
+  </data>
+  <data name="MBMainWindowCreateFatalError" xml:space="preserve">
+    <value>Failed to create the main window. The application will now close</value>
   </data>
 </root>
