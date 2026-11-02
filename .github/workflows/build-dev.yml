@@ -43,12 +43,11 @@ jobs:
       working-directory: ${{ github.workspace }}
       run: msbuild /m /p:Platform=x64 /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
 
-    - name: checkout external component
+    - name: checkout AGB component
       uses: actions/checkout@v7
       with:
-        repository: sigewinnefish/sigewinne-toolkit-exclusive-component
-        token: ${{ secrets.pat }}
-        path: sigewinne-toolkit-exclusive-component
+        repository: sigewinnefish/sigewinne-toolkit-AGB-component
+        path: sigewinne-toolkit-AGB-component
 
     - name: Preparing for Packing
       working-directory: ${{ github.workspace }}
