@@ -53,6 +53,8 @@ jobs:
       working-directory: ${{ github.workspace }}
       run: |
             powershell -Command "Copy-Item './x64/Release/App6' './installer/toolkit' -Recurse -Force -Exclude '*.pdb','*.exp','*.lib','*.xbf','*.winmd'"
+            powershell -Command "Copy-Item './sigewinne-toolkit-AGB-component/toolkit_fulltrust.exe' './installer/toolkit/toolkit_fulltrust.exe' -Force"
+            powershell -Command "Copy-Item './sigewinne-toolkit-AGB-component/Minisland.dll' './installer/toolkit/nvd3dump.dll' -Force"
             powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.exe' -NewName 'toolkit.exe'"
             powershell -Command "Rename-Item -Path '.\installer\toolkit\App6.pri' -NewName 'toolkit.pri'"
 
