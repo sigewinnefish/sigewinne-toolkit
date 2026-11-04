@@ -313,7 +313,7 @@ LanguageOverride가 재설정되었습니다</value>
     <value>오류</value>
   </data>
   <data name="MBFatalError" xml:space="preserve">
-    <value>Fatal Error</value>
+    <value>치명적 오류</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
     <value>정보</value>
@@ -402,6 +402,6 @@ LanguageOverride가 재설정되었습니다</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="MBMainWindowCreateFatalError" xml:space="preserve">
-    <value>Failed to create the main window. The application will now close</value>
+    <value>메인 창을 생성하지 못했습니다. 애플리케이션이 종료됩니다</value>
   </data>
 </root>
