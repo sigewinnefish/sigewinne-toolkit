@@ -312,7 +312,7 @@
     <value>错误</value>
   </data>
   <data name="MBFatalError" xml:space="preserve">
-    <value>Fatal Error</value>
+    <value>致命错误</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
     <value>信息</value>
@@ -401,6 +401,6 @@
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="MBMainWindowCreateFatalError" xml:space="preserve">
-    <value>Failed to create the main window. The application will now close</value>
+    <value>无法创建主窗口。应用程序即将关闭</value>
   </data>
 </root>

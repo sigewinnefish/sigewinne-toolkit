@@ -313,7 +313,7 @@ LanguageOverride a été réinitialisé</value>
     <value>Erreur</value>
   </data>
   <data name="MBFatalError" xml:space="preserve">
-    <value>Fatal Error</value>
+    <value>Erreur fatale</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
     <value>Info</value>
@@ -402,6 +402,6 @@ Un vidage a été généré dans %temp%/toolkit.dmp</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="MBMainWindowCreateFatalError" xml:space="preserve">
-    <value>Failed to create the main window. The application will now close</value>
+    <value>Impossible de créer la fenêtre principale. L'application va maintenant se fermer</value>
   </data>
 </root>
