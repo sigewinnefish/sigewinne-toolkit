@@ -223,6 +223,7 @@ namespace winrt::App6::implementation
                 else
                 {
                     app->mainWindow = mainWindow = make<MainWindow>();
+                    app->mainWindow.Content().try_as<FrameworkElement>().RequestedTheme(ElementTheme(Settings::pappsettings->appthemeindex()));
                     winrt::get_self<MainWindow>(mainWindow.as<default_interface<MainWindow>>())->ShowWindowWithSavedPlacement();
                     mainWindow.Activate();
                 }
