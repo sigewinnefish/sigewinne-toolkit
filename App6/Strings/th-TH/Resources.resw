@@ -254,6 +254,15 @@
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
     <value>ออกจากทูลคิท</value>
   </data>
+  <data name="ViewPageSettingsAppThemeCoreWindowThemeDark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="ViewPageSettingsAppThemeCoreWindowThemeSystem" xml:space="preserve">
+    <value>Follow System</value>
+  </data>
+  <data name="ViewPageSettingsAppThemeCoreWindowThemeLight" xml:space="preserve">
+    <value>Light</value>
+  </data>
   <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
     <value>ปิดหน้าต่าง</value>
   </data>
@@ -313,7 +322,7 @@ LanguageOverride ถูกรีเซ็ตแล้ว</value>
     <value>ข้อผิดพลาด</value>
   </data>
   <data name="MBFatalError" xml:space="preserve">
-    <value>Fatal Error</value>
+    <value>ข้อผิดพลาดร้ายแรง</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
     <value>ข้อมูล</value>
@@ -402,6 +411,12 @@ LanguageOverride ถูกรีเซ็ตแล้ว</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="MBMainWindowCreateFatalError" xml:space="preserve">
-    <value>Failed to create the main window. The application will now close</value>
+    <value>ไม่สามารถสร้างหน้าต่างหลักได้ แอปพลิเคชันจะปิดลงทันที</value>
+  </data>
+  <data name="ViewPageSettingsAppTheme.Header" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="ViewPageSettingsAppTheme.Description" xml:space="preserve">
+    <value>Change window theme</value>
   </data>
 </root>
