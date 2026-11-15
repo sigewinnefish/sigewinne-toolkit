@@ -22,6 +22,7 @@ namespace winrt::App6::implementation
 
 	private:
         static void ToForeground();
+        void SetisRequestedThemeSettabletoTrue();
         NotifyIcon::Controller notifyIconController;
 
     };

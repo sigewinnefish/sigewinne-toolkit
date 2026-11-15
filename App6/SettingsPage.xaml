@@ -150,6 +150,18 @@
                     </essential:SettingsCard.HeaderIcon>
                 </essential:SettingsCard>
 
+                <essential:SettingsCard x:Uid="ViewPageSettingsAppTheme">
+                    <ComboBox
+                        Width="150"
+                        essential:ComboBoxHelper.AcrylicWorkaround="True"
+                        ItemsSource="{x:Bind ViewModel.AppThemes}"
+                        SelectedIndex="{x:Bind ViewModel.AppThemeIndex, Mode=TwoWay}"
+                        SelectionChanged="AppTheme_SelectionChanged" />
+                    <essential:SettingsCard.HeaderIcon>
+                        <FontIcon Glyph="&#xE790;" />
+                    </essential:SettingsCard.HeaderIcon>
+                </essential:SettingsCard>
+
             </StackPanel>
 
         </ScrollViewer>

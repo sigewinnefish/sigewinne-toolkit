@@ -4,6 +4,7 @@
 #if __has_include("SettingsPage.g.cpp")
 #include "SettingsPage.g.cpp"
 #endif
+#include "App.xaml.h"
 #include "MainWindow.xaml.h"
 #include "GamePathDetect.h"
 #include "Utils.h"
@@ -86,3 +87,8 @@ namespace winrt::App6::implementation
 }
 
 
+
+void winrt::App6::implementation::SettingsPage::AppTheme_SelectionChanged(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::Controls::SelectionChangedEventArgs const& e)
+{
+    App::mainWindow.Content().try_as<FrameworkElement>().RequestedTheme(ElementTheme(sender.try_as<ComboBox>().SelectedIndex()));
+}

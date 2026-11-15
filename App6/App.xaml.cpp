@@ -164,7 +164,10 @@ namespace winrt::App6::implementation
     /// <param name="e">Details about the launch request and process.</param>
     void App::OnLaunched([[maybe_unused]] LaunchActivatedEventArgs const& e)
     {
+
         this->DispatcherShutdownMode(DispatcherShutdownMode::OnExplicitShutdown);
+        //this->SetisRequestedThemeSettabletoTrue();
+
         Settings::Init();
         Island::Init();
         Localization::Init();
@@ -175,6 +178,7 @@ namespace winrt::App6::implementation
 
         // stealth launch the game or show main window
         HandleStartupBehavior();
+
 
     }
 
@@ -199,6 +203,13 @@ namespace winrt::App6::implementation
         {
             SwitchToThisWindow(hwnd, TRUE);
         }
+    }
+
+    void App::SetisRequestedThemeSettabletoTrue()
+    {
+        winrt::com_ptr<IUnknown> com_FrameworkApplication;
+        this->try_as<IUnknown>()->QueryInterface(guid{ iid_FrameworkApplication }, com_FrameworkApplication.put_void());
+        *(bool*)((__int64)com_FrameworkApplication.get() + 0x118) = true;
     }
 
     void App::PresentMainWindow()

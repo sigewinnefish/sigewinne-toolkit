@@ -11,10 +11,12 @@ namespace App6
 		Boolean FrameRateLimitOverride;
 		UInt32  FrameRateLimitValue;
 		String  GamePath;
-		Int32  CloseBehaviorIndex;
+		Int32   CloseBehaviorIndex;
 		Windows.Foundation.Collections.IObservableVector<String> CloseBehaviors{ get; };
 		Windows.Foundation.Collections.IObservableVector<String> Languages{ get; };
+		Windows.Foundation.Collections.IObservableVector<String> AppThemes{ get; };
 		Boolean CrashDump;
+		Int32   AppThemeIndex;
 	}
 
 }

@@ -22,7 +22,11 @@ namespace winrt::App6::implementation
         {
 			Languages.Append(ResourceGetString(it.first.data()));
         }
-	    
+
+		AppThemes.Append(ResourceGetString(L"ViewPageSettingsAppThemeCoreWindowThemeSystem"));
+		AppThemes.Append(ResourceGetString(L"ViewPageSettingsAppThemeCoreWindowThemeLight"));
+		AppThemes.Append(ResourceGetString(L"ViewPageSettingsAppThemeCoreWindowThemeDark"));
+
 	}
 
 	bool SettingsViewModel::IslandRestrictionsOverride()
