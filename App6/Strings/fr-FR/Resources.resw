@@ -254,6 +254,15 @@ Activez « Dérogation à la limite de fréquence d'images » pour modifier cett
   <data name="ViewPageSettingsCloseButtonBehaviorExit" xml:space="preserve">
     <value>Quitter l'outil</value>
   </data>
+  <data name="ViewPageSettingsAppThemeCoreWindowThemeDark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="ViewPageSettingsAppThemeCoreWindowThemeSystem" xml:space="preserve">
+    <value>Follow System</value>
+  </data>
+  <data name="ViewPageSettingsAppThemeCoreWindowThemeLight" xml:space="preserve">
+    <value>Light</value>
+  </data>
   <data name="ViewPageSettingsCloseButtonBehaviorCloseWindow" xml:space="preserve">
     <value>Fermer la fenêtre</value>
   </data>
@@ -313,7 +322,7 @@ LanguageOverride a été réinitialisé</value>
     <value>Erreur</value>
   </data>
   <data name="MBFatalError" xml:space="preserve">
-    <value>Fatal Error</value>
+    <value>Erreur fatale</value>
   </data>
   <data name="MBInfo" xml:space="preserve">
     <value>Info</value>
@@ -402,6 +411,12 @@ Un vidage a été généré dans %temp%/toolkit.dmp</value>
     <comment>THIS SHOULD NOT BE TRANSLATED</comment>
   </data>
   <data name="MBMainWindowCreateFatalError" xml:space="preserve">
-    <value>Failed to create the main window. The application will now close</value>
+    <value>Impossible de créer la fenêtre principale. L'application va maintenant se fermer</value>
+  </data>
+  <data name="ViewPageSettingsAppTheme.Header" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="ViewPageSettingsAppTheme.Description" xml:space="preserve">
+    <value>Change window theme</value>
   </data>
 </root>
